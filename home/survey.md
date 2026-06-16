@@ -4,7 +4,7 @@
 
 ## Gráfico 01 — Perfil dos respondentes
 
-![image.png](uploads/fc741ba0e25b990ce2d0a25af6256a8a/image.png){width=900 height=359}
+![image.png](uploads/fc741ba0e25b990ce2d0a25af6256a8a/image.png){width="900" height="359"}
 
 **Pergunta:** Você mora na região do Cariri ou está visitando?\
 **Total de respostas:** 29.
@@ -15,7 +15,7 @@
 
 ## Gráfico 02 — Frequência com que os respondentes conhecem lugares novos
 
-![image.png](uploads/b097bf5669427e2d6ad8a13b49892453/image.png){width=900 height=363}
+![image.png](uploads/b097bf5669427e2d6ad8a13b49892453/image.png){width="900" height="363"}
 
 **Pergunta:** Com que frequência você costuma conhecer lugares novos na região?\
 **Total de respostas:** 29.
@@ -26,6 +26,8 @@
 
 ## Gráfico 03 — Fontes usadas para buscar informações
 
+![grafico-03-fontes-de-informacao.png.jpeg](uploads/5a4082d2a093a33e794a2bf62c7153ba/grafico-03-fontes-de-informacao.png.jpeg){width=900 height=435}
+
 **Pergunta:** Onde você costuma buscar informações sobre lugares, restaurantes, eventos ou atrações no Cariri?\
 **Total de respostas:** 29.
 
@@ -35,7 +37,7 @@
 
 ## Gráfico 04 — Maiores dificuldades para descobrir lugares ou eventos
 
-![Gráfico 04 — Maiores dificuldades para descobrir lugares ou eventos](./graphics/grafico-04-dificuldades-descoberta.png.jpeg)
+![grafico-04-dificuldades-descoberta.png.jpeg](uploads/68a87ba3a9f4c6e91d15bbd171bf257d/grafico-04-dificuldades-descoberta.png.jpeg){width=900 height=383}
 
 **Pergunta:** Qual é a maior dificuldade ao tentar descobrir lugares ou eventos na região?\
 **Total de respostas:** 29.
@@ -46,8 +48,6 @@
 
 ## Gráfico 05 — Desistência por falta de informação
 
-![Gráfico 05 — Desistência por falta de informação](./graphics/grafico-05-deixou-de-visitar.png.jpeg)
-
 **Pergunta:** Você já deixou de visitar algum lugar por falta de informação suficiente ou confiável?\
 **Total de respostas:** 29.
 
@@ -56,8 +56,6 @@
 ---
 
 ## Gráfico 06 — Informações consideradas mais importantes antes da visita
-
-![Gráfico 06 — Informações consideradas mais importantes antes da visita](./graphics/grafico-06-informacoes-antes-da-visita.jpeg)
 
 **Pergunta:** Antes de visitar um lugar novo, quais informações você considera mais importantes?\
 **Total de respostas:** 29.
@@ -68,8 +66,6 @@
 
 ## Gráfico 07 — Necessidades relacionadas a eventos culturais
 
-![Gráfico 07 — Necessidades relacionadas a eventos culturais](./graphics/grafico-07-eventos-culturais.jpeg)
-
 **Pergunta:** Em relação aos eventos culturais da região, o que você mais sente falta?\
 **Total de respostas:** 29.
 
@@ -78,6 +74,8 @@
 ---
 
 ## Gráfico 08 — Interesse em usar uma plataforma centralizada
+
+![grafico-08-interesse-na-plataforma.jpeg](uploads/b48d1742be6b4d2d87a79fbedff30b9a/grafico-08-interesse-na-plataforma.jpeg){width=900 height=442}
 
 **Pergunta:** O quanto você usaria uma plataforma que reunisse pontos turísticos, restaurantes, eventos, avaliações, horários e informações culturais do Cariri em um só lugar?\
 **Total de respostas:** 29.
@@ -88,7 +86,7 @@
 
 ## Gráfico 09 — Funcionalidades consideradas mais úteis
 
-![image.png](uploads/e8e53812695226ab6166078ba5f90c90/image.png){width=900 height=427}
+![image.png](uploads/e8e53812695226ab6166078ba5f90c90/image.png){width="900" height="427"}
 
 **Pergunta:** Quais funcionalidades seriam mais úteis para você em uma plataforma como o Cariri Cultural?\
 **Total de respostas:** 29.
@@ -99,7 +97,7 @@
 
 ## Gráfico 10 — Dúvidas que o assistente conversacional deve responder
 
-![image.png](uploads/e8e0a1864b73e5d19e7b524751ede5b3/image.png){width=900 height=425}
+![image.png](uploads/e8e0a1864b73e5d19e7b524751ede5b3/image.png){width="900" height="425"}
 
 **Pergunta:** Se existisse um assistente conversacional dentro da plataforma, que tipo de dúvida você gostaria que ele respondesse?\
 **Total de respostas:** 29.
