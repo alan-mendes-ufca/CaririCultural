@@ -1,10 +1,10 @@
-#  1. Diagrama HTA  
+# 1. Diagrama HTA
 
-* Link para acesso o diagrama: https://miro.com/app/board/uXjVHF1VWqo=/?share_link_id=625425731477 
+* Link para acesso o diagrama: https://miro.com/app/board/uXjVHF1VWqo=/?share_link_id=625425731477
 
 ---
 
-# 2. Análise Hierárquica de Tarefas (HTA) Descritiva
+# 2. HTA Descritiva - Análise Hierárquica de Tarefas (HTA) Descritiva
 
 ## 1. Explorar opções disponíveis na região
 
