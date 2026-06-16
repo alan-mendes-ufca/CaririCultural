@@ -26,7 +26,7 @@
 
 ## Gráfico 03 — Fontes usadas para buscar informações
 
-![grafico-03-fontes-de-informacao.png.jpeg](uploads/5a4082d2a093a33e794a2bf62c7153ba/grafico-03-fontes-de-informacao.png.jpeg){width=900 height=435}
+![grafico-03-fontes-de-informacao.png.jpeg](uploads/5a4082d2a093a33e794a2bf62c7153ba/grafico-03-fontes-de-informacao.png.jpeg){width="900" height="435"}
 
 **Pergunta:** Onde você costuma buscar informações sobre lugares, restaurantes, eventos ou atrações no Cariri?\
 **Total de respostas:** 29.
@@ -37,7 +37,7 @@
 
 ## Gráfico 04 — Maiores dificuldades para descobrir lugares ou eventos
 
-![grafico-04-dificuldades-descoberta.png.jpeg](uploads/68a87ba3a9f4c6e91d15bbd171bf257d/grafico-04-dificuldades-descoberta.png.jpeg){width=900 height=383}
+![grafico-04-dificuldades-descoberta.png.jpeg](uploads/68a87ba3a9f4c6e91d15bbd171bf257d/grafico-04-dificuldades-descoberta.png.jpeg){width="900" height="383"}
 
 **Pergunta:** Qual é a maior dificuldade ao tentar descobrir lugares ou eventos na região?\
 **Total de respostas:** 29.
@@ -47,6 +47,8 @@
 ---
 
 ## Gráfico 05 — Desistência por falta de informação
+
+![grafico-05-deixou-de-visitar.png.jpeg](uploads/8c9b4aeee0d404c21df7c2170c1e71e5/grafico-05-deixou-de-visitar.png.jpeg){width=900 height=378}
 
 **Pergunta:** Você já deixou de visitar algum lugar por falta de informação suficiente ou confiável?\
 **Total de respostas:** 29.
@@ -75,7 +77,7 @@
 
 ## Gráfico 08 — Interesse em usar uma plataforma centralizada
 
-![grafico-08-interesse-na-plataforma.jpeg](uploads/b48d1742be6b4d2d87a79fbedff30b9a/grafico-08-interesse-na-plataforma.jpeg){width=900 height=442}
+![grafico-08-interesse-na-plataforma.jpeg](uploads/b48d1742be6b4d2d87a79fbedff30b9a/grafico-08-interesse-na-plataforma.jpeg){width="900" height="442"}
 
 **Pergunta:** O quanto você usaria uma plataforma que reunisse pontos turísticos, restaurantes, eventos, avaliações, horários e informações culturais do Cariri em um só lugar?\
 **Total de respostas:** 29.
