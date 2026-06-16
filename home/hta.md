@@ -4,7 +4,7 @@
 
 ---
 
-# 2. HTA Descritiva - Análise Hierárquica de Tarefas (HTA) Descritiva
+# 2. Análise Hierárquica de Tarefas (HTA) Descritiva
 
 ## 1. Explorar opções disponíveis na região
 
