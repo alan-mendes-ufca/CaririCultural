@@ -1,6 +1,15 @@
 Este diretório contém os roteiros e as transcrições/registros das entrevistas realizadas com os usuários.
 
-## Arquivos
+---
+
+### Roteiros de Pertuntas para as Entrevistas:
+
+- [interview-questions](./interview-questions)
+- [interview-questions-2](./interview-questions-2)
+
+---
+
+### Entrevistas com participantes:
 
 - [interview-Alex-Sousa](./interview-Alex-Sousa)
 - [interview-Carolina-Soares](./interview-Carolina-Soares)
@@ -14,5 +23,3 @@ Este diretório contém os roteiros e as transcrições/registros das entrevista
 - [interview-Pedro-Ivan](./interview-Pedro-Ivan)
 - [interview-Rogerio-Ribeiro](./interview-Rogerio-Ribeiro)
 - [interview-Sarah-Linhars](./interview-Sarah-Linhars)
-- [interview-questions-2](./interview-questions-2)
-- [interview-questions](./interview-questions)
