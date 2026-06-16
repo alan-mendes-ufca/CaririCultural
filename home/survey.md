@@ -48,7 +48,7 @@
 
 ## Gráfico 05 — Desistência por falta de informação
 
-![grafico-05-deixou-de-visitar.png.jpeg](uploads/8c9b4aeee0d404c21df7c2170c1e71e5/grafico-05-deixou-de-visitar.png.jpeg){width=900 height=378}
+![grafico-05-deixou-de-visitar.png.jpeg](uploads/8c9b4aeee0d404c21df7c2170c1e71e5/grafico-05-deixou-de-visitar.png.jpeg){width="900" height="378"}
 
 **Pergunta:** Você já deixou de visitar algum lugar por falta de informação suficiente ou confiável?\
 **Total de respostas:** 29.
@@ -59,6 +59,8 @@
 
 ## Gráfico 06 — Informações consideradas mais importantes antes da visita
 
+![grafico-06-informacoes-antes-da-visita.jpeg](uploads/494fee3bd014d050f07b4f810f4c8ace/grafico-06-informacoes-antes-da-visita.jpeg){width=900 height=421}
+
 **Pergunta:** Antes de visitar um lugar novo, quais informações você considera mais importantes?\
 **Total de respostas:** 29.
 
@@ -67,6 +69,8 @@
 ---
 
 ## Gráfico 07 — Necessidades relacionadas a eventos culturais
+
+![grafico-07-eventos-culturais.jpeg](uploads/b1880634baaec97dc8004cd66909e650/grafico-07-eventos-culturais.jpeg){width=900 height=406}
 
 **Pergunta:** Em relação aos eventos culturais da região, o que você mais sente falta?\
 **Total de respostas:** 29.
