@@ -4,9 +4,9 @@ Este diretório contém as análises comparativas e de benchmarking de plataform
 
 ## Arquivos
 
-- [interview-analysis-and-benchmarking.md](./interview-analysis-and-benchmarking.md)
-- [muiraquitana.md](./muiraquitana.md)
-- [turisme-de-barcelona.md](./turisme-de-barcelona.md)
-- [visit-brasil-embratur.md](./visit-brasil-embratur.md)
-- [visit-oslo.md](./visit-oslo.md)
-- [zia.md](./zia.md)
+- [interview-analysis-and-benchmarking](./interview-analysis-and-benchmarking)
+- [muiraquitana](./muiraquitana)
+- [turisme-de-barcelona](./turisme-de-barcelona)
+- [visit-brasil-embratur](./visit-brasil-embratur)
+- [visit-oslo](./visit-oslo)
+- [zia](./zia)
