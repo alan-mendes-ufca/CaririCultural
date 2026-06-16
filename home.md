@@ -1,5 +1,5 @@
 ---
-title: Sumário
+title: Home
 ---
 # Sumário — Cariri Cultural
 
