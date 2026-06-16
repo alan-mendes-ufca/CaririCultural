@@ -1,3 +1,6 @@
+---
+title: zIA
+---
 # zIA
 
 A zIA é uma assistente virtual desenvolvida no contexto de pesquisas sobre turismo inteligente na região de Molise, na Itália. O projeto busca utilizar inteligência artificial para aproximar visitantes da cultura local e promover um território que normalmente recebe menos atenção turística do que os principais destinos italianos.

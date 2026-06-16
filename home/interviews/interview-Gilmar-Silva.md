@@ -1,3 +1,6 @@
+---
+title: Entrevista — Gilmar Silva
+---
 ## Entrevista realizada com Gilmar - 🏠 Morador de longo prazo
 
 ### 1. Com que frequência você visita lugares, vai conhecer lugares ou passeia?

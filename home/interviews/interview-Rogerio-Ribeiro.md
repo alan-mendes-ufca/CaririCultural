@@ -1,3 +1,6 @@
+---
+title: Entrevista — Rogério Ribeiro
+---
 ## Entrevista realizada com Rogério - 🏠 Novo morador
 
 ### 1. É a sua primeira vez aqui na região do Cariri?

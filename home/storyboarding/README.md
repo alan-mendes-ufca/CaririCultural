@@ -1,3 +1,6 @@
+---
+title: Storyboarding
+---
 # Storyboarding
 
 Este diretório contém os quadrinhos ilustrados para as personas do projeto.

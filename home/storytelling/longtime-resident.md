@@ -1,3 +1,6 @@
+---
+title: Morador Antigo
+---
 ### Storytelling – A Jornada de Quem Quer Descobrir o Cariri Além do Óbvio
 
 Depois de mais uma semana corrida, João decide aproveitar a sexta-feira à noite com os amigos. Surge a pergunta de sempre: **"Vamos sair hoje?"**.

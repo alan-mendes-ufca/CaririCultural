@@ -1,3 +1,6 @@
+---
+title: Turista
+---
 ### Storytelling – A Jornada do Turista que Quer Aproveitar o Melhor do Cariri
 
 Após desembarcar no Aeroporto de Juazeiro do Norte, Rafael estava animado. Era sua primeira vez no Cariri e os próximos dias seriam dedicados a visitar familiares e conhecer uma região sobre a qual ouvira tantas histórias.

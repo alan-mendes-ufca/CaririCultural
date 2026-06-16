@@ -1,3 +1,6 @@
+---
+title: Muiraquitãna
+---
 # Muiraquitãna
 
 A Muiraquitãna é uma agente de inteligência artificial desenvolvida para representar e divulgar o território do Baixo Tapajós, na Amazônia brasileira. O projeto reúne informações sobre cultura, história, ciência, turismo e aspectos sociais da região, com conteúdo construído a partir de fontes e instituições locais.

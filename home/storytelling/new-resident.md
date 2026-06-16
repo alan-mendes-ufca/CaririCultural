@@ -1,3 +1,6 @@
+---
+title: Novo Morador
+---
 ### Storytelling – A Jornada de Quem Chega ao Cariri pela Primeira Vez
 
 Lucas acaba de chegar a Juazeiro do Norte. Entre malas, expectativas e a ansiedade de um novo começo, ele sabia que estava entrando em uma região rica em cultura, história e experiências. Mas, como todo recém-chegado, ainda não fazia ideia de por onde começar.

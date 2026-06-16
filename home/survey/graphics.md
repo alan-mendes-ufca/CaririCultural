@@ -1,3 +1,6 @@
+---
+title: Gráficos do Survey
+---
 # Gráficos do Survey
 
 ---

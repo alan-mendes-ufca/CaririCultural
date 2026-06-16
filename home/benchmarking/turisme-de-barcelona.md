@@ -1,3 +1,6 @@
+---
+title: Turisme de Barcelona
+---
 # Turisme de Barcelona
 
 O Turisme de Barcelona é o órgão responsável pela promoção turística da cidade de Barcelona. Seu portal oficial reúne informações sobre atrações, eventos, roteiros culturais, gastronomia, transporte, hospedagem e serviços para visitantes.

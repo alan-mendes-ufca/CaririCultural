@@ -1,3 +1,6 @@
+---
+title: Entrevista — Sarah Linhars
+---
 ## Entrevista realizada com Sarah Linhars - 🗺️ Experiência no Cariri
 
 ### 1. Pensando na sua primeira experiência no Cariri, quando você veio para a região pela primeira vez, como conheceu os principais pontos turísticos e culturais?

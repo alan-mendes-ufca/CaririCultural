@@ -1,3 +1,6 @@
+---
+title: Roteiro de Entrevista 2
+---
 # Segunda Rodada de Entrevistas — Descoberta de Necessidades Latentes
 
 > Esta é uma entrevista de aprofundamento realizada com stakeholders que já participaram da primeira rodada e conhecem o contexto do projeto. O objetivo é identificar novas necessidades e funcionalidades que ainda não foram mapeadas, a partir das experiências e comportamentos reais de cada entrevistado. **Duração estimada:** 20–30 minutos

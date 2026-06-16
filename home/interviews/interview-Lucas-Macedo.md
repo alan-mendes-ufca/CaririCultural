@@ -1,3 +1,6 @@
+---
+title: Entrevista — Lucas Macedo
+---
 ## Entrevista realizada com Lucas Macedo - 🏠 Morador de longo prazo
 
 ### 1. Você mora na região do Cariri ou está visitando?

@@ -18,9 +18,9 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`functional-requirements`](./home/functional-requirements) — 32 requisitos funcionais
 - [`user-storys`](./home/user-storys) — 30 histórias de usuário
 - [`traceability-matrix`](./home/traceability-matrix) — rastreabilidade HU → RF → fonte
-- [`hta/`](./home/hta/hta%20(descriptive)) — análise hierárquica de tarefas (3 arquivos)
+- [`hta/`](./home/hta/hta-descriptive) — análise hierárquica de tarefas (3 arquivos)
 - [`bpmn/`](./home/bpmn/bpmn.png) — diagrama de processo
-- [`user-cases/`](./home/user-cases/Digrama-Cariri-Cultural.png) — diagrama UML de casos de uso
+- [`user-cases/`](./home/user-cases/Diagrama-Cariri-Cultural.png) — diagrama UML de casos de uso
 
 **UX e apresentação**
 

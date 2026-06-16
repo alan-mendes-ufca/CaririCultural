@@ -1,3 +1,6 @@
+---
+title: Requisitos Funcionais
+---
 ## Requisitos Funcionais
 
 ### Épico 1: Exploração e Descoberta

@@ -1,3 +1,6 @@
+---
+title: Benchmarking
+---
 # Benchmarking
 
 Este diretório contém as análises comparativas e de benchmarking de plataformas existentes.
