@@ -1,6 +1,6 @@
-1. [Novo Morador]()
-2. [Turista]()
-3. [Morador de longa data]()
+1. [Novo Morador](https://gitlab.com/ufca/cct/es-ihc0-2026-01/g6/-/wikis/home/storytelling#storytelling--a-jornada-de-quem-chega-ao-cariri-pela-primeira-vez)
+2. [Turista](https://gitlab.com/ufca/cct/es-ihc0-2026-01/g6/-/wikis/home/storytelling#storytelling--a-jornada-do-turista-que-quer-aproveitar-o-melhor-do-cariri)
+3. [Morador de longa data](https://gitlab.com/ufca/cct/es-ihc0-2026-01/g6/-/wikis/home/storytelling#storytelling--a-jornada-de-quem-quer-descobrir-o-cariri-al%C3%A9m-do-%C3%B3bvio)
 
 ---
 
