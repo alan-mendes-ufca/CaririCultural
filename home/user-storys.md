@@ -28,6 +28,8 @@ title: Histórias de Usuário
 | HU-016 | Como usuário, quero **acessar informacoes historicas**, culturais e sociais relacionadas aos locais, para enriquecer minha experiencia.                                                                                   |
 | HU-035 | Como usuário, quero **receber links de redes sociais dos locais que visitarei**, para acompanhar atualizações nos aplicativos que gosto de utilizar.                                                                      |
 | HU-036 | Como usuário, quero **receber imagens do local que pretendo visitar**, para que não seja necessário consultar essas mídias em sites externos.                                                                             |
+| HU-038 | Como usuário, quero **consultar as regras e políticas do local** (itens permitidos/proibidos, restrições de entrada e condições especiais), para chegar ao destino sem ser surpreendido por informações não divulgadas.   |
+| HU-039 | Como usuário, quero **consultar o formato de serviço do local** (atendimento na mesa, self-service, rodízio com garçom, rodízio com fila, balcão, etc.), para não ser surpreendido pela dinâmica do estabelecimento.      |
 
 ### Épico 3: Avaliações e Comunidade
 

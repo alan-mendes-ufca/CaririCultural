@@ -30,6 +30,8 @@ title: Requisitos Funcionais
 | RF-016 | O sistema deve exibir calendário e detalhes, como programações musicais, datas e horários dos eventos cadastrados.                        |            |
 | RF-017 | O sistema deve informar os canais de contato atualizados do estabelecimento de forma acessível.                                           |            |
 | RF-018 | O sistema deve fornecer informações e curiosidades históricas, culturais e sociais relacionadas aos locais da região.                     |            |
+| RF-040 | O sistema deve exibir as regras e políticas do local, incluindo itens permitidos e proibidos, restrições de entrada e condições especiais de acesso ou preço. |            |
+| RF-041 | O sistema deve informar o formato de serviço do estabelecimento (ex: atendimento na mesa, self-service, rodízio com garçom, rodízio com fila, balcão), para que o usuário conheça a dinâmica antes da visita. |            |
 
 ### Épico 3: Avaliações e Comunidade
 
