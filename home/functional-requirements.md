@@ -64,3 +64,15 @@ title: Requisitos Funcionais
 | RF-030 | O sistema deve orientar alternativas ou repasses no próprio assistente quando este não possuir a informação exata.                                           |            |
 | RF-031 | O sistema deve permitir acionar o assistente de forma contextualizada, permitindo a continuidade direta de uma pesquisa em andamento.                        |            |
 | RF-032 | O sistema deve disponibilizar um módulo para importar e atualizar as informações de locais e eventos a partir de fontes de dados externas.                   |            |
+
+> [!WARNING]
+> **Requisitos Funcionais em Avaliação (Aguardando Aprovação do Time)**
+> 
+> ### Épico 7: Interações Sociais e Compartilhamento
+> 
+> | id     | requisito                                                                                                                                                             | prioridade |
+> | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+> | RF-033 | O sistema deve permitir que usuários criem enquetes compartilháveis (via link) de locais ou eventos, permitindo votação anônima sem necessidade de autenticação.      |            |
+> | RF-034 | O sistema deve listar contatos e opções de serviços de transporte alternativo e parceiros locais (ex: mototáxis, vans) atrelados a estabelecimentos ou eventos.       |            |
+> | RF-035 | O sistema deve possuir uma seção para exibição de mídias (fotos e vídeos curtos) geradas exclusivamente pela comunidade de usuários sobre os locais.                  |            |
+> | RF-036 | O sistema deve permitir que o usuário gere um link público ou compartilhe externamente suas listas personalizadas de locais favoritos.                                |            |

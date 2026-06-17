@@ -60,3 +60,15 @@ title: Histórias de Usuário
 | HU-028 | Como usuário, quando não obter uma resposta satisfatória, quero **receber orientações alternativas** para continuar minha busca por informações.           |
 | HU-029 | Como usuário, quero acessar rapidamente o assistente virtual a partir dessa tela, para aprofundar minha pesquisa sem reiniciar a consulta.                 |
 | HU-030 | Como usuário, quero **consultar informações atualizadas e confiáveis sobre locais e eventos**, para planejar minhas atividades com base em dados recentes. |
+
+> [!WARNING]
+> **Funcionalidades em Avaliação (Aguardando Aprovação do Time)**
+> 
+> ### Épico 7: Interações Sociais e Compartilhamento
+> 
+> | id     | historia                                                                                                                                                                                                         |
+> | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> | HU-031 | Como usuário, quero **criar uma enquete rápida com opções de locais/eventos e compartilhar o link com amigos (que podem votar sem precisar de login)**, para facilitar a decisão em grupo de forma ágil.         |
+> | HU-032 | Como usuário sem transporte próprio, quero ter **acesso a uma rede de contatos de transportes alternativos locais recomendados**, para conseguir me deslocar com economia e segurança durante eventos noturnos.  |
+> | HU-033 | Como usuário, quero **visualizar fotos e vídeos reais (formato reels/stories) publicados por outros visitantes**, para ter uma visão autêntica do ambiente e não criar expectativas irreais.                     |
+> | HU-034 | Como usuário mais experiente na região, quero **criar e compartilhar listas de "rolês favoritos" com amigos externamente**, para facilitar a experiência de quem ainda não conhece a cidade.                     |
