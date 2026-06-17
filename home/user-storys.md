@@ -26,6 +26,8 @@ title: Histórias de Usuário
 | HU-014 | Como usuário, quero **consultar calendario, programacao musical, data, horario, local e descricao dos eventos**, para planejar minha participacao.                                                                        |
 | HU-015 | Como usuario, quero encontrar **canais de contato atualizados do estabelecimento**, para confirmar informacoes importantes.                                                                                               |
 | HU-016 | Como usuário, quero **acessar informacoes historicas**, culturais e sociais relacionadas aos locais, para enriquecer minha experiencia.                                                                                   |
+| HU-035 | Como usuário, quero **receber links de redes sociais dos locais que visitarei**, para acompanhar atualizações nos aplicativos que gosto de utilizar.                                                                      |
+| HU-036 | Como usuário, quero **receber imagens do local que pretendo visitar**, para que não seja necessário consultar essas mídias em sites externos.                                                                             |
 
 ### Épico 3: Avaliações e Comunidade
 
@@ -60,6 +62,9 @@ title: Histórias de Usuário
 | HU-028 | Como usuário, quando não obter uma resposta satisfatória, quero **receber orientações alternativas** para continuar minha busca por informações.           |
 | HU-029 | Como usuário, quero acessar rapidamente o assistente virtual a partir dessa tela, para aprofundar minha pesquisa sem reiniciar a consulta.                 |
 | HU-030 | Como usuário, quero **consultar informações atualizadas e confiáveis sobre locais e eventos**, para planejar minhas atividades com base em dados recentes. |
+| HU-031 | Como usuário, quero **receber links de redes sociais dos locais que visitarei**, para acompanhar atualizações nos aplicativos que gosto de utilizar. |
+| HU-032 | Como usuário, quero **receber imagens do local que pretendo visitar**, para que não seja necessário consultar essas mídias em sites externos. |
+| HU-033 | Como usuário, quero **fazer perguntas para o assistente virtual por áudio**, para facilitar a comunicação com o chatbot. |
 
 > [!WARNING]
 > **Funcionalidades em Avaliação (Aguardando Aprovação do Time)**
@@ -68,7 +73,7 @@ title: Histórias de Usuário
 > 
 > | id     | historia                                                                                                                                                                                                         |
 > | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-> | HU-031 | Como usuário, quero **criar uma enquete rápida com opções de locais/eventos e compartilhar o link com amigos (que podem votar sem precisar de login)**, para facilitar a decisão em grupo de forma ágil.         |
-> | HU-032 | Como usuário sem transporte próprio, quero ter **acesso a uma rede de contatos de transportes alternativos locais recomendados**, para conseguir me deslocar com economia e segurança durante eventos noturnos.  |
-> | HU-033 | Como usuário, quero **visualizar fotos e vídeos reais (formato reels/stories) publicados por outros visitantes**, para ter uma visão autêntica do ambiente e não criar expectativas irreais.                     |
-> | HU-034 | Como usuário mais experiente na região, quero **criar e compartilhar listas de "rolês favoritos" com amigos externamente**, para facilitar a experiência de quem ainda não conhece a cidade.                     |
+> | HU-034 | Como usuário, quero **criar uma enquete rápida com opções de locais/eventos e compartilhar o link com amigos (que podem votar sem precisar de login)**, para facilitar a decisão em grupo de forma ágil.         |
+> | HU-035 | Como usuário sem transporte próprio, quero ter **acesso a uma rede de contatos de transportes alternativos locais recomendados**, para conseguir me deslocar com economia e segurança durante eventos noturnos.  |
+> | HU-036 | Como usuário, quero **visualizar fotos e vídeos reais (formato reels/stories) publicados por outros visitantes**, para ter uma visão autêntica do ambiente e não criar expectativas irreais.                     |
+> | HU-037 | Como usuário mais experiente na região, quero **criar e compartilhar listas de "rolês favoritos" com amigos externamente**, para facilitar a experiência de quem ainda não conhece a cidade.                     |

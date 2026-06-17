@@ -64,6 +64,9 @@ title: Requisitos Funcionais
 | RF-030 | O sistema deve orientar alternativas ou repasses no próprio assistente quando este não possuir a informação exata.                                           |            |
 | RF-031 | O sistema deve permitir acionar o assistente de forma contextualizada, permitindo a continuidade direta de uma pesquisa em andamento.                        |            |
 | RF-032 | O sistema deve disponibilizar um módulo para importar e atualizar as informações de locais e eventos a partir de fontes de dados externas.                   |            |
+| RF-033 | O sistema deve ser capaz de disponibilizar links externos para perfis públicos do ponto turístico (caso aplicável).                                          |            |
+| RF-034 | O sistema deve exibir imagens disponíveis acerca do local de visita/passeio.                                                                                 |            |
+| RF-035 | O sistema deve ser capaz de interpretar prompts de áudio e devolver resultados em texto.                                                                     |            |
 
 > [!WARNING]
 > **Requisitos Funcionais em Avaliação (Aguardando Aprovação do Time)**
@@ -72,7 +75,7 @@ title: Requisitos Funcionais
 > 
 > | id     | requisito                                                                                                                                                             | prioridade |
 > | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-> | RF-033 | O sistema deve permitir que usuários criem enquetes compartilháveis (via link) de locais ou eventos, permitindo votação anônima sem necessidade de autenticação.      |            |
-> | RF-034 | O sistema deve listar contatos e opções de serviços de transporte alternativo e parceiros locais (ex: mototáxis, vans) atrelados a estabelecimentos ou eventos.       |            |
-> | RF-035 | O sistema deve possuir uma seção para exibição de mídias (fotos e vídeos curtos) geradas exclusivamente pela comunidade de usuários sobre os locais.                  |            |
-> | RF-036 | O sistema deve permitir que o usuário gere um link público ou compartilhe externamente suas listas personalizadas de locais favoritos.                                |            |
+> | RF-036 | O sistema deve permitir que usuários criem enquetes compartilháveis (via link) de locais ou eventos, permitindo votação anônima sem necessidade de autenticação.      |            |
+> | RF-037 | O sistema deve listar contatos e opções de serviços de transporte alternativo e parceiros locais (ex: mototáxis, vans) atrelados a estabelecimentos ou eventos.       |            |
+> | RF-038 | O sistema deve possuir uma seção para exibição de mídias (fotos e vídeos curtos) geradas exclusivamente pela comunidade de usuários sobre os locais.                  |            |
+> | RF-039 | O sistema deve permitir que o usuário gere um link público ou compartilhe externamente suas listas personalizadas de locais favoritos.                                |            |
