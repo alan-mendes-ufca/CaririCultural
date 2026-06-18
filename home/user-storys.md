@@ -85,21 +85,21 @@ title: Histórias de Usuário
 >
 > | id | história de usuário |
 > |----|---------------------|
-> | HU-037 | Como administrador da plataforma, desejo cadastrar um equipamento cultural para que ele possa ser disponibilizado aos usuários do sistema. |
-> | HU-038 | Como administrador da plataforma, desejo editar as informações de um equipamento cultural para manter seus dados atualizados. |
-> | HU-039 | Como visitante, desejo consultar informações de um equipamento cultural para conhecer sua localização, programação e serviços oferecidos. |
-> | HU-040 | Como administrador da plataforma, desejo associar administradores a equipamentos culturais para que eles possam gerenciar seus próprios conteúdos. |
-> | HU-041 | Como administrador de equipamento cultural, desejo realizar login na plataforma para acessar as funcionalidades de gerenciamento. |
-> | HU-042 | Como administrador de equipamento cultural, desejo cadastrar uma atração para divulgar atividades realizadas em meu equipamento cultural. |
-> | HU-043 | Como administrador de equipamento cultural, desejo editar informações de uma atração cadastrada para corrigir ou atualizar seus dados. |
-> | HU-044 | Como administrador de equipamento cultural, desejo remover uma atração cadastrada para evitar a exibição de informações desatualizadas ou incorretas. |
-> | HU-045 | Como visitante, desejo visualizar as atrações cadastradas para descobrir atividades de meu interesse. |
-> | HU-046 | Como administrador da plataforma, desejo cadastrar um estabelecimento gastronômico para disponibilizar suas informações aos usuários do sistema. |
-> | HU-047 | Como administrador de estabelecimento gastronômico, desejo cadastrar ofertas para divulgar promoções, eventos ou produtos especiais. |
-> | HU-048 | Como administrador de estabelecimento gastronômico, desejo editar ofertas cadastradas para manter as informações corretas e atualizadas. |
-> | HU-049 | Como administrador de estabelecimento gastronômico, desejo remover ofertas cadastradas para evitar a divulgação de informações inválidas. |
-> | HU-050 | Como administrador da plataforma, desejo cadastrar publicações para disponibilizar conteúdos relevantes aos usuários. |
-> | HU-051 | Como administrador de um equipamento cultural ou estabelecimento gastronômico, desejo criar publicações associadas ao meu local para divulgar informações relacionadas às minhas atividades. |
-> | HU-052 | Como administrador, desejo editar publicações existentes para atualizar seu conteúdo quando necessário. |
-> | HU-053 | Como administrador, desejo remover publicações para excluir conteúdos que não devam mais ser exibidos aos usuários. |
+> | HU-038 | Como administrador da plataforma, desejo cadastrar um equipamento cultural para que ele possa ser disponibilizado aos usuários do sistema. |
+> | HU-039 | Como administrador da plataforma, desejo editar as informações de um equipamento cultural para manter seus dados atualizados. |
+> | HU-040 | Como visitante, desejo consultar informações de um equipamento cultural para conhecer sua localização, programação e serviços oferecidos. |
+> | HU-041 | Como administrador da plataforma, desejo associar administradores a equipamentos culturais para que eles possam gerenciar seus próprios conteúdos. |
+> | HU-042 | Como administrador de equipamento cultural, desejo realizar login na plataforma para acessar as funcionalidades de gerenciamento. |
+> | HU-043 | Como administrador de equipamento cultural, desejo cadastrar uma atração para divulgar atividades realizadas em meu equipamento cultural. |
+> | HU-044 | Como administrador de equipamento cultural, desejo editar informações de uma atração cadastrada para corrigir ou atualizar seus dados. |
+> | HU-045 | Como administrador de equipamento cultural, desejo remover uma atração cadastrada para evitar a exibição de informações desatualizadas ou incorretas. |
+> | HU-046 | Como visitante, desejo visualizar as atrações cadastradas para descobrir atividades de meu interesse. |
+> | HU-047 | Como administrador da plataforma, desejo cadastrar um estabelecimento gastronômico para disponibilizar suas informações aos usuários do sistema. |
+> | HU-048 | Como administrador de estabelecimento gastronômico, desejo cadastrar ofertas para divulgar promoções, eventos ou produtos especiais. |
+> | HU-049 | Como administrador de estabelecimento gastronômico, desejo editar ofertas cadastradas para manter as informações corretas e atualizadas. |
+> | HU-050 | Como administrador de estabelecimento gastronômico, desejo remover ofertas cadastradas para evitar a divulgação de informações inválidas. |
+> | HU-051 | Como administrador da plataforma, desejo cadastrar publicações para disponibilizar conteúdos relevantes aos usuários. |
+> | HU-052 | Como administrador de um equipamento cultural ou estabelecimento gastronômico, desejo criar publicações associadas ao meu local para divulgar informações relacionadas às minhas atividades. |
+> | HU-053 | Como administrador, desejo editar publicações existentes para atualizar seu conteúdo quando necessário. |
+> | HU-054 | Como administrador, desejo remover publicações para excluir conteúdos que não devam mais ser exibidos aos usuários. |
 >
