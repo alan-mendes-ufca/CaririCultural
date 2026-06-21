@@ -20,11 +20,11 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`business-rules`](./home/business-rules) — 57 regras de negócio
 - [`traceability-matrix`](./home/traceability-matrix) — rastreabilidade HU → RF → fonte
 - [`hta/`](./home/hta) — análise hierárquica de tarefas (3 arquivos)
-- [`bpmn/`](./home/bpmn/bpmn.md) — diagrama de processo
+- [`bpmn/`](./home/bpmn/bpmn) — diagrama de processo
 - [`user-cases/`](./home/user-cases/Diagrama-Cariri-Cultural.png) — diagrama UML de casos de uso
 - [`RFs-and-NFRs-dependencies`](./home/Depend%C3%AAncia%20de%20RFs%20e%20RNFs/link-RFs-e-RNFs) — Dependencia de RFs e RNFs
-- [`chathy/`](./home/chathy/chathy.md) — Modelo de criação de Personas para Chatbot
-- [`pathy/`](./home/pathy/pathy.md) — Modelo de criação de Personas
+- [`chathy/`](./home/chathy/chathy) — Modelo de criação de Personas para Chatbot
+- [`pathy/`](./home/pathy/pathy) — Modelo de criação de Personas
 
 **3. UX e Apresentação**
 
