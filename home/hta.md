@@ -110,25 +110,12 @@ O usuário deseja organizar seu deslocamento e verificar a adequação do local.
 * 4.2.2 Consultar distância
 * 4.2.3 Identificar estabelecimentos próximos
 
-### 4.3 Avaliar segurança do local
+### 4.3 Avaliar adequação do local
 
 * 4.3.1 Consultar informações de segurança
-* 4.3.2 Consultar informações sobre o entorno
-
-### 4.4 Avaliar condições de higiene
-
-* 4.4.1 Consultar informações de higiene
-* 4.4.2 Consultar informações de limpeza
-
-### 4.5 Avaliar acessibilidade
-
-* 4.5.1 Consultar recursos de acessibilidade disponíveis
-* 4.5.2 Verificar adequação para pessoas com deficiência
-
-### 4.6 Avaliar adequação ao público infantil
-
-* 4.6.1 Consultar estrutura para crianças
-* 4.6.2 Verificar adequação para famílias
+* 4.3.2 Consultar higiene
+* 4.3.3 Consultar acessibilidade
+* 4.3.4 Consultar adequação para crianças
 
 **Requisitos relacionados:** RF-011, RF-012, RF-013, RF-014, RF-015
 
