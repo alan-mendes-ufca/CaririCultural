@@ -22,6 +22,7 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`hta/`](./home/hta) — análise hierárquica de tarefas (3 arquivos)
 - [`bpmn/`](./home/bpmn) — diagrama de processo
 - [`user-cases/`](./home/user-cases/Diagrama-Cariri-Cultural.png) — diagrama UML de casos de uso
+- [`RFs-and-NFRs-dependencies`](./home/Depend%C3%AAncia%20de%20RFs%20e%20RNFs/link-RFs-e-RNFs) — Dependencia de RFs e RNFs
 - [`chaty/`](./home/chaty) — Modelo de criação de Personas para Chatbot
 - [`pathy/`](./home/pathy) — Modelo de criação de Personas
 
