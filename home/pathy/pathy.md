@@ -1,2 +1,4 @@
-# Personas (Pathy)
-- Alex-Ribeiro: [pathy-Alex-Ribeiro](PATHY-Alex-Ribeiro.pdf)
+---
+title: Pathy
+---
+* Alex-Ribeiro: [`pathy-Alex-Ribeiro`](PATHY-Alex-Ribeiro.pdf)
