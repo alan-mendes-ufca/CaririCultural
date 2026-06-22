@@ -61,7 +61,7 @@ title: 'Requisitos Não Funcionais — Segurança, Desempenho e Qualidade'
 | RNF-POR-002 | Responsividade Plena | O layout do sistema deve ser 100% responsivo, adaptando-se com fluidez às variadas resoluções e tamanhos de tela (dispositivos móveis, tablets e desktops). | RF-001 a RF-058 |
 | RNF-POR-003 | Performance em Redes Variadas | O carregamento de dados e mídias deve ser otimizado para não penalizar usuários em conexões mais lentas (3G e 4G) em comparação ao uso em 5G ou Wi-Fi. | RF-001 a RF-018, RF-030 a RF-040 |
 | RNF-POR-004 | Estratégia de Deploy Universal | A solução deve ser implementada com foco em alta capilaridade de acesso (via Web Progressiva - PWA, ou desenvolvimento de aplicativos nativos/híbridos). | RF-001 a RF-058 |
-| RNF-POR-005 | Compatibilidade de Sistemas Operacionais | O aplicativo deve operar sem falhas nos principais sistemas operacionais consumidos pelos usuários, suportando as versões mais recentes do Android, iOS, Windows e macOS. | RF-001 a RF-058 |
+| RNF-POR-005 | Compatibilidade de Sistemas Operacionais | O aplicativo deve operar sem falhas nos principais sistemas operacionais consumidos pelos usuários, suportando as versões mais recentes do Android, iOS. | RF-001 a RF-058 |
 
 ### Épico 1: Exploração e Descoberta
 
