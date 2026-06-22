@@ -9,17 +9,17 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 
 **1. Pesquisa com Usuários**
 
-- [`interviews/`](./home/interviews) — 12 entrevistas + roteiro de perguntas (13 arquivos)
+- [`interviews/`](./home/interviews) — 12 entrevistas + roteiros de perguntas + relatório (15 arquivos)
 - [`survey/`](./home/survey) — questionário com 29 respondentes + 10 gráficos (12 arquivos)
 
 **2. Análise e Modelagem**
 
 - [`benchmarking/`](./home/benchmarking) — comparação com 5 plataformas existentes (6 arquivos)
-- [`functional-requirements`](./home/functional-requirements) — 32 requisitos funcionais
-- [`user-storys`](./home/user-storys) — 30 histórias de usuário
+- [`functional-requirements`](./home/functional-requirements) — 56 requisitos funcionais
+- [`user-storys`](./home/user-storys) — 54 histórias de usuário
 - [`business-rules`](./home/business-rules) — 57 regras de negócio
 - [`traceability-matrix`](./home/traceability-matrix) — rastreabilidade HU → RF → fonte
-- [`hta/`](./home/hta) — análise hierárquica de tarefas (3 arquivos)
+- [`hta/`](./home/hta) — análise hierárquica de tarefas (2 arquivos)
 - [`bpmn/`](./home/bpmn/bpmn) — diagrama de processo
 - [`user-cases/`](./home/user-cases/Diagrama-Cariri-Cultural.png) — diagrama UML de casos de uso
 - [`RFs-and-NFRs-dependencies`](./home/Depend%C3%AAncia%20de%20RFs%20e%20RNFs/link-RFs-e-RNFs) — Dependencia de RFs e RNFs
