@@ -80,37 +80,33 @@ title: Requisitos Funcionais
 | <a id="RF-034"></a>RF-034 | O sistema deve exibir imagens disponíveis acerca do local de visita/passeio.                                                                                 |            |
 | <a id="RF-035"></a>RF-035 | O sistema deve ser capaz de interpretar prompts de áudio e devolver resultados em texto.                                                                     |            |
 
-> [!warning]
->
-> **Requisitos Funcionais em Avaliação (Aguardando Aprovação do Time)**
->
-> ### Épico 7: Interações Sociais e Compartilhamento
->
-> | id     | requisito                                                                                                                                                        | prioridade |
-> | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-> | <a id="RF-036"></a>RF-036 | O sistema deve permitir que usuários criem enquetes compartilháveis (via link) de locais ou eventos, permitindo votação anônima sem necessidade de autenticação. |            |
-> | <a id="RF-037"></a>RF-037 | O sistema deve listar contatos e opções de serviços de transporte alternativo e parceiros locais (ex: mototáxis, vans) atrelados a estabelecimentos ou eventos.  |            |
-> | <a id="RF-038"></a>RF-038 | O sistema deve possuir uma seção para exibição de mídias (fotos e vídeos curtos) geradas exclusivamente pela comunidade de usuários sobre os locais.             |            |
-> | <a id="RF-039"></a>RF-039 | O sistema deve permitir que o usuário gere um link público ou compartilhe externamente suas listas personalizadas de locais favoritos.                           |            |
->
-> ### Épico 8: Equipamentos Culturais e Estabelecimentos
->
-> | id     | requisito                                                                                                                            | prioridade |
-> | ------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
-> | <a id="RF-040"></a>RF-040 | O sistema deve permitir o cadastro de equipamentos culturais.                                                                        |            |
-> | <a id="RF-041"></a>RF-041 | O sistema deve permitir a edição de informações de equipamentos culturais cadastrados.                                               |            |
-> | <a id="RF-042"></a>RF-042 | O sistema deve permitir a consulta de informações de equipamentos culturais.                                                         |            |
-> | <a id="RF-043"></a>RF-043 | O sistema deve permitir a associação de administradores a equipamentos culturais.                                                    |            |
-> | <a id="RF-044"></a>RF-044 | O sistema deve permitir a autenticação de administradores.                                                                           |            |
-> | <a id="RF-045"></a>RF-045 | O sistema deve permitir que administradores de equipamentos culturais cadastrem atrações.                                            |            |
-> | <a id="RF-046"></a>RF-046 | O sistema deve permitir que administradores editem atrações cadastradas.                                                             |            |
-> | <a id="RF-047"></a>RF-047 | O sistema deve permitir que administradores removam atrações cadastradas.                                                            |            |
-> | <a id="RF-048"></a>RF-048 | O sistema deve permitir a consulta de atrações cadastradas.                                                                          |            |
-> | <a id="RF-049"></a>RF-049 | O sistema deve permitir o cadastro de estabelecimentos gastronômicos.                                                                |            |
-> | <a id="RF-050"></a>RF-050 | O sistema deve permitir que administradores de estabelecimentos gastronômicos cadastrem ofertas.                                     |            |
-> | <a id="RF-051"></a>RF-051 | O sistema deve permitir que administradores editem ofertas cadastradas.                                                              |            |
-> | <a id="RF-052"></a>RF-052 | O sistema deve permitir que administradores removam ofertas cadastradas.                                                             |            |
-> | <a id="RF-053"></a>RF-053 | O sistema deve permitir o cadastro de publicações.                                                                                   |            |
-> | <a id="RF-054"></a>RF-054 | O sistema deve permitir que administradores criem publicações associadas a equipamentos culturais ou estabelecimentos gastronômicos. |            |
-> | <a id="RF-055"></a>RF-055 | O sistema deve permitir a edição de publicações cadastradas.                                                                         |            |
-> | <a id="RF-056"></a>RF-056 | O sistema deve permitir a remoção de publicações cadastradas.                                                                        |            |
+### Épico 7: Interações Sociais e Compartilhamento
+
+| id     | requisito                                                                                                                                                        | prioridade |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| <a id="RF-036"></a>RF-036 | O sistema deve permitir que usuários criem enquetes compartilháveis (via link) de locais ou eventos, permitindo votação anônima sem necessidade de autenticação. |            |
+| <a id="RF-037"></a>RF-037 | O sistema deve listar contatos e opções de serviços de transporte alternativo e parceiros locais (ex: mototáxis, vans) atrelados a estabelecimentos ou eventos.  |            |
+| <a id="RF-038"></a>RF-038 | O sistema deve possuir uma seção para exibição de mídias (fotos e vídeos curtos) geradas exclusivamente pela comunidade de usuários sobre os locais.             |            |
+| <a id="RF-039"></a>RF-039 | O sistema deve permitir que o usuário gere um link público ou compartilhe externamente suas listas personalizadas de locais favoritos.                           |            |
+
+### Épico 8: Equipamentos Culturais e Estabelecimentos
+
+| id     | requisito                                                                                                                            | prioridade |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
+| <a id="RF-040"></a>RF-040 | O sistema deve permitir o cadastro de equipamentos culturais.                                                                        |            |
+| <a id="RF-041"></a>RF-041 | O sistema deve permitir a edição de informações de equipamentos culturais cadastrados.                                               |            |
+| <a id="RF-042"></a>RF-042 | O sistema deve permitir a consulta de informações de equipamentos culturais.                                                         |            |
+| <a id="RF-043"></a>RF-043 | O sistema deve permitir a associação de administradores a equipamentos culturais.                                                    |            |
+| <a id="RF-044"></a>RF-044 | O sistema deve permitir a autenticação de administradores.                                                                           |            |
+| <a id="RF-045"></a>RF-045 | O sistema deve permitir que administradores de equipamentos culturais cadastrem atrações.                                            |            |
+| <a id="RF-046"></a>RF-046 | O sistema deve permitir que administradores editem atrações cadastradas.                                                             |            |
+| <a id="RF-047"></a>RF-047 | O sistema deve permitir que administradores removam atrações cadastradas.                                                            |            |
+| <a id="RF-048"></a>RF-048 | O sistema deve permitir a consulta de atrações cadastradas.                                                                          |            |
+| <a id="RF-049"></a>RF-049 | O sistema deve permitir o cadastro de estabelecimentos gastronômicos.                                                                |            |
+| <a id="RF-050"></a>RF-050 | O sistema deve permitir que administradores de estabelecimentos gastronômicos cadastrem ofertas.                                     |            |
+| <a id="RF-051"></a>RF-051 | O sistema deve permitir que administradores editem ofertas cadastradas.                                                              |            |
+| <a id="RF-052"></a>RF-052 | O sistema deve permitir que administradores removam ofertas cadastradas.                                                             |            |
+| <a id="RF-053"></a>RF-053 | O sistema deve permitir o cadastro de publicações.                                                                                   |            |
+| <a id="RF-054"></a>RF-054 | O sistema deve permitir que administradores criem publicações associadas a equipamentos culturais ou estabelecimentos gastronômicos. |            |
+| <a id="RF-055"></a>RF-055 | O sistema deve permitir a edição de publicações cadastradas.                                                                         |            |
+| <a id="RF-056"></a>RF-056 | O sistema deve permitir a remoção de publicações cadastradas.                                                                        |            |

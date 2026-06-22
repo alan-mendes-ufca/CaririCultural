@@ -82,10 +82,6 @@ title: Regras de Negócio
 
 ### Épico 7: Interações Sociais e Compartilhamento
 
-> [!warning]
->
-> **Funcionalidades em Avaliação (Aguardando Aprovação do Time)**
-
 | id     | regra                                       | descrição                                                                                                                                                                           | relacionada_com                                                  |
 | ------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | <a id="RN-038"></a>RN-038 | Compartilhamento de Listas via Link Público | O sistema deve gerar um link público estável para cada lista personalizada do usuário. Esse link deve permitir visualização completa da lista sem exigir autenticação do visitante. | [RF-039](functional-requirements#L81), [HU-037](user-storys#L82) |
@@ -93,10 +89,6 @@ title: Regras de Negócio
 | <a id="RN-040"></a>RN-040 | Anonimato na Votação de Enquetes            | A votação em enquetes compartilhadas não deve exigir autenticação nem identificar o votante.                                                                                        | [RF-036](functional-requirements#L78), [HU-034](user-storys#L79) |
 
 ### Épico 8: Equipamentos Culturais e Estabelecimentos
-
-> [!warning]
->
-> **Funcionalidades em Avaliação (Aguardando Aprovação do Time)**
 
 | id     | regra                                                 | descrição                                                                                                                                                      | relacionada_com                                                    |
 | ------ | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |

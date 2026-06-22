@@ -80,37 +80,33 @@ title: Histórias de Usuário
 | <a id="HU-032"></a>HU-032 | Como usuário, quero **receber imagens do local que pretendo visitar**, para que não seja necessário consultar essas mídias em sites externos.              |
 | <a id="HU-033"></a>HU-033 | Como usuário, quero **fazer perguntas para o assistente virtual por áudio**, para facilitar a comunicação com o chatbot.                                   |
 
-> [!warning]
->
-> **Funcionalidades em Avaliação (Aguardando Aprovação do Time)**
->
-> ### Épico 7: Interações Sociais e Compartilhamento
->
-> | id     | historia                                                                                                                                                                                                        |
-> | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-> | <a id="HU-034"></a>HU-034 | Como usuário, quero **criar uma enquete rápida com opções de locais/eventos e compartilhar o link com amigos (que podem votar sem precisar de login)**, para facilitar a decisão em grupo de forma ágil.        |
-> | <a id="HU-035"></a>HU-035 | Como usuário sem transporte próprio, quero ter **acesso a uma rede de contatos de transportes alternativos locais recomendados**, para conseguir me deslocar com economia e segurança durante eventos noturnos. |
-> | <a id="HU-036"></a>HU-036 | Como usuário, quero **visualizar fotos e vídeos reais (formato reels/stories) publicados por outros visitantes**, para ter uma visão autêntica do ambiente e não criar expectativas irreais.                    |
-> | <a id="HU-037"></a>HU-037 | Como usuário mais experiente na região, quero **criar e compartilhar listas de "rolês favoritos" com amigos externamente**, para facilitar a experiência de quem ainda não conhece a cidade.                    |
->
-> ### Épico 8: Equipamentos Culturais e Estabelecimentos
->
-> | id     | história de usuário                                                                                                                                                                          |
-> | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-> | <a id="HU-038"></a>HU-038 | Como administrador da plataforma, desejo cadastrar um equipamento cultural para que ele possa ser disponibilizado aos usuários do sistema.                                                   |
-> | <a id="HU-039"></a>HU-039 | Como administrador da plataforma, desejo editar as informações de um equipamento cultural para manter seus dados atualizados.                                                                |
-> | <a id="HU-040"></a>HU-040 | Como visitante, desejo consultar informações de um equipamento cultural para conhecer sua localização, programação e serviços oferecidos.                                                    |
-> | <a id="HU-041"></a>HU-041 | Como administrador da plataforma, desejo associar administradores a equipamentos culturais para que eles possam gerenciar seus próprios conteúdos.                                           |
-> | <a id="HU-042"></a>HU-042 | Como administrador de equipamento cultural, desejo realizar login na plataforma para acessar as funcionalidades de gerenciamento.                                                            |
-> | <a id="HU-043"></a>HU-043 | Como administrador de equipamento cultural, desejo cadastrar uma atração para divulgar atividades realizadas em meu equipamento cultural.                                                    |
-> | <a id="HU-044"></a>HU-044 | Como administrador de equipamento cultural, desejo editar informações de uma atração cadastrada para corrigir ou atualizar seus dados.                                                       |
-> | <a id="HU-045"></a>HU-045 | Como administrador de equipamento cultural, desejo remover uma atração cadastrada para evitar a exibição de informações desatualizadas ou incorretas.                                        |
-> | <a id="HU-046"></a>HU-046 | Como visitante, desejo visualizar as atrações cadastradas para descobrir atividades de meu interesse.                                                                                        |
-> | <a id="HU-047"></a>HU-047 | Como administrador da plataforma, desejo cadastrar um estabelecimento gastronômico para disponibilizar suas informações aos usuários do sistema.                                             |
-> | <a id="HU-048"></a>HU-048 | Como administrador de estabelecimento gastronômico, desejo cadastrar ofertas para divulgar promoções, eventos ou produtos especiais.                                                         |
-> | <a id="HU-049"></a>HU-049 | Como administrador de estabelecimento gastronômico, desejo editar ofertas cadastradas para manter as informações corretas e atualizadas.                                                     |
-> | <a id="HU-050"></a>HU-050 | Como administrador de estabelecimento gastronômico, desejo remover ofertas cadastradas para evitar a divulgação de informações inválidas.                                                    |
-> | <a id="HU-051"></a>HU-051 | Como administrador da plataforma, desejo cadastrar publicações para disponibilizar conteúdos relevantes aos usuários.                                                                        |
-> | <a id="HU-052"></a>HU-052 | Como administrador de um equipamento cultural ou estabelecimento gastronômico, desejo criar publicações associadas ao meu local para divulgar informações relacionadas às minhas atividades. |
-> | <a id="HU-053"></a>HU-053 | Como administrador, desejo editar publicações existentes para atualizar seu conteúdo quando necessário.                                                                                      |
-> | <a id="HU-054"></a>HU-054 | Como administrador, desejo remover publicações para excluir conteúdos que não devam mais ser exibidos aos usuários.                                                                          |
+### Épico 7: Interações Sociais e Compartilhamento
+
+| id     | historia                                                                                                                                                                                                        |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <a id="HU-034"></a>HU-034 | Como usuário, quero **criar uma enquete rápida com opções de locais/eventos e compartilhar o link com amigos (que podem votar sem precisar de login)**, para facilitar a decisão em grupo de forma ágil.        |
+| <a id="HU-035"></a>HU-035 | Como usuário sem transporte próprio, quero ter **acesso a uma rede de contatos de transportes alternativos locais recomendados**, para conseguir me deslocar com economia e segurança durante eventos noturnos. |
+| <a id="HU-036"></a>HU-036 | Como usuário, quero **visualizar fotos e vídeos reais (formato reels/stories) publicados por outros visitantes**, para ter uma visão autêntica do ambiente e não criar expectativas irreais.                    |
+| <a id="HU-037"></a>HU-037 | Como usuário mais experiente na região, quero **criar e compartilhar listas de "rolês favoritos" com amigos externamente**, para facilitar a experiência de quem ainda não conhece a cidade.                    |
+
+### Épico 8: Equipamentos Culturais e Estabelecimentos
+
+| id     | história de usuário                                                                                                                                                                          |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <a id="HU-038"></a>HU-038 | Como administrador da plataforma, desejo cadastrar um equipamento cultural para que ele possa ser disponibilizado aos usuários do sistema.                                                   |
+| <a id="HU-039"></a>HU-039 | Como administrador da plataforma, desejo editar as informações de um equipamento cultural para manter seus dados atualizados.                                                                |
+| <a id="HU-040"></a>HU-040 | Como visitante, desejo consultar informações de um equipamento cultural para conhecer sua localização, programação e serviços oferecidos.                                                    |
+| <a id="HU-041"></a>HU-041 | Como administrador da plataforma, desejo associar administradores a equipamentos culturais para que eles possam gerenciar seus próprios conteúdos.                                           |
+| <a id="HU-042"></a>HU-042 | Como administrador de equipamento cultural, desejo realizar login na plataforma para acessar as funcionalidades de gerenciamento.                                                            |
+| <a id="HU-043"></a>HU-043 | Como administrador de equipamento cultural, desejo cadastrar uma atração para divulgar atividades realizadas em meu equipamento cultural.                                                    |
+| <a id="HU-044"></a>HU-044 | Como administrador de equipamento cultural, desejo editar informações de uma atração cadastrada para corrigir ou atualizar seus dados.                                                       |
+| <a id="HU-045"></a>HU-045 | Como administrador de equipamento cultural, desejo remover uma atração cadastrada para evitar a exibição de informações desatualizadas ou incorretas.                                        |
+| <a id="HU-046"></a>HU-046 | Como visitante, desejo visualizar as atrações cadastradas para descobrir atividades de meu interesse.                                                                                        |
+| <a id="HU-047"></a>HU-047 | Como administrador da plataforma, desejo cadastrar um estabelecimento gastronômico para disponibilizar suas informações aos usuários do sistema.                                             |
+| <a id="HU-048"></a>HU-048 | Como administrador de estabelecimento gastronômico, desejo cadastrar ofertas para divulgar promoções, eventos ou produtos especiais.                                                         |
+| <a id="HU-049"></a>HU-049 | Como administrador de estabelecimento gastronômico, desejo editar ofertas cadastradas para manter as informações corretas e atualizadas.                                                     |
+| <a id="HU-050"></a>HU-050 | Como administrador de estabelecimento gastronômico, desejo remover ofertas cadastradas para evitar a divulgação de informações inválidas.                                                    |
+| <a id="HU-051"></a>HU-051 | Como administrador da plataforma, desejo cadastrar publicações para disponibilizar conteúdos relevantes aos usuários.                                                                        |
+| <a id="HU-052"></a>HU-052 | Como administrador de um equipamento cultural ou estabelecimento gastronômico, desejo criar publicações associadas ao meu local para divulgar informações relacionadas às minhas atividades. |
+| <a id="HU-053"></a>HU-053 | Como administrador, desejo editar publicações existentes para atualizar seu conteúdo quando necessário.                                                                                      |
+| <a id="HU-054"></a>HU-054 | Como administrador, desejo remover publicações para excluir conteúdos que não devam mais ser exibidos aos usuários.                                                                          |
