@@ -10,20 +10,20 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 **1. Pesquisa com Usuários**
 
 - [`interviews/`](./home/interviews) — 12 entrevistas + roteiros de perguntas + relatório (15 arquivos)
-- [`survey/`](./home/survey) — questionário com 29 respondentes + 10 gráficos (12 arquivos)
+- [`survey/`](./home/survey) — questionário com 29 respondentes + 10 gráficos (11 arquivos)
 
 **2. Análise e Modelagem**
 
-- [`benchmarking/`](./home/benchmarking) — comparação com 5 plataformas existentes (6 arquivos)
-- [`functional-requirements`](./home/functional-requirements) — 56 requisitos funcionais
-- [`non-functional-requirements`](./home/non-functional-requirements) — 64 requisitos não funcionais
-- [`user-storys`](./home/user-storys) — 54 histórias de usuário
-- [`business-rules`](./home/business-rules) — 57 regras de negócio
+- [`benchmarking/`](./home/benchmarking) — comparação com 5 plataformas existentes (7 arquivos)
+- [`functional-requirements`](./home/functional-requirements) — 58 requisitos funcionais
+- [`non-functional-requirements`](./home/non-functional-requirements) — 61 requisitos não funcionais
+- [`user-storys`](./home/user-storys) — 58 histórias de usuário
+- [`business-rules`](./home/business-rules) — 76 regras de negócio
 - [`traceability-matrix`](./home/traceability-matrix) — rastreabilidade HU → RF → fonte
 - [`hta/`](./home/hta) — análise hierárquica de tarefas (2 arquivos)
 - [`bpmn/`](./home/bpmn/bpmn) — diagrama de processo
 - [`user-cases/`](./home/user-cases/Diagrama-Cariri-Cultural.png) — diagrama UML de casos de uso
-- [`RFs-and-NFRs-dependencies`](./home/Depend%C3%AAncia%20de%20RFs%20e%20RNFs/link-RFs-e-RNFs) — Dependencia de RFs e RNFs
+- [`RFs-and-NFRs-dependencies`](./home/Dependência-de-RFs-e-RNFs/link-RFs-e-RNfs) — dependência de RFs e RNFs
 - [`chathy/`](./home/chathy/chathy) — Modelo de criação de Personas para Chatbot
 - [`pathy/`](./home/pathy/pathy) — Modelo de criação de Personas
 
