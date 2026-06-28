@@ -33,4 +33,7 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`storyboarding/`](./home/storyboarding) — quadrinhos ilustrados das 3 personas
 - [`figma/`](./home/figma/orion-model-cariri-cultural.pdf) — orion model (PDF)
 - [`slides/`](./home/slides/Cariri-Cultural-Primeiro-Pitch.pptx) — primeiro pitch (PPTX)
+- [`slides/ES_ER_IHC_TrabalhoPratico1_Equipe06_Slide.pdf`](./home/slides/ES_ER_IHC_TrabalhoPratico1_Equipe06_Slide.pdf) — apresentação do trabalho prático 1 (PDF)
+- [`reports/ES_ER_IHC_TrabalhoPratico1_Equipe06_Relatorio.pdf`](./home/reports/ES_ER_IHC_TrabalhoPratico1_Equipe06_Relatorio.pdf) — relatório do trabalho prático 1 (PDF)
+- [`minute/ES_ER_IHC_TrabalhoPratico1_Equipe06_Ata.pdf`](./home/minute/ES_ER_IHC_TrabalhoPratico1_Equipe06_Ata.pdf) — ata do trabalho prático 1 (PDF)
 - [`low-level-prototype/`](https://www.tldraw.com/f/FI-05MT2zQp89h-XM-ry7?d=v-4305.-739.6640.4188.page)<span dir=""> — </span>link para o tldraw

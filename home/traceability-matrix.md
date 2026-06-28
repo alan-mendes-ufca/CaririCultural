@@ -2,6 +2,10 @@
 title: Matriz de Rastreabilidade
 ---
 
+> [!WARNING]
+> As linhas com origem `escopo administrativo` não possuem procedência identificada em stakeholders.
+> Elas devem ser revisadas antes de serem consideradas rastreáveis.
+
 | ID_HU | História de usuário | ID_RF | Requisito funcional | ID_RN | Regra de negócio | Requisitos Não Funcionais | origem |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [HU-001](home/user-storys#HU-001) | Consultar catálogo regional | [RF-001](home/functional-requirements#RF-001) | Catálogo regional unificado | [RN-001](home/business-rules#RN-001)<br>[RN-002](home/business-rules#RN-002)<br>[RN-008](home/business-rules#RN-008)<br>[RN-022](home/business-rules#RN-022) | RN-001, RN-002, RN-008, RN-022 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010)<br>[RNF-DIS-002](home/non-functional-requirements#RNF-DIS-002)<br>[RNF-ESC-003](home/non-functional-requirements#RNF-ESC-003)<br>[RNF-DES-001](home/non-functional-requirements#RNF-DES-001)<br>[RNF-EFI-002](home/non-functional-requirements#RNF-EFI-002)<br>[RNF-ESC-004](home/non-functional-requirements#RNF-ESC-004)<br>[RNF-DIS-001](home/non-functional-requirements#RNF-DIS-001)<br>[RNF-ESC-001](home/non-functional-requirements#RNF-ESC-001)<br>[RNF-QUA-001](home/non-functional-requirements#RNF-QUA-001)<br>[RNF-QUA-005](home/non-functional-requirements#RNF-QUA-005)<br>[RNF-USA-001](home/non-functional-requirements#RNF-USA-001)<br>[RNF-USA-002](home/non-functional-requirements#RNF-USA-002)<br>[RNF-USA-004](home/non-functional-requirements#RNF-USA-004)<br>[RNF-USA-005](home/non-functional-requirements#RNF-USA-005)<br>[RNF-ACE-001](home/non-functional-requirements#RNF-ACE-001)<br>[RNF-ACE-002](home/non-functional-requirements#RNF-ACE-002)<br>[RNF-ACE-003](home/non-functional-requirements#RNF-ACE-003)<br>[RNF-ACE-006](home/non-functional-requirements#RNF-ACE-006)<br>[RNF-POR-001](home/non-functional-requirements#RNF-POR-001)<br>[RNF-POR-002](home/non-functional-requirements#RNF-POR-002)<br>[RNF-POR-004](home/non-functional-requirements#RNF-POR-004)<br>[RNF-POR-005](home/non-functional-requirements#RNF-POR-005) | entrevistas |
