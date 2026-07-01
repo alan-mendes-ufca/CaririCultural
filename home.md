@@ -17,8 +17,11 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`benchmarking/`](./home/benchmarking) — comparação com 5 plataformas existentes (7 arquivos)
 - [`functional-requirements`](./home/functional-requirements) — 58 requisitos funcionais
 - [`non-functional-requirements`](./home/non-functional-requirements) — 61 requisitos não funcionais
+- [`priorizated-fr`](./home/priorizated-fr) — requisitos funcionais priorizados
+- [`priorizated-nfr`](./home/priorizated-nfr) — requisitos não funcionais priorizados
 - [`user-storys`](./home/user-storys) — 58 histórias de usuário
 - [`business-rules`](./home/business-rules) — 76 regras de negócio
+- [`priorizated-br`](./home/priorizated-br) — regras de negócio priorizadas
 - [`traceability-matrix`](./home/traceability-matrix) — rastreabilidade HU → RF → fonte
 - [`hta/`](./home/hta) — análise hierárquica de tarefas (2 arquivos)
 - [`bpmn/`](./home/bpmn/bpmn) — diagrama de processo
