@@ -26,7 +26,7 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`hta/`](./home/hta) — análise hierárquica de tarefas (2 arquivos)
 - [`bpmn/`](./home/bpmn/bpmn) — diagrama de processo
 - [`user-cases/`](./home/user-cases/Diagrama-Cariri-Cultural.png) — diagrama UML de casos de uso
-- [`RFs-and-NFRs-dependencies`](./home/Dependência-de-RFs-e-RNFs/link-RFs-e-RNfs) — dependência de RFs e RNFs
+- [`RFs-and-NFRs-dependencies`](./home/Depend%C3%AAncia-de-RFs-e-RNFs/link-RFs-e-RNfs) — dependência de RFs e RNFs
 - [`chathy/`](./home/chathy/chathy) — Modelo de criação de Personas para Chatbot
 - [`pathy/`](./home/pathy/pathy) — Modelo de criação de Personas
 
@@ -39,4 +39,5 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`slides/ES_ER_IHC_TrabalhoPratico1_Equipe06_Slide.pdf`](./home/slides/ES_ER_IHC_TrabalhoPratico1_Equipe06_Slide.pdf) — apresentação do trabalho prático 1 (PDF)
 - [`reports/ES_ER_IHC_TrabalhoPratico1_Equipe06_Relatorio.pdf`](./home/reports/ES_ER_IHC_TrabalhoPratico1_Equipe06_Relatorio.pdf) — relatório do trabalho prático 1 (PDF)
 - [`minute/ES_ER_IHC_TrabalhoPratico1_Equipe06_Ata.pdf`](./home/minute/ES_ER_IHC_TrabalhoPratico1_Equipe06_Ata.pdf) — ata do trabalho prático 1 (PDF)
-- [`low-level-prototype/`](https://www.tldraw.com/f/FI-05MT2zQp89h-XM-ry7?d=v-4305.-739.6640.4188.page)<span dir=""> — </span>link para o tldraw
+- [`low-level-prototype`](https://www.tldraw.com/f/FI-05MT2zQp89h-XM-ry7?d=v-4305.-739.6640.4188.page)<span dir=""> — </span>link para o tldraw
+- [`high-level-prototype`](https://stitch.withgoogle.com/preview/2225335920745274652?node-id=253da0ba0daf4fb38526a33ec5e4e63c) — link para o stitch
