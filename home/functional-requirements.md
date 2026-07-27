@@ -10,6 +10,11 @@ title: Requisitos Funcionais
 6. [Épico 6: Assistente Virtual (Chatbot)](#épico-6-assistente-virtual-chatbot)
 7. [Épico 7: Interações Sociais e Compartilhamento](#épico-7-interações-sociais-e-compartilhamento)
 8. [Épico 8: Equipamentos Culturais e Estabelecimentos](#épico-8-equipamentos-culturais-e-estabelecimentos)
+9. [Épico 9: Avaliações e Comunidade (Protótipo)](#épico-9-avaliações-e-comunidade-protótipo)
+10. [Épico 10: Organização Pessoal e Gamificação (Protótipo)](#épico-10-organização-pessoal-e-gamificação-protótipo)
+11. [Épico 11: Gestão de Estabelecimentos (Protótipo)](#épico-11-gestão-de-estabelecimentos-protótipo)
+12. [Épico 12: Perfil, Autenticação e Parceria (Protótipo)](#épico-12-perfil-autenticação-e-parceria-protótipo)
+13. [Épico 13: Navegação e Interface Global (Protótipo)](#épico-13-navegação-e-interface-global-protótipo)
 
 ---
 
@@ -123,3 +128,61 @@ title: Requisitos Funcionais
 | <a id="RF-056"></a>RF-056 | O sistema deve permitir que administradores criem publicações associadas a equipamentos culturais ou estabelecimentos gastronômicos. | Won't have          |
 | <a id="RF-057"></a>RF-057 | O sistema deve permitir a edição de publicações cadastradas.                                                                         | Won't have          |
 | <a id="RF-058"></a>RF-058 | O sistema deve permitir a remoção de publicações cadastradas.                                                                        | Won't have          |
+
+### Épico 9: Avaliações e Comunidade (Protótipo)
+
+> [!WARNING]
+> Os requisitos deste épico foram derivados do protótipo de alta fidelidade e ainda devem ser validados com stakeholders antes da aprovação definitiva do escopo.
+
+| id     | requisito                                                                                                                                                                                    | prioridade (MoSCoW) |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| <a id="RF-059"></a>RF-059 | O sistema deve permitir que usuários marquem avaliações de outros usuários como úteis e deve exibir publicamente a quantidade de marcações recebidas por cada avaliação. | Should have         |
+| <a id="RF-060"></a>RF-060 | O sistema deve permitir o compartilhamento externo de uma avaliação pública individual por meio de link ou aplicativo compatível.                                        | Could have          |
+| <a id="RF-061"></a>RF-061 | O sistema deve permitir que usuários iniciem tópicos de discussão associados a locais ou eventos na seção de comunidade.                                                 | Should have         |
+
+### Épico 10: Organização Pessoal e Gamificação (Protótipo)
+
+> [!WARNING]
+> Os requisitos deste épico foram derivados do protótipo de alta fidelidade e ainda devem ser validados com stakeholders antes da aprovação definitiva do escopo.
+
+| id     | requisito                                                                                                                                                                     | prioridade (MoSCoW) |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| <a id="RF-062"></a>RF-062 | O sistema deve exibir conquistas e distintivos desbloqueáveis de acordo com o engajamento do usuário, como visitas registradas, avaliações publicadas e check-ins realizados. | Could have          |
+| <a id="RF-063"></a>RF-063 | O sistema deve exibir dicas contextuais curadas sobre o local associado ao checklist de visita do usuário.                                                                    | Could have          |
+
+### Épico 11: Gestão de Estabelecimentos (Protótipo)
+
+> [!WARNING]
+> Os requisitos deste épico foram derivados do protótipo de alta fidelidade e ainda devem ser validados com stakeholders antes da aprovação definitiva do escopo.
+
+| id     | requisito                                                                                                                                                                                                                               | prioridade (MoSCoW) |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| <a id="RF-064"></a>RF-064 | O sistema deve exibir ao gestor um painel com métricas resumidas dos estabelecimentos gerenciados, incluindo visitantes, avaliações recentes e eventos ativos.                                                                          | Should have         |
+| <a id="RF-065"></a>RF-065 | O sistema deve exibir ao gestor um feed cronológico das atividades recentes relacionadas aos estabelecimentos gerenciados, como novas avaliações, visualizações e interações.                                                           | Could have          |
+| <a id="RF-066"></a>RF-066 | O sistema deve permitir que administradores de estabelecimentos respondam publicamente às avaliações realizadas por usuários.                                                                                                            | Should have         |
+| <a id="RF-067"></a>RF-067 | O sistema deve permitir que o gestor visualize a página pública do estabelecimento como ela é apresentada aos usuários.                                                                                                                 | Could have          |
+| <a id="RF-068"></a>RF-068 | O sistema deve disponibilizar ao gestor um painel de indicadores e análises sobre o desempenho do estabelecimento, incluindo fluxo de visitantes, perfil do público, horários de pico e visibilidade regional.                         | Should have         |
+| <a id="RF-069"></a>RF-069 | O sistema deve apresentar ao gestor um mapa com a distribuição geográfica agregada da origem dos visitantes do estabelecimento.                                                                                                         | Could have          |
+
+### Épico 12: Perfil, Autenticação e Parceria (Protótipo)
+
+> [!WARNING]
+> Os requisitos deste épico foram derivados do protótipo de alta fidelidade e ainda devem ser validados com stakeholders antes da aprovação definitiva do escopo.
+
+| id     | requisito                                                                                                                                            | prioridade (MoSCoW) |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| <a id="RF-070"></a>RF-070 | O sistema deve permitir que usuários com perfil de gestor alternem entre os modos Explorador e Gestor sem realizar novo login.                       | Should have         |
+| <a id="RF-071"></a>RF-071 | O sistema deve exibir o nível de parceria do gestor na plataforma, acompanhado de identificação visual e descrição dos benefícios associados.        | Could have          |
+| <a id="RF-072"></a>RF-072 | O sistema deve exibir as certificações e qualificações obtidas pelo gestor dentro da plataforma.                                                     | Won't have          |
+| <a id="RF-073"></a>RF-073 | O sistema deve permitir que o usuário encerre simultaneamente todas as suas sessões ativas.                                                          | Could have          |
+
+### Épico 13: Navegação e Interface Global (Protótipo)
+
+> [!WARNING]
+> Os requisitos deste épico foram derivados do protótipo de alta fidelidade e ainda devem ser validados com stakeholders antes da aprovação definitiva do escopo.
+
+| id     | requisito                                                                                                                                                                      | prioridade (MoSCoW) |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
+| <a id="RF-074"></a>RF-074 | O sistema deve disponibilizar ao Explorador uma barra de navegação inferior fixa com acesso às seções Início, Explorar, Assistente, Comunidade e Perfil.                      | Should have         |
+| <a id="RF-075"></a>RF-075 | O sistema deve disponibilizar ao Gestor uma barra de navegação inferior fixa com acesso às seções Painel, Gerenciar, Indicadores, Novo Estabelecimento e Perfil.              | Should have         |
+| <a id="RF-076"></a>RF-076 | O sistema deve manter um cabeçalho fixo com título, contexto e ações pertinentes à tela atualmente acessada.                                                                  | Should have         |
