@@ -10,8 +10,6 @@ Os diagramas seguem a notação de **Diagrama de Casos de Uso (UML)** adaptada �
 - **Associação ator–caso de uso** → linha simples (`---`).
 - **Generalização/especialização de ator** → seta tracejada rotulada "especializa".
 
-Os casos foram **separados em 5 diagramas por domínio funcional**, em vez de agrupados em 1-2 diagramas grandes, para evitar aglomeração visual e manter a leitura acessível tanto para stakeholders não técnicos quanto para desenvolvedores. A fronteira representa o sistema **Cariri Cultural**. O Épico 8 (UC-18 a UC-25) foi isolado por ser _Won't have_ nesta entrega — ver [backlog administrativo](backlog-casos-de-uso-administrativos.md).
-
 ---
 
 ## 1. Visão geral da linha de base
