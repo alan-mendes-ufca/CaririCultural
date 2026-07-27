@@ -6,7 +6,7 @@ Os diagramas seguem a notação de **Diagrama de Casos de Uso (UML)** adaptada �
 - **Atores** → forma "stadium" (`([Texto])`), a aproximação mais próxima do boneco-palito em Mermaid.
 - **Casos de uso** → forma circular (`((Texto))`), aproximando a elipse UML.
 - **Fronteira do sistema** → `subgraph`, representando o retângulo que envolve os casos de uso.
-- **Relações `<<include>>` e `<<extend>>`** → setas tracejadas rotuladas.
+- **Relações `include` e `extend`** → setas tracejadas rotuladas.
 - **Associação ator–caso de uso** → linha simples (`---`).
 - **Generalização/especialização de ator** → seta tracejada rotulada "especializa".
 
@@ -88,15 +88,15 @@ flowchart LR
     U -.->|especializa| V
 
     %% Relações Include / Extend
-    UC03 -.->|"<<include>>"| UC03A
-    UC03 -.->|"<<include>>"| UC03B
-    UC03 -.->|"<<include>>"| UC03C
+    UC03 -.->|include| UC03A
+    UC03 -.->|include| UC03B
+    UC03 -.->|include| UC03C
 
-    PROX -.->|"<<extend>>"| UC02
+    PROX -.->|extend| UC02
     GEO --- PROX
 
-    UC26 -.->|"<<extend>>"| UC03
-    UC26 -.->|"<<extend>>"| UC04
+    UC26 -.->|extend| UC03
+    UC26 -.->|extend| UC04
 ```
 
 ---
@@ -126,9 +126,9 @@ flowchart LR
     V --- UC16
 
     %% Relações Include / Extend
-    UC16 -.->|"<<extend: parceiro ativo>>"| UC03
-    UC16 -.->|"<<extend: parceiro ativo>>"| UC04
-    TRAJ -.->|"<<extend: solicitar trajeto>>"| UC03
+    UC16 -.->|extend: parceiro ativo| UC03
+    UC16 -.->|extend: parceiro ativo| UC04
+    TRAJ -.->|extend: solicitar trajeto| UC03
 
     MAP --- TRAJ
 ```
@@ -162,11 +162,11 @@ flowchart LR
     U --- UC08 & UC09 & UC10 & UC11 & UC12
 
     %% Relações Include / Extend
-    UC10 -.->|"<<include>>"| AUTH
-    UC11 -.->|"<<include>>"| AUTH
+    UC10 -.->|include| AUTH
+    UC11 -.->|include| AUTH
 
-    UC15 -.->|"<<extend: compartilhar>>"| UC10
-    UC12 -.->|"<<extend: criar do roteiro>>"| UC09
+    UC15 -.->|extend: compartilhar| UC10
+    UC12 -.->|extend: criar do roteiro| UC09
 ```
 
 ---
@@ -207,13 +207,13 @@ flowchart LR
     U -.->|especializa| V
 
     %% Relações Include / Extend
-    UC07 -.->|"<<include>>"| AUTH
-    UC13 -.->|"<<include>>"| AUTH
-    UC17 -.->|"<<include>>"| AUTH
+    UC07 -.->|include| AUTH
+    UC13 -.->|include| AUTH
+    UC17 -.->|include| AUTH
 
-    UC06 -.->|"<<extend: iniciado em página>>"| CTX
-    UC06 -.->|"<<extend: entrada por áudio>>"| AUDIO
-    UC17 -.->|"<<extend: anexar à avaliação>>"| UC07
+    UC06 -.->|extend: iniciado em página| CTX
+    UC06 -.->|extend: entrada por áudio| AUDIO
+    UC17 -.->|extend: anexar à avaliação| UC07
 
     AUD --- AUDIO
 ```
