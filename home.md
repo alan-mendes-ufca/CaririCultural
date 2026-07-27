@@ -34,6 +34,7 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 **3. UX e Apresentação**
 
 - [`service-blueprint`](./home/service-blueprint) — experiência do usuário e processos de prestação do serviço
+- [`user-journey-map.`](./home/journey-map-user) — compreender a experiência do usuário e identificar oportunidades para melhorá-la.
 - [`storytelling/`](./home/storytelling) — narrativas de 3 personas
 - [`storyboarding/`](./home/storyboarding) — quadrinhos ilustrados das 3 personas
 - [`figma/`](./home/figma/orion-model-cariri-cultural.pdf) — orion model (PDF)
