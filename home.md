@@ -25,8 +25,8 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`traceability-matrix`](./home/traceability-matrix) — rastreabilidade HU → RF → fonte
 - [`hta/`](./home/hta) — análise hierárquica de tarefas (2 arquivos)
 - [`bpmn/`](./home/bpmn/bpmn) — diagrama de processo
-- [`use-cases-diagram/`](./home/user-cases/use-cases-diagram) — diagrama UML de casos de uso
-- [`descriptive-use-cases/`](./home/user-cases/descriptive-use-cases) — especificação descritiva de casos de uso
+- [`use-cases-diagram`](./home/user-cases/use-cases-diagram) — diagrama UML de casos de uso
+- [`descriptive-use-cases`](./home/user-cases/descriptive-use-cases) — especificação descritiva de casos de uso
 - [`RFs-and-NFRs-dependencies`](./home/Depend%C3%AAncia-de-RFs-e-RNFs/link-RFs-e-RNfs) — dependência de RFs e RNFs
 - [`chathy/`](./home/chathy/chathy) — Modelo de criação de Personas para Chatbot
 - [`pathy/`](./home/pathy/pathy) — Modelo de criação de Personas
