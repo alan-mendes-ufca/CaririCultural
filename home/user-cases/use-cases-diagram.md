@@ -14,7 +14,7 @@ Os diagramas seguem a notação de **Diagrama de Casos de Uso (UML)** adaptada �
 
 ## 1. Visão geral da linha de base
 
-Resumo macro dos épicos Must/Should/Could e seus atores relevantes. Serve como mapa de navegação para os diagramas detalhados (2 a 5).
+Resumo macro dos épicos Must/Should/Could e da hipótese administrativa do Épico 8. Serve como mapa de navegação para os diagramas detalhados (2 a 6).
 
 ```mermaid
 flowchart LR
@@ -24,6 +24,9 @@ flowchart LR
     VA([Votante Anônimo])
     ADM([Administrador autorizado<br/>em curadoria])
     RESP([Responsável pelo local])
+    APL([Administrador da plataforma])
+    AEC([Administrador de equipamento cultural])
+    AEG([Administrador de estabelecimento gastronômico])
 
     %% Fronteira do Sistema
     subgraph CC [Sistema Cariri Cultural]
@@ -35,6 +38,7 @@ flowchart LR
         C5((Organizar listas, visitas e checklists))
         C6((Avaliar, publicar mídia, compartilhar e votar))
         C7((Sinalizar e tratar dado incorreto))
+        C8((Gerir cadastros e conteúdos<br/>administrativos — hipótese))
     end
 
     %% Relações Ator -> Caso de Uso
@@ -43,12 +47,15 @@ flowchart LR
     VA --- C6
     ADM --- C7
     RESP --- C7
+    APL --- C8
+    AEC --- C8
+    AEG --- C8
 
     %% Especialização
     U -.->|especializa| V
 ```
 
-> Ver diagramas 2 a 5 para os casos de uso individuais (UC-01 a UC-17) que compõem cada bolha acima.
+> Ver diagramas 2 a 5 para os casos de uso da linha de base (UC-01 a UC-17 e UC-26) e o diagrama 6 para as hipóteses UC-18 a UC-25.
 
 ---
 
@@ -228,6 +235,44 @@ flowchart LR
 
 ---
 
-## 6. Épico 8 fora da linha de base
+## 6. Hipótese de escopo administrativo: Equipamentos e estabelecimentos
 
-UC-18 a UC-25 não aparecem nos diagramas acima porque ainda não foram validados.
+Os fluxos do Épico 8 foram modelados como hipóteses verificáveis, derivadas de RF-042 a RF-058 e HU-042 a HU-058. Eles não integram a entrega atual, mas tornam explícitas as decisões a validar com os futuros stakeholders administrativos.
+
+```mermaid
+flowchart LR
+    %% Atores
+    APL([Administrador da plataforma])
+    AEC([Administrador de equipamento cultural])
+    AEG([Administrador de estabelecimento gastronômico])
+    V([Visitante])
+
+    %% Fronteira
+    subgraph CC [Cariri Cultural — hipótese do Épico 8]
+        direction TB
+        UC18((UC-18 Cadastrar equipamento cultural))
+        UC19((UC-19 Editar equipamento cultural))
+        UC20((UC-20 Consultar equipamento cultural))
+        UC21((UC-21 Associar administrador a equipamento))
+        UC22((UC-22 Autenticar administrador))
+        UC23((UC-23 Gerenciar atrações))
+        UC24((UC-24 Cadastrar estabelecimento e gerenciar ofertas))
+        UC25((UC-25 Gerenciar publicações administrativas))
+    end
+
+    %% Relações Ator -> Caso de Uso
+    APL --- UC18 & UC19 & UC21 & UC22 & UC24 & UC25
+    AEC --- UC22 & UC23 & UC25
+    AEG --- UC22 & UC24 & UC25
+    V --- UC20 & UC23
+
+    %% Relações Include
+    UC18 -.->|include| UC22
+    UC19 -.->|include| UC22
+    UC21 -.->|include| UC22
+    UC23 -.->|include| UC22
+    UC24 -.->|include| UC22
+    UC25 -.->|include| UC22
+```
+
+---
