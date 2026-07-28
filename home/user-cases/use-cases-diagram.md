@@ -237,8 +237,6 @@ flowchart LR
 
 ## 6. Hipótese de escopo administrativo: Equipamentos e estabelecimentos
 
-Os fluxos do Épico 8 foram modelados como hipóteses verificáveis, derivadas de RF-042 a RF-058 e HU-042 a HU-058. Eles não integram a entrega atual, mas tornam explícitas as decisões a validar com os futuros stakeholders administrativos.
-
 ```mermaid
 flowchart LR
     %% Atores
