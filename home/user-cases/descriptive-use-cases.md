@@ -1,24 +1,15 @@
 ---
 title: Casos de Uso Descritivos
 ---
-
-# Casos de Uso Descritivos
-
-Este documento contém a **linha de base funcional** do Cariri Cultural: casos de uso
-validados ou sustentados por entrevistas, questionário, requisitos priorizados e
-protótipo de alta fidelidade. O escopo administrativo especulativo do Épico 8 foi
-separado no [backlog administrativo](backlog-casos-de-uso-administrativos.md).
-
 ## Leitura de prioridade e procedência
 
 - **Must have**: necessário na linha de base atual.
 - **Should have**: importante, mas pode entrar depois do núcleo essencial.
 - **Could have**: desejável se houver capacidade.
-- **Won't have nesta entrega**: fora da linha de base atual; não significa baixa
-  importância futura. Os itens nessa situação ficam somente no backlog.
+- **Won't have nesta entrega**: fora da linha de base atual; não significa baixa importância futura. Os itens nessa situação ficam somente no backlog.
 
 | Casos de uso | Prioridade de entrega | Evidência principal |
-| --- | --- | --- |
+|--------------|-----------------------|---------------------|
 | UC-01 a UC-05 | Must have | Entrevistas, questionário, RFs priorizados e telas Início/Explorar/Detalhes/Comunidade. |
 | UC-06 | Must have | Entrevistas, RF-030/RF-031/RF-033 e tela Assistente. |
 | UC-07 | Should have | Entrevistas, RF-022 e tela Comunidade. |
@@ -28,26 +19,19 @@ separado no [backlog administrativo](backlog-casos-de-uso-administrativos.md).
 | UC-13, UC-14 e UC-17 | Could have | Entrevistas, RF-038/RF-040 e tela Comunidade. |
 | UC-26 | Must have | Relatos de Sarah, Iago e Kamily; questionário; RN-037/RN-038. |
 
-> A prioridade acima indica **ordem de entrega**. Impacto de negócio, frequência
-> de uso e urgência de atendimento são critérios diferentes e não são usados como
-> sinônimos de criticidade.
+> A prioridade acima indica **ordem de entrega**. Impacto de negócio, frequência de uso e urgência de atendimento são critérios diferentes e não são usados como sinônimos de criticidade.
 
 ## Confronto com o protótipo de alta fidelidade
 
-- A tela **Explorar** oferece “Mais Próximos” e exibe distâncias, o que sustenta
-  o refinamento de proximidade em UC-02.
-- A tela **Detalhes do local** agrega conteúdo, funcionamento, condições da visita,
-  localização e avaliações, o que sustenta UC-03 como agregador dos blocos
-  UC-03A a UC-03C.
-- As telas **Comunidade** e **Detalhes do local** não mostram um fluxo fechado de
-  correção cadastral; UC-26 explicita essa lacuna para a próxima revisão do protótipo.
-- As telas de cadastro e painel do gestor representam uma hipótese visual do
-  Épico 8, mas não demonstram validação com stakeholders administrativos.
+- A tela **Explorar** oferece “Mais Próximos” e exibe distâncias, o que sustenta o refinamento de proximidade em UC-02.
+- A tela **Detalhes do local** agrega conteúdo, funcionamento, condições da visita, localização e avaliações, o que sustenta UC-03 como agregador dos blocos UC-03A a UC-03C.
+- As telas **Comunidade** e **Detalhes do local** não mostram um fluxo fechado de correção cadastral; UC-26 explicita essa lacuna para a próxima revisão do protótipo.
+- As telas de cadastro e painel do gestor representam uma hipótese visual do Épico 8, mas não demonstram validação com stakeholders administrativos.
 
 ## UC-01 — Explorar catálogo regional
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Descobrir locais, eventos e experiências regionais, inclusive populares e pouco divulgados. |
 | Ator principal | Visitante. |
 | Atores secundários | Nenhum. |
@@ -77,7 +61,7 @@ separado no [backlog administrativo](backlog-casos-de-uso-administrativos.md).
 ## UC-02 — Pesquisar e filtrar locais e eventos
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Encontrar conteúdo por termo, nome, categoria, cidade, perfil de público e proximidade da localização escolhida. |
 | Ator principal | Visitante. |
 | Atores secundários | Serviço de geolocalização/mapas, somente quando o visitante escolher proximidade. |
@@ -88,8 +72,7 @@ separado no [backlog administrativo](backlog-casos-de-uso-administrativos.md).
 
 **Fluxo principal**
 
-1. O visitante informa termo e/ou filtros, ou escolhe descobrir o que está
-   próximo de uma localização.
+1. O visitante informa termo e/ou filtros, ou escolhe descobrir o que está próximo de uma localização.
 2. O sistema valida os valores contra a taxonomia controlada.
 3. O sistema pesquisa nome, palavras-chave, categoria e cidade.
 4. O sistema exibe os resultados e os filtros aplicados.
@@ -99,24 +82,20 @@ separado no [backlog administrativo](backlog-casos-de-uso-administrativos.md).
 
 - A1 — Sem resultado exato: o sistema sugere correções, categorias próximas ou outra cidade.
 - A2 — O visitante altera ou remove filtros e a pesquisa é refeita.
-- A3 — O visitante escolhe “Mais próximos”; o sistema solicita consentimento,
-  obtém a localização atual, calcula as distâncias e ordena os resultados elegíveis.
-- A4 — O visitante não quer usar a localização atual; informa um bairro, cidade
-  ou ponto de referência e o sistema usa essa origem para a busca por proximidade.
+- A3 — O visitante escolhe “Mais próximos”; o sistema solicita consentimento, obtém a localização atual, calcula as distâncias e ordena os resultados elegíveis.
+- A4 — O visitante não quer usar a localização atual; informa um bairro, cidade ou ponto de referência e o sistema usa essa origem para a busca por proximidade.
 
 **Fluxos de exceção**
 
 - E1 — Valor de filtro inválido: o sistema oferece apenas valores aprovados.
 - E2 — Falha de consulta: o sistema informa a situação e uma próxima ação.
-- E3 — Permissão de localização negada ou posição indisponível: a pesquisa
-  continua por cidade e o sistema oferece a origem manual, sem bloquear o catálogo.
-- E4 — Distância não calculável: o item pode permanecer no resultado, mas sem
-  distância estimada e sem ser indevidamente priorizado como próximo.
+- E3 — Permissão de localização negada ou posição indisponível: a pesquisa continua por cidade e o sistema oferece a origem manual, sem bloquear o catálogo.
+- E4 — Distância não calculável: o item pode permanecer no resultado, mas sem distância estimada e sem ser indevidamente priorizado como próximo.
 
 ## UC-03 — Consultar detalhes de local
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Apoiar a decisão e o planejamento da visita com informações completas e confiáveis. |
 | Ator principal | Visitante. |
 | Atores secundários | Serviço de mapas/transportes. |
@@ -129,10 +108,8 @@ separado no [backlog administrativo](backlog-casos-de-uso-administrativos.md).
 **Fluxo principal**
 
 1. O visitante abre um local.
-2. O sistema inclui os blocos de identidade e contexto (UC-03A), informações
-   operacionais (UC-03B) e condições da visita (UC-03C).
-3. O sistema identifica a fonte, a data da última verificação e eventual estado
-   “em revisão” dos dados sensíveis à atualização.
+2. O sistema inclui os blocos de identidade e contexto (UC-03A), informações operacionais (UC-03B) e condições da visita (UC-03C).
+3. O sistema identifica a fonte, a data da última verificação e eventual estado “em revisão” dos dados sensíveis à atualização.
 4. O visitante pode abrir trajeto, contato ou perfil oficial externo.
 
 **Fluxos alternativos**
@@ -140,10 +117,8 @@ separado no [backlog administrativo](backlog-casos-de-uso-administrativos.md).
 - A1 — Campo não aplicável ao tipo de local: o sistema o identifica como não aplicável.
 - A2 — Link oficial disponível: o sistema abre o serviço externo após a ação do visitante.
 - A3 — Feriado ou horário especial: o status usa a programação excepcional cadastrada.
-- A4 — O visitante aciona “Sinalizar dado incorreto”; inicia o UC-26 sem precisar
-  publicar uma avaliação.
-- A5 — Há transporte parceiro ativo para o local/evento; o sistema oferece o
-  UC-16 como opção adicional, sem substituir as informações gerais de acesso.
+- A4 — O visitante aciona “Sinalizar dado incorreto”; inicia o UC-26 sem precisar publicar uma avaliação.
+- A5 — Há transporte parceiro ativo para o local/evento; o sistema oferece o UC-16 como opção adicional, sem substituir as informações gerais de acesso.
 
 **Fluxos de exceção**
 
@@ -153,41 +128,34 @@ separado no [backlog administrativo](backlog-casos-de-uso-administrativos.md).
 
 ### UC-03A — Consultar identidade e contexto
 
-Bloco obrigatório incluído por UC-03. Apresenta descrição, categoria, tipo de
-experiência, fotos reais, características, informações históricas/culturais e
-regras do local.
+Bloco obrigatório incluído por UC-03. Apresenta descrição, categoria, tipo de experiência, fotos reais, características, informações históricas/culturais e regras do local.
 
 | RF | RN |
-| --- | --- |
+|----|----|
 | RF-007, RF-008, RF-018, RF-019, RF-035, RF-036 | RN-014 a RN-016, RN-024 a RN-027 |
 
 ### UC-03B — Consultar informações operacionais
 
-Bloco obrigatório incluído por UC-03. Apresenta horários e status, preços,
-cardápio/taxas, formato de serviço e contatos atualizados.
+Bloco obrigatório incluído por UC-03. Apresenta horários e status, preços, cardápio/taxas, formato de serviço e contatos atualizados.
 
 | RF | RN |
-| --- | --- |
+|----|----|
 | RF-009, RF-010, RF-017, RF-020 | RN-011, RN-021, RN-024, RN-028 |
 
 ### UC-03C — Consultar condições da visita
 
-Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transporte,
-segurança, higiene, acessibilidade e adequação infantil. É o bloco reutilizado
-pelos pontos de extensão de trajeto e transporte parceiro.
+Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transporte, segurança, higiene, acessibilidade e adequação infantil. É o bloco reutilizado pelos pontos de extensão de trajeto e transporte parceiro.
 
 | RF | RN |
-| --- | --- |
+|----|----|
 | RF-011 a RF-015 | RN-012, RN-013, RN-017 a RN-020 |
 
-Essa decomposição mantém UC-03 como a página agregadora vista no protótipo, mas
-torna explícito quais grupos de informação são consumidos pelo visitante,
-produzidos na gestão futura e revisados pelo UC-26.
+Essa decomposição mantém UC-03 como a página agregadora vista no protótipo, mas torna explícito quais grupos de informação são consumidos pelo visitante, produzidos na gestão futura e revisados pelo UC-26.
 
 ## UC-04 — Consultar eventos, equipamentos e atrações
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Conhecer programação, datas, horários, equipamentos e atrações disponíveis. |
 | Ator principal | Visitante. |
 | Pré-condições | Conteúdo publicado e vínculo com local ativo. |
@@ -208,8 +176,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 - A1 — O visitante filtra a agenda por data, cidade ou categoria.
 - A2 — A atração está encerrada: o sistema a identifica como inativa ou a mantém apenas em arquivo.
 - A3 — Há transporte parceiro ativo para o evento; o sistema oferece o UC-16.
-- A4 — O visitante identifica programação, horário ou local incorreto; inicia
-  o UC-26 sem precisar publicar uma avaliação.
+- A4 — O visitante identifica programação, horário ou local incorreto; inicia o UC-26 sem precisar publicar uma avaliação.
 
 **Fluxos de exceção**
 
@@ -218,7 +185,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-05 — Consultar avaliações e mídia comunitária
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Reduzir incertezas com relatos, notas, fotos e vídeos reais da comunidade. |
 | Ator principal | Visitante. |
 | Pré-condições | Local público; avaliações/mídias aprovadas. |
@@ -245,7 +212,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-06 — Usar assistente virtual
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Obter respostas e recomendações sobre locais e eventos em linguagem natural. |
 | Ator principal | Visitante. |
 | Atores secundários | Serviço de transcrição de áudio. |
@@ -275,7 +242,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-07 — Publicar avaliação
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Permitir que um usuário contribua com avaliação sobre experiência real. |
 | Ator principal | Usuário autenticado. |
 | Pré-condições | Usuário autenticado; local existente. |
@@ -294,8 +261,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 **Fluxos alternativos**
 
 - A1 — A avaliação contém mídia; o envio de arquivo segue as validações do UC-17.
-- A2 — O usuário também percebe dado cadastral incorreto; o sistema oferece o
-  UC-26 como ação separada e preserva a avaliação já preenchida.
+- A2 — O usuário também percebe dado cadastral incorreto; o sistema oferece o UC-26 como ação separada e preserva a avaliação já preenchida.
 
 **Fluxos de exceção**
 
@@ -305,7 +271,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-08 — Receber recomendações personalizadas
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Descobrir locais compatíveis com preferências, histórico e perfis similares. |
 | Ator principal | Usuário autenticado. |
 | Pré-condições | Consentimento e dados pessoais suficientes para o critério escolhido. |
@@ -332,7 +298,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-09 — Gerar roteiro personalizado
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Planejar passeio ordenado de acordo com interesses e restrições práticas. |
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Serviço de mapas/transportes. |
@@ -361,7 +327,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-10 — Gerenciar listas pessoais
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Criar, nomear, organizar, editar e excluir listas de locais. |
 | Ator principal | Usuário autenticado. |
 | Pré-condições | Sessão válida. |
@@ -387,7 +353,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-11 — Registrar locais visitados
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Manter histórico pessoal de experiências na região. |
 | Ator principal | Usuário autenticado. |
 | Pré-condições | Sessão válida; local existente. |
@@ -413,7 +379,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-12 — Usar checklists
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Acompanhar tarefas e atividades pessoais de um passeio. |
 | Ator principal | Usuário autenticado. |
 | Pré-condições | Sessão válida; checklist ou roteiro selecionado. |
@@ -438,7 +404,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-13 — Criar e compartilhar enquete
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Facilitar decisão em grupo entre locais ou eventos. |
 | Ator principal | Usuário autenticado. |
 | Pré-condições | Sessão válida; ao menos duas opções válidas. |
@@ -465,7 +431,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-14 — Votar em enquete
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Registrar voto sem exigir login ou revelar identidade. |
 | Ator principal | Votante anônimo. |
 | Pré-condições | Link válido; enquete aberta. |
@@ -493,7 +459,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-15 — Compartilhar lista pessoal
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Disponibilizar uma lista selecionada por link público. |
 | Ator principal | Usuário autenticado. |
 | Pré-condições | Usuário é proprietário da lista. |
@@ -519,7 +485,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-16 — Consultar transporte alternativo parceiro
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Encontrar contatos e opções locais de deslocamento associados a local/evento. |
 | Ator principal | Visitante. |
 | Atores secundários | Serviço/operador de transporte parceiro. |
@@ -539,8 +505,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 
 **Fluxos alternativos**
 
-- A1 — Não há parceiro elegível: a extensão não é acionada e o sistema mantém
-  as informações gerais de acesso e trajeto de UC-03/UC-04.
+- A1 — Não há parceiro elegível: a extensão não é acionada e o sistema mantém as informações gerais de acesso e trajeto de UC-03/UC-04.
 
 **Fluxos de exceção**
 
@@ -549,7 +514,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-17 — Publicar mídia comunitária
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Compartilhar fotos e vídeos curtos de uma experiência real. |
 | Ator principal | Usuário autenticado. |
 | Pré-condições | Sessão válida; local/evento existente. |
@@ -575,7 +540,7 @@ produzidos na gestão futura e revisados pelo UC-26.
 ## UC-26 — Sinalizar e tratar dado incorreto
 
 | Campo | Especificação |
-| --- | --- |
+|-------|---------------|
 | Objetivo | Fechar o ciclo entre uma inconsistência percebida pela comunidade e a revisão do cadastro oficial. |
 | Prioridade | **Must have** — dor recorrente e diretamente validada nas entrevistas e no questionário. |
 | Ator principal | Usuário autenticado. |
@@ -586,47 +551,30 @@ produzidos na gestão futura e revisados pelo UC-26.
 | RN | RN-015, RN-017, RN-019, RN-021, RN-024, RN-027, RN-037, RN-038. |
 | Pontos de extensão | UC-03 e UC-04, na ação “Sinalizar dado incorreto”. |
 
-O **curador da plataforma** é o papel operacional mínimo exigido para validar
-a sinalização e fechar o ciclo. Sua inclusão não antecipa os cadastros, painéis,
-hierarquias e integrações administrativas mantidos no Épico 8.
+O **curador da plataforma** é o papel operacional mínimo exigido para validar a sinalização e fechar o ciclo. Sua inclusão não antecipa os cadastros, painéis, hierarquias e integrações administrativas mantidos no Épico 8.
 
 **Fluxo principal**
 
 1. O usuário aciona “Sinalizar dado incorreto” no local ou evento.
-2. Seleciona o campo afetado, informa o valor observado, data da constatação e,
-   opcionalmente, anexa evidência.
-3. O sistema valida o envio, preserva uma cópia do valor publicado e cria um
-   protocolo com estado “pendente”.
-4. O curador compara a sinalização com fonte verificável e, quando necessário,
-   solicita confirmação ao responsável pelo local.
-5. Confirmada a inconsistência, o curador corrige ou invalida o campo e registra
-   fonte, data, responsável e justificativa da decisão.
-6. O sistema atualiza a data de verificação, encerra o protocolo e comunica o
-   resultado ao usuário que sinalizou.
+2. Seleciona o campo afetado, informa o valor observado, data da constatação e, opcionalmente, anexa evidência.
+3. O sistema valida o envio, preserva uma cópia do valor publicado e cria um protocolo com estado “pendente”.
+4. O curador compara a sinalização com fonte verificável e, quando necessário, solicita confirmação ao responsável pelo local.
+5. Confirmada a inconsistência, o curador corrige ou invalida o campo e registra fonte, data, responsável e justificativa da decisão.
+6. O sistema atualiza a data de verificação, encerra o protocolo e comunica o resultado ao usuário que sinalizou.
 
 **Fluxos alternativos**
 
-- A1 — Já existe sinalização equivalente pendente: o sistema associa o novo relato
-  ao protocolo existente, preservando autoria e evidências.
-- A2 — A apuração ainda não terminou: o campo permanece “em revisão” sem substituir
-  automaticamente o dado oficial.
-- A3 — A sinalização não procede: o curador mantém o valor, registra a justificativa
-  e comunica o encerramento.
-- A4 — O usuário iniciou a ação sem autenticação: o conteúdo preenchido é preservado
-  enquanto o sistema solicita login.
+- A1 — Já existe sinalização equivalente pendente: o sistema associa o novo relato ao protocolo existente, preservando autoria e evidências.
+- A2 — A apuração ainda não terminou: o campo permanece “em revisão” sem substituir automaticamente o dado oficial.
+- A3 — A sinalização não procede: o curador mantém o valor, registra a justificativa e comunica o encerramento.
+- A4 — O usuário iniciou a ação sem autenticação: o conteúdo preenchido é preservado enquanto o sistema solicita login.
 
 **Fluxos de exceção**
 
-- E1 — Evidência inválida ou maliciosa: o arquivo é bloqueado e a sinalização textual
-  pode continuar se contiver dados suficientes.
-- E2 — Campo crítico não pode ser verificado e pode causar risco imediato: o sistema
-  o marca como não verificado ou o oculta preventivamente, conforme política de
-  curadoria a validar.
-- E3 — Falha ao registrar o protocolo: nenhum cadastro é alterado e o sistema orienta
-  nova tentativa.
+- E1 — Evidência inválida ou maliciosa: o arquivo é bloqueado e a sinalização textual pode continuar se contiver dados suficientes.
+- E2 — Campo crítico não pode ser verificado e pode causar risco imediato: o sistema o marca como não verificado ou o oculta preventivamente, conforme política de curadoria a validar.
+- E3 — Falha ao registrar o protocolo: nenhum cadastro é alterado e o sistema orienta nova tentativa.
 
 ## Escopo fora da linha de base
 
-UC-18 a UC-25 mantêm seus identificadores para preservar a rastreabilidade, mas
-foram retirados deste corpo porque pertencem ao Épico 8, marcado como **Won't have
-nesta entrega** e sem procedência identificada em stakeholders.
+UC-18 a UC-25 mantêm seus identificadores para preservar a rastreabilidade, mas foram retirados deste corpo porque pertencem ao Épico 8, marcado como **Won't have nesta entrega** e sem procedência identificada em stakeholders.
