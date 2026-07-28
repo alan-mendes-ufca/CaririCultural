@@ -14,7 +14,7 @@ Os diagramas seguem a notação de **Diagrama de Casos de Uso (UML)** adaptada �
 
 ## 1. Visão geral da linha de base
 
-Resumo macro dos épicos Must/Should/Could e seus atores principais. Serve como mapa de navegação para os diagramas detalhados (2 a 5).
+Resumo macro dos épicos Must/Should/Could e seus atores relevantes. Serve como mapa de navegação para os diagramas detalhados (2 a 5).
 
 ```mermaid
 flowchart LR
@@ -22,7 +22,8 @@ flowchart LR
     V([Visitante])
     U([Usuário Autenticado])
     VA([Votante Anônimo])
-    CUR([Curador da Plataforma])
+    ADM([Administrador autorizado<br/>em curadoria])
+    RESP([Responsável pelo local])
 
     %% Fronteira do Sistema
     subgraph CC [Sistema Cariri Cultural]
@@ -40,7 +41,8 @@ flowchart LR
     V --- C1 & C2 & C3
     U --- C4 & C5 & C6 & C7
     VA --- C6
-    CUR --- C7
+    ADM --- C7
+    RESP --- C7
 
     %% Especialização
     U -.->|especializa| V
@@ -52,14 +54,15 @@ flowchart LR
 
 ## 2. Experiência pública: Exploração e Detalhes
 
-Ações do Visitante para encontrar e avaliar informações básicas de locais e eventos.
+Ações do visitante para encontrar informações de locais e eventos, incluindo a extensão autenticada para sinalizar dados incorretos.
 
 ```mermaid
 flowchart LR
     %% Atores
     V([Visitante])
     U([Usuário Autenticado])
-    CUR([Curador da Plataforma])
+    ADM([Administrador autorizado<br/>em curadoria])
+    RESP([Responsável pelo local])
     GEO([Serviço de Geolocalização])
 
     %% Fronteira
@@ -68,7 +71,7 @@ flowchart LR
         UC01((UC-01 Explorar catálogo))
         UC02((UC-02 Pesquisar e filtrar))
         UC03((UC-03 Consultar detalhes do local))
-        UC04((UC-04 Consultar eventos e atrações))
+        UC04((UC-04 Consultar eventos, equipamentos e atrações))
         UC05((UC-05 Consultar avaliações e mídia))
         UC26((UC-26 Sinalizar e tratar dado incorreto))
 
@@ -78,13 +81,14 @@ flowchart LR
         UC03C((Condições da visita))
 
         %% Extends
-        PROX((Ordenar por proximidade))
+        PROX((Buscar por proximidade))
     end
 
     %% Relações Ator -> Caso de Uso
     V --- UC01 & UC02 & UC03 & UC04 & UC05
     U --- UC26
-    CUR --- UC26
+    ADM --- UC26
+    RESP --- UC26
     U -.->|especializa| V
 
     %% Relações Include / Extend
@@ -110,20 +114,22 @@ flowchart LR
     %% Atores
     V([Visitante])
     MAP([Serviço de Mapas e Transportes])
+    TP([Serviço/operador de transporte parceiro])
 
     %% Fronteira
     subgraph CC [Cariri Cultural]
         direction TB
         UC03((UC-03 Consultar detalhes do local))
-        UC04((UC-04 Consultar eventos e atrações))
-        UC16((UC-16 Consultar transporte parceiro))
+        UC04((UC-04 Consultar eventos, equipamentos e atrações))
+        UC16((UC-16 Consultar transporte alternativo parceiro))
 
         %% Extends
         TRAJ((Obter trajeto geral))
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC16
+    V --- UC03 & UC04 & UC16
+    TP --- UC16
 
     %% Relações Include / Extend
     UC16 -.->|extend: parceiro ativo| UC03
@@ -143,6 +149,7 @@ Funcionalidades exclusivas do Usuário Autenticado para organizar sua própria e
 flowchart LR
     %% Atores
     U([Usuário Autenticado])
+    MAP([Serviço de Mapas e Transportes])
 
     %% Fronteira
     subgraph CC [Cariri Cultural]
@@ -159,7 +166,8 @@ flowchart LR
     end
 
     %% Relações Ator -> Caso de Uso
-    U --- UC08 & UC09 & UC10 & UC11 & UC12
+    U --- UC08 & UC09 & UC10 & UC11 & UC12 & UC15
+    MAP --- UC09
 
     %% Relações Include / Extend
     UC10 -.->|include| AUTH
@@ -211,8 +219,8 @@ flowchart LR
     UC13 -.->|include| AUTH
     UC17 -.->|include| AUTH
 
-    UC06 -.->|extend: iniciado em página| CTX
-    UC06 -.->|extend: entrada por áudio| AUDIO
+    CTX -.->|extend: iniciado em página| UC06
+    AUDIO -.->|extend: entrada por áudio| UC06
     UC17 -.->|extend: anexar à avaliação| UC07
 
     AUD --- AUDIO

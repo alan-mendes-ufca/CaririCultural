@@ -10,6 +10,12 @@ title: Histórias de Usuário
 6. [Épico 6: Assistente Virtual (Chatbot)](#épico-6-assistente-virtual-chatbot)
 7. [Épico 7: Interações Sociais e Compartilhamento](#épico-7-interações-sociais-e-compartilhamento)
 8. [Épico 8: Equipamentos Culturais e Estabelecimentos](#épico-8-equipamentos-culturais-e-estabelecimentos)
+9. [Épico 9: Avaliações e Comunidade (Protótipo)](#épico-9-avaliações-e-comunidade-protótipo)
+10. [Épico 10: Organização Pessoal e Gamificação (Protótipo)](#épico-10-organização-pessoal-e-gamificação-protótipo)
+11. [Épico 11: Gestão de Estabelecimentos (Protótipo)](#épico-11-gestão-de-estabelecimentos-protótipo)
+12. [Épico 12: Perfil, Autenticação e Parceria (Protótipo)](#épico-12-perfil-autenticação-e-parceria-protótipo)
+13. [Épico 13: Navegação e Interface Global (Protótipo)](#épico-13-navegação-e-interface-global-protótipo)
+14. [Épico 14: Fluxos de Uso em Validação](#épico-14-fluxos-de-uso-em-validação)
 
 ---
 
@@ -91,6 +97,9 @@ title: Histórias de Usuário
 
 ### Épico 8: Equipamentos Culturais e Estabelecimentos
 
+> [!WARNING]
+> As histórias deste épico representam uma hipótese de escopo administrativo. Ainda não há stakeholders identificados para validá-las; elas não constituem evidência de necessidade confirmada.
+
 | id     | história de usuário                                                                                                                                                                          |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <a id="HU-042"></a>HU-042 | Como administrador da plataforma, desejo cadastrar um equipamento cultural para que ele possa ser disponibilizado aos usuários do sistema.                                                   |
@@ -110,3 +119,69 @@ title: Histórias de Usuário
 | <a id="HU-056"></a>HU-056 | Como administrador de um equipamento cultural ou estabelecimento gastronômico, desejo criar publicações associadas ao meu local para divulgar informações relacionadas às minhas atividades. |
 | <a id="HU-057"></a>HU-057 | Como administrador, desejo editar publicações existentes para atualizar seu conteúdo quando necessário.                                                                                      |
 | <a id="HU-058"></a>HU-058 | Como administrador, desejo remover publicações para excluir conteúdos que não devam mais ser exibidos aos usuários.                                                                          |
+
+### Épico 9: Avaliações e Comunidade (Protótipo)
+
+> [!WARNING]
+> As histórias dos épicos 9 a 13 foram derivadas do protótipo de alta fidelidade e permanecem pendentes de validação com stakeholders.
+
+| id | história de usuário |
+| --- | --- |
+| <a id="HU-059"></a>HU-059 | Como usuário, quero marcar avaliações de outros usuários como úteis e ver a quantidade de marcações recebidas, para identificar contribuições relevantes. |
+| <a id="HU-060"></a>HU-060 | Como usuário, quero compartilhar externamente uma avaliação pública individual, para recomendar ou discutir uma experiência específica. |
+| <a id="HU-061"></a>HU-061 | Como usuário, quero iniciar tópicos de discussão associados a locais ou eventos, para conversar com a comunidade sobre essas experiências. |
+
+### Épico 10: Organização Pessoal e Gamificação (Protótipo)
+
+| id | história de usuário |
+| --- | --- |
+| <a id="HU-062"></a>HU-062 | Como usuário, quero visualizar conquistas e distintivos desbloqueáveis, para acompanhar meu engajamento na plataforma. |
+| <a id="HU-063"></a>HU-063 | Como usuário, quero visualizar dicas contextuais curadas no checklist de visita, para me preparar melhor para o local escolhido. |
+
+### Épico 11: Gestão de Estabelecimentos (Protótipo)
+
+| id | história de usuário |
+| --- | --- |
+| <a id="HU-064"></a>HU-064 | Como gestor, quero visualizar métricas resumidas dos estabelecimentos que gerencio, para acompanhar sua atividade. |
+| <a id="HU-065"></a>HU-065 | Como gestor, quero acompanhar um feed cronológico de atividades recentes do estabelecimento, para reagir a novas interações. |
+| <a id="HU-066"></a>HU-066 | Como administrador de estabelecimento, quero responder publicamente a avaliações, para dialogar com usuários. |
+| <a id="HU-067"></a>HU-067 | Como gestor, quero visualizar a página pública do estabelecimento como os usuários a veem, para conferir sua apresentação. |
+| <a id="HU-068"></a>HU-068 | Como gestor, quero consultar indicadores e análises de desempenho do estabelecimento, para orientar decisões. |
+| <a id="HU-069"></a>HU-069 | Como gestor, quero visualizar a distribuição geográfica agregada da origem dos visitantes, para compreender o alcance do estabelecimento. |
+
+### Épico 12: Perfil, Autenticação e Parceria (Protótipo)
+
+| id | história de usuário |
+| --- | --- |
+| <a id="HU-070"></a>HU-070 | Como usuário com perfil de gestor, quero alternar entre os modos Explorador e Gestor sem realizar novo login, para acessar rapidamente os dois contextos. |
+| <a id="HU-071"></a>HU-071 | Como gestor, quero visualizar meu nível de parceria e seus benefícios, para compreender minha relação com a plataforma. |
+| <a id="HU-072"></a>HU-072 | Como gestor, quero visualizar minhas certificações e qualificações na plataforma, para evidenciar minha atuação. |
+| <a id="HU-073"></a>HU-073 | Como usuário, quero encerrar simultaneamente todas as sessões ativas, para proteger minha conta. |
+
+### Épico 13: Navegação e Interface Global (Protótipo)
+
+| id | história de usuário |
+| --- | --- |
+| <a id="HU-074"></a>HU-074 | Como Explorador, quero navegar por uma barra inferior fixa com acesso às seções principais, para mudar de contexto rapidamente. |
+| <a id="HU-075"></a>HU-075 | Como Gestor, quero navegar por uma barra inferior fixa com acesso às seções de gestão, para executar minhas atividades. |
+| <a id="HU-076"></a>HU-076 | Como usuário, quero visualizar um cabeçalho fixo com título, contexto e ações da tela, para me orientar durante a navegação. |
+
+### Épico 14: Fluxos de Uso em Validação
+
+> [!WARNING]
+> As histórias deste épico são hipóteses derivadas dos casos de uso. Elas permanecem pendentes de identificação e validação com stakeholders.
+
+| id | história de usuário |
+| --- | --- |
+| <a id="HU-077"></a>HU-077 | Como visitante, quero que os filtros de busca aceitem apenas valores válidos, para receber resultados seguros e coerentes. |
+| <a id="HU-078"></a>HU-078 | Como visitante, quero buscar locais próximos usando minha localização ou uma origem informada, para comparar opções por distância. |
+| <a id="HU-079"></a>HU-079 | Como visitante, quero conhecer a procedência e o estado de atualização dos dados de um local, para decidir com confiança e acessar canais externos oficiais. |
+| <a id="HU-080"></a>HU-080 | Como visitante, quero filtrar a agenda por data e não receber atrações encerradas como disponíveis, para planejar a visita corretamente. |
+| <a id="HU-081"></a>HU-081 | Como usuário, quero retomar uma avaliação ou sinalização após autenticar, para não perder o conteúdo que já preenchi. |
+| <a id="HU-082"></a>HU-082 | Como usuário, quero receber alternativas gerais ou informar interesses quando meus dados não bastarem para personalização, para continuar descobrindo locais. |
+| <a id="HU-083"></a>HU-083 | Como usuário, quero salvar e ajustar um roteiro com explicação de conflitos, para planejar um passeio viável. |
+| <a id="HU-084"></a>HU-084 | Como usuário, quero ser alertado sobre atrações inativas no meu checklist, para revisar meu planejamento sem alterar dados oficiais. |
+| <a id="HU-085"></a>HU-085 | Como criador ou votante, quero que a enquete respeite suas regras de edição, encerramento e voto, para confiar no resultado compartilhado. |
+| <a id="HU-086"></a>HU-086 | Como proprietário de uma lista, quero revogar seu link público, para interromper o compartilhamento quando necessário. |
+| <a id="HU-087"></a>HU-087 | Como visitante, quero acionar um parceiro de transporte elegível após confirmação, para buscar deslocamento sem garantia indevida de contratação. |
+| <a id="HU-088"></a>HU-088 | Como usuário, quero sinalizar um dado incorreto e acompanhar sua análise, para contribuir com a confiabilidade do catálogo. |

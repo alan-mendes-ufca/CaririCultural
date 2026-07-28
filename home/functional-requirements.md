@@ -15,6 +15,7 @@ title: Requisitos Funcionais
 11. [Épico 11: Gestão de Estabelecimentos (Protótipo)](#épico-11-gestão-de-estabelecimentos-protótipo)
 12. [Épico 12: Perfil, Autenticação e Parceria (Protótipo)](#épico-12-perfil-autenticação-e-parceria-protótipo)
 13. [Épico 13: Navegação e Interface Global (Protótipo)](#épico-13-navegação-e-interface-global-protótipo)
+14. [Épico 14: Fluxos de Uso em Validação](#épico-14-fluxos-de-uso-em-validação)
 
 ---
 
@@ -106,8 +107,7 @@ title: Requisitos Funcionais
 ### Épico 8: Equipamentos Culturais e Estabelecimentos
 
 > [!WARNING]
-> Os requisitos deste épico não possuem procedência identificada em stakeholders.
-> Eles representam escopo administrativo e devem ser revisados antes da validação final.
+> Os requisitos deste épico representam uma hipótese de escopo administrativo. Ainda não há stakeholders identificados para validá-los; eles não constituem evidência de necessidade confirmada.
 
 | id     | requisito                                                                                                                            | prioridade (MoSCoW) |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
@@ -186,3 +186,24 @@ title: Requisitos Funcionais
 | <a id="RF-074"></a>RF-074 | O sistema deve disponibilizar ao Explorador uma barra de navegação inferior fixa com acesso às seções Início, Explorar, Assistente, Comunidade e Perfil.                      | Should have         |
 | <a id="RF-075"></a>RF-075 | O sistema deve disponibilizar ao Gestor uma barra de navegação inferior fixa com acesso às seções Painel, Gerenciar, Indicadores, Novo Estabelecimento e Perfil.              | Should have         |
 | <a id="RF-076"></a>RF-076 | O sistema deve manter um cabeçalho fixo com título, contexto e ações pertinentes à tela atualmente acessada.                                                                  | Should have         |
+
+### Épico 14: Fluxos de Uso em Validação
+
+> [!WARNING]
+> Os requisitos deste épico foram derivados dos casos de uso e permanecem hipóteses até a validação com stakeholders.
+
+| id | requisito | prioridade (MoSCoW) |
+| --- | --- | --- |
+| <a id="RF-077"></a>RF-077 | O sistema deve validar formato, tamanho, cardinalidade, domínio e taxonomia dos parâmetros de busca antes de processar a consulta, rejeitando valores inválidos com mensagem compreensível. | Must have |
+| <a id="RF-078"></a>RF-078 | O sistema deve permitir busca por proximidade mediante consentimento para localização atual ou origem manual informada pelo visitante. | Should have |
+| <a id="RF-079"></a>RF-079 | O sistema deve apresentar, para dados sensíveis à atualização, a fonte, a data da última verificação e o eventual estado de revisão. | Must have |
+| <a id="RF-080"></a>RF-080 | O sistema deve permitir filtrar a agenda pública por data. | Must have |
+| <a id="RF-081"></a>RF-081 | O sistema deve retirar da agenda pública eventos e atrações encerrados, mantendo-os inativos ou arquivados. | Must have |
+| <a id="RF-082"></a>RF-082 | O sistema deve preservar temporariamente o conteúdo preenchido em avaliação ou sinalização quando exigir autenticação e restaurá-lo após o retorno do usuário. | Should have |
+| <a id="RF-083"></a>RF-083 | O sistema deve solicitar interesses ou exibir opções gerais elegíveis quando não houver dados suficientes para recomendações personalizadas. | Should have |
+| <a id="RF-084"></a>RF-084 | O sistema deve permitir salvar roteiros pessoais, recalcular trechos após substituições e explicar inviabilidades de combinação. | Must have |
+| <a id="RF-085"></a>RF-085 | O sistema deve alertar o usuário quando um item de checklist estiver vinculado a atração inativa. | Should have |
+| <a id="RF-086"></a>RF-086 | O sistema deve controlar o ciclo de vida de enquetes, incluindo alteração, encerramento, votação múltipla e tratamento de duplicidade. | Could have |
+| <a id="RF-087"></a>RF-087 | O sistema deve permitir ao proprietário revogar links públicos de listas pessoais. | Should have |
+| <a id="RF-088"></a>RF-088 | O sistema deve exibir e permitir o acionamento confirmado de transporte parceiro elegível para um local ou evento. | Should have |
+| <a id="RF-089"></a>RF-089 | O sistema deve registrar, acompanhar e tratar sinalizações de dados incorretos em locais e eventos. | Must have |

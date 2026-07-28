@@ -3,14 +3,77 @@ title: Matriz de Rastreabilidade
 ---
 
 > [!WARNING]
-> As linhas com origem `escopo administrativo` não possuem procedência identificada em stakeholders.
-> Elas devem ser revisadas antes de serem consideradas rastreáveis.
+> As linhas com origem `hipótese de escopo administrativo`, `hipótese derivada do protótipo` ou `hipótese derivada do caso de uso` não possuem validação com stakeholders.
+> Elas devem ser revisadas antes de serem consideradas rastreáveis como necessidades confirmadas.
+
+| Origem registrada nas linhas existentes | Classificação de validação |
+| --- | --- |
+| `escopo administrativo` | hipótese de escopo administrativo — pendente de identificação e validação com stakeholders |
+| `protótipo` | hipótese derivada do protótipo — pendente de validação com stakeholders |
+| `hipótese derivada do caso de uso` | hipótese derivada de fluxo documentado — pendente de validação com stakeholders |
+
+## Índice de vínculos dos casos de uso
+
+| Caso de uso | Linhas de rastreabilidade aplicáveis |
+| --- | --- |
+| <a id="TM-UC-01"></a>UC-01 | [HU-001](home/user-storys#HU-001), [HU-002](home/user-storys#HU-002), [HU-003](home/user-storys#HU-003); [RN-010](home/business-rules#RN-010) também cobre a indisponibilidade do catálogo. |
+| <a id="TM-UC-02"></a>UC-02 | [HU-004](home/user-storys#HU-004), [HU-005](home/user-storys#HU-005), [HU-009](home/user-storys#HU-009), [HU-077](#TM-HU-077) e [HU-078](#TM-HU-078). |
+| <a id="TM-UC-03"></a>UC-03 | [HU-006](home/user-storys#HU-006) a [HU-020](home/user-storys#HU-020), [HU-035](home/user-storys#HU-035), [HU-036](home/user-storys#HU-036), [HU-079](#TM-HU-079), [HU-087](#TM-HU-087) e [HU-088](#TM-HU-088). |
+| <a id="TM-UC-04"></a>UC-04 | [HU-014](home/user-storys#HU-014), [HU-080](#TM-HU-080), [HU-087](#TM-HU-087) e [HU-088](#TM-HU-088); os vínculos com HU-044 e HU-050 são hipóteses de escopo administrativo. |
+| <a id="TM-UC-05"></a>UC-05 | [HU-021](home/user-storys#HU-021), [HU-040](home/user-storys#HU-040) |
+| <a id="TM-UC-06"></a>UC-06 | [HU-030](home/user-storys#HU-030) a [HU-037](home/user-storys#HU-037) |
+| <a id="TM-UC-07"></a>UC-07 | [HU-022](home/user-storys#HU-022), [HU-081](#TM-HU-081) e [HU-088](#TM-HU-088). |
+| <a id="TM-UC-08"></a>UC-08 | [HU-023](home/user-storys#HU-023) a [HU-025](home/user-storys#HU-025), [HU-082](#TM-HU-082). |
+| <a id="TM-UC-09"></a>UC-09 | [HU-026](home/user-storys#HU-026), [HU-083](#TM-HU-083). |
+| <a id="TM-UC-10"></a>UC-10 | [HU-027](home/user-storys#HU-027) |
+| <a id="TM-UC-11"></a>UC-11 | [HU-028](home/user-storys#HU-028) |
+| <a id="TM-UC-12"></a>UC-12 | [HU-029](home/user-storys#HU-029), [HU-084](#TM-HU-084). |
+| <a id="TM-UC-13"></a>UC-13 | [HU-038](home/user-storys#HU-038), [HU-085](#TM-HU-085). |
+| <a id="TM-UC-14"></a>UC-14 | [HU-038](home/user-storys#HU-038), [HU-085](#TM-HU-085). |
+| <a id="TM-UC-15"></a>UC-15 | [HU-041](home/user-storys#HU-041), [HU-086](#TM-HU-086). |
+| <a id="TM-UC-16"></a>UC-16 | [HU-039](home/user-storys#HU-039), [HU-087](#TM-HU-087). |
+| <a id="TM-UC-17"></a>UC-17 | [HU-040](home/user-storys#HU-040) |
+| <a id="TM-UC-26"></a>UC-26 | [HU-081](#TM-HU-081) e [HU-088](#TM-HU-088); RN-037 e RN-038 permanecem como antecedentes da contribuição comunitária. |
+
+## Vínculos diretos entre histórias e casos de uso
+
+| Histórias de usuário | Casos de uso documentados |
+| --- | --- |
+| [HU-001](home/user-storys#HU-001), [HU-002](home/user-storys#HU-002), [HU-003](home/user-storys#HU-003) | [UC-01](home/user-cases/descriptive-use-cases#UC-01) |
+| [HU-004](home/user-storys#HU-004), [HU-005](home/user-storys#HU-005) | [UC-02](home/user-cases/descriptive-use-cases#UC-02) |
+| [HU-006](home/user-storys#HU-006) a [HU-013](home/user-storys#HU-013), [HU-015](home/user-storys#HU-015) a [HU-020](home/user-storys#HU-020) | [UC-03](home/user-cases/descriptive-use-cases#UC-03) |
+| [HU-009](home/user-storys#HU-009), [HU-014](home/user-storys#HU-014) | [UC-03](home/user-cases/descriptive-use-cases#UC-03), [UC-04](home/user-cases/descriptive-use-cases#UC-04) |
+| [HU-021](home/user-storys#HU-021) | [UC-05](home/user-cases/descriptive-use-cases#UC-05) |
+| [HU-022](home/user-storys#HU-022) | [UC-07](home/user-cases/descriptive-use-cases#UC-07) |
+| [HU-023](home/user-storys#HU-023) a [HU-025](home/user-storys#HU-025) | [UC-08](home/user-cases/descriptive-use-cases#UC-08) |
+| [HU-026](home/user-storys#HU-026) | [UC-09](home/user-cases/descriptive-use-cases#UC-09) |
+| [HU-027](home/user-storys#HU-027) | [UC-10](home/user-cases/descriptive-use-cases#UC-10) |
+| [HU-028](home/user-storys#HU-028) | [UC-11](home/user-cases/descriptive-use-cases#UC-11) |
+| [HU-029](home/user-storys#HU-029) | [UC-12](home/user-cases/descriptive-use-cases#UC-12) |
+| [HU-030](home/user-storys#HU-030) a [HU-037](home/user-storys#HU-037) | [UC-06](home/user-cases/descriptive-use-cases#UC-06) |
+| [HU-038](home/user-storys#HU-038) | [UC-13](home/user-cases/descriptive-use-cases#UC-13), [UC-14](home/user-cases/descriptive-use-cases#UC-14) |
+| [HU-039](home/user-storys#HU-039) | [UC-16](home/user-cases/descriptive-use-cases#UC-16) |
+| [HU-040](home/user-storys#HU-040) | [UC-05](home/user-cases/descriptive-use-cases#UC-05), [UC-17](home/user-cases/descriptive-use-cases#UC-17) |
+| [HU-041](home/user-storys#HU-041) | [UC-15](home/user-cases/descriptive-use-cases#UC-15) |
+| [HU-042](home/user-storys#HU-042) a [HU-058](home/user-storys#HU-058) | Sem caso de uso publicado: pertencem ao escopo administrativo fora da linha de base (UC-18 a UC-25 foram removidos do corpo). |
+| [HU-059](home/user-storys#HU-059) a [HU-076](home/user-storys#HU-076) | Sem caso de uso publicado: hipóteses derivadas do protótipo. |
+| [HU-077](home/user-storys#HU-077), [HU-078](home/user-storys#HU-078) | [UC-02](home/user-cases/descriptive-use-cases#UC-02) |
+| [HU-079](home/user-storys#HU-079) | [UC-03](home/user-cases/descriptive-use-cases#UC-03) |
+| [HU-080](home/user-storys#HU-080) | [UC-04](home/user-cases/descriptive-use-cases#UC-04) |
+| [HU-081](home/user-storys#HU-081) | [UC-07](home/user-cases/descriptive-use-cases#UC-07), [UC-26](home/user-cases/descriptive-use-cases#UC-26) |
+| [HU-082](home/user-storys#HU-082) | [UC-08](home/user-cases/descriptive-use-cases#UC-08) |
+| [HU-083](home/user-storys#HU-083) | [UC-09](home/user-cases/descriptive-use-cases#UC-09) |
+| [HU-084](home/user-storys#HU-084) | [UC-12](home/user-cases/descriptive-use-cases#UC-12) |
+| [HU-085](home/user-storys#HU-085) | [UC-13](home/user-cases/descriptive-use-cases#UC-13), [UC-14](home/user-cases/descriptive-use-cases#UC-14) |
+| [HU-086](home/user-storys#HU-086) | [UC-15](home/user-cases/descriptive-use-cases#UC-15) |
+| [HU-087](home/user-storys#HU-087) | [UC-03](home/user-cases/descriptive-use-cases#UC-03), [UC-04](home/user-cases/descriptive-use-cases#UC-04), [UC-16](home/user-cases/descriptive-use-cases#UC-16) |
+| [HU-088](home/user-storys#HU-088) | [UC-03](home/user-cases/descriptive-use-cases#UC-03), [UC-04](home/user-cases/descriptive-use-cases#UC-04), [UC-07](home/user-cases/descriptive-use-cases#UC-07), [UC-26](home/user-cases/descriptive-use-cases#UC-26) |
 
 | ID_HU | História de usuário | ID_RF | Requisito funcional | ID_RN | Regra de negócio | Requisitos Não Funcionais | origem |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [HU-001](home/user-storys#HU-001) | Consultar catálogo regional | [RF-001](home/functional-requirements#RF-001) | Catálogo regional unificado | [RN-001](home/business-rules#RN-001)<br>[RN-002](home/business-rules#RN-002)<br>[RN-008](home/business-rules#RN-008)<br>[RN-022](home/business-rules#RN-022) | RN-001, RN-002, RN-008, RN-022 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010)<br>[RNF-DIS-002](home/non-functional-requirements#RNF-DIS-002)<br>[RNF-ESC-003](home/non-functional-requirements#RNF-ESC-003)<br>[RNF-DES-001](home/non-functional-requirements#RNF-DES-001)<br>[RNF-EFI-002](home/non-functional-requirements#RNF-EFI-002)<br>[RNF-ESC-004](home/non-functional-requirements#RNF-ESC-004)<br>[RNF-DIS-001](home/non-functional-requirements#RNF-DIS-001)<br>[RNF-ESC-001](home/non-functional-requirements#RNF-ESC-001)<br>[RNF-QUA-001](home/non-functional-requirements#RNF-QUA-001)<br>[RNF-QUA-005](home/non-functional-requirements#RNF-QUA-005)<br>[RNF-USA-001](home/non-functional-requirements#RNF-USA-001)<br>[RNF-USA-002](home/non-functional-requirements#RNF-USA-002)<br>[RNF-USA-004](home/non-functional-requirements#RNF-USA-004)<br>[RNF-USA-005](home/non-functional-requirements#RNF-USA-005)<br>[RNF-ACE-001](home/non-functional-requirements#RNF-ACE-001)<br>[RNF-ACE-002](home/non-functional-requirements#RNF-ACE-002)<br>[RNF-ACE-003](home/non-functional-requirements#RNF-ACE-003)<br>[RNF-ACE-006](home/non-functional-requirements#RNF-ACE-006)<br>[RNF-POR-001](home/non-functional-requirements#RNF-POR-001)<br>[RNF-POR-002](home/non-functional-requirements#RNF-POR-002)<br>[RNF-POR-004](home/non-functional-requirements#RNF-POR-004)<br>[RNF-POR-005](home/non-functional-requirements#RNF-POR-005) | entrevistas |
 | [HU-002](home/user-storys#HU-002) | Ver locais mais visitados | [RF-002](home/functional-requirements#RF-002) | Listas de locais populares | [RN-006](home/business-rules#RN-006)<br>[RN-007](home/business-rules#RN-007)<br>[RN-008](home/business-rules#RN-008) | RN-006, RN-007, RN-008 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010)<br>[RNF-ESC-003](home/non-functional-requirements#RNF-ESC-003)<br>[RNF-DES-001](home/non-functional-requirements#RNF-DES-001)<br>[RNF-EFI-002](home/non-functional-requirements#RNF-EFI-002)<br>[RNF-ESC-002](home/non-functional-requirements#RNF-ESC-002) | entrevistas, BPMN |
-| [HU-003](home/user-storys#HU-003) | Ver locais pouco divulgados | [RF-003](home/functional-requirements#RF-003) | Listas de locais alternativos | [RN-006](home/business-rules#RN-006)<br>[RN-007](home/business-rules#RN-007)<br>[RN-008](home/business-rules#RN-008) | RN-006, RN-007, RN-008 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010)<br>[RNF-ESC-003](home/non-functional-requirements#RNF-ESC-003)<br>[RNF-DES-001](home/non-functional-requirements#RNF-DES-001) | entrevistas, BPMN |
+| [HU-003](home/user-storys#HU-003) | Ver locais pouco divulgados | [RF-003](home/functional-requirements#RF-003) | Listas de locais alternativos | [RN-006](home/business-rules#RN-006)<br>[RN-007](home/business-rules#RN-007)<br>[RN-008](home/business-rules#RN-008)<br>[RN-077](home/business-rules#RN-077)<br>[RN-010](home/business-rules#RN-010) | RN-006, RN-007, RN-008, RN-077, RN-010 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010)<br>[RNF-ESC-003](home/non-functional-requirements#RNF-ESC-003)<br>[RNF-DES-001](home/non-functional-requirements#RNF-DES-001) | entrevistas, BPMN |
 | [HU-004](home/user-storys#HU-004) | Pesquisar locais e eventos | [RF-004](home/functional-requirements#RF-004)<br>[RF-005](home/functional-requirements#RF-005) | Busca e sugestões alternativas | [RN-003](home/business-rules#RN-003)<br>[RN-009](home/business-rules#RN-009)<br>[RN-010](home/business-rules#RN-010) | RN-003, RN-009, RN-010 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010)<br>[RNF-ESC-003](home/non-functional-requirements#RNF-ESC-003)<br>[RNF-DES-002](home/non-functional-requirements#RNF-DES-002)<br>[RNF-EFI-005](home/non-functional-requirements#RNF-EFI-005)<br>[RNF-SEG-007](home/non-functional-requirements#RNF-SEG-007)<br>[RNF-USA-003](home/non-functional-requirements#RNF-USA-003)<br>[RNF-POR-003](home/non-functional-requirements#RNF-POR-003) | necessidade de descoberta |
 | [HU-005](home/user-storys#HU-005) | Filtrar por categoria e público | [RF-006](home/functional-requirements#RF-006) | Filtros de locais e eventos | [RN-004](home/business-rules#RN-004)<br>[RN-005](home/business-rules#RN-005) | RN-004, RN-005 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010)<br>[RNF-ESC-003](home/non-functional-requirements#RNF-ESC-003)<br>[RNF-DES-002](home/non-functional-requirements#RNF-DES-002) | entrevistas |
 | [HU-006](home/user-storys#HU-006) | Visualizar fotos e ambiente | [RF-007](home/functional-requirements#RF-007)<br>[RF-008](home/functional-requirements#RF-008) | Informações básicas e mídias | [RN-011](home/business-rules#RN-011)<br>[RN-012](home/business-rules#RN-012)<br>[RN-014](home/business-rules#RN-014)<br>[RN-015](home/business-rules#RN-015)<br>[RN-016](home/business-rules#RN-016) | RN-011, RN-012, RN-014, RN-015, RN-016 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010)<br>[RNF-SEG-011](home/non-functional-requirements#RNF-SEG-011)<br>[RNF-ESC-003](home/non-functional-requirements#RNF-ESC-003)<br>[RNF-DES-006](home/non-functional-requirements#RNF-DES-006)<br>[RNF-DIS-004](home/non-functional-requirements#RNF-DIS-004)<br>[RNF-DES-003](home/non-functional-requirements#RNF-DES-003)<br>[RNF-ACE-004](home/non-functional-requirements#RNF-ACE-004) | entrevistas |
@@ -84,3 +147,15 @@ title: Matriz de Rastreabilidade
 | [HU-074](home/user-storys#HU-074) | Navegar pelo menu inferior como Explorador | [RF-074](home/functional-requirements#RF-074) | Barra de navegação inferior do Explorador | - | - | [RNF-USA-001](home/non-functional-requirements#RNF-USA-001)<br>[RNF-USA-002](home/non-functional-requirements#RNF-USA-002)<br>[RNF-ACE-001](home/non-functional-requirements#RNF-ACE-001)<br>[RNF-DIS-001](home/non-functional-requirements#RNF-DIS-001) | protótipo |
 | [HU-075](home/user-storys#HU-075) | Navegar pelo menu inferior como Gestor | [RF-075](home/functional-requirements#RF-075) | Barra de navegação inferior do Gestor | - | - | [RNF-USA-001](home/non-functional-requirements#RNF-USA-001)<br>[RNF-USA-002](home/non-functional-requirements#RNF-USA-002)<br>[RNF-ACE-001](home/non-functional-requirements#RNF-ACE-001)<br>[RNF-DIS-001](home/non-functional-requirements#RNF-DIS-001) | protótipo |
 | [HU-076](home/user-storys#HU-076) | Ver cabeçalho contextual em todas as telas | [RF-076](home/functional-requirements#RF-076) | Cabeçalho fixo contextual | - | - | [RNF-USA-001](home/non-functional-requirements#RNF-USA-001)<br>[RNF-USA-004](home/non-functional-requirements#RNF-USA-004)<br>[RNF-ACE-001](home/non-functional-requirements#RNF-ACE-001)<br>[RNF-DIS-001](home/non-functional-requirements#RNF-DIS-001) | protótipo |
+| <a id="TM-HU-077"></a>[HU-077](home/user-storys#HU-077) | Validar entradas de busca | [RF-077](home/functional-requirements#RF-077) | Validação de parâmetros de busca | [RN-078](home/business-rules#RN-078) | RN-078 | [RNF-SEG-007](home/non-functional-requirements#RNF-SEG-007) | hipótese derivada do caso de uso |
+| <a id="TM-HU-078"></a>[HU-078](home/user-storys#HU-078) | Buscar por proximidade | [RF-078](home/functional-requirements#RF-078) | Busca por proximidade | [RN-079](home/business-rules#RN-079)<br>[RN-080](home/business-rules#RN-080) | RN-079, RN-080 | [RNF-PDD-005](home/non-functional-requirements#RNF-PDD-005) | hipótese derivada do caso de uso |
+| <a id="TM-HU-079"></a>[HU-079](home/user-storys#HU-079) | Consultar procedência e canais externos | [RF-079](home/functional-requirements#RF-079)<br>[RF-035](home/functional-requirements#RF-035) | Proveniência de dados e links externos | [RN-081](home/business-rules#RN-081)<br>[RN-082](home/business-rules#RN-082)<br>[RN-083](home/business-rules#RN-083) | RN-081, RN-082, RN-083 | [RNF-SEG-014](home/non-functional-requirements#RNF-SEG-014) | hipótese derivada do caso de uso |
+| <a id="TM-HU-080"></a>[HU-080](home/user-storys#HU-080) | Filtrar e manter agenda | [RF-080](home/functional-requirements#RF-080)<br>[RF-081](home/functional-requirements#RF-081) | Filtro por data e ciclo de vida da agenda | [RN-084](home/business-rules#RN-084) | RN-084 | [RNF-SEG-010](home/non-functional-requirements#RNF-SEG-010) | hipótese derivada do caso de uso |
+| <a id="TM-HU-081"></a>[HU-081](home/user-storys#HU-081) | Retomar rascunho após autenticação | [RF-082](home/functional-requirements#RF-082) | Preservação de rascunho | [RN-085](home/business-rules#RN-085) | RN-085 | [RNF-SEG-005](home/non-functional-requirements#RNF-SEG-005) | hipótese derivada do caso de uso |
+| <a id="TM-HU-082"></a>[HU-082](home/user-storys#HU-082) | Receber alternativa à personalização | [RF-083](home/functional-requirements#RF-083) | Fallback de recomendações | [RN-086](home/business-rules#RN-086) | RN-086 | [RNF-PDD-005](home/non-functional-requirements#RNF-PDD-005) | hipótese derivada do caso de uso |
+| <a id="TM-HU-083"></a>[HU-083](home/user-storys#HU-083) | Salvar e ajustar roteiro | [RF-084](home/functional-requirements#RF-084) | Persistência, recálculo e viabilidade de roteiro | [RN-087](home/business-rules#RN-087) | RN-087 | [RNF-PDD-003](home/non-functional-requirements#RNF-PDD-003) | hipótese derivada do caso de uso |
+| <a id="TM-HU-084"></a>[HU-084](home/user-storys#HU-084) | Alertar item inativo em checklist | [RF-085](home/functional-requirements#RF-085) | Alerta de atração inativa | [RN-088](home/business-rules#RN-088) | RN-088 | [RNF-USA-003](home/non-functional-requirements#RNF-USA-003) | hipótese derivada do caso de uso |
+| <a id="TM-HU-085"></a>[HU-085](home/user-storys#HU-085) | Controlar ciclo de vida de enquete | [RF-086](home/functional-requirements#RF-086) | Regras de edição, encerramento e voto | [RN-089](home/business-rules#RN-089) | RN-089 | [RNF-SEG-009](home/non-functional-requirements#RNF-SEG-009) | hipótese derivada do caso de uso |
+| <a id="TM-HU-086"></a>[HU-086](home/user-storys#HU-086) | Revogar link público de lista | [RF-087](home/functional-requirements#RF-087) | Revogação de link público | [RN-090](home/business-rules#RN-090) | RN-090 | [RNF-PDD-003](home/non-functional-requirements#RNF-PDD-003) | hipótese derivada do caso de uso |
+| <a id="TM-HU-087"></a>[HU-087](home/user-storys#HU-087) | Acionar transporte parceiro | [RF-088](home/functional-requirements#RF-088) | Elegibilidade e acionamento de transporte parceiro | [RN-091](home/business-rules#RN-091) | RN-091 | [RNF-SEG-014](home/non-functional-requirements#RNF-SEG-014) | hipótese derivada do caso de uso |
+| <a id="TM-HU-088"></a>[HU-088](home/user-storys#HU-088) | Sinalizar e acompanhar dado incorreto | [RF-089](home/functional-requirements#RF-089) | Tratamento de sinalizações | [RN-092](home/business-rules#RN-092)<br>[RN-093](home/business-rules#RN-093) | RN-092, RN-093 | [RNF-SEG-003](home/non-functional-requirements#RNF-SEG-003)<br>[RNF-SEG-011](home/non-functional-requirements#RNF-SEG-011)<br>[RNF-SEG-012](home/non-functional-requirements#RNF-SEG-012) | hipótese derivada do caso de uso |
