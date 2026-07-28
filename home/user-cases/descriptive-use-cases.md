@@ -24,7 +24,6 @@ title: Casos de Uso Descritivos
 
 ---
 
-<a id="UC-01"></a>
 ## UC-01 — Explorar catálogo regional
 
 | Campo | Especificação |
@@ -57,7 +56,6 @@ title: Casos de Uso Descritivos
 
 ---
 
-<a id="UC-02"></a>
 ## UC-02 — Pesquisar e filtrar locais e eventos
 
 | Campo | Especificação |
@@ -94,7 +92,6 @@ title: Casos de Uso Descritivos
 
 ---
 
-<a id="UC-03"></a>
 ## UC-03 — Consultar detalhes de local
 
 | Campo | Especificação |
@@ -128,7 +125,6 @@ title: Casos de Uso Descritivos
 - E2 — Serviço externo indisponível: os dados locais permanecem visíveis e o sistema informa que o trajeto/link não pôde ser aberto.
 - E3 — Cadastro não atende aos dados mínimos: o local não é publicado.
 
-<a id="UC-03A"></a>
 #### UC-03A — Consultar identidade e contexto
 
 Bloco obrigatório incluído por UC-03. Apresenta descrição, categoria, tipo de experiência, fotos reais, características, informações históricas/culturais e regras do local.
@@ -137,7 +133,7 @@ Bloco obrigatório incluído por UC-03. Apresenta descrição, categoria, tipo d
 |----|----|
 | [RF-007, RF-008, RF-018, RF-019, RF-035, RF-036](home/traceability-matrix#TM-UC-03) | [RN-014 a RN-016, RN-024 a RN-027](home/traceability-matrix#TM-UC-03) |
 
-<a id="UC-03B"></a>
+
 #### UC-03B — Consultar informações operacionais
 
 Bloco obrigatório incluído por UC-03. Apresenta horários e status, preços, cardápio/taxas, formato de serviço e contatos atualizados.
@@ -146,7 +142,7 @@ Bloco obrigatório incluído por UC-03. Apresenta horários e status, preços, c
 |----|----|
 | [RF-009, RF-010, RF-017, RF-020](home/traceability-matrix#TM-UC-03) | [RN-011, RN-021, RN-024, RN-028](home/traceability-matrix#TM-UC-03) |
 
-<a id="UC-03C"></a>
+
 #### UC-03C — Consultar condições da visita
 
 Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transporte, segurança, higiene, acessibilidade e adequação infantil. É o bloco reutilizado pelos pontos de extensão de trajeto e transporte parceiro.
@@ -157,7 +153,6 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 ---
 
-<a id="UC-04"></a>
 ## UC-04 — Consultar eventos, equipamentos e atrações
 
 | Campo | Especificação |
@@ -188,7 +183,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Vínculo do conteúdo com o local deixou de ser válido: o conteúdo não é exibido.
 
-<a id="UC-05"></a>
+---
+
 ## UC-05 — Consultar avaliações e mídia comunitária
 
 | Campo | Especificação |
@@ -216,7 +212,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Mídia não pode ser carregada: a avaliação textual continua disponível.
 
-<a id="UC-06"></a>
+---
+
 ## UC-06 — Usar assistente virtual
 
 | Campo | Especificação |
@@ -247,7 +244,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 - E1 — Áudio incompreensível: o sistema solicita nova gravação ou entrada textual.
 - E2 — Fontes conflitantes/desatualizadas: o sistema não afirma certeza e identifica a limitação.
 
-<a id="UC-07"></a>
+---
+
 ## UC-07 — Publicar avaliação
 
 | Campo | Especificação |
@@ -277,7 +275,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 - E1 — Conteúdo viola regra grave: o sistema rejeita/oculta e informa o motivo aplicável.
 - E2 — Sessão expirada: o sistema solicita nova autenticação e restaura o conteúdo preenchido antes de enviar.
 
-<a id="UC-08"></a>
+---
+
 ## UC-08 — Receber recomendações personalizadas
 
 | Campo | Especificação |
@@ -305,7 +304,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Usuário não autorizou uso do histórico: esse histórico é ignorado.
 
-<a id="UC-09"></a>
+---
+
 ## UC-09 — Gerar roteiro personalizado
 
 | Campo | Especificação |
@@ -335,7 +335,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Não há combinação viável: o sistema explica as restrições e sugere flexibilizações.
 
-<a id="UC-10"></a>
+---
+
 ## UC-10 — Gerenciar listas pessoais
 
 | Campo | Especificação |
@@ -362,7 +363,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Tentativa de alterar lista de terceiro: o sistema nega a operação.
 
-<a id="UC-11"></a>
+---
+
 ## UC-11 — Registrar locais visitados
 
 | Campo | Especificação |
@@ -389,7 +391,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Tentativa de acessar histórico alheio: o sistema nega.
 
-<a id="UC-12"></a>
+---
+
 ## UC-12 — Usar checklists
 
 | Campo | Especificação |
@@ -415,7 +418,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Item se refere a atração inativa: o sistema alerta, mas não altera dados oficiais.
 
-<a id="UC-13"></a>
+---
+
 ## UC-13 — Criar e compartilhar enquete
 
 | Campo | Especificação |
@@ -443,7 +447,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Opção inválida/inativa: o sistema solicita substituição.
 
-<a id="UC-14"></a>
+---
+
 ## UC-14 — Votar em enquete
 
 | Campo | Especificação |
@@ -472,7 +477,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 - E1 — Enquete encerrada: o sistema não registra voto e mostra o resultado disponível.
 - E2 — Controle antifraude rejeita duplicidade: o sistema informa que o voto não foi aceito.
 
-<a id="UC-15"></a>
+---
+
 ## UC-15 — Compartilhar lista pessoal
 
 | Campo | Especificação |
@@ -499,7 +505,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Lista não pertence ao usuário: compartilhamento negado.
 
-<a id="UC-16"></a>
+---
+
 ## UC-16 — Consultar transporte alternativo parceiro
 
 | Campo | Especificação |
@@ -529,7 +536,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Canal indisponível: o sistema informa sem garantir contratação ou disponibilidade.
 
-<a id="UC-17"></a>
+---
+
 ## UC-17 — Publicar mídia comunitária
 
 | Campo | Especificação |
@@ -556,7 +564,8 @@ Bloco obrigatório incluído por UC-03. Apresenta localização, acesso, transpo
 
 - E1 — Arquivo malicioso ou conteúdo grave: o sistema bloqueia/oculta preventivamente.
 
-<a id="UC-26"></a>
+---
+
 ## UC-26 — Sinalizar e tratar dado incorreto
 
 | Campo | Especificação |
@@ -601,7 +610,6 @@ O **administrador autorizado**, em função de curadoria, é o responsável oper
 
 Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** derivada dos requisitos, histórias de usuário, regras de negócio e do protótipo.
 
-<a id="UC-18"></a>
 ## UC-18 — Cadastrar equipamento cultural
 
 | Campo | Especificação |
@@ -631,7 +639,6 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 
 - E1 — Administrador sem autorização: o sistema nega o cadastro e não cria registro público.
 
-<a id="UC-19"></a>
 ## UC-19 — Editar equipamento cultural
 
 | Campo | Especificação |
@@ -660,7 +667,6 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 
 - E1 — O equipamento não pertence ao escopo do administrador: o sistema nega a alteração.
 
-<a id="UC-20"></a>
 ## UC-20 — Consultar equipamento cultural
 
 | Campo | Especificação |
@@ -688,7 +694,6 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 
 - E1 — O equipamento não está ativo ou não possui vínculo válido: o sistema não o exibe como conteúdo público.
 
-<a id="UC-21"></a>
 ## UC-21 — Associar administrador a equipamento cultural
 
 | Campo | Especificação |
@@ -718,7 +723,6 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 
 - E1 — Equipamento ou conta não é válido: o sistema não cria a associação.
 
-<a id="UC-22"></a>
 ## UC-22 — Autenticar administrador
 
 | Campo | Especificação |
@@ -745,7 +749,6 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 
 - E1 — Credenciais inválidas ou conta inativa: o sistema não inicia a sessão administrativa.
 
-<a id="UC-23"></a>
 ## UC-23 — Gerenciar atrações de equipamento cultural
 
 | Campo | Especificação |
@@ -777,7 +780,6 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 - E1 — Atração sem vínculo válido com equipamento ativo: o sistema impede sua exibição pública.
 - E2 — Administrador tenta gerir atração de outro equipamento: o sistema nega a operação.
 
-<a id="UC-24"></a>
 ## UC-24 — Cadastrar estabelecimento gastronômico e gerenciar ofertas
 
 | Campo | Especificação |
@@ -808,7 +810,6 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 - E1 — Oferta sem vínculo válido com estabelecimento ativo: o sistema impede sua publicação.
 - E2 — Administrador sem escopo sobre o estabelecimento: o sistema nega a operação.
 
-<a id="UC-25"></a>
 ## UC-25 — Gerenciar publicações administrativas
 
 | Campo | Especificação |
