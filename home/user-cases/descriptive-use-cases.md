@@ -615,7 +615,7 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 | Campo | Especificação |
 |-------|---------------|
 | Objetivo | Registrar um equipamento cultural para que possa ser administrado e, quando apto, disponibilizado ao público. |
-| Prioridade | **Won't have nesta entrega** — hipótese em validação. |
+| Prioridade | **Must have** — fluxo e telas administrativas ainda em validação com stakeholders. |
 | Ator principal | Administrador da plataforma. |
 | Pré-condições | Administrador autenticado e autorizado; dados mínimos do equipamento disponíveis. |
 | Pós-condições | Equipamento é registrado, com estado de publicação compatível com os dados informados e trilha de auditoria. |
@@ -644,7 +644,7 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 | Campo | Especificação |
 |-------|---------------|
 | Objetivo | Manter atualizados os dados de um equipamento cultural cadastrado. |
-| Prioridade | **Won't have nesta entrega** — hipótese em validação. |
+| Prioridade | **Should have** — fluxo e telas administrativas ainda em validação com stakeholders. |
 | Ator principal | Administrador da plataforma. |
 | Pré-condições | Administrador autenticado e autorizado; equipamento existente. |
 | Pós-condições | Dados autorizados são atualizados, com histórico da alteração. |
@@ -672,7 +672,7 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 | Campo | Especificação |
 |-------|---------------|
 | Objetivo | Consultar informações públicas de um equipamento cultural ativo. |
-| Prioridade | **Won't have nesta entrega** — hipótese em validação. |
+| Prioridade | **Must have** — fluxo e telas administrativas ainda em validação com stakeholders. |
 | Ator principal | Visitante. |
 | Pré-condições | Equipamento publicado e com vínculo válido. |
 | Pós-condições | Informações públicas do equipamento são exibidas ao visitante. |
@@ -699,7 +699,7 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 | Campo | Especificação |
 |-------|---------------|
 | Objetivo | Vincular um administrador autorizado a um equipamento cultural para delimitar seu escopo de gestão. |
-| Prioridade | **Won't have nesta entrega** — hipótese em validação. |
+| Prioridade | **Should have** — fluxo e telas administrativas ainda em validação com stakeholders. |
 | Ator principal | Administrador da plataforma. |
 | Atores secundários | Administrador de equipamento cultural. |
 | Pré-condições | Administrador da plataforma autenticado; equipamento e conta administrativa existentes. |
@@ -728,7 +728,7 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 | Campo | Especificação |
 |-------|---------------|
 | Objetivo | Permitir que um administrador autorizado acesse somente as funcionalidades administrativas compatíveis com seu vínculo. |
-| Prioridade | **Won't have nesta entrega** — hipótese em validação. |
+| Prioridade | **Must have** — fluxo e telas administrativas ainda em validação com stakeholders. |
 | Ator principal | Administrador autorizado. |
 | Pré-condições | Conta administrativa ativa; para gestão de um local, vínculo prévio registrado. |
 | Pós-condições | Sessão administrativa é iniciada com o escopo de acesso aplicável. |
@@ -754,7 +754,7 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 | Campo | Especificação |
 |-------|---------------|
 | Objetivo | Cadastrar, editar, retirar de exibição e consultar atrações vinculadas a um equipamento cultural. |
-| Prioridade | **Won't have nesta entrega** — hipótese em validação. |
+| Prioridade | **Must have** para cadastro, edição e consulta (RF-047, RF-048, RF-050); **Won't have nesta entrega** para a remoção definitiva (RF-049). Fluxo e telas administrativas ainda em validação com stakeholders. |
 | Ator principal | Administrador de equipamento cultural. |
 | Atores secundários | Visitante, na consulta de atrações publicadas. |
 | Pré-condições | Administrador autenticado e vinculado ao equipamento; equipamento ativo para publicação. |
@@ -785,7 +785,7 @@ Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** deri
 | Campo | Especificação |
 |-------|---------------|
 | Objetivo | Registrar um estabelecimento gastronômico e permitir a gestão de ofertas vinculadas a ele. |
-| Prioridade | **Won't have nesta entrega** — hipótese em validação. |
+| Prioridade | **Must have** para o cadastro do estabelecimento (RF-051); **Won't have nesta entrega** para a gestão de ofertas (RF-052 a RF-054). Fluxo e telas administrativas ainda em validação com stakeholders. |
 | Atores principais | Administrador da plataforma; administrador de estabelecimento gastronômico. |
 | Pré-condições | Administradores autenticados; estabelecimento ativo e vínculo administrativo prévio para gerir ofertas. |
 | Pós-condições | Estabelecimento é registrado e suas ofertas são publicadas, atualizadas, arquivadas ou removidas conforme validade e vínculo. |

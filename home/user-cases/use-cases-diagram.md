@@ -237,6 +237,8 @@ flowchart LR
 
 ## 6. Hipótese de escopo administrativo: Equipamentos e estabelecimentos
 
+Os fluxos do Épico 8 foram modelados como hipóteses verificáveis, derivadas de RF-042 a RF-058 e HU-042 a HU-058. O núcleo de cadastro administrativo (RF-042, RF-044, RF-046 a RF-048, RF-050 e RF-051) já integra a entrega atual; os demais (RF-049 e RF-052 a RF-058) permanecem fora dela. Em ambos os casos, os fluxos e telas administrativas ainda dependem de validação com os futuros stakeholders administrativos.
+
 ```mermaid
 flowchart LR
     %% Atores
