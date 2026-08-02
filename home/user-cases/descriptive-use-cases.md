@@ -65,7 +65,7 @@ title: Casos de Uso Descritivos
 | Atores secundários | Serviço de geolocalização/mapas, somente quando o visitante escolher proximidade. |
 | Pré-condições | Registros pesquisáveis contêm os dados mínimos; localização do dispositivo depende de consentimento. |
 | Pós-condições | Resultados filtrados ou alternativas de busca são apresentados; quando aplicável, distância e referência de origem ficam explícitas. |
-| RF | [RF-004, RF-005, RF-006, RF-011](home/traceability-matrix#TM-UC-02), [RF-077](home/traceability-matrix#TM-HU-077), [RF-078](home/traceability-matrix#TM-HU-078). |
+| RF | [RF-004, RF-005, RF-006, RF-006A, RF-011](home/traceability-matrix#TM-UC-02), [RF-077](home/traceability-matrix#TM-HU-077), [RF-078](home/traceability-matrix#TM-HU-078). |
 | RN | [RN-003, RN-004, RN-005, RN-009, RN-010](home/traceability-matrix#TM-UC-02), [RN-078](home/traceability-matrix#TM-HU-077), [RN-079, RN-080](home/traceability-matrix#TM-HU-078). |
 
 **Fluxo principal**
@@ -133,7 +133,6 @@ Bloco obrigatório incluído por UC-03. Apresenta descrição, categoria, tipo d
 |----|----|
 | [RF-007, RF-008, RF-018, RF-019, RF-035, RF-036](home/traceability-matrix#TM-UC-03) | [RN-014 a RN-016, RN-024 a RN-027](home/traceability-matrix#TM-UC-03) |
 
-
 #### UC-03B — Consultar informações operacionais
 
 Bloco obrigatório incluído por UC-03. Apresenta horários e status, preços, cardápio/taxas, formato de serviço e contatos atualizados.
@@ -141,7 +140,6 @@ Bloco obrigatório incluído por UC-03. Apresenta horários e status, preços, c
 | RF | RN |
 |----|----|
 | [RF-009, RF-010, RF-017, RF-020](home/traceability-matrix#TM-UC-03) | [RN-011, RN-021, RN-024, RN-028](home/traceability-matrix#TM-UC-03) |
-
 
 #### UC-03C — Consultar condições da visita
 
