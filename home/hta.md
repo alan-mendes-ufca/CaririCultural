@@ -135,7 +135,7 @@ O usuário deseja organizar seu deslocamento e verificar a adequação do local.
 * 5.2.3 Consultar local
 * 5.2.4 Consultar descrição
 
-**Requisitos relacionados:** RF-013
+**Requisitos relacionados:** RF-016
 
 ---
 
@@ -153,7 +153,7 @@ O usuário deseja organizar seu deslocamento e verificar a adequação do local.
 * 6.2.2 Ler informações culturais
 * 6.2.3 Ler informações sociais
 
-**Requisitos relacionados:** RF-014, RF-015
+**Requisitos relacionados:** RF-017, RF-018
 
 ---
 
@@ -172,7 +172,7 @@ O usuário deseja organizar seu deslocamento e verificar a adequação do local.
 * 7.2.3 Atribuir nota
 * 7.2.4 Publicar avaliação
 
-**Requisitos relacionados:** RF-016, RF-017
+**Requisitos relacionados:** RF-021, RF-022
 
 ---
 
@@ -202,7 +202,7 @@ O usuário deseja organizar seu deslocamento e verificar a adequação do local.
 * 8.4.2 Gerar roteiro personalizado
 * 8.4.3 Visualizar roteiro recomendado
 
-**Requisitos relacionados:** RF-021, RF-022, RF-023, RF-024
+**Requisitos relacionados:** RF-023, RF-024, RF-025, RF-026
 
 ---
 
@@ -218,7 +218,7 @@ O usuário deseja organizar seu deslocamento e verificar a adequação do local.
 * 9.2.1 Marcar local como visitado
 * 9.2.2 Atualizar checklist de atividades
 
-**Requisitos relacionados:** RF-019
+**Requisitos relacionados:** RF-027, RF-028, RF-029
 
 ---
 
@@ -251,4 +251,4 @@ O usuário deseja obter informações, recomendações e suporte por meio de um 
 * 10.4.2 Transferir contexto da pesquisa atual
 * 10.4.3 Continuar consulta sem reiniciar o processo
 
-**Requisitos relacionados:** RF-028, RF-029, RF-030, RF-031
+**Requisitos relacionados:** RF-030, RF-031, RF-032, RF-033
