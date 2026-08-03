@@ -604,6 +604,35 @@ O **administrador autorizado**, em função de curadoria, é o responsável oper
 
 ---
 
+## UC-27 — Compartilhar perfil de local
+
+| Campo | Especificação |
+|-------|---------------|
+| Objetivo | Permitir que o usuário compartilhe externamente o perfil de um local ou evento individual que descobriu na plataforma. |
+| Prioridade | **Should have** — necessidade identificada na avaliação de usabilidade do protótipo de alta fidelidade, ainda pendente de validação com stakeholders. |
+| Ator principal | Usuário autenticado. |
+| Pré-condições | Local ou evento publicado e visível; usuário autenticado. |
+| Pós-condições | Link público de visualização do perfil do local é gerado e pode ser aberto por qualquer pessoa, autenticada ou não. |
+| RF | [RF-090](home/functional-requirements#RF-090). |
+| RN | [RN-094](home/business-rules#RN-094). |
+| Pontos de extensão | [UC-03](#UC-03) e [UC-04](#UC-04), na ação “Compartilhar local”. |
+
+**Fluxo principal**
+
+1. O usuário aciona “Compartilhar” na página de um local ou evento.
+2. O sistema gera o link público de visualização do perfil do local.
+3. O usuário compartilha o link externamente por meio de aplicativo compatível ou copiando o link.
+
+**Fluxos alternativos**
+
+- A1 — O usuário aciona “Compartilhar” sem estar autenticado: o sistema solicita login antes de concluir o compartilhamento.
+
+**Fluxos de exceção**
+
+- E1 — O local é despublicado após o compartilhamento: o acesso ao link informa que o conteúdo não está mais disponível, sem expor detalhes internos.
+
+---
+
 ## Hipóteses de fluxo — Épico 8
 
 Os casos UC-18 a UC-25 descrevem uma **hipótese de escopo administrativo** derivada dos requisitos, histórias de usuário, regras de negócio e do protótipo.

@@ -106,6 +106,7 @@ title: Requisitos Funcionais
 | RF-039 | O sistema deve listar contatos e opções de serviços de transporte alternativo e parceiros locais (ex: mototáxis, vans) atrelados a estabelecimentos ou eventos. | Could have | A plataforma não centraliza transporte como um serviço próprio (não é um modelo tipo Uber) — é apenas uma conveniência opcional de redirecionamento de contato. |
 | RF-040 | O sistema deve possuir uma seção para exibição de mídias (fotos e vídeos curtos) geradas exclusivamente pela comunidade de usuários sobre os locais. | Could have | Enriquecimento de conteúdo gerado por usuários, não essencial ao fluxo mínimo. |
 | RF-041 | O sistema deve permitir que o usuário gere um link público ou compartilhe externamente suas listas personalizadas de locais favoritos. | Should have | Conveniência social de compartilhamento, não necessária para o próprio usuário completar seu fluxo. |
+| RF-090 | O sistema deve permitir que o usuário compartilhe externamente o perfil de um local ou evento individual por meio de link ou aplicativo compatível. | Should have | Necessidade identificada na avaliação de usabilidade do protótipo de alta fidelidade, ainda pendente de validação com stakeholders (mesmo tratamento dado às hipóteses dos Épicos 9 a 13). Replica para um local avulso o padrão social já Should have de RF-041, sem bloquear o fluxo de quem compartilha, já que o destinatário sempre pode encontrar o local pelo catálogo (RF-001). |
 
 ### Épico 8: Equipamentos Culturais e Estabelecimentos
 

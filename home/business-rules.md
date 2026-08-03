@@ -113,6 +113,7 @@ title: Regras de Negócio
 | <a id="RN-063"></a>RN-063 | Condições para Criação de Enquetes | Enquetes devem ser criadas por usuários autenticados, conter opções de locais ou eventos válidos e poder ser compartilhadas por link. | [RF-038](home/functional-requirements#RF-038), [HU-038](home/user-storys#HU-038) | - |
 | <a id="RN-064"></a>RN-064 | Anonimato na Votação de Enquetes | A votação em enquetes compartilhadas não deve exigir autenticação nem identificar publicamente o votante. | [RF-038](home/functional-requirements#RF-038), [HU-038](home/user-storys#HU-038) | [RN-063](#RN-063) |
 | <a id="RN-065"></a>RN-065 | Privacidade em Controles Antifraude de Enquetes | Controles antifraude de enquetes não devem expor a identidade do participante. | [RF-038](home/functional-requirements#RF-038), [HU-038](home/user-storys#HU-038) | [RN-064](#RN-064) |
+| <a id="RN-094"></a>RN-094 | Compartilhamento do Perfil de Local | O compartilhamento externo do perfil de um local ou evento deve direcionar o destinatário às mesmas informações públicas já visíveis a qualquer visitante, sem exigir autenticação para visualização e sem expor dados privados do usuário que compartilhou. | [RF-090](home/functional-requirements#RF-090), [HU-089](home/user-storys#HU-089) | [RN-022](#RN-022) |
 
 ### Épico 8: Equipamentos Culturais e Estabelecimentos
 

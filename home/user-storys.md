@@ -94,6 +94,7 @@ title: Histórias de Usuário
 | <a id="HU-039"></a>HU-039 | Como usuário sem transporte próprio, quero ter **acesso a uma rede de contatos de transportes alternativos locais recomendados**, para conseguir me deslocar com economia e segurança durante eventos noturnos. |
 | <a id="HU-040"></a>HU-040 | Como usuário, quero **visualizar fotos e vídeos reais (formato reels/stories) publicados por outros visitantes**, para ter uma visão autêntica do ambiente e não criar expectativas irreais.                    |
 | <a id="HU-041"></a>HU-041 | Como usuário mais experiente na região, quero **criar e compartilhar listas de "rolês favoritos" com amigos externamente**, para facilitar a experiência de quem ainda não conhece a cidade.                    |
+| <a id="HU-089"></a>HU-089 | Como usuário, quero **compartilhar externamente o perfil de um local ou evento individual que descobri**, para recomendar o lugar a outras pessoas sem precisar montar uma lista ou publicar uma avaliação.       |
 
 ### Épico 8: Equipamentos Culturais e Estabelecimentos
 

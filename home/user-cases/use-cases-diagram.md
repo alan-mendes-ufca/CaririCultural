@@ -55,7 +55,7 @@ flowchart LR
     U -.->|especializa| V
 ```
 
-> Ver diagramas 2 a 5 para os casos de uso da linha de base (UC-01 a UC-17 e UC-26) e o diagrama 6 para as hipóteses UC-18 a UC-25.
+> Ver diagramas 2 a 5 para os casos de uso da linha de base (UC-01 a UC-17, UC-26 e UC-27) e o diagrama 6 para as hipóteses UC-18 a UC-25.
 
 ---
 
@@ -81,6 +81,7 @@ flowchart LR
         UC04((UC-04 Consultar eventos, equipamentos e atrações))
         UC05((UC-05 Consultar avaliações e mídia))
         UC26((UC-26 Sinalizar e tratar dado incorreto))
+        UC27((UC-27 Compartilhar perfil de local))
 
         %% Includes do UC-03
         UC03A((Identidade e contexto))
@@ -93,7 +94,7 @@ flowchart LR
 
     %% Relações Ator -> Caso de Uso
     V --- UC01 & UC02 & UC03 & UC04 & UC05
-    U --- UC26
+    U --- UC26 & UC27
     ADM --- UC26
     RESP --- UC26
     U -.->|especializa| V
@@ -108,6 +109,9 @@ flowchart LR
 
     UC26 -.->|extend| UC03
     UC26 -.->|extend| UC04
+
+    UC27 -.->|extend: compartilhar local| UC03
+    UC27 -.->|extend: compartilhar local| UC04
 ```
 
 ---

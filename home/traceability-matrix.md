@@ -55,6 +55,7 @@ Esta é a fonte única para a relação entre histórias e casos de uso. Os link
 | [HU-086](#TM-HU-086) | UC-15 | — |
 | [HU-087](#TM-HU-087) | UC-03, UC-04, UC-16 | — |
 | [HU-088](#TM-HU-088) | UC-03, UC-04, UC-07, UC-26 | — |
+| [HU-089](#TM-HU-089) | UC-03, UC-04, UC-27 | — |
 
 ---
 
@@ -150,4 +151,5 @@ Esta é a fonte única para a relação entre histórias e casos de uso. Os link
 | [HU-086](home/user-storys#HU-086) | Revogar link público de lista | [RF-087](home/functional-requirements#RF-087) | Revogação de link público | [RN-090](home/business-rules#RN-090) | RN-090 | [RNF-PDD-003](home/non-functional-requirements#RNF-PDD-003) | hipótese derivada do caso de uso |
 | [HU-087](home/user-storys#HU-087) | Acionar transporte parceiro | [RF-088](home/functional-requirements#RF-088) | Elegibilidade e acionamento de transporte parceiro | [RN-091](home/business-rules#RN-091) | RN-091 | [RNF-SEG-014](home/non-functional-requirements#RNF-SEG-014) | hipótese derivada do caso de uso |
 | [HU-088](home/user-storys#HU-088) | Sinalizar e acompanhar dado incorreto | [RF-089](home/functional-requirements#RF-089) | Tratamento de sinalizações | [RN-092](home/business-rules#RN-092)<br>[RN-093](home/business-rules#RN-093) | RN-092, RN-093 | [RNF-SEG-003](home/non-functional-requirements#RNF-SEG-003)<br>[RNF-SEG-011](home/non-functional-requirements#RNF-SEG-011)<br>[RNF-SEG-012](home/non-functional-requirements#RNF-SEG-012) | hipótese derivada do caso de uso |
+| [HU-089](home/user-storys#HU-089) | Compartilhar perfil de local | [RF-090](home/functional-requirements#RF-090) | Compartilhamento de perfil de local individual | [RN-094](home/business-rules#RN-094) | RN-094 | [RNF-SEG-008](home/non-functional-requirements#RNF-SEG-008)<br>[RNF-PDD-003](home/non-functional-requirements#RNF-PDD-003) | protótipo |
 
