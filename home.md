@@ -44,5 +44,5 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`reports/ES_ER_IHC_TrabalhoPratico1_Equipe06_Relatorio.pdf`](./home/reports/ES_ER_IHC_TrabalhoPratico1_Equipe06_Relatorio.pdf) — relatório do trabalho prático 1 (PDF)
 - [`minute/ES_ER_IHC_TrabalhoPratico1_Equipe06_Ata.pdf`](./home/minute/ES_ER_IHC_TrabalhoPratico1_Equipe06_Ata.pdf) — ata do trabalho prático 1 (PDF)
 - [`low-level-prototype`](https://www.tldraw.com/f/FI-05MT2zQp89h-XM-ry7?d=v-4305.-739.6640.4188.page)<span dir=""> — </span>link para o tldraw
-- [`high-level-prototype`]() — link para o stitch
+- [`high-level-prototype`](https://deprecate-aerosol-undergo.ngrok-free.dev/) — link para o stitch
 - [`prototype-interaction-workflows/`](https://gitlab.com/ufca/cct/es-ihc0-2026-01/g6/-/wikis/prototype-interaction-workflows) — fluxos de interação do protótipo
