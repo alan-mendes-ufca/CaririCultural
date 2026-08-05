@@ -48,5 +48,6 @@ Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de 
 - [`prototype-interaction-workflows/`](https://gitlab.com/ufca/cct/es-ihc0-2026-01/g6/-/wikis/prototype-interaction-workflows) — fluxos de interação do protótipo
 
 **4. Avaliações**
-- [`usability-testing/`](./home/relatorio_inspecao_usabilidade_prototipo) 
-- [`artefacts-inspection/`](./home/Validação_e_Verificação_de_Artefatos)
+
+- [`usability-testing/`](https://gitlab.com/ufca/cct/es-ihc0-2026-01/g6/-/wikis/Relat%C3%B3rio-de-Inspe%C3%A7%C3%A3o)
+- [`artefacts-inspection/`](./home/Valida%C3%A7%C3%A3o_e_Verifica%C3%A7%C3%A3o_de_Artefatos)
