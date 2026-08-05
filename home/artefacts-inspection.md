@@ -5,6 +5,29 @@
 
 **Escopo:** requisitos funcionais, requisitos não funcionais, regras de negócio, histórias de usuário, casos de uso descritivos, diagrama de casos de uso, BPMN, mapa de jornada/usuário, Service Blueprint, storytelling, storyboarding e matriz de rastreabilidade. Protótipos e itens derivados exclusivamente deles (Épicos 9 a 13) ficaram fora do escopo, por solicitação do responsável pela revisão.
 
+> [!NOTE]
+>
+> **Numeração de casos de uso anterior à renumeração.** Este relatório foi redigido quando os casos de uso iam de UC-01 a UC-27. Depois dele, os casos foram granularizados e renumerados para **UC-001 a UC-089**, em correspondência 1:1 com as histórias de usuário. As referências `UC-NN` (dois dígitos) abaixo continuam válidas para os PDFs auditados e **não foram alteradas**, para preservar o registro do que foi efetivamente encontrado. Para localizar o caso correspondente na versão atual, use o de-para abaixo; a fonte corrente é a [matriz de rastreabilidade](home/traceability-matrix) e os [casos de uso descritivos](home/user-cases/descriptive-use-cases).
+>
+> | Antes | Agora | | Antes | Agora |
+> |---|---|---|---|---|
+> | UC-01 | UC-001, UC-002, UC-003 | | UC-15 | UC-041, UC-086 |
+> | UC-02 | UC-004, UC-005, UC-077, UC-078 | | UC-16 | UC-039, UC-087 |
+> | UC-03 | UC-006 a UC-020, UC-079 | | UC-17 | UC-040 |
+> | UC-04 | UC-014, UC-080 | | UC-18 | UC-042 |
+> | UC-05 | UC-021, UC-040 | | UC-19 | UC-043 |
+> | UC-06 | UC-030 a UC-037 | | UC-20 | UC-044 |
+> | UC-07 | UC-022 | | UC-21 | UC-045 |
+> | UC-08 | UC-023, UC-024, UC-025, UC-082 | | UC-22 | UC-046 |
+> | UC-09 | UC-026, UC-083 | | UC-23 | UC-047 a UC-050 |
+> | UC-10 | UC-027 | | UC-24 | UC-051 a UC-054 |
+> | UC-11 | UC-028 | | UC-25 | UC-055 a UC-058 |
+> | UC-12 | UC-029, UC-084 | | UC-26 | UC-088 |
+> | UC-13 | UC-038 | | UC-27 | UC-089 |
+> | UC-14 | UC-085 | | | |
+>
+> As correções propostas na seção 3.7 já foram aplicadas na versão atual: a busca por proximidade cita RF-006A em [UC-078](home/user-cases/descriptive-use-cases#UC-078), e a sinalização de dado incorreto cita RF-22A em [UC-088](home/user-cases/descriptive-use-cases#UC-088). Note que o identificador real do requisito é `RF-22A`, e não `RF-022A` como grafado na seção 3.7.
+
 ---
 
 ## 1. Resumo executivo
