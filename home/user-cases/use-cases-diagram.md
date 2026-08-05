@@ -11,7 +11,6 @@ title: Diagramas de Casos de Uso
 flowchart LR
     %% Atores
     V([Visitante])
-    U([Usuário Autenticado])
     VA([Votante Anônimo])
     G([Gestor])
     ADM([Administrador autorizado<br/>em curadoria])
@@ -33,8 +32,7 @@ flowchart LR
     end
 
     %% Relações Ator -> Agrupamento
-    V --- C1 & C2 & C3 & C4 & C6
-    U --- C3 & C5 & C6 & C7
+    V --- C1 & C2 & C3 & C4 & C5 & C6 & C7
     VA --- C6
     ADM --- C3
     RESP --- C3
@@ -42,9 +40,6 @@ flowchart LR
     APL --- C7
     AEC --- C7
     AEG --- C7
-
-    %% Especialização
-    U -.->|especializa| V
 ```
 
 ---
@@ -90,7 +85,6 @@ flowchart LR
 flowchart LR
     %% Atores
     V([Visitante])
-    U([Usuário Autenticado])
 
     %% Fronteira
     subgraph CC [Cariri Cultural — identidade e contexto]
@@ -107,9 +101,7 @@ flowchart LR
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC006 & UC016 & UC017 & UC018 & UC019
-    U --- UC088 & UC089
-    U -.->|especializa| V
+    V --- UC006 & UC016 & UC017 & UC018 & UC019 & UC088 & UC089
 
     %% Relações Extend vindas de fora do recorte
     UC088 -.->|extend| UC006 & UC016 & UC017 & UC018 & UC019
@@ -123,7 +115,6 @@ flowchart LR
 flowchart LR
     %% Atores
     V([Visitante])
-    U([Usuário Autenticado])
 
     %% Fronteira
     subgraph CC [Cariri Cultural — informações operacionais]
@@ -141,9 +132,7 @@ flowchart LR
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC007 & UC008 & UC014 & UC015 & UC020 & UC079
-    U --- UC088 & UC089
-    U -.->|especializa| V
+    V --- UC007 & UC008 & UC014 & UC015 & UC020 & UC079 & UC088 & UC089
 
     %% Relações Include
     UC007 -.->|include| UC079
@@ -164,7 +153,6 @@ flowchart LR
 flowchart LR
     %% Atores
     V([Visitante])
-    U([Usuário Autenticado])
     MAP([Serviço de Mapas e Transportes])
 
     %% Fronteira
@@ -183,10 +171,8 @@ flowchart LR
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC009 & UC010 & UC011 & UC012 & UC013 & UC079
-    U --- UC088 & UC089
+    V --- UC009 & UC010 & UC011 & UC012 & UC013 & UC079 & UC088 & UC089
     MAP --- UC009
-    U -.->|especializa| V
 
     %% Relações Include
     UC009 -.->|include| UC079
@@ -205,7 +191,6 @@ flowchart LR
 flowchart LR
     %% Atores
     V([Visitante])
-    U([Usuário Autenticado])
     ADM([Administrador autorizado<br/>em curadoria])
     RESP([Responsável pelo local])
 
@@ -225,11 +210,9 @@ flowchart LR
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC014 & UC021 & UC040 & UC080
-    U --- UC022 & UC059 & UC060 & UC061 & UC081 & UC088
+    V --- UC014 & UC021 & UC040 & UC080 & UC022 & UC059 & UC060 & UC061 & UC081 & UC088
     ADM --- UC088
     RESP --- UC088
-    U -.->|especializa| V
 
     %% Relações Extend
     UC059 -.->|extend| UC021
@@ -283,7 +266,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     %% Atores
-    U([Usuário Autenticado])
+    V([Visitante])
     MAP([Serviço de Mapas e Transportes])
 
     %% Fronteira
@@ -306,8 +289,8 @@ flowchart LR
     end
 
     %% Relações Ator -> Caso de Uso
-    U --- UC023 & UC024 & UC025 & UC026 & UC027 & UC028 & UC029
-    U --- UC041 & UC062 & UC063 & UC082 & UC083 & UC084 & UC086
+    V --- UC023 & UC024 & UC025 & UC026 & UC027 & UC028 & UC029
+    V --- UC041 & UC062 & UC063 & UC082 & UC083 & UC084 & UC086
     MAP --- UC026
 
     %% Relações Include
@@ -329,7 +312,6 @@ flowchart LR
 flowchart LR
     %% Atores
     V([Visitante])
-    U([Usuário Autenticado])
     VA([Votante Anônimo])
     TP([Serviço/operador de transporte parceiro])
 
@@ -344,11 +326,9 @@ flowchart LR
     end
 
     %% Relações Ator -> Caso de Uso
-    U --- UC038 & UC089
-    V --- UC039 & UC087
+    V --- UC039 & UC087 & UC038 & UC089
     VA --- UC085
     TP --- UC039 & UC087
-    U -.->|especializa| V
 
     %% Relações Include / Extend
     UC038 -.->|include| UC085
@@ -365,7 +345,6 @@ flowchart LR
 flowchart LR
     %% Atores
     V([Visitante])
-    U([Usuário Autenticado])
     APL([Administrador da plataforma])
     AEC([Administrador de equipamento cultural])
 
@@ -389,9 +368,7 @@ flowchart LR
     %% Relações Ator -> Caso de Uso
     APL --- UC042 & UC043 & UC045
     AEC --- UC046 & UC047 & UC048 & UC049
-    V --- UC044 & UC050
-    U --- UC088 & UC089
-    U -.->|especializa| V
+    V --- UC044 & UC050 & UC088 & UC089
 
     %% Relações Include
     UC042 -.->|include| UC046
@@ -479,7 +456,6 @@ flowchart LR
 flowchart LR
     %% Atores
     V([Visitante])
-    U([Usuário Autenticado])
     G([Gestor])
 
     subgraph CC [Cariri Cultural — perfil e navegação]
@@ -495,9 +471,7 @@ flowchart LR
 
     %% Relações Ator -> Caso de Uso
     G --- UC070 & UC071 & UC072 & UC075
-    U --- UC073
-    V --- UC074 & UC076
-    U -.->|especializa| V
+    V --- UC073 & UC074 & UC076
 ```
 
 ---
