@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="2110.0" viewBox="0 0 1400 2110.0" role="img" aria-labelledby="title desc">
+  <title id="title">Diagrama de Atividades UML — UC-062 — Consultar conquistas e distintivos</title>
+  <desc id="desc">Fluxo de atividades em ordem temporal, com raias por responsável e alternativas e exceções posicionadas após o fluxo principal documentado.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#334155"/></marker>
+    <marker id="error-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c2410c"/></marker>
+    <filter id="shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <style>
+      .title { font: 700 28px "Lato", "DejaVu Sans", sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 15px "Lato", "DejaVu Sans", sans-serif; fill: #475569; }
+      .lane-title { font: 700 17px "Lato", "DejaVu Sans", sans-serif; fill: #fff; letter-spacing: .35px; text-anchor: middle; }
+      .node { fill: #fff; stroke: #334155; stroke-width: 2; filter: url(#shadow); }
+      .system-node { fill: #f8fbff; stroke: #2563eb; }
+      .exception-node { fill: #fff7ed; stroke: #c2410c; }
+      .decision { filter: url(#shadow); }
+      .merge { fill: #fff; stroke: #334155; stroke-width: 2; }
+      .text { font: 600 15px "Lato", "DejaVu Sans", sans-serif; fill: #172033; }
+      .small { font: 600 13px "Lato", "DejaVu Sans", sans-serif; fill: #172033; }
+      .guard { font: italic 600 13px "Lato", "DejaVu Sans", sans-serif; fill: #334155; }
+      .branch-code { font: 700 14px "Lato", "DejaVu Sans", sans-serif; fill: #334155; }
+      .result-label { font: 500 12px "Lato", "DejaVu Sans", sans-serif; fill: #64748b; }
+      .flow, .main-flow, .error-flow, .return-flow, .branch-bus { fill: none; stroke: #334155; stroke-width: 2.2; marker-end: url(#arrow); }
+      .main-flow { stroke: #64748b; }
+      .error-flow { stroke: #c2410c; marker-end: url(#error-arrow); }
+      .return-flow { stroke: #64748b; stroke-dasharray: 6 5; }
+      .branch-bus.no-arrow, .return-flow.no-arrow { marker-end: none; }
+      .alternative-band { fill: #eff6ff; fill-opacity: .66; stroke: #93c5fd; stroke-width: 1.5; stroke-dasharray: 7 5; }
+      .exception-band { fill: #fff7ed; fill-opacity: .82; stroke: #fdba74; stroke-width: 1.5; stroke-dasharray: 7 5; }
+      .legend { font: 500 13px "Lato", "DejaVu Sans", sans-serif; fill: #475569; }
+    </style>
+  </defs>
+  <rect width="1400" height="2110.0" fill="#f8fafc"/>
+  <text class="title" x="70" y="48">Diagrama de Atividades UML — UC-062</text>
+  <text class="subtitle" x="70" y="75">Consultar conquistas e distintivos · fluxo principal, alternativas e exceções em ordem de ocorrência</text>
+  <rect x="60.0" y="100" width="640.0" height="1840.0" rx="10" fill="#f6f7f9" stroke="#cbd5e1" stroke-width="2"/><path d="M70.0 100 H690.0 Q700.0 100 700.0 110 V150 H60.0 V110 Q60.0 100 70.0 100 Z" fill="#475569"/><text class="lane-title" x="380.0" y="132">USUÁRIO AUTENTICADO</text><rect x="700.0" y="100" width="640.0" height="1840.0" rx="10" fill="#eef5ff" stroke="#bfdbfe" stroke-width="2"/><path d="M710.0 100 H1330.0 Q1340.0 100 1340.0 110 V150 H700.0 V110 Q700.0 100 710.0 100 Z" fill="#2563eb"/><text class="lane-title" x="1020.0" y="132">SISTEMA</text>
+  <rect class="alternative-band" x="88" y="888.0" width="1224.0" height="208.0" rx="18"/><rect class="exception-band" x="88" y="1350.0" width="1224.0" height="264.0" rx="18"/>
+  <path class="flow" d="M380.0 197.0 V270.0"/><path class="flow" d="M380.0 338.0 V365.5 H1020.0 V393.0"/><path class="flow" d="M1020.0 461.0 V516.0"/><path class="flow" d="M1020.0 584.0 V639.0"/><path class="flow" d="M1020.0 707.0 V762.0"/><path class="main-flow" d="M948.0 804.0 H80.0 V1166.0 H1005.0"/><path class="branch-bus no-arrow" d="M1092.0 804.0 H1350.0 V938.0"/><path class="flow" d="M1350.0 938.0 H1020.0 V958.0"/><path class="return-flow no-arrow" d="M1020.0 1026.0 H1382.0 V1166.0"/><path class="return-flow" d="M1382.0 1166.0 H1035.0"/><path class="flow" d="M1020.0 1181.0 V1224.0"/><path class="main-flow" d="M948.0 1266.0 H80.0 V1684.0 H1005.0"/><path class="branch-bus no-arrow" d="M1092.0 1266.0 H1350.0 V1400.0"/><path class="error-flow" d="M1350.0 1400.0 H1020.0 V1420.0"/><path class="error-flow" d="M1020.0 1488.0 V1526.0"/><path class="flow" d="M1020.0 1699.0 V1742.0"/><path class="flow" d="M1020.0 1810.0 V1847.0"/>
+  <circle cx="380.0" cy="185" r="12" fill="#0f172a"/><rect class="node" x="185.0" y="270.0" width="390.0" height="68.0" rx="18"/><text class="text" x="380.0" y="299.0" text-anchor="middle"><tspan x="380.0" y="299.0">O usuário acessa a área de conquistas do próprio</tspan><tspan x="380.0" y="319.0">perfil.</tspan></text><rect class="node system-node" x="825.0" y="393.0" width="390.0" height="68.0" rx="18"/><text class="text" x="1020.0" y="422.0" text-anchor="middle"><tspan x="1020.0" y="422.0">O sistema consulta o histórico de visitas,</tspan><tspan x="1020.0" y="442.0">avaliações publicadas e check-ins do usuário.</tspan></text><rect class="node system-node" x="825.0" y="516.0" width="390.0" height="68.0" rx="18"/><text class="text" x="1020.0" y="545.0" text-anchor="middle"><tspan x="1020.0" y="545.0">O sistema calcula quais conquistas e distintivos</tspan><tspan x="1020.0" y="565.0">foram desbloqueados.</tspan></text><rect class="node system-node" x="825.0" y="639.0" width="390.0" height="68.0" rx="18"/><text class="text" x="1020.0" y="668.0" text-anchor="middle"><tspan x="1020.0" y="668.0">O sistema exibe os distintivos obtidos e os</tspan><tspan x="1020.0" y="688.0">pendentes de desbloqueio.</tspan></text><polygon class="node system-node decision" points="1020.0,762.0 1092.0,804.0 1020.0,846.0 948.0,804.0"/><text class="small" x="1020.0" y="809.0" text-anchor="middle"><tspan x="1020.0" y="809.0">Condição A1?</tspan></text><rect class="node system-node" x="825.0" y="958.0" width="390.0" height="68.0" rx="18"/><text class="text" x="1020.0" y="987.0" text-anchor="middle"><tspan x="1020.0" y="987.0">O sistema exibe os critérios para o próximo</tspan><tspan x="1020.0" y="1007.0">distintivo.</tspan></text><polygon class="merge" points="1020.0,1151.0 1035.0,1166.0 1020.0,1181.0 1005.0,1166.0"/><polygon class="node system-node decision" points="1020.0,1224.0 1092.0,1266.0 1020.0,1308.0 948.0,1266.0"/><text class="small" x="1020.0" y="1271.0" text-anchor="middle"><tspan x="1020.0" y="1271.0">Condição E1?</tspan></text><rect class="node exception-node" x="825.0" y="1420.0" width="390.0" height="68.0" rx="18"/><text class="text" x="1020.0" y="1449.0" text-anchor="middle"><tspan x="1020.0" y="1449.0">O sistema não exibe progresso de conquistas</tspan><tspan x="1020.0" y="1469.0">baseado em dado de terceiro.</tspan></text><circle cx="1020.0" cy="1544.0" r="18" fill="#fff" stroke="#9a3412" stroke-width="2.5"/><circle cx="1020.0" cy="1544.0" r="10" fill="#c2410c"/><polygon class="merge" points="1020.0,1669.0 1035.0,1684.0 1020.0,1699.0 1005.0,1684.0"/><rect class="node system-node" x="825.0" y="1742.0" width="390.0" height="68.0" rx="18"/><text class="text" x="1020.0" y="1771.0" text-anchor="middle"><tspan x="1020.0" y="1771.0">Resultado: Conquistas e distintivos desbloqueados</tspan><tspan x="1020.0" y="1791.0">e pendentes são exibidos ao usuário.</tspan></text><circle cx="1020.0" cy="1865.0" r="18" fill="#fff" stroke="#0f172a" stroke-width="2.5"/><circle cx="1020.0" cy="1865.0" r="10" fill="#0f172a"/>
+  <text class="branch-code" x="110" y="915.0"><tspan x="110" y="915.0">A1 — Nenhuma conquista foi desbloqueada ainda</tspan></text><text class="guard" x="92" y="794.0">[fluxo principal]</text><text class="result-label" x="1362.0" y="1157.0" text-anchor="end">Retoma o fluxo principal</text><text class="branch-code" x="110" y="1377.0"><tspan x="110" y="1377.0">E1 — Falha ao vincular histórico de visitas ou avaliações ao usuário autenticado</tspan></text><text class="guard" x="92" y="1256.0">[fluxo principal]</text><text class="result-label" x="1048.0" y="1549.0">Fluxo excepcional encerrado</text>
+  
+  <g transform="translate(340.0 1960.0)">
+    <rect x="0" y="0" width="720" height="98" rx="12" fill="#fff" stroke="#cbd5e1"/>
+    <rect class="node" x="28" y="22" width="74" height="34" rx="12"/><text class="legend" x="116" y="44">Ação do ator</text>
+    <rect class="node system-node" x="235" y="22" width="74" height="34" rx="12"/><text class="legend" x="323" y="44">Ação do sistema</text>
+    <rect class="node exception-node" x="454" y="22" width="74" height="34" rx="12"/><text class="legend" x="542" y="44">Tratamento de exceção</text>
+    <text class="legend" x="28" y="80">Losango maior: decisão · losango pequeno: fusão · faixa tracejada: caminho alternativo/excepcional</text>
+  </g>
+</svg>
