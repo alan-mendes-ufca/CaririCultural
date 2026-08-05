@@ -1,11 +1,9 @@
 ---
 title: Home
 ---
-# Sumário — Cariri Cultural
-
 Plataforma web/mobile + chatbot IA para turismo e cultura do Cariri. Em fase de requisitos, sem código-fonte.
 
-Artefatos em *ordem alfabética*:
+Artefatos em _ordem alfabética_:
 
 - [`activity-diagram`](./home/activity-diagram/activity-diagram) — fluxos de atividades, decisões e ações dos processos do sistema
 - [`artefacts-inspection`](./home/artefacts-inspection) — validação e verificação de artefatos: inconsistências registradas e correções redigidas
