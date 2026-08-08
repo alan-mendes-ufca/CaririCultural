@@ -23,89 +23,89 @@ title: Matriz de Rastreabilidade
 | [HU-004](#TM-HU-004) | [UC-004](home/user-cases/descriptive-use-cases#UC-004) | 1 | — |
 | [HU-005](#TM-HU-005) | [UC-005](home/user-cases/descriptive-use-cases#UC-005) | 1 | — |
 | [HU-006](#TM-HU-006) | [UC-006](home/user-cases/descriptive-use-cases#UC-006) | 2 | — |
-| [HU-007](#TM-HU-007) | [UC-007](home/user-cases/descriptive-use-cases#UC-007) | 2 | — |
-| [HU-008](#TM-HU-008) | [UC-008](home/user-cases/descriptive-use-cases#UC-008) | 2 | — |
-| [HU-009](#TM-HU-009) | [UC-009](home/user-cases/descriptive-use-cases#UC-009) | 2 | — |
-| [HU-010](#TM-HU-010) | [UC-010](home/user-cases/descriptive-use-cases#UC-010) | 2 | — |
-| [HU-011](#TM-HU-011) | [UC-011](home/user-cases/descriptive-use-cases#UC-011) | 2 | — |
-| [HU-012](#TM-HU-012) | [UC-012](home/user-cases/descriptive-use-cases#UC-012) | 2 | — |
-| [HU-013](#TM-HU-013) | [UC-013](home/user-cases/descriptive-use-cases#UC-013) | 2 | — |
-| [HU-014](#TM-HU-014) | [UC-014](home/user-cases/descriptive-use-cases#UC-014) | 2 | — |
-| [HU-015](#TM-HU-015) | [UC-015](home/user-cases/descriptive-use-cases#UC-015) | 2 | — |
-| [HU-016](#TM-HU-016) | [UC-016](home/user-cases/descriptive-use-cases#UC-016) | 2 | — |
-| [HU-017](#TM-HU-017) | [UC-017](home/user-cases/descriptive-use-cases#UC-017) | 2 | — |
-| [HU-018](#TM-HU-018) | [UC-018](home/user-cases/descriptive-use-cases#UC-018) | 2 | — |
-| [HU-019](#TM-HU-019) | [UC-019](home/user-cases/descriptive-use-cases#UC-019) | 2 | — |
-| [HU-020](#TM-HU-020) | [UC-020](home/user-cases/descriptive-use-cases#UC-020) | 2 | — |
-| [HU-021](#TM-HU-021) | [UC-021](home/user-cases/descriptive-use-cases#UC-021) | 3 | — |
-| [HU-022](#TM-HU-022) | [UC-022](home/user-cases/descriptive-use-cases#UC-022) | 3 | — |
-| [HU-023](#TM-HU-023) | [UC-023](home/user-cases/descriptive-use-cases#UC-023) | 4 | — |
-| [HU-024](#TM-HU-024) | [UC-024](home/user-cases/descriptive-use-cases#UC-024) | 4 | — |
-| [HU-025](#TM-HU-025) | [UC-025](home/user-cases/descriptive-use-cases#UC-025) | 4 | — |
-| [HU-026](#TM-HU-026) | [UC-026](home/user-cases/descriptive-use-cases#UC-026) | 4 | — |
-| [HU-027](#TM-HU-027) | [UC-027](home/user-cases/descriptive-use-cases#UC-027) | 5 | — |
-| [HU-028](#TM-HU-028) | [UC-028](home/user-cases/descriptive-use-cases#UC-028) | 5 | — |
-| [HU-029](#TM-HU-029) | [UC-029](home/user-cases/descriptive-use-cases#UC-029) | 5 | — |
-| [HU-030](#TM-HU-030) | [UC-030](home/user-cases/descriptive-use-cases#UC-030) | 6 | — |
-| [HU-031](#TM-HU-031) | [UC-031](home/user-cases/descriptive-use-cases#UC-031) | 6 | — |
-| [HU-032](#TM-HU-032) | [UC-032](home/user-cases/descriptive-use-cases#UC-032) | 6 | — |
-| [HU-033](#TM-HU-033) | [UC-033](home/user-cases/descriptive-use-cases#UC-033) | 6 | — |
-| [HU-034](#TM-HU-034) | [UC-034](home/user-cases/descriptive-use-cases#UC-034) | 6 | — |
-| [HU-035](#TM-HU-035) | [UC-035](home/user-cases/descriptive-use-cases#UC-035) | 6 | — |
-| [HU-036](#TM-HU-036) | [UC-036](home/user-cases/descriptive-use-cases#UC-036) | 6 | — |
-| [HU-037](#TM-HU-037) | [UC-037](home/user-cases/descriptive-use-cases#UC-037) | 6 | — |
-| [HU-038](#TM-HU-038) | [UC-038](home/user-cases/descriptive-use-cases#UC-038) | 7 | — |
-| [HU-039](#TM-HU-039) | [UC-039](home/user-cases/descriptive-use-cases#UC-039) | 7 | — |
-| [HU-040](#TM-HU-040) | [UC-040](home/user-cases/descriptive-use-cases#UC-040) | 7 | — |
-| [HU-041](#TM-HU-041) | [UC-041](home/user-cases/descriptive-use-cases#UC-041) | 7 | — |
-| [HU-042](#TM-HU-042) | [UC-042](home/user-cases/descriptive-use-cases#UC-042) | 8 | Hipótese de escopo administrativo. |
-| [HU-043](#TM-HU-043) | [UC-043](home/user-cases/descriptive-use-cases#UC-043) | 8 | Hipótese de escopo administrativo. |
-| [HU-044](#TM-HU-044) | [UC-044](home/user-cases/descriptive-use-cases#UC-044) | 8 | Hipótese de escopo administrativo. |
-| [HU-045](#TM-HU-045) | [UC-045](home/user-cases/descriptive-use-cases#UC-045) | 8 | Hipótese de escopo administrativo. |
-| [HU-046](#TM-HU-046) | [UC-046](home/user-cases/descriptive-use-cases#UC-046) | 8 | Hipótese de escopo administrativo. |
-| [HU-047](#TM-HU-047) | [UC-047](home/user-cases/descriptive-use-cases#UC-047) | 8 | Hipótese de escopo administrativo. |
-| [HU-048](#TM-HU-048) | [UC-048](home/user-cases/descriptive-use-cases#UC-048) | 8 | Hipótese de escopo administrativo. |
-| [HU-049](#TM-HU-049) | [UC-049](home/user-cases/descriptive-use-cases#UC-049) | 8 | Hipótese de escopo administrativo. |
-| [HU-050](#TM-HU-050) | [UC-050](home/user-cases/descriptive-use-cases#UC-050) | 8 | Hipótese de escopo administrativo. |
-| [HU-051](#TM-HU-051) | [UC-051](home/user-cases/descriptive-use-cases#UC-051) | 8 | Hipótese de escopo administrativo. |
-| [HU-052](#TM-HU-052) | [UC-052](home/user-cases/descriptive-use-cases#UC-052) | 8 | Hipótese de escopo administrativo. |
-| [HU-053](#TM-HU-053) | [UC-053](home/user-cases/descriptive-use-cases#UC-053) | 8 | Hipótese de escopo administrativo. |
-| [HU-054](#TM-HU-054) | [UC-054](home/user-cases/descriptive-use-cases#UC-054) | 8 | Hipótese de escopo administrativo. |
-| [HU-055](#TM-HU-055) | [UC-055](home/user-cases/descriptive-use-cases#UC-055) | 8 | Hipótese de escopo administrativo. |
-| [HU-056](#TM-HU-056) | [UC-056](home/user-cases/descriptive-use-cases#UC-056) | 8 | Hipótese de escopo administrativo. |
-| [HU-057](#TM-HU-057) | [UC-057](home/user-cases/descriptive-use-cases#UC-057) | 8 | Hipótese de escopo administrativo. |
-| [HU-058](#TM-HU-058) | [UC-058](home/user-cases/descriptive-use-cases#UC-058) | 8 | Hipótese de escopo administrativo. |
-| [HU-059](#TM-HU-059) | [UC-059](home/user-cases/descriptive-use-cases#UC-059) | 9 | Hipótese derivada do protótipo. |
-| [HU-060](#TM-HU-060) | [UC-060](home/user-cases/descriptive-use-cases#UC-060) | 9 | Hipótese derivada do protótipo. |
-| [HU-061](#TM-HU-061) | [UC-061](home/user-cases/descriptive-use-cases#UC-061) | 9 | Hipótese derivada do protótipo. |
-| [HU-062](#TM-HU-062) | [UC-062](home/user-cases/descriptive-use-cases#UC-062) | 10 | Hipótese derivada do protótipo. |
-| [HU-063](#TM-HU-063) | [UC-063](home/user-cases/descriptive-use-cases#UC-063) | 10 | Hipótese derivada do protótipo. |
-| [HU-064](#TM-HU-064) | [UC-064](home/user-cases/descriptive-use-cases#UC-064) | 11 | Hipótese derivada do protótipo. |
-| [HU-065](#TM-HU-065) | [UC-065](home/user-cases/descriptive-use-cases#UC-065) | 11 | Hipótese derivada do protótipo. |
-| [HU-066](#TM-HU-066) | [UC-066](home/user-cases/descriptive-use-cases#UC-066) | 11 | Hipótese derivada do protótipo. |
-| [HU-067](#TM-HU-067) | [UC-067](home/user-cases/descriptive-use-cases#UC-067) | 11 | Hipótese derivada do protótipo. |
-| [HU-068](#TM-HU-068) | [UC-068](home/user-cases/descriptive-use-cases#UC-068) | 11 | Hipótese derivada do protótipo. |
-| [HU-069](#TM-HU-069) | [UC-069](home/user-cases/descriptive-use-cases#UC-069) | 11 | Hipótese derivada do protótipo. |
-| [HU-070](#TM-HU-070) | [UC-070](home/user-cases/descriptive-use-cases#UC-070) | 12 | Hipótese derivada do protótipo. |
-| [HU-071](#TM-HU-071) | [UC-071](home/user-cases/descriptive-use-cases#UC-071) | 12 | Hipótese derivada do protótipo. |
-| [HU-072](#TM-HU-072) | [UC-072](home/user-cases/descriptive-use-cases#UC-072) | 12 | Hipótese derivada do protótipo. |
-| [HU-073](#TM-HU-073) | [UC-073](home/user-cases/descriptive-use-cases#UC-073) | 12 | Hipótese derivada do protótipo. |
-| [HU-074](#TM-HU-074) | [UC-074](home/user-cases/descriptive-use-cases#UC-074) | 13 | Hipótese derivada do protótipo. |
-| [HU-075](#TM-HU-075) | [UC-075](home/user-cases/descriptive-use-cases#UC-075) | 13 | Hipótese derivada do protótipo. |
-| [HU-076](#TM-HU-076) | [UC-076](home/user-cases/descriptive-use-cases#UC-076) | 13 | Hipótese derivada do protótipo. |
-| [HU-077](#TM-HU-077) | [UC-077](home/user-cases/descriptive-use-cases#UC-077) | 14 | Hipótese derivada do caso de uso. |
-| [HU-078](#TM-HU-078) | [UC-078](home/user-cases/descriptive-use-cases#UC-078) | 14 | Hipótese derivada do caso de uso. |
-| [HU-079](#TM-HU-079) | [UC-079](home/user-cases/descriptive-use-cases#UC-079) | 14 | Hipótese derivada do caso de uso. |
-| [HU-080](#TM-HU-080) | [UC-080](home/user-cases/descriptive-use-cases#UC-080) | 14 | Hipótese derivada do caso de uso. |
-| [HU-081](#TM-HU-081) | [UC-081](home/user-cases/descriptive-use-cases#UC-081) | 14 | Hipótese derivada do caso de uso. |
-| [HU-082](#TM-HU-082) | [UC-082](home/user-cases/descriptive-use-cases#UC-082) | 14 | Hipótese derivada do caso de uso. |
-| [HU-083](#TM-HU-083) | [UC-083](home/user-cases/descriptive-use-cases#UC-083) | 14 | Hipótese derivada do caso de uso. |
-| [HU-084](#TM-HU-084) | [UC-084](home/user-cases/descriptive-use-cases#UC-084) | 14 | Hipótese derivada do caso de uso. |
-| [HU-085](#TM-HU-085) | [UC-085](home/user-cases/descriptive-use-cases#UC-085) | 14 | Hipótese derivada do caso de uso. |
-| [HU-086](#TM-HU-086) | [UC-086](home/user-cases/descriptive-use-cases#UC-086) | 14 | Hipótese derivada do caso de uso. |
-| [HU-087](#TM-HU-087) | [UC-087](home/user-cases/descriptive-use-cases#UC-087) | 14 | Hipótese derivada do caso de uso. |
-| [HU-088](#TM-HU-088) | [UC-088](home/user-cases/descriptive-use-cases#UC-088) | 14 | Hipótese derivada do caso de uso. |
-| [HU-089](#TM-HU-089) | [UC-089](home/user-cases/descriptive-use-cases#UC-089) | 7 | Hipótese derivada do protótipo. |
+| [HU-007](#TM-HU-007) | [UC-006](home/user-cases/descriptive-use-cases#UC-006) | 2 | Consolidado em UC-006. |
+| [HU-008](#TM-HU-008) | [UC-006](home/user-cases/descriptive-use-cases#UC-006) | 2 | Consolidado em UC-006. |
+| [HU-009](#TM-HU-009) | [UC-007](home/user-cases/descriptive-use-cases#UC-007) | 2 | — |
+| [HU-010](#TM-HU-010) | [UC-006](home/user-cases/descriptive-use-cases#UC-006) | 2 | Consolidado em UC-006. |
+| [HU-011](#TM-HU-011) | [UC-008](home/user-cases/descriptive-use-cases#UC-008) | 2 | — |
+| [HU-012](#TM-HU-012) | [UC-006](home/user-cases/descriptive-use-cases#UC-006) | 2 | Consolidado em UC-006. |
+| [HU-013](#TM-HU-013) | [UC-006](home/user-cases/descriptive-use-cases#UC-006) | 2 | Consolidado em UC-006. |
+| [HU-014](#TM-HU-014) | [UC-009](home/user-cases/descriptive-use-cases#UC-009) | 2 | — |
+| [HU-015](#TM-HU-015) | [UC-010](home/user-cases/descriptive-use-cases#UC-010) | 2 | — |
+| [HU-016](#TM-HU-016) | [UC-021](home/user-cases/descriptive-use-cases#UC-021) | 6 | Caso próprio removido: a necessidade passou a ser atendida pelo fluxo conversacional do assistente virtual. |
+| [HU-017](#TM-HU-017) | [UC-010](home/user-cases/descriptive-use-cases#UC-010) | 2 | Consolidado em UC-010. |
+| [HU-018](#TM-HU-018) | [UC-011](home/user-cases/descriptive-use-cases#UC-011) | 2 | — |
+| [HU-019](#TM-HU-019) | [UC-006](home/user-cases/descriptive-use-cases#UC-006) | 2 | Consolidado em UC-006. |
+| [HU-020](#TM-HU-020) | [UC-006](home/user-cases/descriptive-use-cases#UC-006) | 2 | Consolidado em UC-006. |
+| [HU-021](#TM-HU-021) | [UC-012](home/user-cases/descriptive-use-cases#UC-012) | 3 | — |
+| [HU-022](#TM-HU-022) | [UC-013](home/user-cases/descriptive-use-cases#UC-013) | 3 | — |
+| [HU-023](#TM-HU-023) | [UC-014](home/user-cases/descriptive-use-cases#UC-014) | 4 | — |
+| [HU-024](#TM-HU-024) | [UC-015](home/user-cases/descriptive-use-cases#UC-015) | 4 | — |
+| [HU-025](#TM-HU-025) | [UC-016](home/user-cases/descriptive-use-cases#UC-016) | 4 | — |
+| [HU-026](#TM-HU-026) | [UC-017](home/user-cases/descriptive-use-cases#UC-017) | 4 | — |
+| [HU-027](#TM-HU-027) | [UC-018](home/user-cases/descriptive-use-cases#UC-018) | 5 | — |
+| [HU-028](#TM-HU-028) | [UC-019](home/user-cases/descriptive-use-cases#UC-019) | 5 | — |
+| [HU-029](#TM-HU-029) | [UC-020](home/user-cases/descriptive-use-cases#UC-020) | 5 | — |
+| [HU-030](#TM-HU-030) | [UC-021](home/user-cases/descriptive-use-cases#UC-021) | 6 | — |
+| [HU-031](#TM-HU-031) | [UC-022](home/user-cases/descriptive-use-cases#UC-022) | 6 | — |
+| [HU-032](#TM-HU-032) | [UC-023](home/user-cases/descriptive-use-cases#UC-023) | 6 | — |
+| [HU-033](#TM-HU-033) | [UC-024](home/user-cases/descriptive-use-cases#UC-024) | 6 | — |
+| [HU-034](#TM-HU-034) | [UC-025](home/user-cases/descriptive-use-cases#UC-025) | 6 | — |
+| [HU-035](#TM-HU-035) | [UC-026](home/user-cases/descriptive-use-cases#UC-026) | 6 | — |
+| [HU-036](#TM-HU-036) | [UC-027](home/user-cases/descriptive-use-cases#UC-027) | 6 | — |
+| [HU-037](#TM-HU-037) | [UC-028](home/user-cases/descriptive-use-cases#UC-028) | 6 | — |
+| [HU-038](#TM-HU-038) | [UC-029](home/user-cases/descriptive-use-cases#UC-029) | 7 | — |
+| [HU-039](#TM-HU-039) | [UC-030](home/user-cases/descriptive-use-cases#UC-030) | 7 | — |
+| [HU-040](#TM-HU-040) | [UC-031](home/user-cases/descriptive-use-cases#UC-031) | 7 | — |
+| [HU-041](#TM-HU-041) | [UC-032](home/user-cases/descriptive-use-cases#UC-032) | 7 | — |
+| [HU-042](#TM-HU-042) | [UC-034](home/user-cases/descriptive-use-cases#UC-034) | 8 | Hipótese de escopo administrativo. |
+| [HU-043](#TM-HU-043) | [UC-035](home/user-cases/descriptive-use-cases#UC-035) | 8 | Hipótese de escopo administrativo. |
+| [HU-044](#TM-HU-044) | [UC-036](home/user-cases/descriptive-use-cases#UC-036) | 8 | Hipótese de escopo administrativo. |
+| [HU-045](#TM-HU-045) | [UC-037](home/user-cases/descriptive-use-cases#UC-037) | 8 | Hipótese de escopo administrativo. |
+| [HU-046](#TM-HU-046) | [UC-038](home/user-cases/descriptive-use-cases#UC-038) | 8 | Hipótese de escopo administrativo. |
+| [HU-047](#TM-HU-047) | [UC-039](home/user-cases/descriptive-use-cases#UC-039) | 8 | Hipótese de escopo administrativo. |
+| [HU-048](#TM-HU-048) | [UC-040](home/user-cases/descriptive-use-cases#UC-040) | 8 | Hipótese de escopo administrativo. |
+| [HU-049](#TM-HU-049) | [UC-041](home/user-cases/descriptive-use-cases#UC-041) | 8 | Hipótese de escopo administrativo. |
+| [HU-050](#TM-HU-050) | [UC-042](home/user-cases/descriptive-use-cases#UC-042) | 8 | Hipótese de escopo administrativo. |
+| [HU-051](#TM-HU-051) | [UC-043](home/user-cases/descriptive-use-cases#UC-043) | 8 | Hipótese de escopo administrativo. |
+| [HU-052](#TM-HU-052) | [UC-044](home/user-cases/descriptive-use-cases#UC-044) | 8 | Hipótese de escopo administrativo. |
+| [HU-053](#TM-HU-053) | [UC-045](home/user-cases/descriptive-use-cases#UC-045) | 8 | Hipótese de escopo administrativo. |
+| [HU-054](#TM-HU-054) | [UC-046](home/user-cases/descriptive-use-cases#UC-046) | 8 | Hipótese de escopo administrativo. |
+| [HU-055](#TM-HU-055) | [UC-047](home/user-cases/descriptive-use-cases#UC-047) | 8 | Hipótese de escopo administrativo. |
+| [HU-056](#TM-HU-056) | [UC-048](home/user-cases/descriptive-use-cases#UC-048) | 8 | Hipótese de escopo administrativo. |
+| [HU-057](#TM-HU-057) | [UC-049](home/user-cases/descriptive-use-cases#UC-049) | 8 | Hipótese de escopo administrativo. |
+| [HU-058](#TM-HU-058) | [UC-050](home/user-cases/descriptive-use-cases#UC-050) | 8 | Hipótese de escopo administrativo. |
+| [HU-059](#TM-HU-059) | [UC-051](home/user-cases/descriptive-use-cases#UC-051) | 9 | Hipótese derivada do protótipo. |
+| [HU-060](#TM-HU-060) | [UC-052](home/user-cases/descriptive-use-cases#UC-052) | 9 | Hipótese derivada do protótipo. |
+| [HU-061](#TM-HU-061) | [UC-053](home/user-cases/descriptive-use-cases#UC-053) | 9 | Hipótese derivada do protótipo. |
+| [HU-062](#TM-HU-062) | [UC-054](home/user-cases/descriptive-use-cases#UC-054) | 10 | Hipótese derivada do protótipo. |
+| [HU-063](#TM-HU-063) | [UC-055](home/user-cases/descriptive-use-cases#UC-055) | 10 | Hipótese derivada do protótipo. |
+| [HU-064](#TM-HU-064) | [UC-056](home/user-cases/descriptive-use-cases#UC-056) | 11 | Hipótese derivada do protótipo. |
+| [HU-065](#TM-HU-065) | [UC-057](home/user-cases/descriptive-use-cases#UC-057) | 11 | Hipótese derivada do protótipo. |
+| [HU-066](#TM-HU-066) | [UC-058](home/user-cases/descriptive-use-cases#UC-058) | 11 | Hipótese derivada do protótipo. |
+| [HU-067](#TM-HU-067) | [UC-059](home/user-cases/descriptive-use-cases#UC-059) | 11 | Hipótese derivada do protótipo. |
+| [HU-068](#TM-HU-068) | [UC-060](home/user-cases/descriptive-use-cases#UC-060) | 11 | Hipótese derivada do protótipo. |
+| [HU-069](#TM-HU-069) | [UC-061](home/user-cases/descriptive-use-cases#UC-061) | 11 | Hipótese derivada do protótipo. |
+| [HU-070](#TM-HU-070) | [UC-062](home/user-cases/descriptive-use-cases#UC-062) | 12 | Hipótese derivada do protótipo. |
+| [HU-071](#TM-HU-071) | [UC-063](home/user-cases/descriptive-use-cases#UC-063) | 12 | Hipótese derivada do protótipo. |
+| [HU-072](#TM-HU-072) | [UC-064](home/user-cases/descriptive-use-cases#UC-064) | 12 | Hipótese derivada do protótipo. |
+| [HU-073](#TM-HU-073) | [UC-065](home/user-cases/descriptive-use-cases#UC-065) | 12 | Hipótese derivada do protótipo. |
+| [HU-074](#TM-HU-074) | [UC-066](home/user-cases/descriptive-use-cases#UC-066) | 13 | Hipótese derivada do protótipo. |
+| [HU-075](#TM-HU-075) | [UC-067](home/user-cases/descriptive-use-cases#UC-067) | 13 | Hipótese derivada do protótipo. |
+| [HU-076](#TM-HU-076) | [UC-068](home/user-cases/descriptive-use-cases#UC-068) | 13 | Hipótese derivada do protótipo. |
+| [HU-077](#TM-HU-077) | [UC-069](home/user-cases/descriptive-use-cases#UC-069) | 14 | Hipótese derivada do caso de uso. |
+| [HU-078](#TM-HU-078) | [UC-070](home/user-cases/descriptive-use-cases#UC-070) | 14 | Hipótese derivada do caso de uso. |
+| [HU-079](#TM-HU-079) | [UC-071](home/user-cases/descriptive-use-cases#UC-071) | 14 | Hipótese derivada do caso de uso. |
+| [HU-080](#TM-HU-080) | [UC-072](home/user-cases/descriptive-use-cases#UC-072) | 14 | Hipótese derivada do caso de uso. |
+| [HU-081](#TM-HU-081) | [UC-073](home/user-cases/descriptive-use-cases#UC-073) | 14 | Hipótese derivada do caso de uso. |
+| [HU-082](#TM-HU-082) | [UC-074](home/user-cases/descriptive-use-cases#UC-074) | 14 | Hipótese derivada do caso de uso. |
+| [HU-083](#TM-HU-083) | [UC-075](home/user-cases/descriptive-use-cases#UC-075) | 14 | Hipótese derivada do caso de uso. |
+| [HU-084](#TM-HU-084) | [UC-076](home/user-cases/descriptive-use-cases#UC-076) | 14 | Hipótese derivada do caso de uso. |
+| [HU-085](#TM-HU-085) | [UC-077](home/user-cases/descriptive-use-cases#UC-077) | 14 | Hipótese derivada do caso de uso. |
+| [HU-086](#TM-HU-086) | [UC-078](home/user-cases/descriptive-use-cases#UC-078) | 14 | Hipótese derivada do caso de uso. |
+| [HU-087](#TM-HU-087) | [UC-079](home/user-cases/descriptive-use-cases#UC-079) | 14 | Hipótese derivada do caso de uso. |
+| [HU-088](#TM-HU-088) | [UC-080](home/user-cases/descriptive-use-cases#UC-080) | 14 | Hipótese derivada do caso de uso. |
+| [HU-089](#TM-HU-089) | [UC-033](home/user-cases/descriptive-use-cases#UC-033) | 7 | Hipótese derivada do protótipo. |
 
 ---
 

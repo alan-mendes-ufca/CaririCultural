@@ -2,7 +2,7 @@
 title: Diagramas de Casos de Uso
 ---
 - Os diagramas seguem a notação de **Diagrama de Casos de Uso (UML)** adaptada à sintaxe do Mermaid (que não possui um tipo de diagrama "use case" nativo).
-- **Atenção:** A autenticação de usuário comum é **pré-condição** de uso da plataforma, não um caso de uso (por isso não há nó de autenticação genérico nestes diagramas); o único caso de autenticação modelado é UC-046 (administrador), nos diagramas 10 e 11.
+- **Atenção:** A autenticação de usuário comum é **pré-condição** de uso da plataforma, não um caso de uso (por isso não há nó de autenticação genérico nestes diagramas); o único caso de autenticação modelado é UC-038 (administrador), nos diagramas 8 e 9.
 
 ---
 
@@ -59,96 +59,28 @@ flowchart LR
         UC003((UC-003 Locais pouco divulgados))
         UC004((UC-004 Pesquisa por termo))
         UC005((UC-005 Filtro por categoria e público))
-        UC077((UC-077 Validar parâmetros de busca))
-        UC078((UC-078 Buscar por proximidade))
+        UC069((UC-069 Validar parâmetros de busca))
+        UC070((UC-070 Buscar por proximidade))
     end
 
     %% Relações Ator -> Caso de Uso
     V --- UC001 & UC002 & UC003 & UC004 & UC005
 
     %% Relações Include / Extend
-    UC004 -.->|include| UC077
-    UC005 -.->|include| UC077
+    UC004 -.->|include| UC069
+    UC005 -.->|include| UC069
 
     UC002 -.->|extend| UC001
     UC003 -.->|extend| UC001
 
-    UC078 -.->|extend| UC004
-    UC078 -.->|extend| UC005
-    GEO --- UC078
+    UC070 -.->|extend| UC004
+    UC070 -.->|extend| UC005
+    GEO --- UC070
 ```
 
 ---
 
-## 3. Perfil do local — identidade e contexto
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-
-    %% Fronteira
-    subgraph CC [Cariri Cultural — identidade e contexto]
-        direction TB
-        UC006((UC-006 Fotos e mídias do ambiente))
-        UC016((UC-016 Informações históricas e culturais))
-        UC017((UC-017 Links de redes sociais do local))
-        UC018((UC-018 Imagens do local na plataforma))
-        UC019((UC-019 Regras e políticas do local))
-
-        %% Nós convidados: extensões vindas dos diagramas 6 e 9
-        UC088((UC-088 Sinalizar e acompanhar<br/>dado incorreto))
-        UC089((UC-089 Compartilhar perfil<br/>de local ou evento))
-    end
-
-    %% Relações Ator -> Caso de Uso
-    V --- UC006 & UC016 & UC017 & UC018 & UC019 & UC088 & UC089
-
-    %% Relações Extend vindas de fora do recorte
-    UC088 -.->|extend| UC006 & UC016 & UC017 & UC018 & UC019
-    UC089 -.->|extend| UC006 & UC016 & UC017 & UC018 & UC019
-```
-
----
-
-## 4. Perfil do local — informações operacionais
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-
-    %% Fronteira
-    subgraph CC [Cariri Cultural — informações operacionais]
-        direction TB
-        UC007((UC-007 Horários e status de funcionamento))
-        UC008((UC-008 Cardápio e faixa de preços))
-        UC014((UC-014 Calendário e programação de eventos))
-        UC015((UC-015 Canais de contato))
-        UC020((UC-020 Formato de serviço))
-        UC079((UC-079 Procedência do dado e canal externo))
-
-        %% Nós convidados: extensões vindas dos diagramas 6 e 9
-        UC088((UC-088 Sinalizar e acompanhar<br/>dado incorreto))
-        UC089((UC-089 Compartilhar perfil<br/>de local ou evento))
-    end
-
-    %% Relações Ator -> Caso de Uso
-    V --- UC007 & UC008 & UC014 & UC015 & UC020 & UC079 & UC088 & UC089
-
-    %% Relações Include
-    UC007 -.->|include| UC079
-    UC008 -.->|include| UC079
-    UC014 -.->|include| UC079
-
-    %% Relações Extend vindas de fora do recorte
-    UC088 -.->|extend| UC007 & UC008 & UC014 & UC015 & UC020
-    UC089 -.->|extend| UC007 & UC008 & UC014 & UC015 & UC020
-```
-
-> UC-014 também aparece no diagrama 6, onde é filtrado por data e tem seu ciclo de vida controlado por UC-080. UC-079 reaparece no diagrama 5, pelos mesmos motivos de proveniência.
-
----
-
-## 5. Perfil do local — condições da visita
+## 3. Perfil do local
 ```mermaid
 flowchart LR
     %% Atores
@@ -156,37 +88,48 @@ flowchart LR
     MAP([Serviço de Mapas e Transportes])
 
     %% Fronteira
-    subgraph CC [Cariri Cultural — condições da visita]
+    subgraph CC [Cariri Cultural — perfil do local]
         direction TB
-        UC009((UC-009 Localização e opções de transporte))
-        UC010((UC-010 Informações de segurança))
-        UC011((UC-011 Condições de higiene))
-        UC012((UC-012 Recursos de acessibilidade))
-        UC013((UC-013 Adequação ao público infantil))
-        UC079((UC-079 Procedência do dado e canal externo))
+        UC006((UC-006 Perfil do local<br/>ambiente horários preços<br/>regras segurança e público))
+        UC007((UC-007 Localização acesso<br/>e opções de transporte))
+        UC009((UC-009 Calendário e<br/>programação de eventos))
+        UC010((UC-010 Canais de contato<br/>e redes sociais))
+        UC011((UC-011 Imagens do local<br/>na plataforma))
+        UC008((UC-008 Condições de higiene<br/>fora do escopo desta entrega))
+        UC071((UC-071 Procedência do dado<br/>e canal externo))
 
-        %% Nós convidados: extensões vindas dos diagramas 6 e 9
-        UC088((UC-088 Sinalizar e acompanhar<br/>dado incorreto))
-        UC089((UC-089 Compartilhar perfil<br/>de local ou evento))
+        %% Nós convidados: extensões vindas dos diagramas 4 e 7
+        UC072((UC-072 Filtrar agenda por data))
+        UC080((UC-080 Sinalizar e acompanhar<br/>dado incorreto))
+        UC033((UC-033 Compartilhar perfil<br/>de local ou evento))
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC009 & UC010 & UC011 & UC012 & UC013 & UC079 & UC088 & UC089
-    MAP --- UC009
+    V --- UC006 & UC007 & UC009 & UC010 & UC011
+    MAP --- UC007
 
     %% Relações Include
-    UC009 -.->|include| UC079
-    UC010 -.->|include| UC079
-    UC012 -.->|include| UC079
+    UC006 -.->|include| UC071
+    UC007 -.->|include| UC071
+    UC009 -.->|include| UC071
+    UC010 -.->|include| UC071
 
     %% Relações Extend vindas de fora do recorte
-    UC088 -.->|extend| UC009 & UC010 & UC011 & UC012 & UC013
-    UC089 -.->|extend| UC009 & UC010 & UC011 & UC012 & UC013
+    UC072 -.->|extend| UC009
+    UC080 -.->|extend| UC006 & UC007 & UC009 & UC010
+    UC033 -.->|extend| UC006 & UC007 & UC009 & UC010
+
+    classDef fora fill:#f4f4f4,stroke:#9e9e9e,stroke-dasharray:4 3,color:#6b6b6b
+    class UC008 fora
 ```
+
+> Os antigos diagramas 3, 4 e 5 foram unificados aqui: a consolidação do Épico 2 reduziu o perfil do local a seis casos, e manter três recortes passou a repetir os mesmos nós.
+> UC-008 aparece tracejado por estar fora do escopo desta entrega; não recebe include nem extend enquanto essa decisão valer.
+> UC-009 reaparece no diagrama 4, onde seu ciclo de vida é controlado por UC-072. UC-071, UC-080 e UC-033 são nós convidados, detalhados nos diagramas 4 e 7.
 
 ---
 
-## 6. Agenda, comunidade e avaliações
+## 4. Agenda, comunidade e avaliações
 ```mermaid
 flowchart LR
     %% Atores
@@ -197,35 +140,35 @@ flowchart LR
     %% Fronteira
     subgraph CC [Cariri Cultural]
         direction TB
-        UC014((UC-014 Calendário e programação de eventos))
-        UC021((UC-021 Avaliações da comunidade))
-        UC022((UC-022 Publicar avaliação))
-        UC040((UC-040 Mídias publicadas pela comunidade))
-        UC059((UC-059 Marcar avaliação como útil))
-        UC060((UC-060 Compartilhar avaliação individual))
-        UC061((UC-061 Iniciar tópico de discussão))
-        UC080((UC-080 Filtrar agenda por data))
-        UC081((UC-081 Retomar rascunho após autenticação))
-        UC088((UC-088 Sinalizar e acompanhar dado incorreto))
+        UC009((UC-009 Calendário e programação de eventos))
+        UC012((UC-012 Avaliações da comunidade))
+        UC013((UC-013 Publicar avaliação))
+        UC031((UC-031 Mídias publicadas pela comunidade))
+        UC051((UC-051 Marcar avaliação como útil))
+        UC052((UC-052 Compartilhar avaliação individual))
+        UC053((UC-053 Iniciar tópico de discussão))
+        UC072((UC-072 Filtrar agenda por data))
+        UC073((UC-073 Retomar rascunho após autenticação))
+        UC080((UC-080 Sinalizar e acompanhar dado incorreto))
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC014 & UC021 & UC040 & UC080 & UC022 & UC059 & UC060 & UC061 & UC081 & UC088
-    ADM --- UC088
-    RESP --- UC088
+    V --- UC009 & UC012 & UC031 & UC072 & UC013 & UC051 & UC052 & UC053 & UC073 & UC080
+    ADM --- UC080
+    RESP --- UC080
 
     %% Relações Extend
-    UC059 -.->|extend| UC021
-    UC060 -.->|extend| UC021
-    UC040 -.->|extend| UC021
-    UC080 -.->|extend| UC014
-    UC081 -.->|extend| UC022
-    UC081 -.->|extend| UC088
+    UC051 -.->|extend| UC012
+    UC052 -.->|extend| UC012
+    UC031 -.->|extend| UC012
+    UC072 -.->|extend| UC009
+    UC073 -.->|extend| UC013
+    UC073 -.->|extend| UC080
 ```
 
 ---
 
-## 7. Assistente virtual
+## 5. Assistente virtual
 ```mermaid
 flowchart LR
     %% Atores
@@ -236,33 +179,33 @@ flowchart LR
     %% Fronteira
     subgraph CC [Cariri Cultural]
         direction TB
-        UC030((UC-030 Consultar assistente virtual))
-        UC031((UC-031 Resposta interpretada por intenção))
-        UC032((UC-032 Orientação alternativa))
-        UC033((UC-033 Contexto da tela))
-        UC034((UC-034 Dados por fonte externa))
-        UC035((UC-035 Links de redes sociais pelo assistente))
-        UC036((UC-036 Imagens do local pelo assistente))
-        UC037((UC-037 Pergunta por áudio))
+        UC021((UC-021 Consultar assistente virtual))
+        UC022((UC-022 Resposta interpretada por intenção))
+        UC023((UC-023 Orientação alternativa))
+        UC024((UC-024 Contexto da tela))
+        UC025((UC-025 Dados por fonte externa))
+        UC026((UC-026 Links de redes sociais pelo assistente))
+        UC027((UC-027 Imagens do local pelo assistente))
+        UC028((UC-028 Pergunta por áudio))
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC030 & UC031 & UC032 & UC033 & UC034 & UC035 & UC036 & UC037
-    AUD --- UC037
-    FONTE --- UC034
+    V --- UC021 & UC022 & UC023 & UC024 & UC025 & UC026 & UC027 & UC028
+    AUD --- UC028
+    FONTE --- UC025
 
     %% Relações Extend
-    UC031 -.->|extend| UC030
-    UC032 -.->|extend| UC030
-    UC033 -.->|extend| UC030
-    UC035 -.->|extend| UC030
-    UC036 -.->|extend| UC030
-    UC037 -.->|extend| UC030
+    UC022 -.->|extend| UC021
+    UC023 -.->|extend| UC021
+    UC024 -.->|extend| UC021
+    UC026 -.->|extend| UC021
+    UC027 -.->|extend| UC021
+    UC028 -.->|extend| UC021
 ```
 
 ---
 
-## 8. Área pessoal: recomendações, roteiros, listas e gamificação
+## 6. Área pessoal: recomendações, roteiros, listas e gamificação
 ```mermaid
 flowchart LR
     %% Atores
@@ -272,42 +215,42 @@ flowchart LR
     %% Fronteira
     subgraph CC [Cariri Cultural]
         direction TB
-        UC023((UC-023 Recomendação por histórico de visitas))
-        UC024((UC-024 Recomendação por avaliações realizadas))
-        UC025((UC-025 Recomendação por perfis similares))
-        UC026((UC-026 Gerar roteiro personalizado))
-        UC027((UC-027 Gerenciar listas de locais desejados))
-        UC028((UC-028 Registrar locais visitados))
-        UC029((UC-029 Checklist de atividades e passeios))
-        UC041((UC-041 Compartilhar lista por link))
-        UC062((UC-062 Conquistas e distintivos))
-        UC063((UC-063 Dicas contextuais no checklist))
-        UC082((UC-082 Alternativa de personalização))
-        UC083((UC-083 Salvar e ajustar roteiro))
-        UC084((UC-084 Alerta de item vinculado a atração inativa))
-        UC086((UC-086 Revogar link público de lista))
+        UC014((UC-014 Recomendação por histórico de visitas))
+        UC015((UC-015 Recomendação por avaliações realizadas))
+        UC016((UC-016 Recomendação por perfis similares))
+        UC017((UC-017 Gerar roteiro personalizado))
+        UC018((UC-018 Gerenciar listas de locais desejados))
+        UC019((UC-019 Registrar locais visitados))
+        UC020((UC-020 Checklist de atividades e passeios))
+        UC032((UC-032 Compartilhar lista por link))
+        UC054((UC-054 Conquistas e distintivos))
+        UC055((UC-055 Dicas contextuais no checklist))
+        UC074((UC-074 Alternativa de personalização))
+        UC075((UC-075 Salvar e ajustar roteiro))
+        UC076((UC-076 Alerta de item vinculado a atração inativa))
+        UC078((UC-078 Revogar link público de lista))
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC023 & UC024 & UC025 & UC026 & UC027 & UC028 & UC029
-    V --- UC041 & UC062 & UC063 & UC082 & UC083 & UC084 & UC086
-    MAP --- UC026
+    V --- UC014 & UC015 & UC016 & UC017 & UC018 & UC019 & UC020
+    V --- UC032 & UC054 & UC055 & UC074 & UC075 & UC076 & UC078
+    MAP --- UC017
 
     %% Relações Include
-    UC026 -.->|include| UC083
+    UC017 -.->|include| UC075
 
     %% Relações Extend
-    UC082 -.->|extend| UC023
-    UC082 -.->|extend| UC024
-    UC082 -.->|extend| UC025
-    UC084 -.->|extend| UC029
-    UC063 -.->|extend| UC029
-    UC086 -.->|extend| UC041
+    UC074 -.->|extend| UC014
+    UC074 -.->|extend| UC015
+    UC074 -.->|extend| UC016
+    UC076 -.->|extend| UC020
+    UC055 -.->|extend| UC020
+    UC078 -.->|extend| UC032
 ```
 
 ---
 
-## 9. Social, enquetes, transporte e compartilhamento
+## 7. Social, enquetes, transporte e compartilhamento
 ```mermaid
 flowchart LR
     %% Atores
@@ -318,28 +261,28 @@ flowchart LR
     %% Fronteira
     subgraph CC [Cariri Cultural]
         direction TB
-        UC038((UC-038 Criar e compartilhar enquete))
-        UC039((UC-039 Transporte alternativo parceiro))
-        UC085((UC-085 Votar em enquete))
-        UC087((UC-087 Acionar contato de transporte parceiro))
-        UC089((UC-089 Compartilhar perfil de local ou evento))
+        UC029((UC-029 Criar e compartilhar enquete))
+        UC030((UC-030 Transporte alternativo parceiro))
+        UC077((UC-077 Votar em enquete))
+        UC079((UC-079 Acionar contato de transporte parceiro))
+        UC033((UC-033 Compartilhar perfil de local ou evento))
     end
 
     %% Relações Ator -> Caso de Uso
-    V --- UC039 & UC087 & UC038 & UC089
-    VA --- UC085
-    TP --- UC039 & UC087
+    V --- UC030 & UC079 & UC029 & UC033
+    VA --- UC077
+    TP --- UC030 & UC079
 
     %% Relações Include / Extend
-    UC038 -.->|include| UC085
-    UC087 -.->|extend| UC039
+    UC029 -.->|include| UC077
+    UC079 -.->|extend| UC030
 ```
 
 ---
 
-## 10. Hipótese administrativa — equipamentos culturais e atrações
+## 8. Hipótese administrativa — equipamentos culturais e atrações
 > [!WARNING]
-> Os diagramas 10 a 13 modelam **hipóteses verificáveis**. O núcleo de cadastro administrativo (RF-042, RF-044, RF-046 a RF-048, RF-050 e RF-051) já integra a entrega atual; os demais casos do Épico 8 (RF-049 e RF-052 a RF-058) e a totalidade dos Épicos 11 a 13 permanecem fora dela. Em todos os casos, os fluxos e telas administrativas ainda dependem de validação com os futuros stakeholders administrativos.
+> Os diagramas 8 a 11 modelam **hipóteses verificáveis**. O núcleo de cadastro administrativo (UC-034, UC-036, UC-038 a UC-040, UC-042 e UC-043) já integra a entrega atual; os demais casos do Épico 8 (UC-041 e UC-044 a UC-050) e a totalidade dos Épicos 11 a 13 permanecem fora dela. Em todos os casos, os fluxos e telas administrativas ainda dependem de validação com os futuros stakeholders administrativos.
 
 ```mermaid
 flowchart LR
@@ -350,42 +293,42 @@ flowchart LR
 
     subgraph CC [Cariri Cultural — equipamentos e atrações]
         direction TB
-        UC042((UC-042 Cadastrar equipamento cultural))
-        UC043((UC-043 Editar equipamento cultural))
-        UC044((UC-044 Consultar equipamento cultural))
-        UC045((UC-045 Associar administrador a equipamento))
-        UC046((UC-046 Autenticar administrador))
-        UC047((UC-047 Cadastrar atração))
-        UC048((UC-048 Editar atração))
-        UC049((UC-049 Remover atração))
-        UC050((UC-050 Consultar atrações cadastradas))
+        UC034((UC-034 Cadastrar equipamento cultural))
+        UC035((UC-035 Editar equipamento cultural))
+        UC036((UC-036 Consultar equipamento cultural))
+        UC037((UC-037 Associar administrador a equipamento))
+        UC038((UC-038 Autenticar administrador))
+        UC039((UC-039 Cadastrar atração))
+        UC040((UC-040 Editar atração))
+        UC041((UC-041 Remover atração))
+        UC042((UC-042 Consultar atrações cadastradas))
 
-        %% Nós convidados: extensões vindas dos diagramas 6 e 9
-        UC088((UC-088 Sinalizar e acompanhar<br/>dado incorreto))
-        UC089((UC-089 Compartilhar perfil<br/>de local ou evento))
+        %% Nós convidados: extensões vindas dos diagramas 4 e 7
+        UC080((UC-080 Sinalizar e acompanhar<br/>dado incorreto))
+        UC033((UC-033 Compartilhar perfil<br/>de local ou evento))
     end
 
     %% Relações Ator -> Caso de Uso
-    APL --- UC042 & UC043 & UC045
-    AEC --- UC046 & UC047 & UC048 & UC049
-    V --- UC044 & UC050 & UC088 & UC089
+    APL --- UC034 & UC035 & UC037
+    AEC --- UC038 & UC039 & UC040 & UC041
+    V --- UC036 & UC042 & UC080 & UC033
 
     %% Relações Include
-    UC042 -.->|include| UC046
-    UC043 -.->|include| UC046
-    UC045 -.->|include| UC046
-    UC047 -.->|include| UC046
-    UC048 -.->|include| UC046
-    UC049 -.->|include| UC046
+    UC034 -.->|include| UC038
+    UC035 -.->|include| UC038
+    UC037 -.->|include| UC038
+    UC039 -.->|include| UC038
+    UC040 -.->|include| UC038
+    UC041 -.->|include| UC038
 
     %% Relações Extend
-    UC088 -.->|extend| UC044 & UC050
-    UC089 -.->|extend| UC044 & UC050
+    UC080 -.->|extend| UC036 & UC042
+    UC033 -.->|extend| UC036 & UC042
 ```
 
 ---
 
-## 11. Hipótese administrativa — estabelecimentos, ofertas e publicações
+## 9. Hipótese administrativa — estabelecimentos, ofertas e publicações
 ```mermaid
 flowchart LR
     %% Atores
@@ -395,38 +338,38 @@ flowchart LR
 
     subgraph CC [Cariri Cultural — estabelecimentos e conteúdos]
         direction TB
-        UC046((UC-046 Autenticar administrador))
-        UC051((UC-051 Cadastrar estabelecimento gastronômico))
-        UC052((UC-052 Cadastrar oferta))
-        UC053((UC-053 Editar oferta))
-        UC054((UC-054 Remover oferta))
-        UC055((UC-055 Cadastrar publicação))
-        UC056((UC-056 Criar publicação vinculada a local))
-        UC057((UC-057 Editar publicação))
-        UC058((UC-058 Remover publicação))
+        UC038((UC-038 Autenticar administrador))
+        UC043((UC-043 Cadastrar estabelecimento gastronômico))
+        UC044((UC-044 Cadastrar oferta))
+        UC045((UC-045 Editar oferta))
+        UC046((UC-046 Remover oferta))
+        UC047((UC-047 Cadastrar publicação))
+        UC048((UC-048 Criar publicação vinculada a local))
+        UC049((UC-049 Editar publicação))
+        UC050((UC-050 Remover publicação))
     end
 
     %% Relações Ator -> Caso de Uso
-    APL --- UC051 & UC055
-    AEG --- UC052 & UC053 & UC054 & UC056 & UC057 & UC058
-    AEC --- UC056 & UC057 & UC058
+    APL --- UC043 & UC047
+    AEG --- UC044 & UC045 & UC046 & UC048 & UC049 & UC050
+    AEC --- UC048 & UC049 & UC050
 
     %% Relações Include
-    UC051 -.->|include| UC046
-    UC052 -.->|include| UC046
-    UC053 -.->|include| UC046
-    UC054 -.->|include| UC046
-    UC055 -.->|include| UC046
-    UC056 -.->|include| UC046
-    UC057 -.->|include| UC046
-    UC058 -.->|include| UC046
+    UC043 -.->|include| UC038
+    UC044 -.->|include| UC038
+    UC045 -.->|include| UC038
+    UC046 -.->|include| UC038
+    UC047 -.->|include| UC038
+    UC048 -.->|include| UC038
+    UC049 -.->|include| UC038
+    UC050 -.->|include| UC038
 ```
 
-> UC-046 é o mesmo caso do diagrama 10; aparece nos dois recortes porque é incluído por ações de escrita de ambos.
+> UC-038 é o mesmo caso do diagrama 8; aparece nos dois recortes porque é incluído por ações de escrita de ambos.
 
 ---
 
-## 12. Gestão de estabelecimentos — painel e indicadores
+## 10. Gestão de estabelecimentos — painel e indicadores
 ```mermaid
 flowchart LR
     %% Atores
@@ -434,24 +377,24 @@ flowchart LR
 
     subgraph CC [Cariri Cultural — painel do Gestor]
         direction TB
-        UC064((UC-064 Painel de métricas do estabelecimento))
-        UC065((UC-065 Feed de atividades recentes))
-        UC066((UC-066 Responder publicamente a avaliação))
-        UC067((UC-067 Visualizar página pública))
-        UC068((UC-068 Indicadores de desempenho))
-        UC069((UC-069 Mapa de origem dos visitantes))
+        UC056((UC-056 Painel de métricas do estabelecimento))
+        UC057((UC-057 Feed de atividades recentes))
+        UC058((UC-058 Responder publicamente a avaliação))
+        UC059((UC-059 Visualizar página pública))
+        UC060((UC-060 Indicadores de desempenho))
+        UC061((UC-061 Mapa de origem dos visitantes))
     end
 
     %% Relações Ator -> Caso de Uso
-    G --- UC064 & UC065 & UC066 & UC067 & UC068 & UC069
+    G --- UC056 & UC057 & UC058 & UC059 & UC060 & UC061
 
     %% Relações Extend
-    UC067 -.->|extend| UC064
+    UC059 -.->|extend| UC056
 ```
 
 ---
 
-## 13. Perfil, sessão e navegação global
+## 11. Perfil, sessão e navegação global
 ```mermaid
 flowchart LR
     %% Atores
@@ -460,18 +403,18 @@ flowchart LR
 
     subgraph CC [Cariri Cultural — perfil e navegação]
         direction TB
-        UC070((UC-070 Alternar modos Explorador e Gestor))
-        UC071((UC-071 Nível de parceria na plataforma))
-        UC072((UC-072 Certificações e qualificações))
-        UC073((UC-073 Encerrar sessões ativas))
-        UC074((UC-074 Barra inferior do Explorador))
-        UC075((UC-075 Barra inferior do Gestor))
-        UC076((UC-076 Cabeçalho contextual da tela))
+        UC062((UC-062 Alternar modos Explorador e Gestor))
+        UC063((UC-063 Nível de parceria na plataforma))
+        UC064((UC-064 Certificações e qualificações))
+        UC065((UC-065 Encerrar sessões ativas))
+        UC066((UC-066 Barra inferior do Explorador))
+        UC067((UC-067 Barra inferior do Gestor))
+        UC068((UC-068 Cabeçalho contextual da tela))
     end
 
     %% Relações Ator -> Caso de Uso
-    G --- UC070 & UC071 & UC072 & UC075
-    V --- UC073 & UC074 & UC076
+    G --- UC062 & UC063 & UC064 & UC067
+    V --- UC065 & UC066 & UC068
 ```
 
 ---

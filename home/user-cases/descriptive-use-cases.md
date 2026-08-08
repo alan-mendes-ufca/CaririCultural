@@ -1,40 +1,6 @@
 ---
 title: Casos de Uso Descritivos
----
-
-- Cada caso de uso corresponde a exatamente uma história de usuário, e a numeração é posicional: **UC-0NN detalha a HU-0NN**. A base atual tem **89 histórias de usuário e 89 casos de uso**.
-- O identificador de cada caso permite localizar a história de origem sem consulta intermediária: [UC-004](#UC-004) detalha [HU-004](home/user-storys#HU-004), [UC-047](#UC-047) detalha [HU-047](home/user-storys#HU-047), e assim por diante.
-- Os requisitos funcionais e as regras de negócio de cada caso são os já registrados para a história correspondente na [matriz de rastreabilidade](home/traceability-matrix).
----
-
-## Priorização de Casos de Uso
-
-- **Must have**: necessário na linha de base atual.
-- **Should have**: importante, mas pode entrar depois do núcleo essencial.
-- **Could have**: desejável se houver capacidade.
-- **Won't have nesta entrega**: não integra a versão de entrega atual; não significa baixa importância futura.
-
-| Épico | Casos de uso | Must | Should | Could | Won't | Situação |
-|-------|--------------|------|--------|-------|-------|----------|
-| 1. Exploração e Descoberta | UC-001 a UC-005 | 3 | 2 | — | — | Linha de base |
-| 2. Informações e Detalhes do Local | UC-006 a UC-020 | 9 | 6 | — | — | Linha de base |
-| 3. Avaliações e Comunidade | UC-021, UC-022 | 2 | — | — | — | Linha de base |
-| 4. Recomendações Personalizadas | UC-023 a UC-026 | 1 | 2 | 1 | — | Linha de base |
-| 5. Organização Pessoal e Roteiros | UC-027 a UC-029 | 2 | 1 | — | — | Linha de base |
-| 6. Assistente Virtual (Chatbot) | UC-030 a UC-037 | 4 | 3 | 1 | — | Linha de base |
-| 7. Interações Sociais e Compartilhamento | UC-038 a UC-041, UC-089 | — | 2 | 3 | — | Linha de base |
-| 8. Equipamentos Culturais e Estabelecimentos | UC-042 a UC-058 | 6 | 3 | — | 8 | Hipótese de escopo administrativo |
-| 9. Avaliações e Comunidade (Protótipo) | UC-059 a UC-061 | — | 2 | 1 | — | Hipótese derivada do protótipo |
-| 10. Organização Pessoal e Gamificação (Protótipo) | UC-062, UC-063 | — | — | 2 | — | Hipótese derivada do protótipo |
-| 11. Gestão de Estabelecimentos (Protótipo) | UC-064 a UC-069 | — | 3 | 3 | — | Hipótese derivada do protótipo |
-| 12. Perfil, Autenticação e Parceria (Protótipo) | UC-070 a UC-073 | — | 1 | 2 | 1 | Hipótese derivada do protótipo |
-| 13. Navegação e Interface Global (Protótipo) | UC-074 a UC-076 | — | 3 | — | — | Hipótese derivada do protótipo |
-| 14. Fluxos de Uso em Validação | UC-077 a UC-088 | 5 | 5 | 2 | — | Hipótese derivada do caso de uso |
-| **Total** | **89 casos** | **32** | **33** | **15** | **9** | — |
-
-> A priorização acima está compatível com a priorização de requisitos e com a das histórias de usuário.
-
----
+--- 
 
 ## Épico 1: Exploração e Descoberta
 
@@ -119,7 +85,7 @@ title: Casos de Uso Descritivos
 **Fluxo principal**
 
 1. O visitante escolhe a opção "pouco divulgados" na exploração.
-2. O sistema aplica o critério de avaliação e visitas para identificar locais elegíveis.
+2. O sistema aplica o critério de avaliação (RN-077) e visitas para identificar locais elegíveis.
 3. O sistema exibe a lista.
 4. O visitante seleciona um item para consultar detalhes.
 
@@ -143,13 +109,13 @@ title: Casos de Uso Descritivos
 | RF | [RF-004](home/functional-requirements#RF-004), [RF-005](home/functional-requirements#RF-005). |
 | RN | [RN-003](home/business-rules#RN-003), [RN-009](home/business-rules#RN-009), [RN-010](home/business-rules#RN-010). |
 | Rastreabilidade | [Linha TM-HU-004](home/traceability-matrix#TM-HU-004). |
-| Tipo de relação | `<<include>>` de [UC-077](#UC-077) (validar parâmetros de busca). |
-| Pontos de extensão | [UC-078](#UC-078) (busca por proximidade) estende este caso quando o visitante opta por ordenar os resultados por proximidade. |
+| Tipo de relação | `<<include>>` de [UC-069](#UC-069) (validar parâmetros de busca). |
+| Pontos de extensão | [UC-070](#UC-070) (busca por proximidade) estende este caso quando o visitante opta por ordenar os resultados por proximidade. |
 
 **Fluxo principal**
 
 1. O visitante informa um termo de busca.
-2. O sistema executa [UC-077](#UC-077) para validar o parâmetro informado.
+2. O sistema executa [UC-069](#UC-069) para validar o parâmetro informado.
 3. O sistema pesquisa nome, palavras-chave, categoria e cidade.
 4. O sistema exibe os resultados encontrados.
 5. O visitante seleciona um resultado.
@@ -178,122 +144,78 @@ title: Casos de Uso Descritivos
 | RF | [RF-006](home/functional-requirements#RF-006). |
 | RN | [RN-004](home/business-rules#RN-004), [RN-005](home/business-rules#RN-005). |
 | Rastreabilidade | [Linha TM-HU-005](home/traceability-matrix#TM-HU-005). |
-| Tipo de relação | `<<include>>` de [UC-077](#UC-077) (validar parâmetros de busca). |
-| Pontos de extensão | [UC-078](#UC-078) (busca por proximidade) estende este caso quando o visitante opta por ordenar os resultados por proximidade. |
+| Tipo de relação | `<<include>>` de [UC-069](#UC-069) (validar parâmetros de busca). |
+| Pontos de extensão | [UC-070](#UC-070) (busca por proximidade) estende este caso quando o visitante opta por ordenar os resultados por proximidade. |
 
 **Fluxo principal**
 
-1. O visitante escolhe categoria e/ou perfil de público desejado.
-2. O sistema executa [UC-077](#UC-077) para validar os valores informados.
+1. O visitante escolhe categoria e/ou perfil de público.
+2. O sistema executa [UC-069](#UC-069) para validar os valores informados.
 3. O sistema aplica os filtros sobre o catálogo.
 4. O sistema exibe os resultados e os filtros aplicados.
 
 **Fluxos alternativos**
 
-- A1 — O visitante altera ou remove filtros e a pesquisa é refeita.
+- A1 — O visitante altera ou remove filtros, assim a pesquisa é refeita com os filtros atualizados.
 
 **Fluxos de exceção**
 
-- E1 — Valor de filtro inválido: o sistema oferece apenas valores aprovados (tratamento detalhado em [UC-077](#UC-077)).
+- E1 — Valor de filtro inválido: o sistema oferece apenas valores aprovados (tratamento detalhado em [UC-069](#UC-069)).
 
 ---
 
 ## Épico 2: Informações e Detalhes do Local
 
-### <a id="UC-006"></a>UC-006 — Consultar fotos, mídias e características do ambiente
+### <a id="UC-006"></a>UC-006 — Consultar perfil do local
 
 | Campo | Especificação |
 |-------|---------------|
-| Objetivo | Conhecer o espaço do local antes da visita e avaliar se combina com a ocasião. |
+| Objetivo | Avaliar se um local atende à necessidade da visita, consultando em um único perfil suas características de ambiente, funcionamento, custos, regras, segurança e adequação de público. |
 | Prioridade | Must have. |
 | Ator principal | Visitante. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Fotos, mídias e características do ambiente são exibidas. |
-| HU | [HU-006](home/user-storys#HU-006). |
-| RF | [RF-007](home/functional-requirements#RF-007), [RF-008](home/functional-requirements#RF-008). |
-| RN | [RN-011](home/business-rules#RN-011), [RN-012](home/business-rules#RN-012), [RN-014](home/business-rules#RN-014), [RN-015](home/business-rules#RN-015), [RN-016](home/business-rules#RN-016). |
-| Rastreabilidade | [Linha TM-HU-006](home/traceability-matrix#TM-HU-006). |
-| Pontos de extensão | [UC-088](#UC-088) (sinalizar dado incorreto) e [UC-089](#UC-089) (compartilhar) estendem este caso. |
+| Pré-condições | Local publicado e visível, atendendo às condições de publicação (RN-068). |
+| Pós-condições | Perfil do local é exibido com fonte e data de verificação nos dados sensíveis à atualização; o visitante pode aprofundar em localização, agenda ou contato. |
+| HU | [HU-006](home/user-storys#HU-006), [HU-007](home/user-storys#HU-007), [HU-008](home/user-storys#HU-008), [HU-010](home/user-storys#HU-010), [HU-012](home/user-storys#HU-012), [HU-013](home/user-storys#HU-013), [HU-019](home/user-storys#HU-019), [HU-020](home/user-storys#HU-020). |
+| RF | [RF-007](home/functional-requirements#RF-007), [RF-008](home/functional-requirements#RF-008), [RF-009](home/functional-requirements#RF-009), [RF-010](home/functional-requirements#RF-010), [RF-012](home/functional-requirements#RF-012), [RF-014](home/functional-requirements#RF-014), [RF-015](home/functional-requirements#RF-015), [RF-019](home/functional-requirements#RF-019), [RF-020](home/functional-requirements#RF-020), [RF-036](home/functional-requirements#RF-036). |
+| RN | [RN-011](home/business-rules#RN-011), [RN-012](home/business-rules#RN-012), [RN-013](home/business-rules#RN-013), [RN-014](home/business-rules#RN-014), [RN-015](home/business-rules#RN-015), [RN-016](home/business-rules#RN-016), [RN-017](home/business-rules#RN-017), [RN-018](home/business-rules#RN-018), [RN-019](home/business-rules#RN-019), [RN-021](home/business-rules#RN-021), [RN-027](home/business-rules#RN-027), [RN-028](home/business-rules#RN-028), [RN-068](home/business-rules#RN-068). |
+| Rastreabilidade | [TM-HU-006](home/traceability-matrix#TM-HU-006), [TM-HU-007](home/traceability-matrix#TM-HU-007), [TM-HU-008](home/traceability-matrix#TM-HU-008), [TM-HU-010](home/traceability-matrix#TM-HU-010), [TM-HU-012](home/traceability-matrix#TM-HU-012), [TM-HU-013](home/traceability-matrix#TM-HU-013), [TM-HU-019](home/traceability-matrix#TM-HU-019), [TM-HU-020](home/traceability-matrix#TM-HU-020). |
+| Tipo de relação | Inclui [UC-071](#UC-071) — a procedência é apurada uma única vez para o conjunto de dados sensíveis do perfil. |
+| Pontos de extensão | [UC-080](#UC-080) (sinalizar dado incorreto) e [UC-033](#UC-033) (compartilhar) estendem este caso. |
 
 **Fluxo principal**
 
-1. O visitante abre a página de um local.
-2. O sistema apresenta a descrição, categoria, tipo de experiência e as características do ambiente.
-3. O sistema exibe fotos reais vinculadas ao local.
-4. O visitante amplia as imagens ou navega entre elas.
-
-**Fluxos de exceção**
-
-- E1 — Cadastro não atende aos dados mínimos: o local não é publicado.
-
----
-
-### <a id="UC-007"></a>UC-007 — Consultar horários e status de funcionamento
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Planejar a visita sem risco de encontrar o local fechado, inclusive em relação a opções de funcionamento noturno. |
-| Prioridade | Must have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Horário e status de funcionamento são exibidos, com fonte e data de verificação quando aplicável. |
-| HU | [HU-007](home/user-storys#HU-007). |
-| RF | [RF-009](home/functional-requirements#RF-009). |
-| RN | [RN-013](home/business-rules#RN-013), [RN-021](home/business-rules#RN-021). |
-| Rastreabilidade | [Linha TM-HU-007](home/traceability-matrix#TM-HU-007). |
-| Tipo de relação | `<<include>>` de [UC-079](#UC-079) (consultar procedência do dado e abrir canal externo). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta os horários de funcionamento e o status atual (aberto/fechado).
-3. O sistema executa [UC-079](#UC-079) para identificar a fonte e a data da última verificação.
-4. O visitante consulta as informações antes de decidir a visita.
+1. O visitante abre a página de um local a partir do catálogo, da busca ou de um resultado filtrado.
+2. O sistema verifica se o cadastro atende às condições de publicação (RN-068).
+3. O sistema inclui [UC-071](#UC-071) para identificar fonte e data da última verificação dos dados sensíveis à atualização exibidos no perfil.
+4. O sistema apresenta o perfil consolidado do local, contendo:
+   - descrição, categoria, tipo de experiência e características do ambiente (RN-068);
+   - fotos e mídias reais vinculadas ao local (RN-014, RN-015, RN-016);
+   - horários de funcionamento e status atual, aberto ou fechado (RN-013, RN-021);
+   - cardápio ou descrição de produtos, faixa de preços, taxas e couvert artístico quando aplicável (RN-011, RN-028);
+   - formato de atendimento do estabelecimento (RN-011, RN-028);
+   - regras e políticas do local: itens permitidos e proibidos, restrições de entrada e condições especiais (RN-027);
+   - informações de segurança do local (RN-019);
+   - recursos de acessibilidade (RN-017);
+   - indicação de adequação ao público infantil (RN-018).
+5. O visitante navega pelo perfil, navegando entre as imagens ou expandindo as seções de interesse.
 
 **Fluxos alternativos**
 
-- A1 — Feriado ou horário especial: o status usa a programação excepcional cadastrada.
+- A1 — Feriado ou horário especial cadastrado: o status de funcionamento passa a refletir a programação excepcional em vez do horário regular.
+- A2 — O visitante identifica um dado incorreto: aciona a extensão [UC-080](#UC-080), sem precisar publicar uma avaliação.
+- A3 — O visitante deseja compartilhar o local: aciona a extensão [UC-033](#UC-033).
+- A4 — O visitante quer aprofundar em deslocamento, agenda ou contato: segue para [UC-007](#UC-007), [UC-009](#UC-009) ou [UC-010](#UC-010).
 
 **Fluxos de exceção**
 
-- E1 — Dado desatualizado ou não verificado: o sistema sinaliza a limitação.
+- E1 — Cadastro não atende aos dados mínimos exigidos para o tipo de local: o local não é publicado e o perfil não é exibido (RN-068).
+- E2 — Dado sensível desatualizado ou ainda não verificado: o sistema sinaliza a limitação sem ocultar a informação, conforme [UC-071](#UC-071).
+- E3 — Uma mídia não pode ser carregada: as demais mídias e o conteúdo textual do perfil permanecem disponíveis.
 
 ---
 
-### <a id="UC-008"></a>UC-008 — Consultar cardápio, faixa de preços e taxas
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Planejar os gastos antes da visita, consultando cardápio, faixa de preços, taxas e couvert artístico quando aplicável. |
-| Prioridade | Must have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Cardápio, faixa de preços, taxas e couvert artístico (quando aplicável) são exibidos, com fonte e data de verificação. |
-| HU | [HU-008](home/user-storys#HU-008). |
-| RF | [RF-010](home/functional-requirements#RF-010). |
-| RN | [RN-011](home/business-rules#RN-011), [RN-028](home/business-rules#RN-028). |
-| Rastreabilidade | [Linha TM-HU-008](home/traceability-matrix#TM-HU-008). |
-| Tipo de relação | `<<include>>` de [UC-079](#UC-079). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta o cardápio, a faixa de preços, taxas e couvert artístico quando aplicável.
-3. O sistema executa [UC-079](#UC-079) para identificar a fonte e a data da última verificação.
-4. O visitante consulta as informações financeiras antes de decidir a visita.
-
-**Fluxos de exceção**
-
-- E1 — Dado desatualizado ou não verificado: o sistema sinaliza a limitação.
-
----
-
-### <a id="UC-009"></a>UC-009 — Consultar localização, acesso e opções de transporte
+### <a id="UC-007"></a>UC-007 — Consultar localização, acesso e opções de transporte
 
 | Campo | Especificação |
 |-------|---------------|
@@ -307,15 +229,16 @@ title: Casos de Uso Descritivos
 | RF | [RF-011](home/functional-requirements#RF-011). |
 | RN | [RN-012](home/business-rules#RN-012). |
 | Rastreabilidade | [Linha TM-HU-009](home/traceability-matrix#TM-HU-009). |
-| Tipo de relação | `<<include>>` de [UC-079](#UC-079). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
+| Tipo de relação | `<<include>>` de [UC-071](#UC-071). |
+| Pontos de extensão | [UC-080](#UC-080) e [UC-033](#UC-033) estendem este caso. |
 
 **Fluxo principal**
 
 1. O visitante abre a página de um local.
-2. O sistema apresenta localização, perfil do bairro, formas de acesso e distância a pé.
-3. O sistema consulta o Serviço de Mapas e Transportes para calcular trajeto e opções de transporte.
-4. O sistema executa [UC-079](#UC-079) para identificar a fonte e a data da última verificação.
+2. O sistema busca as informações necessárias para exibir sobre o local.
+3. O sistema executa [UC-071](#UC-071) para identificar a fonte e a data da última verificação.
+4. O sistema apresenta localização, perfil do bairro, formas de acesso e distância a pé.
+5. O sistema consulta o Serviço de Mapas e Transportes para calcular trajeto e opções de transporte.
 5. O visitante pode abrir o trajeto no serviço externo.
 
 **Fluxos alternativos**
@@ -328,121 +251,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-010"></a>UC-010 — Consultar informações de segurança do local
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Visitar o destino com mais confiança, conhecendo previamente as informações de segurança do local. |
-| Prioridade | Must have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Informações de segurança do local são exibidas. |
-| HU | [HU-010](home/user-storys#HU-010). |
-| RF | [RF-012](home/functional-requirements#RF-012). |
-| RN | [RN-019](home/business-rules#RN-019). |
-| Rastreabilidade | [Linha TM-HU-010](home/traceability-matrix#TM-HU-010). |
-| Tipo de relação | `<<include>>` de [UC-079](#UC-079). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta as informações de segurança cadastradas.
-3. O sistema executa [UC-079](#UC-079) para identificar a fonte e a data da última verificação.
-
-**Fluxos de exceção**
-
-- E1 — Dado desatualizado ou não verificado: o sistema sinaliza a limitação.
-
----
-
-### <a id="UC-011"></a>UC-011 — Consultar condições de higiene do local
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Avaliar as condições de uso do local antes da visita, consultando informações de higiene. |
-| Prioridade | Should have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Informações de higiene do local são exibidas. |
-| HU | [HU-011](home/user-storys#HU-011). |
-| RF | [RF-013](home/functional-requirements#RF-013). |
-| RN | [RN-020](home/business-rules#RN-020). |
-| Rastreabilidade | [Linha TM-HU-011](home/traceability-matrix#TM-HU-011). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta as informações de higiene cadastradas.
-3. O visitante consulta o conteúdo antes de decidir a visita.
-
-**Fluxos de exceção**
-
-- E1 — Cadastro não atende aos dados mínimos: o local não é publicado.
-
----
-
-### <a id="UC-012"></a>UC-012 — Consultar recursos de acessibilidade
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Verificar se o local atende às necessidades de acessibilidade do visitante. |
-| Prioridade | Must have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Recursos de acessibilidade do local são exibidos. |
-| HU | [HU-012](home/user-storys#HU-012). |
-| RF | [RF-014](home/functional-requirements#RF-014). |
-| RN | [RN-017](home/business-rules#RN-017). |
-| Rastreabilidade | [Linha TM-HU-012](home/traceability-matrix#TM-HU-012). |
-| Tipo de relação | `<<include>>` de [UC-079](#UC-079). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta os recursos de acessibilidade cadastrados.
-3. O sistema executa [UC-079](#UC-079) para identificar a fonte e a data da última verificação.
-
-**Fluxos de exceção**
-
-- E1 — Dado desatualizado ou não verificado: o sistema sinaliza a limitação.
-
----
-
-### <a id="UC-013"></a>UC-013 — Consultar adequação ao público infantil
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Planejar o passeio com mais segurança, verificando se o local é adequado ao público infantil. |
-| Prioridade | Should have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Indicação de adequação ao público infantil é exibida. |
-| HU | [HU-013](home/user-storys#HU-013). |
-| RF | [RF-015](home/functional-requirements#RF-015). |
-| RN | [RN-018](home/business-rules#RN-018). |
-| Rastreabilidade | [Linha TM-HU-013](home/traceability-matrix#TM-HU-013). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta a indicação de adequação ao público infantil.
-3. O visitante consulta o conteúdo antes de decidir a visita.
-
-**Fluxos de exceção**
-
-- E1 — Cadastro não atende aos dados mínimos: o local não é publicado.
-
----
-
-### <a id="UC-014"></a>UC-014 — Consultar calendário e programação de eventos
+### <a id="UC-009"></a>UC-009 — Consultar calendário e programação de eventos
 
 | Campo | Especificação |
 |-------|---------------|
@@ -456,16 +265,16 @@ title: Casos de Uso Descritivos
 | RF | [RF-016](home/functional-requirements#RF-016). |
 | RN | [RN-012](home/business-rules#RN-012). |
 | Rastreabilidade | [Linha TM-HU-014](home/traceability-matrix#TM-HU-014). |
-| Tipo de relação | `<<include>>` de [UC-079](#UC-079). |
-| Pontos de extensão | [UC-080](#UC-080) (filtrar agenda por data e ciclo de vida) estende este caso; [UC-088](#UC-088) e [UC-089](#UC-089) também estendem este caso. |
+| Tipo de relação | `<<include>>` de [UC-071](#UC-071). |
+| Pontos de extensão | [UC-072](#UC-072) (filtrar agenda por data e ciclo de vida) estende este caso; [UC-080](#UC-080) e [UC-033](#UC-033) também estendem este caso. |
 
 **Fluxo principal**
 
 1. O visitante abre a agenda de um local ou evento.
 2. O sistema lista os eventos e a programação pública.
 3. O visitante escolhe um item.
-4. O sistema exibe descrição, data, horário, local e programação musical associada.
-5. O sistema executa [UC-079](#UC-079) para identificar a fonte e a data da última verificação.
+4. O sistema executa [UC-071](#UC-071) para identificar a fonte e a data da última verificação.
+5. O sistema exibe descrição, data, horário, local e programação musical associada.
 
 **Fluxos de exceção**
 
@@ -473,177 +282,41 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-015"></a>UC-015 — Consultar canais de contato do estabelecimento
+### <a id="UC-010"></a>UC-010 — Acessar canais de contato e redes sociais
 
 | Campo | Especificação |
 |-------|---------------|
-| Objetivo | Confirmar informações importantes diretamente com o estabelecimento, por meio de canais de contato atualizados. |
+| Objetivo | Confirmar informações diretamente com o estabelecimento e acompanhar suas atualizações, acessando canais de contato e perfis públicos de redes sociais. |
 | Prioridade | Must have. |
 | Ator principal | Visitante. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Canais de contato atualizados são exibidos. |
-| HU | [HU-015](home/user-storys#HU-015). |
-| RF | [RF-017](home/functional-requirements#RF-017). |
+| Pré-condições | Local publicado e visível; ao menos um canal de contato ou perfil de rede social cadastrado. |
+| Pós-condições | Canais de contato e links de redes sociais são exibidos e o canal escolhido é aberto externamente após ação do visitante. |
+| HU | [HU-015](home/user-storys#HU-015), [HU-017](home/user-storys#HU-017). |
+| RF | [RF-017](home/functional-requirements#RF-017), [RF-035](home/functional-requirements#RF-035). |
 | RN | [RN-024](home/business-rules#RN-024). |
-| Rastreabilidade | [Linha TM-HU-015](home/traceability-matrix#TM-HU-015). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
+| Rastreabilidade | [TM-HU-015](home/traceability-matrix#TM-HU-015), [TM-HU-017](home/traceability-matrix#TM-HU-017). |
+| Tipo de relação | Inclui [UC-071](#UC-071) — contatos e perfis oficiais são dados sensíveis à atualização. |
+| Pontos de extensão | [UC-080](#UC-080) e [UC-033](#UC-033) estendem este caso. |
 
 **Fluxo principal**
 
-1. O visitante abre a página de um local.
-2. O sistema apresenta os canais de contato cadastrados.
-3. O visitante abre o canal externo escolhido.
+1. O visitante abre os canais de contato de um local.
+2. O sistema inclui [UC-071](#UC-071) para identificar fonte e data da última verificação dos canais.
+3. O sistema apresenta os canais de contato cadastrados e os links de perfis públicos em redes sociais.
+4. O visitante seleciona um canal.
+5. O sistema encaminha para o serviço externo somente após a ação do visitante.
 
 **Fluxos de exceção**
 
-- E1 — Canal indisponível: o sistema informa a situação sem garantir a disponibilidade externa.
+- E1 — O local não possui canal ou perfil público cadastrado: o sistema informa a ausência sem apresentar link inexistente.
+- E2 — Canal indisponível: o sistema informa a situação sem garantir a disponibilidade externa e sem expor detalhes técnicos.
 
 ---
 
-### <a id="UC-016"></a>UC-016 — Consultar informações históricas e culturais
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Enriquecer a experiência de visita acessando informações históricas, culturais e sociais relacionadas ao local. |
-| Prioridade | Should have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Informações históricas e culturais são exibidas. |
-| HU | [HU-016](home/user-storys#HU-016). |
-| RF | [RF-018](home/functional-requirements#RF-018). |
-| RN | [RN-025](home/business-rules#RN-025), [RN-026](home/business-rules#RN-026). |
-| Rastreabilidade | [Linha TM-HU-016](home/traceability-matrix#TM-HU-016). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta as informações históricas, culturais e sociais cadastradas.
-3. O visitante consulta o conteúdo para enriquecer sua experiência.
-
-**Fluxos de exceção**
-
-- E1 — Cadastro não atende aos dados mínimos: o local não é publicado.
-
----
-
-### <a id="UC-017"></a>UC-017 — Acessar links de redes sociais do local
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Acompanhar atualizações do local nos aplicativos de redes sociais que o visitante já utiliza. |
-| Prioridade | Must have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível; perfis de redes sociais cadastrados. |
-| Pós-condições | Links de redes sociais são exibidos e podem ser abertos externamente. |
-| HU | [HU-017](home/user-storys#HU-017). |
-| RF | [RF-035](home/functional-requirements#RF-035). |
-| RN | [RN-024](home/business-rules#RN-024). |
-| Rastreabilidade | [Linha TM-HU-017](home/traceability-matrix#TM-HU-017). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta os links de perfis públicos em redes sociais.
-3. O visitante seleciona um link.
-4. O sistema abre o serviço externo.
-
-**Fluxos de exceção**
-
-- E1 — Canal indisponível: o sistema informa a situação sem garantir a disponibilidade externa.
-
----
-
-### <a id="UC-018"></a>UC-018 — Consultar imagens do local na plataforma
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Consultar imagens do local diretamente na plataforma, sem precisar acessar sites externos. |
-| Prioridade | Should have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Imagens do local são exibidas. |
-| HU | [HU-018](home/user-storys#HU-018). |
-| RF | [RF-036](home/functional-requirements#RF-036). |
-| RN | [RN-014](home/business-rules#RN-014), [RN-015](home/business-rules#RN-015), [RN-016](home/business-rules#RN-016). |
-| Rastreabilidade | [Linha TM-HU-018](home/traceability-matrix#TM-HU-018). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta as imagens cadastradas do local.
-3. O visitante amplia ou navega entre as imagens.
-
-**Fluxos de exceção**
-
-- E1 — Cadastro não atende aos dados mínimos: o local não é publicado.
-
----
-
-### <a id="UC-019"></a>UC-019 — Consultar regras e políticas do local
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Chegar ao destino sem ser surpreendido por informações não divulgadas, consultando as regras e políticas do local. |
-| Prioridade | Should have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Regras e políticas do local (itens permitidos/proibidos, restrições de entrada e condições especiais) são exibidas. |
-| HU | [HU-019](home/user-storys#HU-019). |
-| RF | [RF-019](home/functional-requirements#RF-019). |
-| RN | [RN-027](home/business-rules#RN-027). |
-| Rastreabilidade | [Linha TM-HU-019](home/traceability-matrix#TM-HU-019). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta as regras e políticas cadastradas.
-3. O visitante consulta o conteúdo antes de decidir a visita.
-
-**Fluxos de exceção**
-
-- E1 — Cadastro não atende aos dados mínimos: o local não é publicado.
-
----
-
-### <a id="UC-020"></a>UC-020 — Consultar formato de serviço do estabelecimento
-
-| Campo | Especificação |
-|-------|---------------|
-| Objetivo | Não ser surpreendido pela dinâmica de atendimento do estabelecimento, consultando o formato de serviço previamente. |
-| Prioridade | Should have. |
-| Ator principal | Visitante. |
-| Atores secundários | Nenhum. |
-| Pré-condições | Local publicado e visível. |
-| Pós-condições | Formato de atendimento (mesa, self-service, rodízio com garçom, rodízio com fila, balcão, etc.) é exibido. |
-| HU | [HU-020](home/user-storys#HU-020). |
-| RF | [RF-020](home/functional-requirements#RF-020). |
-| RN | [RN-011](home/business-rules#RN-011), [RN-028](home/business-rules#RN-028). |
-| Rastreabilidade | [Linha TM-HU-020](home/traceability-matrix#TM-HU-020). |
-| Pontos de extensão | [UC-088](#UC-088) e [UC-089](#UC-089) estendem este caso. |
-
-**Fluxo principal**
-
-1. O visitante abre a página de um local.
-2. O sistema apresenta o formato de atendimento cadastrado.
-3. O visitante consulta o conteúdo antes de decidir a visita.
-
-**Fluxos de exceção**
-
-- E1 — Cadastro não atende aos dados mínimos: o local não é publicado.
-
----
 ## Épico 3: Avaliações e Comunidade
 
-### <a id="UC-021"></a>UC-021 — Consultar avaliações da comunidade
+### <a id="UC-012"></a>UC-012 — Consultar avaliações da comunidade
 
 | Campo | Especificação |
 |-------|---------------|
@@ -657,7 +330,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-021](home/functional-requirements#RF-021). |
 | RN | [RN-007](home/business-rules#RN-007), [RN-022](home/business-rules#RN-022), [RN-029](home/business-rules#RN-029), [RN-030](home/business-rules#RN-030), [RN-031](home/business-rules#RN-031), [RN-032](home/business-rules#RN-032), [RN-037](home/business-rules#RN-037), [RN-038](home/business-rules#RN-038). |
 | Rastreabilidade | [Linha TM-HU-021](home/traceability-matrix#TM-HU-021). |
-| Pontos de extensão | [UC-059](#UC-059), ao marcar uma avaliação como útil; [UC-060](#UC-060), ao compartilhar uma avaliação individual; [UC-040](#UC-040), quando existe mídia comunitária vinculada ao local. |
+| Pontos de extensão | [UC-051](#UC-051), ao marcar uma avaliação como útil; [UC-052](#UC-052), ao compartilhar uma avaliação individual; [UC-031](#UC-031), quando existe mídia comunitária vinculada ao local. |
 
 **Fluxo principal**
 
@@ -677,7 +350,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-022"></a>UC-022 — Publicar avaliação
+### <a id="UC-013"></a>UC-013 — Publicar avaliação
 
 | Campo | Especificação |
 |-------|---------------|
@@ -691,7 +364,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-022](home/functional-requirements#RF-022). |
 | RN | [RN-030](home/business-rules#RN-030), [RN-033](home/business-rules#RN-033), [RN-035](home/business-rules#RN-035), [RN-036](home/business-rules#RN-036), [RN-037](home/business-rules#RN-037). |
 | Rastreabilidade | [Linha TM-HU-022](home/traceability-matrix#TM-HU-022). |
-| Pontos de extensão | [UC-081](home/traceability-matrix#TM-HU-081), quando a sessão expira durante o preenchimento da avaliação. |
+| Pontos de extensão | [UC-073](home/traceability-matrix#TM-HU-081), quando a sessão expira durante o preenchimento da avaliação. |
 
 **Fluxo principal**
 
@@ -703,48 +376,53 @@ title: Casos de Uso Descritivos
 
 **Fluxos alternativos**
 
-- A1 — A avaliação contém mídia: o envio de arquivo segue as validações descritas em [UC-040](#UC-040).
-- A2 — O usuário também percebe um dado cadastral incorreto no mesmo local: essa ação é tratada separadamente pelo caso de sinalização de dado incorreto (UC-088, fora deste escopo), preservando a avaliação já preenchida.
+- A1 — A avaliação contém mídia: o envio de arquivo segue as validações descritas em [UC-031](#UC-031).
+- A2 — O usuário também percebe um dado cadastral incorreto no mesmo local: essa ação é tratada separadamente pelo caso de sinalização de dado incorreto (UC-080, fora deste escopo), preservando a avaliação já preenchida.
 
 **Fluxos de exceção**
 
 - E1 — Conteúdo viola regra grave: o sistema rejeita ou oculta a avaliação e informa o motivo aplicável.
-- E2 — Sessão expira durante o preenchimento: o caso aciona a extensão [UC-081](home/traceability-matrix#TM-HU-081), que preserva o conteúdo já preenchido e solicita nova autenticação antes de restaurá-lo.
+- E2 — Sessão expira durante o preenchimento: o caso aciona a extensão [UC-073](home/traceability-matrix#TM-HU-081), que preserva o conteúdo já preenchido e solicita nova autenticação antes de restaurá-lo.
 
 ---
 
 ## Épico 4: Recomendações Personalizadas
 
-### <a id="UC-023"></a>UC-023 — Receber recomendações por histórico de visitas
+- Como saber se o usuário visitou um local ou não? Perguntar se ele realizou a visita? Presumir interesse já que o usuário entou no perfil
+
+## Épico 4: Recomendações Personalizadas
+
+### <a id="UC-014"></a>UC-014 — Receber recomendações por interesse demonstrado
 
 | Campo | Especificação |
 |-------|---------------|
-| Objetivo | Encontrar locais semelhantes aos já conhecidos e apreciados, a partir do histórico de visitas do usuário. |
+| Objetivo | Encontrar locais semelhantes aos que o usuário demonstrou interesse, a partir do histórico de acessos a perfis de locais na plataforma. |
 | Prioridade | Should have. |
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Sessão válida; consentimento para uso do histórico de visitas. |
-| Pós-condições | Recomendações justificáveis pelo histórico são exibidas sem revelar dados de terceiros. |
+| Pré-condições | Sessão válida; consentimento explícito para uso do histórico de navegação/interesse para fins de recomendação. |
+| Pós-condições | Recomendações relacionadas aos interesses demonstrados são exibidas, identificadas como baseadas em interesse — não em visita confirmada —, sem revelar dados de terceiros. |
 | HU | [HU-023](home/user-storys#HU-023). |
 | RF | [RF-023](home/functional-requirements#RF-023). |
-| RN | [RN-039](home/business-rules#RN-039). |
+| RN | [RN-039](home/business-rules#RN-039) |
 | Rastreabilidade | [Linha TM-HU-023](home/traceability-matrix#TM-HU-023). |
-| Pontos de extensão | [UC-082](home/traceability-matrix#TM-HU-082), quando os dados de histórico são insuficientes para personalizar. |
+| Pontos de extensão | [UC-074](home/traceability-matrix#TM-HU-082), quando os dados de interesse são insuficientes para personalizar. |
 
 **Fluxo principal**
 
-1. O usuário acessa as recomendações baseadas em histórico.
-2. O sistema considera o histórico de visitas registrado e autorizado pelo usuário.
-3. O sistema calcula a compatibilidade com locais ainda não visitados, excluindo dados inválidos ou moderados.
-4. O sistema exibe os locais recomendados com base no histórico.
+1. O usuário acessa as recomendações baseadas em interesse.
+2. O sistema considera o histórico de acessos a perfis de locais, registrado e autorizado pelo usuário.
+3. O sistema calcula a compatibilidade com locais ainda não acessados, excluindo dados inválidos, moderados ou fora da janela de relevância temporal.
+4. O sistema exibe os locais recomendados, sinalizando de forma clara que a recomendação é baseada em interesse demonstrado.
 
 **Fluxos de exceção**
 
-- E1 — O usuário não autorizou o uso do histórico: esse histórico é ignorado e o caso aciona a alternativa especificada em [UC-082](home/traceability-matrix#TM-HU-082).
+- E1 — O usuário não autorizou o uso do histórico de navegação: esse histórico é ignorado e o caso aciona a alternativa especificada em [UC-074](home/traceability-matrix#TM-HU-082).
+- E2 — Volume de interações insuficiente para gerar recomendação confiável: o sistema aciona [UC-074](home/traceability-matrix#TM-HU-082) por dados insuficientes.
 
 ---
 
-### <a id="UC-024"></a>UC-024 — Receber recomendações por avaliações realizadas
+### <a id="UC-015"></a>UC-015 — Receber recomendações por avaliações realizadas
 
 | Campo | Especificação |
 |-------|---------------|
@@ -758,7 +436,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-024](home/functional-requirements#RF-024). |
 | RN | [RN-040](home/business-rules#RN-040), [RN-041](home/business-rules#RN-041). |
 | Rastreabilidade | [Linha TM-HU-024](home/traceability-matrix#TM-HU-024). |
-| Pontos de extensão | [UC-082](home/traceability-matrix#TM-HU-082), quando as avaliações disponíveis são insuficientes para personalizar. |
+| Pontos de extensão | [UC-074](home/traceability-matrix#TM-HU-082), quando as avaliações disponíveis são insuficientes para personalizar. |
 
 **Fluxo principal**
 
@@ -769,11 +447,11 @@ title: Casos de Uso Descritivos
 
 **Fluxos de exceção**
 
-- E1 — O usuário não possui avaliações suficientes: o caso aciona a alternativa especificada em [UC-082](home/traceability-matrix#TM-HU-082).
+- E1 — O usuário não possui avaliações suficientes: o caso aciona a alternativa especificada em [UC-074](home/traceability-matrix#TM-HU-082).
 
 ---
 
-### <a id="UC-025"></a>UC-025 — Receber recomendações por perfis similares
+### <a id="UC-016"></a>UC-016 — Receber recomendações por perfis similares
 
 | Campo | Especificação |
 |-------|---------------|
@@ -787,7 +465,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-025](home/functional-requirements#RF-025). |
 | RN | [RN-042](home/business-rules#RN-042). |
 | Rastreabilidade | [Linha TM-HU-025](home/traceability-matrix#TM-HU-025). |
-| Pontos de extensão | [UC-082](home/traceability-matrix#TM-HU-082), quando não há massa de usuários suficiente para personalizar. |
+| Pontos de extensão | [UC-074](home/traceability-matrix#TM-HU-082), quando não há massa de usuários suficiente para personalizar. |
 
 **Fluxo principal**
 
@@ -802,11 +480,11 @@ title: Casos de Uso Descritivos
 
 **Fluxos de exceção**
 
-- E1 — Massa de usuários insuficiente para comparação de perfis: o caso aciona a alternativa especificada em [UC-082](home/traceability-matrix#TM-HU-082).
+- E1 — Massa de usuários insuficiente para comparação de perfis: o caso aciona a alternativa especificada em [UC-074](home/traceability-matrix#TM-HU-082).
 
 ---
 
-### <a id="UC-026"></a>UC-026 — Gerar roteiro personalizado
+### <a id="UC-017"></a>UC-017 — Gerar roteiro personalizado
 
 | Campo | Especificação |
 |-------|---------------|
@@ -815,12 +493,12 @@ title: Casos de Uso Descritivos
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Serviço de Mapas e Transportes. |
 | Pré-condições | Sessão válida; preferências informadas; catálogo com locais elegíveis. |
-| Pós-condições | Roteiro é exibido e, por inclusão do UC-083, persistido para permitir ajustes posteriores. |
+| Pós-condições | Roteiro é exibido e, por inclusão do UC-075, persistido para permitir ajustes posteriores. |
 | HU | [HU-026](home/user-storys#HU-026). |
 | RF | [RF-026](home/functional-requirements#RF-026). |
 | RN | [RN-043](home/business-rules#RN-043), [RN-044](home/business-rules#RN-044), [RN-052](home/business-rules#RN-052), [RN-053](home/business-rules#RN-053). |
 | Rastreabilidade | [Linha TM-HU-026](home/traceability-matrix#TM-HU-026). |
-| Tipo de relação | `<<include>>` de UC-083 — o roteiro gerado é sempre persistido e recalculável. |
+| Tipo de relação | `<<include>>` de UC-075 — o roteiro gerado é sempre persistido e recalculável. |
 
 **Fluxo principal**
 
@@ -828,7 +506,7 @@ title: Casos de Uso Descritivos
 2. O sistema seleciona locais públicos com dados mínimos completos.
 3. O sistema considera distância, horários e status, apoiado pelo serviço de mapas e transportes.
 4. O sistema gera uma sequência de passeio ordenada.
-5. O sistema inclui o UC-083 para persistir o roteiro e permitir seu ajuste posterior pelo usuário.
+5. O sistema inclui o UC-075 para persistir o roteiro e permitir seu ajuste posterior pelo usuário.
 
 **Fluxos alternativos**
 
@@ -836,13 +514,13 @@ title: Casos de Uso Descritivos
 
 **Fluxos de exceção**
 
-- E1 — Não há combinação viável de locais para os critérios informados: o sistema explica as restrições identificadas e sugere flexibilizações antes de acionar o UC-083.
+- E1 — Não há combinação viável de locais para os critérios informados: o sistema explica as restrições identificadas e sugere flexibilizações antes de acionar o UC-075.
 
 ---
 
 ## Épico 5: Organização Pessoal e Roteiros
 
-### <a id="UC-027"></a>UC-027 — Gerenciar listas de locais desejados
+### <a id="UC-018"></a>UC-018 — Gerenciar listas de locais desejados
 
 | Campo | Especificação |
 |-------|---------------|
@@ -874,16 +552,16 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-028"></a>UC-028 — Registrar locais visitados
+### <a id="UC-019"></a>UC-019 — Registrar locais visitados (Histórico Pessoal)
 
 | Campo | Especificação |
 |-------|---------------|
-| Objetivo | Registrar experiências já vividas na região, marcando locais como visitados. |
+| Objetivo | Registrar, de forma pessoal e privada, experiências já vividas na região, marcando locais como visitados. |
 | Prioridade | Should have. |
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Nenhum. |
 | Pré-condições | Sessão válida; local existente. |
-| Pós-condições | Histórico pessoal é criado, alterado ou removido, sem alterar o cadastro público do local. |
+| Pós-condições | Histórico pessoal é criado, alterado ou removido, visível apenas ao próprio usuário, sem alterar o cadastro público do local. |
 | HU | [HU-028](home/user-storys#HU-028). |
 | RF | [RF-028](home/functional-requirements#RF-028). |
 | RN | [RN-047](home/business-rules#RN-047), [RN-048](home/business-rules#RN-048), [RN-049](home/business-rules#RN-049). |
@@ -906,7 +584,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-029"></a>UC-029 — Usar checklist de atividades e passeios
+### <a id="UC-020"></a>UC-020 — Usar checklist de atividades e passeios
 
 | Campo | Especificação |
 |-------|---------------|
@@ -920,7 +598,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-029](home/functional-requirements#RF-029). |
 | RN | [RN-050](home/business-rules#RN-050), [RN-051](home/business-rules#RN-051). |
 | Rastreabilidade | [Linha TM-HU-029](home/traceability-matrix#TM-HU-029). |
-| Pontos de extensão | [UC-084](home/traceability-matrix#TM-HU-084), quando um item está vinculado a atração inativa; [UC-063](home/traceability-matrix#TM-HU-063), quando há dica curada disponível para o local do item. |
+| Pontos de extensão | [UC-076](home/traceability-matrix#TM-HU-084), quando um item está vinculado a atração inativa; [UC-055](home/traceability-matrix#TM-HU-063), quando há dica curada disponível para o local do item. |
 
 **Fluxo principal**
 
@@ -930,7 +608,7 @@ title: Casos de Uso Descritivos
 
 **Fluxos alternativos**
 
-- A1 — O checklist é criado a partir de um roteiro personalizado gerado no [UC-026](#UC-026).
+- A1 — O checklist é criado a partir de um roteiro personalizado gerado no [UC-017](#UC-017).
 
 **Fluxos de exceção**
 
@@ -940,7 +618,7 @@ title: Casos de Uso Descritivos
 
 ## Épico 6: Assistente Virtual (Chatbot)
 
-### <a id="UC-030"></a>UC-030 — Consultar o assistente virtual
+### <a id="UC-021"></a>UC-021 — Consultar o assistente virtual
 
 | Campo | Especificação |
 |-------|---------------|
@@ -954,7 +632,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-030](home/functional-requirements#RF-030). |
 | RN | [RN-054](home/business-rules#RN-054), [RN-055](home/business-rules#RN-055). |
 | Rastreabilidade | [Linha TM-HU-030](home/traceability-matrix#TM-HU-030). |
-| Pontos de extensão | [UC-031](#UC-031), na interpretação de intenção; [UC-032](#UC-032), quando a informação é insuficiente; [UC-033](#UC-033), quando acionado a partir de uma página de local/evento; [UC-035](#UC-035), ao solicitar links de redes sociais; [UC-036](#UC-036), ao solicitar imagens do local; [UC-037](#UC-037), ao enviar a pergunta por áudio. |
+| Pontos de extensão | [UC-022](#UC-022), na interpretação de intenção; [UC-023](#UC-023), quando a informação é insuficiente; [UC-024](#UC-024), quando acionado a partir de uma página de local/evento; [UC-026](#UC-026), ao solicitar links de redes sociais; [UC-027](#UC-027), ao solicitar imagens do local; [UC-028](#UC-028), ao enviar a pergunta por áudio. |
 
 **Fluxo principal**
 
@@ -968,7 +646,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-031"></a>UC-031 — Receber resposta interpretada por intenção
+### <a id="UC-022"></a>UC-022 — Receber resposta interpretada por intenção
 
 | Campo | Especificação |
 |-------|---------------|
@@ -976,29 +654,29 @@ title: Casos de Uso Descritivos
 | Prioridade | Must have. |
 | Ator principal | Visitante. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Assistente disponível; pergunta enviada no UC-030. |
+| Pré-condições | Assistente disponível; pergunta enviada no UC-021. |
 | Pós-condições | Resposta considera a intenção identificada e o contexto atual da consulta. |
 | HU | [HU-031](home/user-storys#HU-031). |
 | RF | [RF-031](home/functional-requirements#RF-031). |
 | RN | [RN-054](home/business-rules#RN-054), [RN-055](home/business-rules#RN-055). |
 | Rastreabilidade | [Linha TM-HU-031](home/traceability-matrix#TM-HU-031). |
-| Tipo de relação | `<<extend>>` de [UC-030](#UC-030). |
+| Tipo de relação | `<<extend>>` de [UC-021](#UC-021). |
 | Condição de extensão | Toda pergunta enviada ao assistente passa por interpretação de intenção antes da resposta. |
 
 **Fluxo principal**
 
-1. O sistema recebe a pergunta enviada no [UC-030](#UC-030).
+1. O sistema recebe a pergunta enviada no [UC-021](#UC-021).
 2. O sistema interpreta a intenção subjacente à pergunta e o contexto atual da consulta.
 3. O sistema seleciona as informações mais pertinentes à intenção identificada.
 4. O sistema retorna a resposta interpretada ao visitante.
 
 **Fluxos de exceção**
 
-- E1 — A intenção não é identificada com confiança suficiente: o caso aciona a orientação alternativa especificada em [UC-032](#UC-032).
+- E1 — A intenção não é identificada com confiança suficiente: o caso aciona a orientação alternativa especificada em [UC-023](#UC-023).
 
 ---
 
-### <a id="UC-032"></a>UC-032 — Receber orientação alternativa do assistente
+### <a id="UC-023"></a>UC-023 — Receber orientação alternativa do assistente
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1012,7 +690,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-032](home/functional-requirements#RF-032). |
 | RN | [RN-056](home/business-rules#RN-056). |
 | Rastreabilidade | [Linha TM-HU-032](home/traceability-matrix#TM-HU-032). |
-| Tipo de relação | `<<extend>>` de [UC-030](#UC-030). |
+| Tipo de relação | `<<extend>>` de [UC-021](#UC-021). |
 | Condição de extensão | A pergunta enviada não obtém resposta satisfatória do assistente. |
 
 **Fluxo principal**
@@ -1027,7 +705,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-033"></a>UC-033 — Acionar o assistente com contexto da tela
+### <a id="UC-024"></a>UC-024 — Acionar o assistente com contexto da tela
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1041,7 +719,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-033](home/functional-requirements#RF-033). |
 | RN | [RN-057](home/business-rules#RN-057). |
 | Rastreabilidade | [Linha TM-HU-033](home/traceability-matrix#TM-HU-033). |
-| Tipo de relação | `<<extend>>` de [UC-030](#UC-030). |
+| Tipo de relação | `<<extend>>` de [UC-021](#UC-021). |
 | Condição de extensão | O visitante aciona o assistente a partir de uma página de local ou evento. |
 
 **Fluxo principal**
@@ -1057,7 +735,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-034"></a>UC-034 — Consultar dados atualizados por fonte externa
+### <a id="UC-025"></a>UC-025 — Consultar dados atualizados por fonte externa
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1085,7 +763,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-035"></a>UC-035 — Receber links de redes sociais pelo assistente
+### <a id="UC-026"></a>UC-026 — Receber links de redes sociais pelo assistente
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1099,7 +777,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-035](home/functional-requirements#RF-035). |
 | RN | [RN-024](home/business-rules#RN-024). |
 | Rastreabilidade | [Linha TM-HU-035](home/traceability-matrix#TM-HU-035). |
-| Tipo de relação | `<<extend>>` de [UC-030](#UC-030). |
+| Tipo de relação | `<<extend>>` de [UC-021](#UC-021). |
 | Condição de extensão | O visitante solicita links de redes sociais de um local ou evento durante a conversa com o assistente. |
 
 **Fluxo principal**
@@ -1114,7 +792,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-036"></a>UC-036 — Receber imagens do local pelo assistente
+### <a id="UC-027"></a>UC-027 — Receber imagens do local pelo assistente
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1128,7 +806,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-036](home/functional-requirements#RF-036). |
 | RN | [RN-014](home/business-rules#RN-014), [RN-015](home/business-rules#RN-015), [RN-016](home/business-rules#RN-016). |
 | Rastreabilidade | [Linha TM-HU-036](home/traceability-matrix#TM-HU-036). |
-| Tipo de relação | `<<extend>>` de [UC-030](#UC-030). |
+| Tipo de relação | `<<extend>>` de [UC-021](#UC-021). |
 | Condição de extensão | O visitante solicita imagens de um local ou evento durante a conversa com o assistente. |
 
 **Fluxo principal**
@@ -1143,7 +821,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-037"></a>UC-037 — Enviar pergunta por áudio ao assistente
+### <a id="UC-028"></a>UC-028 — Enviar pergunta por áudio ao assistente
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1157,7 +835,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-037](home/functional-requirements#RF-037). |
 | RN | [RN-059](home/business-rules#RN-059), [RN-060](home/business-rules#RN-060). |
 | Rastreabilidade | [Linha TM-HU-037](home/traceability-matrix#TM-HU-037). |
-| Tipo de relação | `<<extend>>` de [UC-030](#UC-030). |
+| Tipo de relação | `<<extend>>` de [UC-021](#UC-021). |
 | Condição de extensão | O visitante opta por enviar a pergunta por áudio em vez de texto. |
 
 **Fluxo principal**
@@ -1175,7 +853,7 @@ title: Casos de Uso Descritivos
 
 ## Épico 7: Interações Sociais e Compartilhamento
 
-### <a id="UC-038"></a>UC-038 — Criar e compartilhar enquete
+### <a id="UC-029"></a>UC-029 — Criar e compartilhar enquete
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1189,14 +867,14 @@ title: Casos de Uso Descritivos
 | RF | [RF-038](home/functional-requirements#RF-038). |
 | RN | [RN-063](home/business-rules#RN-063), [RN-064](home/business-rules#RN-064), [RN-065](home/business-rules#RN-065). |
 | Rastreabilidade | [Linha TM-HU-038](home/traceability-matrix#TM-HU-038). |
-| Tipo de relação | `<<include>>` de UC-085 — o ciclo de vida e o antifraude da enquete valem desde a criação. |
+| Tipo de relação | `<<include>>` de UC-077 — o ciclo de vida e o antifraude da enquete valem desde a criação. |
 
 **Fluxo principal**
 
 1. O usuário inicia a criação de uma enquete.
 2. Informa título e opções de locais/eventos válidos.
 3. O sistema valida as opções e cria a enquete.
-4. O sistema gera o link público de votação, sob as regras incluídas do UC-085.
+4. O sistema gera o link público de votação, sob as regras incluídas do UC-077.
 5. O usuário compartilha o link externamente.
 
 **Fluxos alternativos**
@@ -1209,7 +887,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-039"></a>UC-039 — Consultar transporte alternativo parceiro
+### <a id="UC-030"></a>UC-030 — Consultar transporte alternativo parceiro
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1223,7 +901,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-039](home/functional-requirements#RF-039). |
 | RN | Nenhuma regra de negócio associada a esta história na matriz. |
 | Rastreabilidade | [Linha TM-HU-039](home/traceability-matrix#TM-HU-039). |
-| Pontos de extensão | [UC-087](home/traceability-matrix#TM-HU-087), no acionamento do contato após a escolha da opção de transporte. |
+| Pontos de extensão | [UC-079](home/traceability-matrix#TM-HU-087), no acionamento do contato após a escolha da opção de transporte. |
 
 **Fluxo principal**
 
@@ -1237,7 +915,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-040"></a>UC-040 — Consultar mídias publicadas pela comunidade
+### <a id="UC-031"></a>UC-031 — Consultar mídias publicadas pela comunidade
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1251,8 +929,8 @@ title: Casos de Uso Descritivos
 | RF | [RF-040](home/functional-requirements#RF-040). |
 | RN | [RN-033](home/business-rules#RN-033), [RN-034](home/business-rules#RN-034). |
 | Rastreabilidade | [Linha TM-HU-040](home/traceability-matrix#TM-HU-040). |
-| Tipo de relação | `<<extend>>` de [UC-021](#UC-021). |
-| Condição de extensão | Existe mídia comunitária vinculada ao local exibido no UC-021. |
+| Tipo de relação | `<<extend>>` de [UC-012](#UC-012). |
+| Condição de extensão | Existe mídia comunitária vinculada ao local exibido no UC-012. |
 
 **Fluxo principal**
 
@@ -1272,7 +950,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-041"></a>UC-041 — Compartilhar lista pessoal por link público
+### <a id="UC-032"></a>UC-032 — Compartilhar lista pessoal por link público
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1286,7 +964,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-041](home/functional-requirements#RF-041). |
 | RN | [RN-045](home/business-rules#RN-045), [RN-061](home/business-rules#RN-061), [RN-062](home/business-rules#RN-062). |
 | Rastreabilidade | [Linha TM-HU-041](home/traceability-matrix#TM-HU-041). |
-| Pontos de extensão | [UC-086](home/traceability-matrix#TM-HU-086), quando o proprietário revoga o link já gerado. |
+| Pontos de extensão | [UC-078](home/traceability-matrix#TM-HU-086), quando o proprietário revoga o link já gerado. |
 
 **Fluxo principal**
 
@@ -1301,7 +979,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-089"></a>UC-089 — Compartilhar perfil de local ou evento
+### <a id="UC-033"></a>UC-033 — Compartilhar perfil de local ou evento
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1315,7 +993,7 @@ title: Casos de Uso Descritivos
 | RF | [RF-090](home/functional-requirements#RF-090). |
 | RN | [RN-094](home/business-rules#RN-094). |
 | Rastreabilidade | [Linha TM-HU-089](home/traceability-matrix#TM-HU-089). |
-| Tipo de relação | `<<extend>>` de UC-006 a UC-020, UC-044 e UC-050. |
+| Tipo de relação | `<<extend>>` de [UC-006](#UC-006), [UC-007](#UC-007), [UC-009](#UC-009), [UC-010](#UC-010), [UC-036](#UC-036) e [UC-042](#UC-042). |
 | Condição de extensão | O usuário aciona "Compartilhar" na página do local, evento, equipamento ou atração. |
 
 **Fluxo principal**
@@ -1331,16 +1009,19 @@ title: Casos de Uso Descritivos
 **Fluxos de exceção**
 
 - E1 — O local ou evento é despublicado após o compartilhamento: o acesso ao link informa que o conteúdo não está mais disponível, sem expor detalhes internos.
+
+- - - 
+
 ## Épico 8: Equipamentos Culturais e Estabelecimentos
 
 > [!WARNING]
 > Os casos deste épico representam uma hipótese de escopo administrativo. Ainda não há stakeholders identificados para validá-los; eles não constituem evidência de necessidade confirmada.
 >
-> O núcleo de cadastro administrativo (UC-042, UC-044, UC-046 a UC-048, UC-050 e UC-051) é considerado estruturalmente necessário por decisão de produto: sem ele, o catálogo e a agenda de eventos dependem inteiramente da importação de fontes externas (RF-034) como única fonte de dado. A forma final de implementação (fluxos, telas e regras administrativas) ainda depende de validação com stakeholders administrativos, que ainda não foram identificados. Os casos remanescentes (UC-049 e UC-052 a UC-058) permanecem fora do escopo da entrega atual.
+> O núcleo de cadastro administrativo (UC-034, UC-036, UC-038 a UC-040, UC-042 e UC-043) é considerado estruturalmente necessário por decisão de produto: sem ele, o catálogo e a agenda de eventos dependem inteiramente da importação de fontes externas (RF-034) como única fonte de dado. A forma final de implementação (fluxos, telas e regras administrativas) ainda depende de validação com stakeholders administrativos, que ainda não foram identificados. Os casos remanescentes (UC-041 e UC-044 a UC-050) permanecem fora do escopo da entrega atual.
 
 ---
 
-### <a id="UC-042"></a>UC-042 — Cadastrar equipamento cultural
+### <a id="UC-034"></a>UC-034 — Cadastrar equipamento cultural
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1352,30 +1033,30 @@ title: Casos de Uso Descritivos
 | Pós-condições | Equipamento é registrado, com estado de publicação compatível com os dados informados e trilha de auditoria. |
 | HU | [HU-042](home/user-storys#HU-042) |
 | RF | [RF-042](home/functional-requirements#RF-042) |
-| RN | [RN-023](home/business-rules#RN-023), [RN-068](home/business-rules#RN-068), [RN-076](home/business-rules#RN-076) |
+| RN | [RN-023](home/business-rules#RN-023), [RN-068](home/business-rules#RN-068), [RN-076](home/business-rules#RN-076), [RN-095](home/business-rules#RN-095) |
 | Rastreabilidade | [Linha TM-HU-042](home/traceability-matrix#TM-HU-042) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador da plataforma inicia o cadastro de um equipamento cultural; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa autorizada.
-2. O administrador informa identificação, localização, dados de funcionamento, responsável e demais informações exigidas para o tipo de local.
-3. O sistema valida os dados mínimos do cadastro.
+1. O administrador da plataforma inicia o cadastro de um equipamento cultural; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa autorizada.
+2. O administrador informa identificação, localização, dados de funcionamento, responsável, CNPJ quanto aplicável e demais informações exigidas para o tipo de local.
+3. O sistema valida os dados mínimos do cadastro e verifica duplicidade conforme o critério aplicável (RN-095).
 4. O sistema registra o equipamento e a operação de auditoria (RN-076).
 5. O sistema disponibiliza o equipamento ou o mantém pendente até que atenda às condições de publicação (RN-068).
 
 **Fluxos alternativos**
 
 - A1 — Há dados mínimos pendentes: o sistema mantém o cadastro como não publicado e informa os campos necessários.
-- A2 — O equipamento já possui cadastro: o sistema direciona o administrador para [UC-043](#UC-043).
+- A2 — O equipamento já possui cadastro: o sistema direciona o administrador para [UC-035](#UC-035).
 
 **Fluxos de exceção**
 
-- E1 — A sessão administrativa não é confirmada pelo [UC-046](#UC-046): o sistema nega o cadastro e não cria registro público.
+- E1 — A sessão administrativa não é confirmada pelo [UC-038](#UC-038): o sistema nega o cadastro e não cria registro público.
 
 ---
 
-### <a id="UC-043"></a>UC-043 — Editar equipamento cultural
+### <a id="UC-035"></a>UC-035 — Editar equipamento cultural
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1389,11 +1070,11 @@ title: Casos de Uso Descritivos
 | RF | [RF-043](home/functional-requirements#RF-043) |
 | RN | [RN-023](home/business-rules#RN-023), [RN-066](home/business-rules#RN-066), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-043](home/traceability-matrix#TM-HU-043) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador da plataforma seleciona um equipamento cultural cadastrado; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador da plataforma seleciona um equipamento cultural cadastrado; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema apresenta os dados atuais e verifica o escopo de administração (RN-066).
 3. O administrador altera as informações necessárias.
 4. O sistema valida os dados e o vínculo do administrador ao equipamento.
@@ -1409,7 +1090,7 @@ title: Casos de Uso Descritivos
 
 ---
 
-### <a id="UC-044"></a>UC-044 — Consultar equipamento cultural
+### <a id="UC-036"></a>UC-036 — Consultar equipamento cultural
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1423,9 +1104,9 @@ title: Casos de Uso Descritivos
 | RF | [RF-044](home/functional-requirements#RF-044) |
 | RN | [RN-022](home/business-rules#RN-022), [RN-068](home/business-rules#RN-068) |
 | Rastreabilidade | [Linha TM-HU-044](home/traceability-matrix#TM-HU-044) |
-| Pontos de extensão | [UC-088](#UC-088), ao sinalizar um dado incorreto; [UC-089](#UC-089), ao compartilhar o equipamento. |
+| Pontos de extensão | [UC-080](#UC-080), ao sinalizar um dado incorreto; [UC-033](#UC-033), ao compartilhar o equipamento. |
 
-Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação não exige autenticação (RN-022).
+Consulta pública: não inclui [UC-038](#UC-038) — o acesso à informação não exige autenticação (RN-022).
 
 **Fluxo principal**
 
@@ -1435,8 +1116,8 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 **Fluxos alternativos**
 
-- A1 — O visitante identifica um dado incorreto: aciona a extensão [UC-088](#UC-088) sem precisar publicar uma avaliação.
-- A2 — O visitante deseja compartilhar o equipamento: aciona a extensão [UC-089](#UC-089).
+- A1 — O visitante identifica um dado incorreto: aciona a extensão [UC-080](#UC-080) sem precisar publicar uma avaliação.
+- A2 — O visitante deseja compartilhar o equipamento: aciona a extensão [UC-033](#UC-033).
 
 **Fluxos de exceção**
 
@@ -1444,7 +1125,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-045"></a>UC-045 — Associar administrador a equipamento cultural
+### <a id="UC-037"></a>UC-037 — Associar administrador a equipamento cultural
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1458,11 +1139,11 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-045](home/functional-requirements#RF-045) |
 | RN | [RN-023](home/business-rules#RN-023), [RN-066](home/business-rules#RN-066), [RN-067](home/business-rules#RN-067), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-045](home/traceability-matrix#TM-HU-045) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador da plataforma seleciona um equipamento e uma conta administrativa; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador da plataforma seleciona um equipamento e uma conta administrativa; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica a existência dos dois registros.
 3. O administrador confirma o escopo de gestão concedido.
 4. O sistema registra o vínculo e a operação de auditoria (RN-076).
@@ -1478,7 +1159,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-046"></a>UC-046 — Autenticar administrador
+### <a id="UC-038"></a>UC-038 — Autenticar administrador
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1493,7 +1174,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RN | [RN-023](home/business-rules#RN-023), [RN-067](home/business-rules#RN-067) |
 | Rastreabilidade | [Linha TM-HU-046](home/traceability-matrix#TM-HU-046) |
 
-Este é o único caso de autenticação/sessão administrativa do épico. Ele é incluído por [UC-042](#UC-042), [UC-043](#UC-043), [UC-045](#UC-045), [UC-047](#UC-047) a [UC-049](#UC-049), [UC-051](#UC-051) a [UC-058](#UC-058) — qualquer ação administrativa de criação, edição, remoção, associação ou publicação exige que este caso seja executado antes (RN-023). A autenticação do usuário comum (visitante logado) não é modelada como caso de uso; é tratada como pré-condição nos casos que a exigem.
+Este é o único caso de autenticação/sessão administrativa do épico. Ele é incluído por [UC-034](#UC-034), [UC-035](#UC-035), [UC-037](#UC-037), [UC-039](#UC-039) a [UC-041](#UC-041), [UC-043](#UC-043) a [UC-050](#UC-050) — qualquer ação administrativa de criação, edição, remoção, associação ou publicação exige que este caso seja executado antes (RN-023). A autenticação do usuário comum (visitante logado) não é modelada como caso de uso; é tratada como pré-condição nos casos que a exigem.
 
 **Fluxo principal**
 
@@ -1503,7 +1184,7 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 
 **Fluxos alternativos**
 
-- A1 — A conta ainda não possui vínculo com um equipamento: o sistema mantém apenas as permissões compatíveis e orienta a associação por [UC-045](#UC-045), quando necessária.
+- A1 — A conta ainda não possui vínculo com um equipamento: o sistema mantém apenas as permissões compatíveis e orienta a associação por [UC-037](#UC-037), quando necessária.
 
 **Fluxos de exceção**
 
@@ -1511,7 +1192,7 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 
 ---
 
-### <a id="UC-047"></a>UC-047 — Cadastrar atração
+### <a id="UC-039"></a>UC-039 — Cadastrar atração
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1525,11 +1206,11 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 | RF | [RF-047](home/functional-requirements#RF-047) |
 | RN | [RN-012](home/business-rules#RN-012), [RN-023](home/business-rules#RN-023), [RN-038](home/business-rules#RN-038), [RN-066](home/business-rules#RN-066), [RN-068](home/business-rules#RN-068), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-047](home/traceability-matrix#TM-HU-047) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador de equipamento cultural acessa o cadastro de atrações do equipamento ao qual está vinculado; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador de equipamento cultural acessa o cadastro de atrações do equipamento ao qual está vinculado; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador sobre o equipamento (RN-066).
 3. O administrador informa descrição da experiência, horários de visitação, localização, valor de ingresso quando aplicável, acessibilidade, adequação infantil, segurança do entorno, programação associada e contato (RN-012).
 4. O sistema valida os dados mínimos e o vínculo com o equipamento ativo (RN-068).
@@ -1546,7 +1227,7 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 
 ---
 
-### <a id="UC-048"></a>UC-048 — Editar atração
+### <a id="UC-040"></a>UC-040 — Editar atração
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1560,11 +1241,11 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 | RF | [RF-048](home/functional-requirements#RF-048) |
 | RN | [RN-066](home/business-rules#RN-066), [RN-071](home/business-rules#RN-071), [RN-072](home/business-rules#RN-072), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-048](home/traceability-matrix#TM-HU-048) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador seleciona uma atração cadastrada; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador seleciona uma atração cadastrada; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador sobre o equipamento e o vínculo da atração com o equipamento ativo (RN-066, RN-071).
 3. O administrador altera os dados necessários.
 4. O sistema valida os dados e o vínculo.
@@ -1580,7 +1261,7 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 
 ---
 
-### <a id="UC-049"></a>UC-049 — Remover atração
+### <a id="UC-041"></a>UC-041 — Remover atração
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1594,11 +1275,11 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 | RF | [RF-049](home/functional-requirements#RF-049) |
 | RN | [RN-066](home/business-rules#RN-066), [RN-074](home/business-rules#RN-074), [RN-075](home/business-rules#RN-075), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-049](home/traceability-matrix#TM-HU-049) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador seleciona uma atração cadastrada e solicita a remoção; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador seleciona uma atração cadastrada e solicita a remoção; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador sobre o equipamento (RN-066).
 3. O administrador confirma a remoção ou o motivo do encerramento.
 4. O sistema retira a atração da exibição pública, arquiva-a ou a marca como inativa (RN-074).
@@ -1614,7 +1295,7 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 
 ---
 
-### <a id="UC-050"></a>UC-050 — Consultar atrações cadastradas
+### <a id="UC-042"></a>UC-042 — Consultar atrações cadastradas
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1628,9 +1309,9 @@ Este é o único caso de autenticação/sessão administrativa do épico. Ele é
 | RF | [RF-050](home/functional-requirements#RF-050) |
 | RN | [RN-012](home/business-rules#RN-012), [RN-022](home/business-rules#RN-022) |
 | Rastreabilidade | [Linha TM-HU-050](home/traceability-matrix#TM-HU-050) |
-| Pontos de extensão | [UC-088](#UC-088), ao sinalizar um dado incorreto; [UC-089](#UC-089), ao compartilhar a atração. |
+| Pontos de extensão | [UC-080](#UC-080), ao sinalizar um dado incorreto; [UC-033](#UC-033), ao compartilhar a atração. |
 
-Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação não exige autenticação (RN-022).
+Consulta pública: não inclui [UC-038](#UC-038) — o acesso à informação não exige autenticação (RN-022).
 
 **Fluxo principal**
 
@@ -1641,8 +1322,8 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 **Fluxos alternativos**
 
-- A1 — O visitante identifica um dado incorreto: aciona a extensão [UC-088](#UC-088) sem precisar publicar uma avaliação.
-- A2 — O visitante deseja compartilhar a atração: aciona a extensão [UC-089](#UC-089).
+- A1 — O visitante identifica um dado incorreto: aciona a extensão [UC-080](#UC-080) sem precisar publicar uma avaliação.
+- A2 — O visitante deseja compartilhar a atração: aciona a extensão [UC-033](#UC-033).
 
 **Fluxos de exceção**
 
@@ -1650,7 +1331,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-051"></a>UC-051 — Cadastrar estabelecimento gastronômico
+### <a id="UC-043"></a>UC-043 — Cadastrar estabelecimento gastronômico
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1662,30 +1343,30 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Pós-condições | Estabelecimento é registrado, com estado de publicação compatível com os dados mínimos e trilha de auditoria. |
 | HU | [HU-051](home/user-storys#HU-051) |
 | RF | [RF-051](home/functional-requirements#RF-051) |
-| RN | [RN-011](home/business-rules#RN-011), [RN-023](home/business-rules#RN-023), [RN-038](home/business-rules#RN-038), [RN-068](home/business-rules#RN-068), [RN-076](home/business-rules#RN-076) |
+| RN | [RN-011](home/business-rules#RN-011), [RN-023](home/business-rules#RN-023), [RN-038](home/business-rules#RN-038), [RN-068](home/business-rules#RN-068), [RN-076](home/business-rules#RN-076), [RN-095](home/business-rules#RN-095) |
 | Rastreabilidade | [Linha TM-HU-051](home/traceability-matrix#TM-HU-051) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador da plataforma inicia o cadastro de um estabelecimento gastronômico; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
-2. O administrador informa cardápio ou descrição de produtos, faixa de preços, couvert artístico quando aplicável, horários, formato de atendimento, regras do local, canal de contato e o responsável administrativo (RN-011).
-3. O sistema valida os dados mínimos do cadastro (RN-068).
+1. O administrador da plataforma inicia o cadastro de um estabelecimento gastronômico; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
+2. O administrador informa CNPJ quando aplicável, cardápio ou descrição de produtos, faixa de preços, couvert artístico quando aplicável, horários, formato de atendimento, regras do local, canal de contato e o responsável administrativo (RN-011).
+3. O sistema valida os dados mínimos do cadastro (RN-068) e verifica duplicidade conforme o critério aplicável (RN-095).
 4. O sistema registra o estabelecimento e a operação de auditoria (RN-076).
 5. O sistema disponibiliza o estabelecimento ou o mantém pendente até que atenda às condições de publicação.
 
 **Fluxos alternativos**
 
 - A1 — Há dados mínimos pendentes: o sistema mantém o cadastro fora da exibição pública e informa os campos necessários.
-- A2 — O cadastro decorre de uma sinalização comunitária validada: a alteração só é aplicada após confirmação do administrador (RN-038).
+- A2 — O estabelecimento já possui cadastro (mesmo CNPJ ou correspondência de nome, endereço e categoria, conforme RN-095): o sistema direciona o administrador para a edição do cadastro existente.
+- A3 — O cadastro decorre de uma sinalização comunitária validada: a alteração só é aplicada após confirmação do administrador (RN-038).
 
 **Fluxos de exceção**
 
-- E1 — A sessão administrativa não é confirmada pelo [UC-046](#UC-046): o sistema nega o cadastro e não cria registro público.
-
+- E1 — A sessão administrativa não é confirmada pelo [UC-038](#UC-038): o sistema nega o cadastro e não cria registro público.
 ---
 
-### <a id="UC-052"></a>UC-052 — Cadastrar oferta
+### <a id="UC-044"></a>UC-044 — Cadastrar oferta
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1699,11 +1380,11 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-052](home/functional-requirements#RF-052) |
 | RN | [RN-066](home/business-rules#RN-066), [RN-068](home/business-rules#RN-068), [RN-069](home/business-rules#RN-069), [RN-071](home/business-rules#RN-071), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-052](home/traceability-matrix#TM-HU-052) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador de estabelecimento gastronômico acessa as ofertas do estabelecimento ao qual está vinculado; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador de estabelecimento gastronômico acessa as ofertas do estabelecimento ao qual está vinculado; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador sobre o estabelecimento (RN-066).
 3. O administrador informa título, descrição, responsável e período de validade da oferta (RN-069).
 4. O sistema valida o vínculo com o estabelecimento ativo e os dados mínimos (RN-068, RN-071).
@@ -1719,7 +1400,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-053"></a>UC-053 — Editar oferta
+### <a id="UC-045"></a>UC-045 — Editar oferta
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1733,11 +1414,11 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-053](home/functional-requirements#RF-053) |
 | RN | [RN-066](home/business-rules#RN-066), [RN-071](home/business-rules#RN-071), [RN-072](home/business-rules#RN-072), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-053](home/traceability-matrix#TM-HU-053) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador seleciona uma oferta cadastrada; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador seleciona uma oferta cadastrada; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador sobre o estabelecimento e o vínculo da oferta com o estabelecimento ativo (RN-066, RN-071).
 3. O administrador altera os dados necessários.
 4. O sistema valida os dados e o vínculo.
@@ -1753,7 +1434,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-054"></a>UC-054 — Remover oferta
+### <a id="UC-046"></a>UC-046 — Remover oferta
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1767,11 +1448,11 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-054](home/functional-requirements#RF-054) |
 | RN | [RN-066](home/business-rules#RN-066), [RN-073](home/business-rules#RN-073), [RN-075](home/business-rules#RN-075), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-054](home/traceability-matrix#TM-HU-054) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador seleciona uma oferta cadastrada; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador seleciona uma oferta cadastrada; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador sobre o estabelecimento (RN-066).
 3. O sistema identifica se a oferta atingiu o período de validade encerrado (RN-073).
 4. O administrador confirma a remoção manual, quando aplicável.
@@ -1787,7 +1468,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-055"></a>UC-055 — Cadastrar publicação
+### <a id="UC-047"></a>UC-047 — Cadastrar publicação
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1801,11 +1482,11 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-055](home/functional-requirements#RF-055) |
 | RN | [RN-068](home/business-rules#RN-068), [RN-070](home/business-rules#RN-070), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-055](home/traceability-matrix#TM-HU-055) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador da plataforma inicia a criação de uma publicação; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador da plataforma inicia a criação de uma publicação; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O administrador informa título, conteúdo e responsável pela publicação (RN-070).
 3. O sistema valida os dados mínimos da publicação (RN-068).
 4. O sistema cria a publicação geral, sem vínculo com local específico, e registra a operação de auditoria (RN-076).
@@ -1820,7 +1501,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-056"></a>UC-056 — Criar publicação vinculada a local
+### <a id="UC-048"></a>UC-048 — Criar publicação vinculada a local
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1834,11 +1515,11 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-056](home/functional-requirements#RF-056) |
 | RN | [RN-066](home/business-rules#RN-066), [RN-070](home/business-rules#RN-070), [RN-071](home/business-rules#RN-071), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-056](home/traceability-matrix#TM-HU-056) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador de equipamento cultural ou de estabelecimento gastronômico acessa as publicações do local ao qual está vinculado; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador de equipamento cultural ou de estabelecimento gastronômico acessa as publicações do local ao qual está vinculado; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador sobre o local (RN-066).
 3. O administrador informa título, conteúdo, responsável e o local ao qual a publicação se vincula (RN-070).
 4. O sistema valida o vínculo com o local ativo (RN-071).
@@ -1854,7 +1535,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-057"></a>UC-057 — Editar publicação
+### <a id="UC-049"></a>UC-049 — Editar publicação
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1868,11 +1549,11 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-057](home/functional-requirements#RF-057) |
 | RN | [RN-066](home/business-rules#RN-066), [RN-071](home/business-rules#RN-071), [RN-072](home/business-rules#RN-072), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-057](home/traceability-matrix#TM-HU-057) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador seleciona uma publicação existente; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador seleciona uma publicação existente; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador e o vínculo da publicação com o local ativo (RN-066, RN-071).
 3. O administrador altera título, conteúdo ou demais dados.
 4. O sistema valida os dados e o vínculo.
@@ -1888,7 +1569,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-058"></a>UC-058 — Remover publicação
+### <a id="UC-050"></a>UC-050 — Remover publicação
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1902,11 +1583,11 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-058](home/functional-requirements#RF-058) |
 | RN | [RN-023](home/business-rules#RN-023), [RN-066](home/business-rules#RN-066), [RN-074](home/business-rules#RN-074), [RN-075](home/business-rules#RN-075), [RN-076](home/business-rules#RN-076) |
 | Rastreabilidade | [Linha TM-HU-058](home/traceability-matrix#TM-HU-058) |
-| Tipo de relação | `<<include>>` de [UC-046](#UC-046) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
+| Tipo de relação | `<<include>>` de [UC-038](#UC-038) — toda ação administrativa exige sessão administrativa autorizada (RN-023). |
 
 **Fluxo principal**
 
-1. O administrador seleciona uma publicação existente e solicita a remoção; o sistema inclui [UC-046](#UC-046) para confirmar a sessão administrativa.
+1. O administrador seleciona uma publicação existente e solicita a remoção; o sistema inclui [UC-038](#UC-038) para confirmar a sessão administrativa.
 2. O sistema verifica o escopo do administrador sobre o local vinculado à publicação (RN-066).
 3. O administrador confirma a remoção.
 4. O sistema retira a publicação da exibição pública, arquiva-a ou a marca como inativa (RN-074).
@@ -1924,7 +1605,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 > [!WARNING]
 > As histórias dos épicos 9 a 13 foram derivadas do protótipo de alta fidelidade e permanecem pendentes de validação com stakeholders.
 
-### <a id="UC-059"></a>UC-059 — Marcar avaliação como útil
+### <a id="UC-051"></a>UC-051 — Marcar avaliação como útil
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1938,12 +1619,12 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-059](home/functional-requirements#RF-059). |
 | RN | [RN-029](home/business-rules#RN-029), [RN-030](home/business-rules#RN-030), [RN-037](home/business-rules#RN-037). |
 | Rastreabilidade | [Linha TM-HU-059](home/traceability-matrix#TM-HU-059). |
-| Tipo de relação | `<<extend>>` de [UC-021](#UC-021) (Consultar avaliações da comunidade), no ponto "marcar avaliação como útil". |
+| Tipo de relação | `<<extend>>` de [UC-012](#UC-012) (Consultar avaliações da comunidade), no ponto "marcar avaliação como útil". |
 | Condição de extensão | O usuário aciona "marcar como útil" em uma avaliação exibida. |
 
 **Fluxo principal**
 
-1. O usuário autenticado consulta avaliações de um local ([UC-021](#UC-021)).
+1. O usuário autenticado consulta avaliações de um local ([UC-012](#UC-012)).
 2. Aciona "marcar como útil" em uma avaliação publicada.
 3. O sistema verifica se o usuário já marcou essa avaliação anteriormente.
 4. O sistema registra a marcação vinculada ao usuário e à avaliação.
@@ -1959,7 +1640,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-060"></a>UC-060 — Compartilhar avaliação individual
+### <a id="UC-052"></a>UC-052 — Compartilhar avaliação individual
 
 | Campo | Especificação |
 |-------|---------------|
@@ -1973,12 +1654,12 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-060](home/functional-requirements#RF-060). |
 | RN | [RN-029](home/business-rules#RN-029), [RN-037](home/business-rules#RN-037). |
 | Rastreabilidade | [Linha TM-HU-060](home/traceability-matrix#TM-HU-060). |
-| Tipo de relação | `<<extend>>` de [UC-021](#UC-021) (Consultar avaliações da comunidade), no ponto "compartilhar avaliação individual". |
+| Tipo de relação | `<<extend>>` de [UC-012](#UC-012) (Consultar avaliações da comunidade), no ponto "compartilhar avaliação individual". |
 | Condição de extensão | O usuário aciona "compartilhar" em uma avaliação individual exibida. |
 
 **Fluxo principal**
 
-1. O usuário consulta avaliações de um local ([UC-021](#UC-021)).
+1. O usuário consulta avaliações de um local ([UC-012](#UC-012)).
 2. Aciona "compartilhar" em uma avaliação publicada específica.
 3. O sistema gera o link público de visualização da avaliação individual.
 4. O usuário compartilha o link por aplicativo compatível ou copiando o link.
@@ -1989,7 +1670,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-061"></a>UC-061 — Iniciar tópico de discussão na comunidade
+### <a id="UC-053"></a>UC-053 — Iniciar tópico de discussão na comunidade
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2023,7 +1704,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ## Épico 10: Organização Pessoal e Gamificação (Protótipo)
 
-### <a id="UC-062"></a>UC-062 — Consultar conquistas e distintivos
+### <a id="UC-054"></a>UC-054 — Consultar conquistas e distintivos
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2055,7 +1736,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-063"></a>UC-063 — Consultar dicas contextuais no checklist
+### <a id="UC-055"></a>UC-055 — Consultar dicas contextuais no checklist
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2069,12 +1750,12 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-063](home/functional-requirements#RF-063). |
 | RN | [RN-050](home/business-rules#RN-050), [RN-051](home/business-rules#RN-051). |
 | Rastreabilidade | [Linha TM-HU-063](home/traceability-matrix#TM-HU-063). |
-| Tipo de relação | `<<extend>>` de [UC-029](#UC-029) (Usar checklist de atividades e passeios), no ponto "consultar dicas contextuais". |
+| Tipo de relação | `<<extend>>` de [UC-020](#UC-020) (Usar checklist de atividades e passeios), no ponto "consultar dicas contextuais". |
 | Condição de extensão | Existe dica curada disponível para o local associado ao checklist. |
 
 **Fluxo principal**
 
-1. O usuário abre o checklist de um local ([UC-029](#UC-029)).
+1. O usuário abre o checklist de um local ([UC-020](#UC-020)).
 2. O sistema verifica se há dicas contextuais curadas para aquele local.
 3. O sistema exibe as dicas junto aos itens do checklist, sem alterar o progresso registrado.
 
@@ -2086,7 +1767,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ## Épico 11: Gestão de Estabelecimentos (Protótipo)
 
-### <a id="UC-064"></a>UC-064 — Consultar painel de métricas do estabelecimento
+### <a id="UC-056"></a>UC-056 — Consultar painel de métricas do estabelecimento
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2100,7 +1781,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-064](home/functional-requirements#RF-064). |
 | RN | [RN-066](home/business-rules#RN-066), [RN-068](home/business-rules#RN-068). |
 | Rastreabilidade | [Linha TM-HU-064](home/traceability-matrix#TM-HU-064). |
-| Pontos de extensão | [UC-067](#UC-067), na ação "ver como visitante". |
+| Pontos de extensão | [UC-059](#UC-059), na ação "ver como visitante". |
 
 **Fluxo principal**
 
@@ -2119,7 +1800,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-065"></a>UC-065 — Acompanhar feed de atividades recentes
+### <a id="UC-057"></a>UC-057 — Acompanhar feed de atividades recentes
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2151,7 +1832,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-066"></a>UC-066 — Responder publicamente a uma avaliação
+### <a id="UC-058"></a>UC-058 — Responder publicamente a uma avaliação
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2183,7 +1864,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-067"></a>UC-067 — Visualizar a página pública como visitante
+### <a id="UC-059"></a>UC-059 — Visualizar a página pública como visitante
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2197,12 +1878,12 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-067](home/functional-requirements#RF-067). |
 | RN | [RN-066](home/business-rules#RN-066), [RN-068](home/business-rules#RN-068). |
 | Rastreabilidade | [Linha TM-HU-067](home/traceability-matrix#TM-HU-067). |
-| Tipo de relação | `<<extend>>` de [UC-064](#UC-064) (Consultar painel de métricas do estabelecimento), no ponto "visualizar página pública como visitante". |
+| Tipo de relação | `<<extend>>` de [UC-056](#UC-056) (Consultar painel de métricas do estabelecimento), no ponto "visualizar página pública como visitante". |
 | Condição de extensão | O gestor opta por conferir a apresentação pública do estabelecimento. |
 
 **Fluxo principal**
 
-1. A partir do painel de métricas ([UC-064](#UC-064)), o gestor aciona "ver como visitante".
+1. A partir do painel de métricas ([UC-056](#UC-056)), o gestor aciona "ver como visitante".
 2. O sistema verifica o vínculo administrativo do gestor com o estabelecimento.
 3. O sistema apresenta a página pública do estabelecimento na mesma versão exibida aos visitantes.
 
@@ -2212,7 +1893,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-068"></a>UC-068 — Consultar indicadores de desempenho
+### <a id="UC-060"></a>UC-060 — Consultar indicadores de desempenho
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2244,7 +1925,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-069"></a>UC-069 — Consultar mapa de origem dos visitantes
+### <a id="UC-061"></a>UC-061 — Consultar mapa de origem dos visitantes
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2274,7 +1955,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ## Épico 12: Perfil, Autenticação e Parceria (Protótipo)
 
-### <a id="UC-070"></a>UC-070 — Alternar entre os modos Explorador e Gestor
+### <a id="UC-062"></a>UC-062 — Alternar entre os modos Explorador e Gestor
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2301,7 +1982,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-071"></a>UC-071 — Consultar nível de parceria na plataforma
+### <a id="UC-063"></a>UC-063 — Consultar nível de parceria na plataforma
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2328,7 +2009,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-072"></a>UC-072 — Consultar certificações e qualificações
+### <a id="UC-064"></a>UC-064 — Consultar certificações e qualificações
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2355,7 +2036,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-073"></a>UC-073 — Encerrar todas as sessões ativas
+### <a id="UC-065"></a>UC-065 — Encerrar todas as sessões ativas
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2386,7 +2067,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ## Épico 13: Navegação e Interface Global (Protótipo)
 
-### <a id="UC-074"></a>UC-074 — Navegar pela barra inferior do Explorador
+### <a id="UC-066"></a>UC-066 — Navegar pela barra inferior do Explorador
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2413,7 +2094,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-075"></a>UC-075 — Navegar pela barra inferior do Gestor
+### <a id="UC-067"></a>UC-067 — Navegar pela barra inferior do Gestor
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2440,7 +2121,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-076"></a>UC-076 — Consultar cabeçalho contextual da tela
+### <a id="UC-068"></a>UC-068 — Consultar cabeçalho contextual da tela
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2467,7 +2148,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-077"></a>UC-077 — Validar parâmetros de busca
+### <a id="UC-069"></a>UC-069 — Validar parâmetros de busca
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2501,7 +2182,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-078"></a>UC-078 — Buscar por proximidade
+### <a id="UC-070"></a>UC-070 — Buscar por proximidade
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2512,7 +2193,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Pré-condições | Pesquisa por termo ([UC-004](#UC-004)) ou filtragem ([UC-005](#UC-005)) em andamento; uso da localização atual depende de consentimento explícito. |
 | Pós-condições | Resultados públicos e elegíveis com localização válida são ordenados por distância crescente, com origem e distância explícitas; ou a busca prossegue por cidade quando a proximidade não é viável. |
 | HU | [HU-078](home/user-storys#HU-078) |
-| RF | [RF-078](home/functional-requirements#RF-078), [RF-006A](home/functional-requirements#RF-006A) |
+| RF | [RF-078](home/functional-requirements#RF-078) |
 | RN | [RN-079](home/business-rules#RN-079), [RN-080](home/business-rules#RN-080) |
 | Rastreabilidade | [Linha TM-HU-078](home/traceability-matrix#TM-HU-078) |
 | Tipo de relação | `<<extend>>` de [UC-004](#UC-004) e [UC-005](#UC-005). |
@@ -2537,7 +2218,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-079"></a>UC-079 — Consultar procedência do dado e abrir canal externo
+### <a id="UC-071"></a>UC-071 — Consultar procedência do dado e abrir canal externo
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2551,7 +2232,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-079](home/functional-requirements#RF-079), [RF-035](home/functional-requirements#RF-035) |
 | RN | [RN-081](home/business-rules#RN-081), [RN-082](home/business-rules#RN-082), [RN-083](home/business-rules#RN-083) |
 | Rastreabilidade | [Linha TM-HU-079](home/traceability-matrix#TM-HU-079) |
-| Tipo de relação | `<<include>>` — incluído por [UC-007](#UC-007), [UC-008](#UC-008), [UC-009](#UC-009), [UC-010](#UC-010), [UC-012](#UC-012) e [UC-014](#UC-014), sempre que exibem dado sensível à atualização. |
+| Tipo de relação | `<<include>>` — incluído por [UC-006](#UC-006), [UC-007](#UC-007), [UC-009](#UC-009) e [UC-010](#UC-010), sempre que exibem dado sensível à atualização. |
 
 **Fluxo principal**
 
@@ -2572,7 +2253,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-080"></a>UC-080 — Filtrar agenda por data e ocultar itens encerrados
+### <a id="UC-072"></a>UC-072 — Filtrar agenda por data e ocultar itens encerrados
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2580,18 +2261,18 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Prioridade | Must have — hipótese derivada do caso de uso, pendente de validação com stakeholders. |
 | Ator principal | Visitante. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Calendário ou agenda de eventos em consulta ([UC-014](#UC-014)). |
+| Pré-condições | Calendário ou agenda de eventos em consulta ([UC-009](#UC-009)). |
 | Pós-condições | Agenda exibida reflete apenas o período filtrado e somente itens vigentes; itens encerrados permanecem inativos ou arquivados. |
 | HU | [HU-080](home/user-storys#HU-080) |
 | RF | [RF-080](home/functional-requirements#RF-080), [RF-081](home/functional-requirements#RF-081) |
 | RN | [RN-084](home/business-rules#RN-084) |
 | Rastreabilidade | [Linha TM-HU-080](home/traceability-matrix#TM-HU-080) |
-| Tipo de relação | `<<extend>>` de [UC-014](#UC-014). |
+| Tipo de relação | `<<extend>>` de [UC-009](#UC-009). |
 | Condição de extensão | O visitante filtra a agenda por data. |
 
 **Fluxo principal**
 
-1. Durante a consulta ao calendário ([UC-014](#UC-014)), o visitante informa uma data ou período.
+1. Durante a consulta ao calendário ([UC-009](#UC-009)), o visitante informa uma data ou período.
 2. O sistema filtra a agenda pública pelo período informado.
 3. O sistema verifica o estado de cada evento/atração do período.
 4. O sistema retira da lista qualquer item encerrado, mantendo-o apenas inativo ou arquivado.
@@ -2607,7 +2288,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-081"></a>UC-081 — Retomar rascunho após autenticação
+### <a id="UC-073"></a>UC-073 — Retomar rascunho após autenticação
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2615,18 +2296,18 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Prioridade | Should have — hipótese derivada do caso de uso, pendente de validação com stakeholders. |
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Usuário iniciou o preenchimento de uma avaliação ([UC-022](#UC-022)) ou de uma sinalização de dado incorreto ([UC-088](#UC-088)) sem estar autenticado. |
+| Pré-condições | Usuário iniciou o preenchimento de uma avaliação ([UC-013](#UC-013)) ou de uma sinalização de dado incorreto ([UC-080](#UC-080)) sem estar autenticado. |
 | Pós-condições | Conteúdo preenchido é restaurado após a autenticação; o rascunho é descartado após o envio ou o descarte explícito. |
 | HU | [HU-081](home/user-storys#HU-081) |
 | RF | [RF-082](home/functional-requirements#RF-082) |
 | RN | [RN-085](home/business-rules#RN-085) |
 | Rastreabilidade | [Linha TM-HU-081](home/traceability-matrix#TM-HU-081) |
-| Tipo de relação | `<<extend>>` de [UC-022](#UC-022) e [UC-088](#UC-088). |
+| Tipo de relação | `<<extend>>` de [UC-013](#UC-013) e [UC-080](#UC-080). |
 | Condição de extensão | O envio do conteúdo exige autenticação e o usuário já preencheu conteúdo antes de autenticar. |
 
 **Fluxo principal**
 
-1. O usuário preenche nota, comentário ou dados de sinalização no caso estendido ([UC-022](#UC-022) ou [UC-088](#UC-088)) sem sessão autenticada.
+1. O usuário preenche nota, comentário ou dados de sinalização no caso estendido ([UC-013](#UC-013) ou [UC-080](#UC-080)) sem sessão autenticada.
 2. Ao tentar enviar, o sistema identifica a exigência de autenticação e retém temporariamente o conteúdo preenchido.
 3. O sistema solicita que o usuário se autentique.
 4. Após a autenticação, o sistema restaura o conteúdo preenchido no formulário de origem.
@@ -2642,7 +2323,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-082"></a>UC-082 — Receber alternativa quando a personalização é insuficiente
+### <a id="UC-074"></a>UC-074 — Receber alternativa quando a personalização é insuficiente
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2650,18 +2331,18 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Prioridade | Should have — hipótese derivada do caso de uso, pendente de validação com stakeholders. |
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Consulta de recomendações por histórico ([UC-023](#UC-023)), por avaliações ([UC-024](#UC-024)) ou por perfis similares ([UC-025](#UC-025)) em andamento. |
+| Pré-condições | Consulta de recomendações por histórico ([UC-014](#UC-014)), por avaliações ([UC-015](#UC-015)) ou por perfis similares ([UC-016](#UC-016)) em andamento. |
 | Pós-condições | Usuário recebe pedido de interesses ou uma lista de opções gerais elegíveis, sem que o fluxo de recomendação seja interrompido. |
 | HU | [HU-082](home/user-storys#HU-082) |
 | RF | [RF-083](home/functional-requirements#RF-083) |
 | RN | [RN-086](home/business-rules#RN-086) |
 | Rastreabilidade | [Linha TM-HU-082](home/traceability-matrix#TM-HU-082) |
-| Tipo de relação | `<<extend>>` de [UC-023](#UC-023), [UC-024](#UC-024) e [UC-025](#UC-025). |
+| Tipo de relação | `<<extend>>` de [UC-014](#UC-014), [UC-015](#UC-015) e [UC-016](#UC-016). |
 | Condição de extensão | Os dados históricos, de avaliações ou de perfis disponíveis são insuficientes para calcular a personalização. |
 
 **Fluxo principal**
 
-1. O caso estendido ([UC-023](#UC-023), [UC-024](#UC-024) ou [UC-025](#UC-025)) verifica que não há dados suficientes ou autorizados para o critério de recomendação.
+1. O caso estendido ([UC-014](#UC-014), [UC-015](#UC-015) ou [UC-016](#UC-016)) verifica que não há dados suficientes ou autorizados para o critério de recomendação.
 2. O sistema solicita ao usuário que informe interesses diretamente.
 3. Caso o usuário não informe, o sistema apresenta opções gerais públicas e elegíveis.
 4. O sistema retorna o controle ao caso estendido com o conjunto de locais obtido.
@@ -2676,7 +2357,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-083"></a>UC-083 — Salvar e ajustar roteiro pessoal
+### <a id="UC-075"></a>UC-075 — Salvar e ajustar roteiro pessoal
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2684,17 +2365,17 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Prioridade | Must have — hipótese derivada do caso de uso, pendente de validação com stakeholders. |
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Roteiro personalizado gerado ([UC-026](#UC-026)). |
+| Pré-condições | Roteiro personalizado gerado ([UC-017](#UC-017)). |
 | Pós-condições | Roteiro é persistido, pertence ao usuário e reflete as alterações feitas; trechos afetados por substituição são recalculados. |
 | HU | [HU-083](home/user-storys#HU-083) |
 | RF | [RF-084](home/functional-requirements#RF-084) |
 | RN | [RN-087](home/business-rules#RN-087) |
 | Rastreabilidade | [Linha TM-HU-083](home/traceability-matrix#TM-HU-083) |
-| Tipo de relação | `<<include>>` — incluído por [UC-026](#UC-026), ao final da geração do roteiro. |
+| Tipo de relação | `<<include>>` — incluído por [UC-017](#UC-017), ao final da geração do roteiro. |
 
 **Fluxo principal**
 
-1. O caso [UC-026](#UC-026) inclui este caso após gerar a sequência de passeio.
+1. O caso [UC-017](#UC-017) inclui este caso após gerar a sequência de passeio.
 2. O usuário revisa o roteiro proposto.
 3. O usuário salva o roteiro, que passa a pertencer ao seu perfil.
 4. O usuário reorganiza manualmente a ordem dos locais, ou remove/substitui um local.
@@ -2712,7 +2393,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-084"></a>UC-084 — Alertar item de checklist vinculado a atração inativa
+### <a id="UC-076"></a>UC-076 — Alertar item de checklist vinculado a atração inativa
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2720,18 +2401,18 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Prioridade | Should have — hipótese derivada do caso de uso, pendente de validação com stakeholders. |
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Checklist com item vinculado a uma atração que passou a inativa ou arquivada ([UC-029](#UC-029)). |
+| Pré-condições | Checklist com item vinculado a uma atração que passou a inativa ou arquivada ([UC-020](#UC-020)). |
 | Pós-condições | Usuário visualiza o alerta; o andamento pessoal e o dado oficial da atração permanecem inalterados. |
 | HU | [HU-084](home/user-storys#HU-084) |
 | RF | [RF-085](home/functional-requirements#RF-085) |
 | RN | [RN-088](home/business-rules#RN-088) |
 | Rastreabilidade | [Linha TM-HU-084](home/traceability-matrix#TM-HU-084) |
-| Tipo de relação | `<<extend>>` de [UC-029](#UC-029). |
+| Tipo de relação | `<<extend>>` de [UC-020](#UC-020). |
 | Condição de extensão | O item do checklist está vinculado a uma atração inativa ou arquivada. |
 
 **Fluxo principal**
 
-1. O usuário abre o checklist ([UC-029](#UC-029)).
+1. O usuário abre o checklist ([UC-020](#UC-020)).
 2. O sistema verifica o estado da atração vinculada a cada item.
 3. O sistema identifica um item cuja atração está inativa ou arquivada.
 4. O sistema exibe um alerta visível ao lado do item, sem bloquear as demais interações do checklist.
@@ -2746,7 +2427,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-085"></a>UC-085 — Votar em enquete sob as regras de ciclo de vida
+### <a id="UC-077"></a>UC-077 — Votar em enquete sob as regras de ciclo de vida
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2754,17 +2435,17 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Prioridade | Could have — hipótese derivada do caso de uso, pendente de validação com stakeholders. |
 | Ator principal | Votante anônimo. |
 | Atores secundários | Criador da enquete (usuário autenticado), nas regras de alteração de opções e de encerramento. |
-| Pré-condições | Enquete criada com ao menos duas opções válidas ([UC-038](#UC-038)); link público disponível. |
+| Pré-condições | Enquete criada com ao menos duas opções válidas ([UC-029](#UC-029)); link público disponível. |
 | Pós-condições | Voto é contabilizado sem exigir login nem identificar o votante; resultado é atualizado; a enquete respeita as regras de edição e encerramento ao longo de todo o ciclo. |
 | HU | [HU-085](home/user-storys#HU-085) |
 | RF | [RF-086](home/functional-requirements#RF-086) |
 | RN | [RN-089](home/business-rules#RN-089) |
 | Rastreabilidade | [Linha TM-HU-085](home/traceability-matrix#TM-HU-085) |
-| Tipo de relação | `<<include>>` — incluído por [UC-038](#UC-038), que aplica o ciclo de vida e o antifraude desde a criação da enquete. |
+| Tipo de relação | `<<include>>` — incluído por [UC-029](#UC-029), que aplica o ciclo de vida e o antifraude desde a criação da enquete. |
 
 **Fluxo principal**
 
-1. O caso [UC-038](#UC-038) inclui este caso a partir da criação da enquete e mantém suas regras válidas durante toda a existência dela.
+1. O caso [UC-029](#UC-029) inclui este caso a partir da criação da enquete e mantém suas regras válidas durante toda a existência dela.
 2. O votante abre o link público e o sistema mostra as opções e a situação atual da enquete.
 3. O votante escolhe uma opção (ou, se permitido, múltiplas até o limite definido) e confirma.
 4. O sistema aplica os controles antifraude sem expor a identidade do votante.
@@ -2783,7 +2464,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-086"></a>UC-086 — Revogar link público de lista
+### <a id="UC-078"></a>UC-078 — Revogar link público de lista
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2791,18 +2472,18 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Prioridade | Should have — hipótese derivada do caso de uso, pendente de validação com stakeholders. |
 | Ator principal | Usuário autenticado. |
 | Atores secundários | Nenhum. |
-| Pré-condições | Link público da lista já gerado ([UC-041](#UC-041)); usuário é o proprietário da lista. |
+| Pré-condições | Link público da lista já gerado ([UC-032](#UC-032)); usuário é o proprietário da lista. |
 | Pós-condições | Link revogado; qualquer acesso posterior é negado sem exibir a lista. |
 | HU | [HU-086](home/user-storys#HU-086) |
 | RF | [RF-087](home/functional-requirements#RF-087) |
 | RN | [RN-090](home/business-rules#RN-090) |
 | Rastreabilidade | [Linha TM-HU-086](home/traceability-matrix#TM-HU-086) |
-| Tipo de relação | `<<extend>>` de [UC-041](#UC-041). |
+| Tipo de relação | `<<extend>>` de [UC-032](#UC-032). |
 | Condição de extensão | O proprietário revoga o link já gerado. |
 
 **Fluxo principal**
 
-1. O proprietário acessa a lista já compartilhada ([UC-041](#UC-041)).
+1. O proprietário acessa a lista já compartilhada ([UC-032](#UC-032)).
 2. Aciona a opção de revogar o link público.
 3. O sistema confirma a ação com o proprietário.
 4. O sistema invalida o link vigente.
@@ -2815,7 +2496,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-087"></a>UC-087 — Acionar contato de transporte parceiro
+### <a id="UC-079"></a>UC-079 — Acionar contato de transporte parceiro
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2823,18 +2504,18 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | Prioridade | Could have — hipótese derivada do caso de uso, pendente de validação com stakeholders. |
 | Ator principal | Visitante. |
 | Atores secundários | Serviço/operador de transporte parceiro. |
-| Pré-condições | Parceiro de transporte ativo, com área atendida e contato público compatíveis com o local ou evento ([UC-039](#UC-039)). |
+| Pré-condições | Parceiro de transporte ativo, com área atendida e contato público compatíveis com o local ou evento ([UC-030](#UC-030)). |
 | Pós-condições | Canal externo do parceiro é aberto após confirmação do visitante, sem garantia de contratação ou disponibilidade. |
 | HU | [HU-087](home/user-storys#HU-087) |
 | RF | [RF-088](home/functional-requirements#RF-088) |
 | RN | [RN-091](home/business-rules#RN-091) |
 | Rastreabilidade | [Linha TM-HU-087](home/traceability-matrix#TM-HU-087) |
-| Tipo de relação | `<<extend>>` de [UC-039](#UC-039). |
+| Tipo de relação | `<<extend>>` de [UC-030](#UC-030). |
 | Condição de extensão | Existe parceiro ativo, com área atendida e contato público compatíveis com o local/evento em consulta. |
 
 **Fluxo principal**
 
-1. O visitante consulta as opções de transporte parceiro do local/evento ([UC-039](#UC-039)).
+1. O visitante consulta as opções de transporte parceiro do local/evento ([UC-030](#UC-030)).
 2. O visitante escolhe uma opção elegível.
 3. O sistema solicita confirmação antes de acionar o contato externo.
 4. Confirmada a ação, o sistema abre o canal do Serviço/operador de transporte parceiro (telefone, WhatsApp ou canal equivalente).
@@ -2849,7 +2530,7 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 
 ---
 
-### <a id="UC-088"></a>UC-088 — Sinalizar e acompanhar dado incorreto
+### <a id="UC-080"></a>UC-080 — Sinalizar e acompanhar dado incorreto
 
 | Campo | Especificação |
 |-------|---------------|
@@ -2863,9 +2544,9 @@ Consulta pública: não inclui [UC-046](#UC-046) — o acesso à informação n�
 | RF | [RF-089](home/functional-requirements#RF-089), [RF-22A](home/functional-requirements#RF-22A) |
 | RN | Tratamento da sinalização: [RN-092](home/business-rules#RN-092), [RN-093](home/business-rules#RN-093). Regras que definem o dado correto nos campos sinalizáveis: [RN-015](home/business-rules#RN-015), [RN-017](home/business-rules#RN-017), [RN-019](home/business-rules#RN-019), [RN-021](home/business-rules#RN-021), [RN-024](home/business-rules#RN-024), [RN-027](home/business-rules#RN-027), [RN-037](home/business-rules#RN-037), [RN-038](home/business-rules#RN-038). |
 | Rastreabilidade | [Linha TM-HU-088](home/traceability-matrix#TM-HU-088) |
-| Tipo de relação | `<<extend>>` de [UC-006](#UC-006) a [UC-020](#UC-020), [UC-044](#UC-044) e [UC-050](#UC-050). |
+| Tipo de relação | `<<extend>>` de [UC-006](#UC-006), [UC-007](#UC-007), [UC-009](#UC-009), [UC-010](#UC-010), [UC-036](#UC-036) e [UC-042](#UC-042). |
 | Condição de extensão | O usuário aciona “Sinalizar dado incorreto” na página do local, evento, equipamento cultural ou atração. |
-| Pontos de extensão | [UC-081](#UC-081), quando o envio da sinalização exige autenticação com conteúdo já preenchido. |
+| Pontos de extensão | [UC-073](#UC-073), quando o envio da sinalização exige autenticação com conteúdo já preenchido. |
 
 O **administrador autorizado**, em função de curadoria, é o responsável operacional por validar a sinalização e fechar o ciclo. Essa atribuição usa o papel administrativo existente e não cria novo papel de acesso.
 
@@ -2883,7 +2564,7 @@ O **administrador autorizado**, em função de curadoria, é o responsável oper
 - A1 — Já existe sinalização equivalente pendente: o sistema associa o novo relato ao protocolo existente, preservando autoria e evidências.
 - A2 — A apuração ainda não terminou: o campo permanece “em revisão” sem substituir automaticamente o dado oficial.
 - A3 — A sinalização não procede: o administrador mantém o valor, registra a justificativa e comunica o encerramento.
-- A4 — O usuário inicia a sinalização sem estar autenticado: aciona-se a extensão [UC-081](#UC-081), que preserva o conteúdo preenchido e retoma o envio após a autenticação.
+- A4 — O usuário inicia a sinalização sem estar autenticado: aciona-se a extensão [UC-073](#UC-073), que preserva o conteúdo preenchido e retoma o envio após a autenticação.
 
 **Fluxos de exceção**
 

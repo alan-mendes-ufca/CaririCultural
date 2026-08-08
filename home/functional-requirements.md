@@ -39,7 +39,6 @@ title: Requisitos Funcionais
 | RF-004 | O sistema deve permitir pesquisa de locais e eventos por palavras-chave, nome, categoria e cidade. | Must have | Mecanismo essencial para localizar algo específico dentro do catálogo; sem ele a descoberta depende só de rolagem. |
 | RF-005 | O sistema deve fornecer sugestões alternativas (termos ou categorias) quando uma busca não retornar resultados. | Should have | Melhora a recuperação de buscas sem resultado, mas a busca básica (RF-004) já funciona sem esse tratamento. |
 | RF-006 | O sistema deve permitir a filtragem de locais e eventos por categoria e adequação ao público (ex: infantil, famílias). | Must have | Torna o catálogo navegável e relevante; sem filtro a descoberta em um catálogo regional amplo fica inviável na prática. |
-| RF-006A | O sistema deve permitir buscar e ordenar locais e eventos por proximidade da localização atual do usuário (mediante consentimento) ou de uma origem informada manualmente | Should have | Torna a descoberta útil e conveniente em tempo real; sem o filtro por proximidade a navegação em um catálogo regional amplo gera atrito e recomendações irrelevantes. |
 
 ### Épico 2: Informações e Detalhes do Local
 
@@ -51,12 +50,12 @@ title: Requisitos Funcionais
 | RF-010 | O sistema deve disponibilizar informações financeiras, incluindo cardápio, faixa de preços, taxas e couvert artístico (quando aplicável). | Must have | Custo é critério primário de decisão; sem ele a etapa de avaliação fica incompleta. |
 | RF-011 | O sistema deve apresentar dados de localização, trajeto, formas de acesso, opções de transporte e estabelecimentos próximos. | Must have | Sustenta diretamente a transição planejamento → visita: sem isso o usuário não sabe como chegar ao local. |
 | RF-012 | O sistema deve disponibilizar informações específicas sobre a segurança do local e de seu entorno. | Must have | Critério decisório essencial, especialmente relevante em contexto de turismo regional. |
-| RF-013 | O sistema deve disponibilizar informações qualitativas sobre as condições de higiene do estabelecimento. | Should have | Complementa a decisão, mas é secundária frente a critérios mais determinantes já cobertos (preço, segurança, horário). |
+| RF-013 | O sistema deve disponibilizar informações qualitativas sobre as condições de higiene do estabelecimento. | Won't have | Complementa a decisão, mas é secundária frente a critérios mais determinantes já cobertos (preço, segurança, horário). Necessidade reconhecida como válida; implementação suspensa por ausência de fonte de dado confiável. |
 | RF-014 | O sistema deve indicar de forma clara os recursos de acessibilidade disponíveis no local. | Must have | Indispensável para o público que depende dessa informação para decidir se a visita é viável. |
 | RF-015 | O sistema deve informar se o local conta com estrutura e adequação para receber o público infantil. | Should have | Refina a decisão para um segmento específico de público, não é universal a todos os usuários. |
 | RF-016 | O sistema deve exibir calendário e detalhes, como programações musicais, datas e horários dos eventos cadastrados. | Must have | Eventos têm janela temporal definida; sem essa informação a decisão de ir ou não perde sentido. |
 | RF-017 | O sistema deve informar os canais de contato atualizados do estabelecimento de forma acessível. | Must have | É o mecanismo direto de divulgação/redirecionamento — a plataforma não intermedia negócios, então o contato real é o que efetivamente conecta o usuário ao estabelecimento. |
-| RF-018 | O sistema deve fornecer informações e curiosidades históricas, culturais e sociais relacionadas aos locais da região. | Should have | Enriquece a experiência e o valor cultural, mas não é decisório para a etapa de avaliação. |
+| RF-018 | O sistema deve fornecer informações e curiosidades históricas, culturais e sociais relacionadas aos locais da região. | Should have | Enriquece a experiência e o valor cultural sem ser decisório na etapa de avaliação; entregue pelo fluxo conversacional do assistente virtual (UC-021), não por tela dedicada. |
 | RF-019 | O sistema deve exibir as regras e políticas do local, incluindo itens permitidos e proibidos, restrições de entrada e condições especiais de acesso ou preço. | Should have | Refina a decisão, mas as informações centrais já Must (preço, horário, acesso) cobrem o essencial. |
 | RF-020 | O sistema deve informar o formato de serviço do estabelecimento (ex: atendimento na mesa, self-service, rodízio com garçom, rodízio com fila, balcão), para que o usuário conheça a dinâmica antes da visita. | Should have | Informação de conveniência sobre a dinâmica local, não crítica para decidir visitar. |
 
@@ -72,7 +71,7 @@ title: Requisitos Funcionais
 
 | id | requisito | prioridade (MoSCoW) | justificativa |
 |----|-----------|---------------------|---------------|
-| RF-023 | O sistema deve exibir recomendações de locais com base no histórico de visitas anteriores do usuário. | Should have | Refina a descoberta, mas depende de dados que só existem após uso continuado do sistema. |
+| RF-023 | O sistema deve exibir recomendações de locais com base no histórico de interesse demonstrado pelo usuário (acesso a perfis de locais), e não em visitas confirmadas. | Should have | Refina a descoberta, mas depende de dados que só existem após uso continuado do sistema; sinal de interesse — não de visita —, reformulado por ausência de mecanismo de confirmação de visita real. |
 | RF-024 | O sistema deve fornecer recomendações de locais alinhadas às avaliações realizadas pelo usuário. | Should have | Mesma lógica de RF-023: personalização incremental, não bloqueante ao fluxo mínimo de descoberta. |
 | RF-025 | O sistema deve sugerir locais considerando os interesses de usuários com perfis compatíveis (filtragem de interesses similares). | Could have | Recomendação social avançada, dependente de massa crítica de usuários que o MVP ainda não terá. |
 | RF-026 | O sistema deve gerar e recomendar roteiros elaborados e personalizados de passeios de acordo com o interesse do usuário. | Must have | Núcleo da etapa de planejamento; é o que transforma locais individuais em um passeio coeso. |
@@ -95,7 +94,7 @@ title: Requisitos Funcionais
 | RF-033 | O sistema deve permitir acionar o assistente de forma contextualizada, permitindo a continuidade direta de uma pesquisa em andamento. | Should have | É um refinamento de integração de UX entre telas, não um passo do fluxo em si — o assistente já é Must have via RF-030/RF-031. |
 | RF-034 | O sistema deve disponibilizar um módulo para importar e atualizar as informações de locais e eventos a partir de fontes de dados externas. | Must have | Via complementar (não substituta) ao cadastro administrativo (RF-042/RF-051) para povoar o catálogo (RF-001) e a agenda (RF-016). |
 | RF-035 | O sistema deve ser capaz de disponibilizar links externos para perfis públicos do ponto turístico (caso aplicável). | Must have | A plataforma não centraliza negócios nem vende reservas — divulgar e redirecionar externamente é o próprio mecanismo de valor, não um extra. |
-| RF-036 | O sistema deve exibir imagens disponíveis acerca do local de visita/passeio. | Should have | Reforça a etapa de avaliação, mas RF-008 já cobre o mínimo necessário de mídia visual. |
+| RF-036 | O sistema deve exibir imagens disponíveis acerca do local de visita/passeio, inclusive fora do fluxo de perfil (ex.: entrega pelo assistente virtual). | Should have | No perfil consolidado (UC-006), é redundante com RF-008; sua justificativa independente hoje vem do assistente virtual (UC-027), que exibe imagens dentro da própria conversa. |
 | RF-037 | O sistema deve ser capaz de interpretar prompts de áudio e devolver resultados em texto. | Could have | Conveniência adicional de interação com o assistente, não essencial ao seu funcionamento básico. |
 
 ### Épico 7: Interações Sociais e Compartilhamento
@@ -154,7 +153,7 @@ title: Requisitos Funcionais
 
 | id | requisito | prioridade (MoSCoW) | justificativa |
 |----|-----------|---------------------|---------------|
-| RF-062 | O sistema deve exibir conquistas e distintivos desbloqueáveis de acordo com o engajamento do usuário, como visitas registradas, avaliações publicadas e check-ins realizados. | Could have | Incentivo de engajamento, não necessário ao funcionamento do fluxo descoberta → visita. |
+| RF-062 | O sistema deve exibir conquistas e distintivos desbloqueáveis de acordo com o engajamento do usuário, como visitas registradas, avaliações publicadas e check-ins realizados. | Could have | Incentivo de engajamento, não necessário ao funcionamento do fluxo descoberta → visita. Dependência a revisitar se o Épico 10 sair da hipótese: "visitas registradas" é dado autodeclarado do UC-019, cuja confiabilidade só é aceitável enquanto o registro for privado ao próprio usuário; e "check-ins realizados" não possui requisito funcional de origem em nenhum ponto deste documento. |
 | RF-063 | O sistema deve exibir dicas contextuais curadas sobre o local associado ao checklist de visita do usuário. | Could have | Valor agregado à etapa de visita, mas RF-029 já cobre o acompanhamento essencial via checklist. |
 
 ### Épico 11: Gestão de Estabelecimentos (Protótipo)
@@ -206,7 +205,7 @@ title: Requisitos Funcionais
 | id | requisito | prioridade (MoSCoW) | justificativa |
 |----|-----------|---------------------|---------------|
 | RF-077 | O sistema deve validar formato, tamanho, cardinalidade, domínio e taxonomia dos parâmetros de busca antes de processar a consulta, rejeitando valores inválidos com mensagem compreensível. | Must have | Protege a integridade da etapa de descoberta, cuja busca (RF-004) já é Must have. |
-| RF-078 | O sistema deve permitir busca por proximidade mediante consentimento para localização atual ou origem manual informada pelo visitante. | Should have | Refinamento de busca; a descoberta básica por palavra-chave e filtro (RF-004/RF-006) já funciona sem geolocalização. |
+| RF-078 | O sistema deve permitir buscar e ordenar locais e eventos por proximidade, mediante consentimento para uso da localização atual ou a partir de origem informada manualmente pelo visitante. | Should have | Refinamento de busca; a descoberta básica por palavra-chave e filtro (RF-004/RF-006) já funciona sem geolocalização. |
 | RF-079 | O sistema deve apresentar, para dados sensíveis à atualização, a fonte, a data da última verificação e o eventual estado de revisão. | Must have | Sustenta a confiabilidade da etapa de avaliação, especialmente com dados vindos de importação externa (RF-034). |
 | RF-080 | O sistema deve permitir filtrar a agenda pública por data. | Must have | Essencial para eventos com janela temporal definida, complementando o calendário já Must (RF-016). |
 | RF-081 | O sistema deve retirar da agenda pública eventos e atrações encerrados, mantendo-os inativos ou arquivados. | Must have | Evita decisões erradas de planejamento baseadas em eventos que não existem mais. |
@@ -218,4 +217,3 @@ title: Requisitos Funcionais
 | RF-087 | O sistema deve permitir ao proprietário revogar links públicos de listas pessoais. | Should have | Controle de privacidade complementar ao compartilhamento de listas (RF-041), também Should have. |
 | RF-088 | O sistema deve exibir e permitir o acionamento do contato de transporte parceiro elegível para um local ou evento. | Could have | Ação de redirecionamento de contato sobre a listagem de transporte parceiro (RF-039); reescrito para não sugerir uma reserva/confirmação intermediada pela plataforma. |
 | RF-089 | O sistema deve registrar, acompanhar e tratar sinalizações de dados incorretos em locais e eventos. | Must have | Sustenta a confiabilidade do catálogo ao longo de todo o fluxo, especialmente com dados de fontes externas (RF-034). |
-
