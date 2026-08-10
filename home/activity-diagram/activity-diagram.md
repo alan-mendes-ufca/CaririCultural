@@ -1,6 +1,6 @@
 # Diagramas de Atividades UML
 
-Esta página reúne os diagramas de atividades dos 78 casos de uso descritivos do Cariri Cultural. Cada diagrama apresenta o fluxo principal e, quando aplicável, os fluxos alternativos e de exceção, organizados em raias por responsável.
+Esta página reúne os diagramas de atividades dos casos de uso descritivos do Cariri Cultural. Cada diagrama apresenta o fluxo principal e, quando aplicável, os fluxos alternativos e de exceção, organizados em raias por responsável.
 
 ---
 
@@ -170,7 +170,7 @@ Esta página reúne os diagramas de atividades dos 78 casos de uso descritivos d
 
 [Consultar o caso de uso descritivo](../user-cases/descriptive-use-cases#UC-019)
 
-![Diagrama de Atividades UML — UC-019 — Registrar locais visitados (Histórico Pessoal)](Diagrama-de-Atividades-UC019.svg)
+![Diagrama de Atividades UML — UC-019 — Registrar locais visitados \(Histórico Pessoal\)](Diagrama-de-Atividades-UC019.svg)
 
 ---
 
