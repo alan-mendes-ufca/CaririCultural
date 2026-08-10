@@ -33,18 +33,20 @@ Diagramas com o fluxo de interação dos usuários no protótipo
 
 # Assistente Virtual
 
+![Gestor Access Flow for-2026-08-10-130901.png](uploads/da2a7008c24f2329e74b5a1f35347f7f/Gestor_Access_Flow_for-2026-08-10-130901.png){width=651 height=600}
+
 # Comunidade e Avaliações
 
-![Gestor Access Flow for-2026-08-10-130343.png](uploads/fd8a5980f1710ca903d6923e59751304/Gestor_Access_Flow_for-2026-08-10-130343.png){width=900 height=550}
+![Gestor Access Flow for-2026-08-10-130343.png](uploads/fd8a5980f1710ca903d6923e59751304/Gestor_Access_Flow_for-2026-08-10-130343.png){width="900" height="550"}
 
-# Perfil do Explorador e Troca de Modo 
+# Perfil do Explorador e Troca de Modo
 
-![Gestor Access Flow for-2026-08-10-130434.png](uploads/3ea615dd5845d53b308f9718be19da61/Gestor_Access_Flow_for-2026-08-10-130434.png){width=861 height=600}
+![Gestor Access Flow for-2026-08-10-130434.png](uploads/3ea615dd5845d53b308f9718be19da61/Gestor_Access_Flow_for-2026-08-10-130434.png){width="861" height="600"}
 
-# Área do Gestor: Painel, Gerenciamento e Insights 
+# Área do Gestor: Painel, Gerenciamento e Insights
 
-![Gestor Access Flow for-2026-08-10-130534.png](uploads/749c7acedf92a27f49fbe0ccda83f2ac/Gestor_Access_Flow_for-2026-08-10-130534.png){width=900 height=376}
+![Gestor Access Flow for-2026-08-10-130534.png](uploads/749c7acedf92a27f49fbe0ccda83f2ac/Gestor_Access_Flow_for-2026-08-10-130534.png){width="900" height="376"}
 
-# Cadastro de Novo Estabelecimento 
+# Cadastro de Novo Estabelecimento
 
-![Gestor Access Flow for-2026-08-10-130614.png](uploads/2347770b43c23211b14bdbd1ce0eb8b9/Gestor_Access_Flow_for-2026-08-10-130614.png){width=281 height=600}
+![Gestor Access Flow for-2026-08-10-130614.png](uploads/2347770b43c23211b14bdbd1ce0eb8b9/Gestor_Access_Flow_for-2026-08-10-130614.png){width="281" height="600"}
