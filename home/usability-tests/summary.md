@@ -15,9 +15,7 @@ title: Sumário dos Testes de Usabilidade
    4.2. [Teste Público](./public-usability-tests/Kamily-Rocha/test-Kamily-Rocha)
 5. Lucas Santos
 
-   5.1. Transcrição
-
-   5.2. Teste Público
+   5.1. [Teste Público](./public-usability-tests/Lucas-Santos/test-Lucas-Santos)
 6. Tays Ferreira
 
    6.1. [Teste Público](./public-usability-tests/Tays-Ferreira/test-Tays-Ferreira)
