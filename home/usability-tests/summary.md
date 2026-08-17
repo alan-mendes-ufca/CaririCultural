@@ -2,6 +2,7 @@
 title: Sumário dos Testes de Usabilidade
 ---
  1. [Plano de avaliação de usabilidade](https://docs.google.com/document/d/18X0fiRMK2LEuV3qziunAhFoXxHqGaWaUFQi5QUti0OQ/edit?tab=t.0)
+ 1.1. [Relatório das avaliação de usabilidade](https://docs.google.com/document/d/1uJkoejP6ujpsQoMVlIeFNXH0MF2yaUcnqPogCoNo1ZA/edit?usp=sharing)
  2. [Inspeção da Equipe](./team-usability-testing)
  3. Nataniel Nhanga
 
