@@ -37,3 +37,5 @@ title: Sumário dos Testes de Usabilidade
 12. Lucas Macedo
 
     12.1 [Teste Público](./public-usability-tests/Lucas-Macedo/Test-Lucas-Macedo)
+
+13. [Relatório Final](https://docs.google.com/document/d/1nML-kbeHC85OLW-5F-H-aAr6oFo2Ec5aZyroZ2LIMV4/edit?tab=t.0#heading=h.jnmvhsjpjs48)
