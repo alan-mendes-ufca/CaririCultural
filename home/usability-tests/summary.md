@@ -12,3 +12,8 @@ title: Sumário dos Testes de Usabilidade
    3.1. [Transcrição](./public-usability-tests/Kamily-Rocha/transcription-Kamily-Rocha)
 
    3.2. [Teste Público](./public-usability-tests/Kamily-Rocha/test-Kamily-Rocha)
+4. Lucas Santos
+
+   4.1. Transcrição
+
+   4.2. Teste Público
