@@ -1,282 +1,384 @@
 ---
 title: Diagramas de Casos de Uso
 ---
-- Os diagramas seguem a notação de **Diagrama de Casos de Uso (UML)** adaptada à sintaxe do Mermaid (que não possui um tipo de diagrama "use case" nativo).
+- Os diagramas seguem a notação de **Diagrama de Casos de Uso (UML)** utilizando **PlantUML**, que oferece suporte nativo a atores, casos de uso, fronteira do sistema e relações `<<include>>` e `<<extend>>`.
 - **Atenção:** A autenticação de usuário comum é **pré-condição** de uso da plataforma, não um caso de uso (por isso não há nó de autenticação genérico nestes diagramas); o único caso de autenticação modelado é UC-038 (administrador), nos diagramas 8 e 9.
+- **Atores e relações** reproduzem os campos "Ator principal", "Atores secundários", "Tipo de relação" e "Pontos de extensão" da especificação descritiva. Convenções adotadas:
+  - `<<include>>`: seta tracejada do caso **base** para o caso **incluído**.
+  - `<<extend>>`: seta tracejada do caso **extensor** para o caso **base**.
+  - Atores secundários recebem associação, do mesmo modo que o ator principal.
+  - **Usuário autenticado** é modelado como especialização de **Visitante** (generalização de ator), pois herda todos os casos de acesso público e acrescenta os que exigem sessão válida.
+  - Casos exclusivamente incluídos e nunca iniciados diretamente pelo ator (UC-069, UC-071, UC-075) não recebem associação de ator: são alcançados a partir do caso base.
 
 ---
 
 ## 1. Visão geral por épico e ator
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    VA([Votante Anônimo])
-    G([Gestor])
-    ADM([Administrador autorizado<br/>em curadoria])
-    RESP([Responsável pelo local])
-    APL([Administrador da plataforma])
-    AEC([Administrador de equipamento cultural])
-    AEG([Administrador de estabelecimento gastronômico])
+```plantuml
+@startuml
+left to right direction
+skinparam packageStyle rectangle
 
-    %% Fronteira do Sistema
-    subgraph CC [Sistema Cariri Cultural]
-        direction TB
-        C1((Descoberta e busca))
-        C2((Perfil do local))
-        C3((Agenda comunidade e avaliações))
-        C4((Assistente virtual))
-        C5((Área pessoal e roteiros))
-        C6((Social enquetes e compartilhamento))
-        C7((Gestão administrativa — hipótese))
-    end
+' Atores
+actor "Visitante" as V
+actor "Usuário autenticado" as UA
+actor "Votante anônimo" as VA
+actor "Gestor" as G
+actor "Administrador autorizado\nem curadoria" as ADM
+actor "Responsável pelo local" as RESP
+actor "Administrador da plataforma" as APL
+actor "Administrador de equipamento cultural" as AEC
+actor "Administrador de estabelecimento gastronômico" as AEG
 
-    %% Relações Ator -> Agrupamento
-    V --- C1 & C2 & C3 & C4 & C5 & C6 & C7
-    VA --- C6
-    ADM --- C3
-    RESP --- C3
-    G --- C7
-    APL --- C7
-    AEC --- C7
-    AEG --- C7
+' Generalização de ator
+V <|-- UA
+
+' Fronteira do Sistema
+rectangle "Sistema Cariri Cultural" {
+    package "Descoberta e busca" as C1
+    package "Perfil do local" as C2
+    package "Agenda comunidade e avaliações" as C3
+    package "Assistente virtual" as C4
+    package "Área pessoal e roteiros" as C5
+    package "Social enquetes e compartilhamento" as C6
+    package "Gestão administrativa — hipótese" as C7
+}
+
+' Relações Ator -> Agrupamento
+V -- C1
+V -- C2
+V -- C3
+V -- C4
+V -- C6
+V -- C7
+UA -- C3
+UA -- C5
+UA -- C6
+VA -- C6
+ADM -- C3
+RESP -- C3
+G -- C7
+APL -- C7
+AEC -- C7
+AEG -- C7
+@enduml
 ```
+
+> Visão de contexto: os elementos internos são **pacotes** de casos de uso, não casos de uso individuais. O detalhamento está nos diagramas 2 a 11.
 
 ---
 
 ## 2. Descoberta e busca
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    GEO([Serviço de Geolocalização])
+```plantuml
+@startuml
+left to right direction
 
-    %% Fronteira
-    subgraph CC [Cariri Cultural]
-        direction TB
-        UC001((UC-001 Catálogo regional))
-        UC002((UC-002 Locais em alta visitação))
-        UC003((UC-003 Locais pouco divulgados))
-        UC004((UC-004 Pesquisa por termo))
-        UC005((UC-005 Filtro por categoria e público))
-        UC069((UC-069 Validar parâmetros de busca))
-        UC070((UC-070 Buscar por proximidade))
-    end
+' Atores
+actor "Visitante" as V
+actor "Serviço de Geolocalização" as GEO
 
-    %% Relações Ator -> Caso de Uso
-    V --- UC001 & UC002 & UC003 & UC004 & UC005
+' Fronteira
+rectangle "Cariri Cultural" {
+    usecase "UC-001\nConsultar catálogo regional" as UC001
+    usecase "UC-002\nConsultar locais em alta visitação" as UC002
+    usecase "UC-003\nConsultar locais pouco divulgados" as UC003
+    usecase "UC-004\nPesquisar locais e eventos por termo" as UC004
+    usecase "UC-005\nFiltrar locais e eventos\npor categoria e público" as UC005
+    usecase "UC-069\nValidar parâmetros de busca" as UC069
+    usecase "UC-070\nBuscar por proximidade" as UC070
+}
 
-    %% Relações Include / Extend
-    UC004 -.->|include| UC069
-    UC005 -.->|include| UC069
+' Relações Ator -> Caso de Uso
+V -- UC001
+V -- UC002
+V -- UC003
+V -- UC004
+V -- UC005
+V -- UC070
+GEO -- UC070
 
-    UC002 -.->|extend| UC001
-    UC003 -.->|extend| UC001
+' Relações Include / Extend
+UC004 ..> UC069 : <<include>>
+UC005 ..> UC069 : <<include>>
 
-    UC070 -.->|extend| UC004
-    UC070 -.->|extend| UC005
-    GEO --- UC070
+UC002 ..> UC001 : <<extend>>
+UC003 ..> UC001 : <<extend>>
+
+UC070 ..> UC004 : <<extend>>
+UC070 ..> UC005 : <<extend>>
+@enduml
 ```
 
 ---
 
 ## 3. Perfil do local
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    MAP([Serviço de Mapas e Transportes])
+```plantuml
+@startuml
+left to right direction
+skinparam usecase {
+    BackgroundColor<<fora de escopo>> #F4F4F4
+    BorderColor<<fora de escopo>> #9E9E9E
+    FontColor<<fora de escopo>> #6B6B6B
+    BackgroundColor<<detalhado em outro diagrama>> #EEF3FB
+    BorderColor<<detalhado em outro diagrama>> #6B8DB5
+    FontColor<<detalhado em outro diagrama>> #33495E
+}
 
-    %% Fronteira
-    subgraph CC [Cariri Cultural — perfil do local]
-        direction TB
-        UC006((UC-006 Perfil do local<br/>ambiente horários preços<br/>regras segurança e público))
-        UC007((UC-007 Localização acesso<br/>e opções de transporte))
-        UC009((UC-009 Calendário e<br/>programação de eventos))
-        UC010((UC-010 Canais de contato<br/>e redes sociais))
-        UC011((UC-011 Imagens do local<br/>na plataforma))
-        UC008((UC-008 Condições de higiene<br/>fora do escopo desta entrega))
-        UC071((UC-071 Procedência do dado<br/>e canal externo))
+' Atores
+actor "Visitante" as V
+actor "Serviço de Mapas e Transportes" as MAP
 
-        %% Nós convidados: extensões vindas dos diagramas 4 e 7
-        UC072((UC-072 Filtrar agenda por data))
-        UC080((UC-080 Sinalizar e acompanhar<br/>dado incorreto))
-        UC033((UC-033 Compartilhar perfil<br/>de local ou evento))
-    end
+' Fronteira
+rectangle "Cariri Cultural — perfil do local" {
+    usecase "UC-006\nConsultar perfil do local\nambiente funcionamento custos\nregras segurança e público" as UC006
+    usecase "UC-007\nConsultar localização acesso\ne opções de transporte" as UC007
+    usecase "UC-009\nConsultar calendário e\nprogramação de eventos" as UC009
+    usecase "UC-010\nAcessar canais de contato\ne redes sociais" as UC010
+    usecase "UC-071\nConsultar procedência do dado\ne abrir canal externo" as UC071
+    usecase "UC-008\nConsultar condições de higiene" as UC008 <<fora de escopo>>
 
-    %% Relações Ator -> Caso de Uso
-    V --- UC006 & UC007 & UC009 & UC010 & UC011
-    MAP --- UC007
+    ' Nós convidados: extensões vindas dos diagramas 4 e 7
+    usecase "UC-072\nFiltrar agenda por data e\nocultar itens encerrados" as UC072 <<detalhado em outro diagrama>>
+    usecase "UC-080\nSinalizar e acompanhar\ndado incorreto" as UC080 <<detalhado em outro diagrama>>
+    usecase "UC-033\nCompartilhar perfil\nde local ou evento" as UC033 <<detalhado em outro diagrama>>
+}
 
-    %% Relações Include
-    UC006 -.->|include| UC071
-    UC007 -.->|include| UC071
-    UC009 -.->|include| UC071
-    UC010 -.->|include| UC071
+' Relações Ator -> Caso de Uso
+V -- UC006
+V -- UC007
+V -- UC009
+V -- UC010
+MAP -- UC007
 
-    %% Relações Extend vindas de fora do recorte
-    UC072 -.->|extend| UC009
-    UC080 -.->|extend| UC006 & UC007 & UC009 & UC010
-    UC033 -.->|extend| UC006 & UC007 & UC009 & UC010
+' Relações Include
+UC006 ..> UC071 : <<include>>
+UC007 ..> UC071 : <<include>>
+UC009 ..> UC071 : <<include>>
+UC010 ..> UC071 : <<include>>
 
-    classDef fora fill:#f4f4f4,stroke:#9e9e9e,stroke-dasharray:4 3,color:#6b6b6b
-    class UC008 fora
+' Relações Extend vindas de fora do recorte
+UC072 ..> UC009 : <<extend>>
+UC080 ..> UC006 : <<extend>>
+UC080 ..> UC007 : <<extend>>
+UC080 ..> UC009 : <<extend>>
+UC080 ..> UC010 : <<extend>>
+UC033 ..> UC006 : <<extend>>
+UC033 ..> UC007 : <<extend>>
+UC033 ..> UC009 : <<extend>>
+UC033 ..> UC010 : <<extend>>
+@enduml
 ```
 
-> Os antigos diagramas 3, 4 e 5 foram unificados aqui: a consolidação do Épico 2 reduziu o perfil do local a seis casos, e manter três recortes passou a repetir os mesmos nós.
-> UC-008 aparece tracejado por estar fora do escopo desta entrega; não recebe include nem extend enquanto essa decisão valer.
-> UC-009 reaparece no diagrama 4, onde seu ciclo de vida é controlado por UC-072. UC-071, UC-080 e UC-033 são nós convidados, detalhados nos diagramas 4 e 7.
+> Os antigos diagramas 3, 4 e 5 foram unificados aqui: a consolidação do Épico 2 reduziu o perfil do local a quatro casos principais (UC-006, UC-007, UC-009 e UC-010), e manter três recortes passou a repetir os mesmos nós.
+> UC-008 aparece destacado por estar fora do escopo desta entrega; não recebe include nem extend enquanto essa decisão valer.
+> UC-009 reaparece no diagrama 4, onde seu ciclo de vida é controlado por UC-072. UC-072, UC-080 e UC-033 são nós convidados, detalhados nos diagramas 4 e 7; permanecem dentro da fronteira do sistema porque são casos de uso do próprio Cariri Cultural, e aparecem aqui apenas como origem das relações `<<extend>>`. O ator principal de UC-080 e UC-033 é o usuário autenticado, associado a eles nos diagramas de origem.
 
 ---
 
 ## 4. Agenda, comunidade e avaliações
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    ADM([Administrador autorizado<br/>em curadoria])
-    RESP([Responsável pelo local])
+```plantuml
+@startuml
+left to right direction
 
-    %% Fronteira
-    subgraph CC [Cariri Cultural]
-        direction TB
-        UC009((UC-009 Calendário e programação de eventos))
-        UC012((UC-012 Avaliações da comunidade))
-        UC013((UC-013 Publicar avaliação))
-        UC031((UC-031 Mídias publicadas pela comunidade))
-        UC051((UC-051 Marcar avaliação como útil))
-        UC052((UC-052 Compartilhar avaliação individual))
-        UC053((UC-053 Iniciar tópico de discussão))
-        UC072((UC-072 Filtrar agenda por data))
-        UC073((UC-073 Retomar rascunho após autenticação))
-        UC080((UC-080 Sinalizar e acompanhar dado incorreto))
-    end
+' Atores
+actor "Visitante" as V
+actor "Usuário autenticado" as UA
+actor "Administrador autorizado\nem curadoria" as ADM
+actor "Responsável pelo local" as RESP
 
-    %% Relações Ator -> Caso de Uso
-    V --- UC009 & UC012 & UC031 & UC072 & UC013 & UC051 & UC052 & UC053 & UC073 & UC080
-    ADM --- UC080
-    RESP --- UC080
+' Generalização de ator
+V <|-- UA
 
-    %% Relações Extend
-    UC051 -.->|extend| UC012
-    UC052 -.->|extend| UC012
-    UC031 -.->|extend| UC012
-    UC072 -.->|extend| UC009
-    UC073 -.->|extend| UC013
-    UC073 -.->|extend| UC080
+' Fronteira
+rectangle "Cariri Cultural" {
+    usecase "UC-009\nConsultar calendário e programação de eventos" as UC009
+    usecase "UC-012\nConsultar avaliações da comunidade" as UC012
+    usecase "UC-013\nPublicar avaliação" as UC013
+    usecase "UC-031\nConsultar mídias publicadas pela comunidade" as UC031
+    usecase "UC-051\nMarcar avaliação como útil" as UC051
+    usecase "UC-052\nCompartilhar avaliação individual" as UC052
+    usecase "UC-053\nIniciar tópico de discussão na comunidade" as UC053
+    usecase "UC-072\nFiltrar agenda por data\ne ocultar itens encerrados" as UC072
+    usecase "UC-073\nRetomar rascunho após autenticação" as UC073
+    usecase "UC-080\nSinalizar e acompanhar dado incorreto" as UC080
+}
+
+' Relações Ator -> Caso de Uso
+V -- UC009
+V -- UC012
+V -- UC031
+V -- UC072
+UA -- UC013
+UA -- UC031
+UA -- UC051
+UA -- UC052
+UA -- UC053
+UA -- UC073
+UA -- UC080
+ADM -- UC080
+RESP -- UC080
+
+' Relações Extend
+UC051 ..> UC012 : <<extend>>
+UC052 ..> UC012 : <<extend>>
+UC031 ..> UC012 : <<extend>>
+UC072 ..> UC009 : <<extend>>
+UC073 ..> UC013 : <<extend>>
+UC073 ..> UC080 : <<extend>>
+@enduml
 ```
+
+> Em UC-031 o visitante é o ator principal (consulta das mídias) e o usuário autenticado participa como ator secundário, ao publicar uma nova mídia.
 
 ---
 
 ## 5. Assistente virtual
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    AUD([Serviço de Transcrição de Áudio])
-    FONTE([Fonte de dados externa])
+```plantuml
+@startuml
+left to right direction
 
-    %% Fronteira
-    subgraph CC [Cariri Cultural]
-        direction TB
-        UC021((UC-021 Consultar assistente virtual))
-        UC022((UC-022 Resposta interpretada por intenção))
-        UC023((UC-023 Orientação alternativa))
-        UC024((UC-024 Contexto da tela))
-        UC025((UC-025 Dados por fonte externa))
-        UC026((UC-026 Links de redes sociais pelo assistente))
-        UC027((UC-027 Imagens do local pelo assistente))
-        UC028((UC-028 Pergunta por áudio))
-    end
+' Atores
+actor "Visitante" as V
+actor "Serviço de Transcrição de Áudio" as AUD
+actor "Fonte de dados externa" as FONTE
 
-    %% Relações Ator -> Caso de Uso
-    V --- UC021 & UC022 & UC023 & UC024 & UC025 & UC026 & UC027 & UC028
-    AUD --- UC028
-    FONTE --- UC025
+' Fronteira
+rectangle "Cariri Cultural" {
+    usecase "UC-021\nConsultar o assistente virtual" as UC021
+    usecase "UC-022\nReceber resposta interpretada por intenção" as UC022
+    usecase "UC-023\nReceber orientação alternativa do assistente" as UC023
+    usecase "UC-024\nAcionar o assistente com contexto da tela" as UC024
+    usecase "UC-025\nConsultar dados atualizados por fonte externa" as UC025
+    usecase "UC-026\nReceber links de redes sociais pelo assistente" as UC026
+    usecase "UC-027\nReceber imagens do local pelo assistente" as UC027
+    usecase "UC-028\nEnviar pergunta por áudio ao assistente" as UC028
+}
 
-    %% Relações Extend
-    UC022 -.->|extend| UC021
-    UC023 -.->|extend| UC021
-    UC024 -.->|extend| UC021
-    UC026 -.->|extend| UC021
-    UC027 -.->|extend| UC021
-    UC028 -.->|extend| UC021
+' Relações Ator -> Caso de Uso
+V -- UC021
+V -- UC022
+V -- UC023
+V -- UC024
+V -- UC025
+V -- UC026
+V -- UC027
+V -- UC028
+AUD -- UC028
+FONTE -- UC025
+
+' Relações Extend
+UC022 ..> UC021 : <<extend>>
+UC023 ..> UC021 : <<extend>>
+UC024 ..> UC021 : <<extend>>
+UC026 ..> UC021 : <<extend>>
+UC027 ..> UC021 : <<extend>>
+UC028 ..> UC021 : <<extend>>
+@enduml
 ```
+
+> UC-025 é o único caso deste recorte sem campo "Tipo de relação" na especificação descritiva; por isso aparece sem `<<extend>>` de UC-021, diferentemente dos demais casos do épico.
 
 ---
 
 ## 6. Área pessoal: recomendações, roteiros, listas e gamificação
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    MAP([Serviço de Mapas e Transportes])
+```plantuml
+@startuml
+left to right direction
 
-    %% Fronteira
-    subgraph CC [Cariri Cultural]
-        direction TB
-        UC014((UC-014 Recomendação por histórico de visitas))
-        UC015((UC-015 Recomendação por avaliações realizadas))
-        UC016((UC-016 Recomendação por perfis similares))
-        UC017((UC-017 Gerar roteiro personalizado))
-        UC018((UC-018 Gerenciar listas de locais desejados))
-        UC019((UC-019 Registrar locais visitados))
-        UC020((UC-020 Checklist de atividades e passeios))
-        UC032((UC-032 Compartilhar lista por link))
-        UC054((UC-054 Conquistas e distintivos))
-        UC055((UC-055 Dicas contextuais no checklist))
-        UC074((UC-074 Alternativa de personalização))
-        UC075((UC-075 Salvar e ajustar roteiro))
-        UC076((UC-076 Alerta de item vinculado a atração inativa))
-        UC078((UC-078 Revogar link público de lista))
-    end
+' Atores
+actor "Usuário autenticado" as UA
+actor "Serviço de Mapas e Transportes" as MAP
 
-    %% Relações Ator -> Caso de Uso
-    V --- UC014 & UC015 & UC016 & UC017 & UC018 & UC019 & UC020
-    V --- UC032 & UC054 & UC055 & UC074 & UC075 & UC076 & UC078
-    MAP --- UC017
+' Fronteira
+rectangle "Cariri Cultural" {
+    usecase "UC-014\nReceber recomendações por interesse demonstrado" as UC014
+    usecase "UC-015\nReceber recomendações por avaliações realizadas" as UC015
+    usecase "UC-016\nReceber recomendações por perfis similares" as UC016
+    usecase "UC-017\nGerar roteiro personalizado" as UC017
+    usecase "UC-018\nGerenciar listas de locais desejados" as UC018
+    usecase "UC-019\nRegistrar locais visitados\nhistórico pessoal" as UC019
+    usecase "UC-020\nUsar checklist de atividades e passeios" as UC020
+    usecase "UC-032\nCompartilhar lista pessoal por link público" as UC032
+    usecase "UC-054\nConsultar conquistas e distintivos" as UC054
+    usecase "UC-055\nConsultar dicas contextuais no checklist" as UC055
+    usecase "UC-074\nReceber alternativa quando a\npersonalização é insuficiente" as UC074
+    usecase "UC-075\nSalvar e ajustar roteiro pessoal" as UC075
+    usecase "UC-076\nAlertar item de checklist\nvinculado a atração inativa" as UC076
+    usecase "UC-078\nRevogar link público de lista" as UC078
+}
 
-    %% Relações Include
-    UC017 -.->|include| UC075
+' Relações Ator -> Caso de Uso
+UA -- UC014
+UA -- UC015
+UA -- UC016
+UA -- UC017
+UA -- UC018
+UA -- UC019
+UA -- UC020
+UA -- UC032
+UA -- UC054
+UA -- UC055
+UA -- UC074
+UA -- UC076
+UA -- UC078
+MAP -- UC017
 
-    %% Relações Extend
-    UC074 -.->|extend| UC014
-    UC074 -.->|extend| UC015
-    UC074 -.->|extend| UC016
-    UC076 -.->|extend| UC020
-    UC055 -.->|extend| UC020
-    UC078 -.->|extend| UC032
+' Relações Include
+UC017 ..> UC075 : <<include>>
+
+' Relações Extend
+UC074 ..> UC014 : <<extend>>
+UC074 ..> UC015 : <<extend>>
+UC074 ..> UC016 : <<extend>>
+UC076 ..> UC020 : <<extend>>
+UC055 ..> UC020 : <<extend>>
+UC078 ..> UC032 : <<extend>>
+@enduml
 ```
+
+> Todos os casos do Épico 5 exigem sessão válida: o ator é o usuário autenticado, não o visitante. UC-075 não recebe associação de ator por ser alcançado exclusivamente pela inclusão a partir de UC-017.
 
 ---
 
 ## 7. Social, enquetes, transporte e compartilhamento
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    VA([Votante Anônimo])
-    TP([Serviço/operador de transporte parceiro])
+```plantuml
+@startuml
+left to right direction
 
-    %% Fronteira
-    subgraph CC [Cariri Cultural]
-        direction TB
-        UC029((UC-029 Criar e compartilhar enquete))
-        UC030((UC-030 Transporte alternativo parceiro))
-        UC077((UC-077 Votar em enquete))
-        UC079((UC-079 Acionar contato de transporte parceiro))
-        UC033((UC-033 Compartilhar perfil de local ou evento))
-    end
+' Atores
+actor "Visitante" as V
+actor "Usuário autenticado" as UA
+actor "Votante anônimo" as VA
+actor "Serviço/operador de transporte parceiro" as TP
 
-    %% Relações Ator -> Caso de Uso
-    V --- UC030 & UC079 & UC029 & UC033
-    VA --- UC077
-    TP --- UC030 & UC079
+' Generalização de ator
+V <|-- UA
 
-    %% Relações Include / Extend
-    UC029 -.->|include| UC077
-    UC079 -.->|extend| UC030
+' Fronteira
+rectangle "Cariri Cultural" {
+    usecase "UC-029\nCriar e compartilhar enquete" as UC029
+    usecase "UC-030\nConsultar transporte alternativo parceiro" as UC030
+    usecase "UC-077\nVotar em enquete sob as\nregras de ciclo de vida" as UC077
+    usecase "UC-079\nAcionar contato de transporte parceiro" as UC079
+    usecase "UC-033\nCompartilhar perfil de local ou evento" as UC033
+}
+
+' Relações Ator -> Caso de Uso
+V -- UC030
+V -- UC079
+UA -- UC029
+UA -- UC033
+UA -- UC077
+VA -- UC077
+TP -- UC030
+TP -- UC079
+
+' Relações Include / Extend
+UC029 ..> UC077 : <<include>>
+UC079 ..> UC030 : <<extend>>
+@enduml
 ```
+
+> Em UC-077 o votante anônimo é o ator principal; o criador da enquete (usuário autenticado) participa como ator secundário, nas regras de alteração de opções e de encerramento.
 
 ---
 
@@ -284,137 +386,188 @@ flowchart LR
 > [!WARNING]
 > Os diagramas 8 a 11 modelam **hipóteses verificáveis**. O núcleo de cadastro administrativo (UC-034, UC-036, UC-038 a UC-040, UC-042 e UC-043) já integra a entrega atual; os demais casos do Épico 8 (UC-041 e UC-044 a UC-050) e a totalidade dos Épicos 11 a 13 permanecem fora dela. Em todos os casos, os fluxos e telas administrativas ainda dependem de validação com os futuros stakeholders administrativos.
 
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    APL([Administrador da plataforma])
-    AEC([Administrador de equipamento cultural])
+```plantuml
+@startuml
+left to right direction
+skinparam usecase {
+    BackgroundColor<<detalhado em outro diagrama>> #EEF3FB
+    BorderColor<<detalhado em outro diagrama>> #6B8DB5
+    FontColor<<detalhado em outro diagrama>> #33495E
+}
 
-    subgraph CC [Cariri Cultural — equipamentos e atrações]
-        direction TB
-        UC034((UC-034 Cadastrar equipamento cultural))
-        UC035((UC-035 Editar equipamento cultural))
-        UC036((UC-036 Consultar equipamento cultural))
-        UC037((UC-037 Associar administrador a equipamento))
-        UC038((UC-038 Autenticar administrador))
-        UC039((UC-039 Cadastrar atração))
-        UC040((UC-040 Editar atração))
-        UC041((UC-041 Remover atração))
-        UC042((UC-042 Consultar atrações cadastradas))
+' Atores
+actor "Visitante" as V
+actor "Administrador da plataforma" as APL
+actor "Administrador de equipamento cultural" as AEC
 
-        %% Nós convidados: extensões vindas dos diagramas 4 e 7
-        UC080((UC-080 Sinalizar e acompanhar<br/>dado incorreto))
-        UC033((UC-033 Compartilhar perfil<br/>de local ou evento))
-    end
+rectangle "Cariri Cultural — equipamentos e atrações" {
+    usecase "UC-034\nCadastrar equipamento cultural" as UC034
+    usecase "UC-035\nEditar equipamento cultural" as UC035
+    usecase "UC-036\nConsultar equipamento cultural" as UC036
+    usecase "UC-037\nAssociar administrador a equipamento cultural" as UC037
+    usecase "UC-038\nAutenticar administrador" as UC038
+    usecase "UC-039\nCadastrar atração" as UC039
+    usecase "UC-040\nEditar atração" as UC040
+    usecase "UC-041\nRemover atração" as UC041
+    usecase "UC-042\nConsultar atrações cadastradas" as UC042
 
-    %% Relações Ator -> Caso de Uso
-    APL --- UC034 & UC035 & UC037
-    AEC --- UC038 & UC039 & UC040 & UC041
-    V --- UC036 & UC042 & UC080 & UC033
+    ' Nós convidados: extensões vindas dos diagramas 4 e 7
+    usecase "UC-080\nSinalizar e acompanhar\ndado incorreto" as UC080 <<detalhado em outro diagrama>>
+    usecase "UC-033\nCompartilhar perfil\nde local ou evento" as UC033 <<detalhado em outro diagrama>>
+}
 
-    %% Relações Include
-    UC034 -.->|include| UC038
-    UC035 -.->|include| UC038
-    UC037 -.->|include| UC038
-    UC039 -.->|include| UC038
-    UC040 -.->|include| UC038
-    UC041 -.->|include| UC038
+' Relações Ator -> Caso de Uso
+APL -- UC034
+APL -- UC035
+APL -- UC037
+APL -- UC038
+AEC -- UC037
+AEC -- UC038
+AEC -- UC039
+AEC -- UC040
+AEC -- UC041
+V -- UC036
+V -- UC042
 
-    %% Relações Extend
-    UC080 -.->|extend| UC036 & UC042
-    UC033 -.->|extend| UC036 & UC042
+' Relações Include
+UC034 ..> UC038 : <<include>>
+UC035 ..> UC038 : <<include>>
+UC037 ..> UC038 : <<include>>
+UC039 ..> UC038 : <<include>>
+UC040 ..> UC038 : <<include>>
+UC041 ..> UC038 : <<include>>
+
+' Relações Extend
+UC080 ..> UC036 : <<extend>>
+UC080 ..> UC042 : <<extend>>
+UC033 ..> UC036 : <<extend>>
+UC033 ..> UC042 : <<extend>>
+@enduml
 ```
+
+> UC-036 e UC-042 são consultas públicas: não incluem UC-038, pois o acesso à informação não exige autenticação (RN-022).
+> Em UC-037, o administrador de equipamento cultural é ator secundário. Em UC-038, o administrador da plataforma é ator secundário — o fluxo de autenticação é o mesmo para qualquer perfil administrativo.
 
 ---
 
 ## 9. Hipótese administrativa — estabelecimentos, ofertas e publicações
-```mermaid
-flowchart LR
-    %% Atores
-    APL([Administrador da plataforma])
-    AEC([Administrador de equipamento cultural])
-    AEG([Administrador de estabelecimento gastronômico])
+```plantuml
+@startuml
+left to right direction
 
-    subgraph CC [Cariri Cultural — estabelecimentos e conteúdos]
-        direction TB
-        UC038((UC-038 Autenticar administrador))
-        UC043((UC-043 Cadastrar estabelecimento gastronômico))
-        UC044((UC-044 Cadastrar oferta))
-        UC045((UC-045 Editar oferta))
-        UC046((UC-046 Remover oferta))
-        UC047((UC-047 Cadastrar publicação))
-        UC048((UC-048 Criar publicação vinculada a local))
-        UC049((UC-049 Editar publicação))
-        UC050((UC-050 Remover publicação))
-    end
+' Atores
+actor "Administrador da plataforma" as APL
+actor "Administrador de equipamento cultural" as AEC
+actor "Administrador de estabelecimento gastronômico" as AEG
 
-    %% Relações Ator -> Caso de Uso
-    APL --- UC043 & UC047
-    AEG --- UC044 & UC045 & UC046 & UC048 & UC049 & UC050
-    AEC --- UC048 & UC049 & UC050
+rectangle "Cariri Cultural — estabelecimentos e conteúdos" {
+    usecase "UC-038\nAutenticar administrador" as UC038
+    usecase "UC-043\nCadastrar estabelecimento gastronômico" as UC043
+    usecase "UC-044\nCadastrar oferta" as UC044
+    usecase "UC-045\nEditar oferta" as UC045
+    usecase "UC-046\nRemover oferta" as UC046
+    usecase "UC-047\nCadastrar publicação" as UC047
+    usecase "UC-048\nCriar publicação vinculada a local" as UC048
+    usecase "UC-049\nEditar publicação" as UC049
+    usecase "UC-050\nRemover publicação" as UC050
+}
 
-    %% Relações Include
-    UC043 -.->|include| UC038
-    UC044 -.->|include| UC038
-    UC045 -.->|include| UC038
-    UC046 -.->|include| UC038
-    UC047 -.->|include| UC038
-    UC048 -.->|include| UC038
-    UC049 -.->|include| UC038
-    UC050 -.->|include| UC038
+' Relações Ator -> Caso de Uso
+APL -- UC043
+APL -- UC047
+APL -- UC038
+AEC -- UC038
+AEG -- UC038
+AEG -- UC044
+AEG -- UC045
+AEG -- UC046
+AEG -- UC048
+AEG -- UC049
+AEG -- UC050
+AEC -- UC048
+AEC -- UC049
+AEC -- UC050
+
+' Relações Include
+UC043 ..> UC038 : <<include>>
+UC044 ..> UC038 : <<include>>
+UC045 ..> UC038 : <<include>>
+UC046 ..> UC038 : <<include>>
+UC047 ..> UC038 : <<include>>
+UC048 ..> UC038 : <<include>>
+UC049 ..> UC038 : <<include>>
+UC050 ..> UC038 : <<include>>
+@enduml
 ```
 
-> UC-038 é o mesmo caso do diagrama 8; aparece nos dois recortes porque é incluído por ações de escrita de ambos.
+> UC-038 é o mesmo caso do diagrama 8; aparece nos dois recortes porque é incluído por ações de escrita de ambos. Seu ator principal é o administrador de equipamento cultural; o administrador da plataforma e o administrador de estabelecimento gastronômico participam como atores secundários do mesmo fluxo.
 
 ---
 
 ## 10. Gestão de estabelecimentos — painel e indicadores
-```mermaid
-flowchart LR
-    %% Atores
-    G([Gestor])
+```plantuml
+@startuml
+left to right direction
 
-    subgraph CC [Cariri Cultural — painel do Gestor]
-        direction TB
-        UC056((UC-056 Painel de métricas do estabelecimento))
-        UC057((UC-057 Feed de atividades recentes))
-        UC058((UC-058 Responder publicamente a avaliação))
-        UC059((UC-059 Visualizar página pública))
-        UC060((UC-060 Indicadores de desempenho))
-        UC061((UC-061 Mapa de origem dos visitantes))
-    end
+' Atores
+actor "Gestor" as G
 
-    %% Relações Ator -> Caso de Uso
-    G --- UC056 & UC057 & UC058 & UC059 & UC060 & UC061
+rectangle "Cariri Cultural — painel do Gestor" {
+    usecase "UC-056\nConsultar painel de métricas do estabelecimento" as UC056
+    usecase "UC-057\nAcompanhar feed de atividades recentes" as UC057
+    usecase "UC-058\nResponder publicamente a uma avaliação" as UC058
+    usecase "UC-059\nVisualizar a página pública como visitante" as UC059
+    usecase "UC-060\nConsultar indicadores de desempenho" as UC060
+    usecase "UC-061\nConsultar mapa de origem dos visitantes" as UC061
+}
 
-    %% Relações Extend
-    UC059 -.->|extend| UC056
+' Relações Ator -> Caso de Uso
+G -- UC056
+G -- UC057
+G -- UC058
+G -- UC059
+G -- UC060
+G -- UC061
+
+' Relações Extend
+UC059 ..> UC056 : <<extend>>
+@enduml
 ```
 
 ---
 
 ## 11. Perfil, sessão e navegação global
-```mermaid
-flowchart LR
-    %% Atores
-    V([Visitante])
-    G([Gestor])
+```plantuml
+@startuml
+left to right direction
 
-    subgraph CC [Cariri Cultural — perfil e navegação]
-        direction TB
-        UC062((UC-062 Alternar modos Explorador e Gestor))
-        UC063((UC-063 Nível de parceria na plataforma))
-        UC064((UC-064 Certificações e qualificações))
-        UC065((UC-065 Encerrar sessões ativas))
-        UC066((UC-066 Barra inferior do Explorador))
-        UC067((UC-067 Barra inferior do Gestor))
-        UC068((UC-068 Cabeçalho contextual da tela))
-    end
+' Atores
+actor "Visitante" as V
+actor "Usuário autenticado" as UA
+actor "Gestor" as G
 
-    %% Relações Ator -> Caso de Uso
-    G --- UC062 & UC063 & UC064 & UC067
-    V --- UC065 & UC066 & UC068
+' Generalização de ator
+V <|-- UA
+
+rectangle "Cariri Cultural — perfil e navegação" {
+    usecase "UC-062\nAlternar entre os modos Explorador e Gestor" as UC062
+    usecase "UC-063\nConsultar nível de parceria na plataforma" as UC063
+    usecase "UC-064\nConsultar certificações e qualificações" as UC064
+    usecase "UC-065\nEncerrar todas as sessões ativas" as UC065
+    usecase "UC-066\nNavegar pela barra inferior do Explorador" as UC066
+    usecase "UC-067\nNavegar pela barra inferior do Gestor" as UC067
+    usecase "UC-068\nConsultar cabeçalho contextual da tela" as UC068
+}
+
+' Relações Ator -> Caso de Uso
+G -- UC062
+G -- UC063
+G -- UC064
+G -- UC067
+V -- UC066
+V -- UC068
+UA -- UC065
+@enduml
 ```
 
 ---
