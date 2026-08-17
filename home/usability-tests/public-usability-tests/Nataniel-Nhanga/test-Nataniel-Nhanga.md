@@ -1,7 +1,7 @@
 # Formulário de Observação — Avaliação de Usabilidade
 
 **Projeto:** Cariri Cultural
-**Método:** Entrevista com Think Aloud
+**Método:** Entrevista com Obsevação e Walkthrough
 **Dispositivo utilizado:** Celular / Smartphone
 
 | Campo | Preenchimento |

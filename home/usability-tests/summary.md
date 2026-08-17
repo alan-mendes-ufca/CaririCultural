@@ -18,3 +18,9 @@ title: Sumário dos Testes de Usabilidade
    5.1. Transcrição
 
    5.2. Teste Público
+6. Tays Ferreira
+
+   6.1. [Teste Público](./public-usability-tests/Tays-Ferreira/test-Tays-Ferreira)
+7. Gleyce Silva
+
+   7.1. [Teste Público](./public-usability-tests/Gleyce-Silva/test-Gleyce-Silva)
