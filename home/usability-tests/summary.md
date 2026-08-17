@@ -28,3 +28,9 @@ title: Sumário dos Testes de Usabilidade
 9. Gabriel Alexandre
 
    9.1. [Teste Público](./public-usability-tests/Gabriel-Alexandre/test-Gabriel-Alexandre)
+10. Jorgean
+
+   10.1. [Teste Público](./public-usability-tests/Jorgean/Test-Jorgean)
+11. Maria das Dores
+
+   11.1. [Teste Público](./public-usability-tests/Maria-Das-Dores/Test-Maria-Das-Dores)
