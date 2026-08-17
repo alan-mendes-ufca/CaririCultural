@@ -22,3 +22,9 @@ title: Sumário dos Testes de Usabilidade
 7. Gleyce Silva
 
    7.1. [Teste Público](./public-usability-tests/Gleyce-Silva/test-Gleyce-Silva)
+8. Lucas Lima
+
+   8.1. [Teste Público](./public-usability-tests/Lucas-Lima/test-Lucas-Lima)
+9. Gabriel Alexandre
+
+   9.1. [Teste Público](./public-usability-tests/Gabriel-Alexandre/test-Gabriel-Alexandre)
