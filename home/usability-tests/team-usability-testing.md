@@ -1,4 +1,4 @@
-# Relatório de Inspeção de Usabilidade — Protótipo de Alta Fidelidade
+# Relatório de Inspeção de Usabilidade realizado pela Equipe do Cariri Cultural — Protótipo de Alta Fidelidade
 ## Plataforma Cariri Cultural
 
 **Data da inspeção:** [preencher]

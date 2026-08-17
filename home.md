@@ -36,6 +36,6 @@ Artefatos em _ordem alfabética_:
 - [`storytelling/`](./home/storytelling) — narrativas de 3 personas
 - [`survey/`](./home/survey) — questionário com 29 respondentes + 10 gráficos (11 arquivos)
 - [`traceability-matrix`](./home/traceability-matrix) — rastreabilidade HU → UC → RF → RN → RNF → fonte
-- [`usability-testing`](./home/usability-testing) — relatório de inspeção de usabilidade do protótipo
+- [`usability-tests/`](./home/usability-tests/summary) — sumário dos testes de usabilidade: inspeção da equipe + 2 testes públicos com usuários (4 arquivos)
 - [`use-cases-diagram`](./home/user-cases/use-cases-diagram) — diagramas UML de casos de uso (13 diagramas)
 - [`user-storys`](./home/user-storys) — 89 histórias de usuário
