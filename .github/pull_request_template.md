@@ -1,32 +1,22 @@
 <!--
-Antes de fechar uma issue, este PR precisa registrar três coisas:
-a decisão principal (com a alternativa descartada), os modos de falha
-testados e o que ficou de fora de propósito.
+Responda com as suas palavras, em uma ou duas frases cada, antes de fechar a issue.
+Se uma resposta exigir abrir a IA, essa é a lacuna de estudo desta fatia.
 
-Estas respostas são do autor humano do PR, escritas com as próprias
-palavras. Não peça a um agente de IA para preenchê-las: o objetivo é
-registrar o SEU raciocínio sobre o que foi construído. Um agente pode
-te ajudar a levantar opções e riscos, mas a decisão e o texto são seus.
+Exemplo (armazenamento do token, issue #48):
+1. Como: o token é salvo após o login e lido pelo Repository em cada requisição.
+2. Por que assim: DataStore com criptografia via Keystore, em vez de SharedPreferences em texto puro, porque é um token de administrador.
+3. Quando falha: se o token expirar, a API devolve 401, o Repository limpa o token e a navegação volta ao login.
 -->
 
-Closes #<!-- número da issue -->
+Closes #
 
-## Decisão principal
+**1. Como funciona?**
 
-- **Escolhida:** <!-- o que foi feito -->
-- **Alternativa descartada:** <!-- o que foi considerado e não usado -->
-- **Por quê:** <!-- o critério que decidiu entre as duas -->
 
-## Modos de falha testados
+**2. Por que assim e não de outra forma?**
+<!-- Nomeie a alternativa descartada. -->
 
-<!-- Como isso pode quebrar e como você verificou que não quebra. -->
 
-| Falha | Como testei | Resultado |
-| --- | --- | --- |
-| <!-- ex.: sem conexão ao abrir a tela --> | <!-- ex.: teste de UI com repositório falso --> | <!-- ex.: exibe estado de erro com tentar de novo --> |
+**3. O que acontece quando falha?**
+<!-- Os limites da solução, não só o caminho feliz. -->
 
-## Fora de escopo, de propósito
-
-<!-- O que ficou de fora por decisão, e onde será tratado (issue, milestone ou "não será feito"). -->
-
-- 

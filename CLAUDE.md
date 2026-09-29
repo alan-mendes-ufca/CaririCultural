@@ -4,7 +4,7 @@ Este é um projeto acadêmico: além de entregar valor ao usuário final, ele ex
 
 ## Pull requests
 
-- Ao abrir um PR, **não preencha** as seções "Decisão principal", "Modos de falha testados" e "Fora de escopo, de propósito" do template (`.github/pull_request_template.md`). Deixe os comentários do template intactos para o autor responder com as próprias palavras.
+- Ao abrir um PR, **não responda** as três perguntas do template (`.github/pull_request_template.md`): "Como funciona?", "Por que assim e não de outra forma?" e "O que acontece quando falha?". Deixe-as em branco para o autor responder com as próprias palavras.
 - Na descrição, você pode incluir um resumo factual do que mudou (arquivos, comandos executados, resultados de testes). Se quiser contribuir com a reflexão, liste **perguntas** ou **riscos a considerar**, nunca as respostas.
 
 ## Decisões
