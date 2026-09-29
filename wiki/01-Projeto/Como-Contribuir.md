@@ -22,19 +22,16 @@
 
 ## Editando esta wiki
 
-A wiki é **gerada automaticamente** a partir da pasta [`wiki/`](https://github.com/alan-mendes-ufca/CaririCultural-wiki/tree/main/wiki) do repositório pelo workflow `Publicar Wiki`. Para alterar uma página:
+Toda a documentação do projeto fica **somente nesta wiki**; o repositório guarda apenas o código. Há duas formas de editar:
 
-1. Edite o arquivo `.md` correspondente em `wiki/` (pelo próprio GitHub ou por uma branch).
-2. Abra um PR; ao ser mergeado em `main`, a wiki é atualizada.
-
-> [!WARNING]
-> Edições feitas diretamente pela interface da wiki são sobrescritas na próxima publicação.
+- **Pela interface**: botão **Edit** no topo de cada página, ou **New Page** para criar uma página.
+- **Via Git** (edições grandes, imagens e PDFs): clone `https://github.com/alan-mendes-ufca/CaririCultural-wiki.wiki.git`, edite e faça push. As páginas ficam organizadas em pastas por área (`01-Projeto/`, `02-Pesquisa/`, `03-Requisitos/`, …).
 
 Convenções:
 - O nome do arquivo é o nome da página (`Requisitos-Funcionais.md` → página *Requisitos Funcionais*). Nomes devem ser únicos, independentemente da pasta.
 - Links entre páginas usam apenas o nome: `[Regras de Negócio](Regras-de-Neg%C3%B3cio#RN-001)`.
-- Imagens e PDFs ficam em `wiki/assets/` e são referenciados a partir da raiz: `![diagrama](assets/bpmn/BPMN-Cariri-Cultural.png)`.
-- Novas páginas devem ser adicionadas ao menu em `wiki/_Sidebar.md`.
+- Imagens e PDFs ficam na pasta `assets/` da wiki e são referenciados a partir da raiz: `![diagrama](assets/bpmn/BPMN-Cariri-Cultural.png)`.
+- Novas páginas devem ser adicionadas ao menu em `_Sidebar.md`.
 
 ## Milestones e labels
 
