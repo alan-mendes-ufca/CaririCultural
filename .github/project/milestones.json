@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Milestone 0: Em construção",
+    "description": "Documentação organizada na Wiki, repositório preparado e primeira versão instalável do aplicativo Android (tela \"Em construção\") distribuída para a equipe."
+  },
+  {
+    "title": "Milestone 1: Fundação",
+    "description": "Arquitetura do app e do backend, modelo de dados, design system, navegação base e esteira de qualidade (linters, testes automatizados e integração contínua)."
+  },
+  {
+    "title": "Milestone 2: Catálogo e Descoberta",
+    "description": "Épicos 1 e 2: catálogo regional, busca, filtros, perfil do local, horários, localização, agenda de eventos e procedência dos dados."
+  },
+  {
+    "title": "Milestone 3: Usuários, Autenticação e Privacidade",
+    "description": "Cadastro, login, sessões, papéis (RBAC), perfil do usuário e conformidade com a LGPD."
+  },
+  {
+    "title": "Milestone 4: Avaliações e Comunidade",
+    "description": "Épico 3: consulta e publicação de avaliações, relevância, marcação de utilidade e sinalização de dados incorretos."
+  },
+  {
+    "title": "Milestone 5: Planejamento Pessoal",
+    "description": "Épicos 4 e 5: listas de locais desejados, roteiros personalizados, checklists de passeio, locais visitados e recomendações."
+  },
+  {
+    "title": "Milestone 6: Assistente Virtual",
+    "description": "Épico 6: assistente conversacional com interpretação de intenção, contexto da tela, dados do catálogo e fallback gracioso."
+  },
+  {
+    "title": "Milestone 7: Gestão de Estabelecimentos",
+    "description": "Épicos 8 e 11: autenticação de administradores, cadastro de equipamentos culturais, atrações e estabelecimentos, e modo Gestor."
+  },
+  {
+    "title": "Milestone 8: Qualidade e Lançamento",
+    "description": "Acessibilidade (WCAG 2.1 AA), desempenho, monitoramento, testes de usabilidade no app nativo e publicação na Google Play."
+  }
+]

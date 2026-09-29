@@ -1,0 +1,50 @@
+name: Publicar Wiki
+
+# A pasta wiki/ é a fonte da verdade da Wiki do GitHub.
+# Qualquer alteração nela é publicada automaticamente em
+# https://github.com/<owner>/<repo>/wiki (edições feitas direto na
+# interface da Wiki são sobrescritas na próxima publicação).
+on:
+  push:
+    branches: [main, claude/sharp-allen-smaxk5]
+    paths:
+      - "wiki/**"
+      - ".github/workflows/publish-wiki.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-wiki
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publicar wiki/ no GitHub Wiki
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if ! git clone "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.wiki.git" "$RUNNER_TEMP/wiki"; then
+            echo "::error::Não foi possível clonar a Wiki. Ative a Wiki em Settings > Features e crie a primeira página pela interface (https://github.com/${GITHUB_REPOSITORY}/wiki) antes de publicar."
+            exit 1
+          fi
+
+          rsync -a --delete --exclude ".git" wiki/ "$RUNNER_TEMP/wiki/"
+
+          cd "$RUNNER_TEMP/wiki"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Wiki já está atualizada."
+            exit 0
+          fi
+          git commit -m "docs(wiki): sincroniza com ${GITHUB_SHA::7}"
+          git push origin HEAD

@@ -1,0 +1,57 @@
+name: Sincronizar milestones e labels
+
+# Cria ou atualiza as milestones e labels descritas em .github/project/.
+# Idempotente: itens existentes (mesmo título/nome) são apenas atualizados.
+on:
+  push:
+    branches: [main, claude/sharp-allen-smaxk5]
+    paths:
+      - ".github/project/**"
+      - ".github/workflows/sync-project.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sincronizar labels
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          jq -c '.[]' .github/project/labels.json | while read -r label; do
+            name=$(jq -r '.name' <<<"$label")
+            color=$(jq -r '.color' <<<"$label")
+            description=$(jq -r '.description' <<<"$label")
+            gh label create "$name" --repo "$GITHUB_REPOSITORY" \
+              --color "$color" --description "$description" --force
+          done
+
+      - name: Sincronizar milestones
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          existing=$(gh api "repos/$GITHUB_REPOSITORY/milestones?state=all&per_page=100")
+          jq -c '.[]' .github/project/milestones.json | while read -r milestone; do
+            title=$(jq -r '.title' <<<"$milestone")
+            description=$(jq -r '.description' <<<"$milestone")
+            number=$(jq -r --arg t "$title" '.[] | select(.title == $t) | .number' <<<"$existing")
+            if [ -n "$number" ]; then
+              gh api -X PATCH "repos/$GITHUB_REPOSITORY/milestones/$number" \
+                -f description="$description" --silent
+              echo "Atualizada: #$number $title"
+            else
+              number=$(gh api -X POST "repos/$GITHUB_REPOSITORY/milestones" \
+                -f title="$title" -f description="$description" --jq '.number')
+              echo "Criada: #$number $title"
+            fi
+          done
+          gh api "repos/$GITHUB_REPOSITORY/milestones?state=all&per_page=100" \
+            --jq '.[] | "#\(.number) \(.title)"'
