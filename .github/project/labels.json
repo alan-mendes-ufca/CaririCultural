@@ -1,0 +1,11 @@
+[
+  {"name": "app", "color": "3ddc84", "description": "Aplicativo Android (Kotlin/Jetpack Compose)"},
+  {"name": "backend", "color": "1d76db", "description": "API, banco de dados e serviços do servidor"},
+  {"name": "infra", "color": "5319e7", "description": "CI/CD, ferramentas e configuração do repositório"},
+  {"name": "ux", "color": "d4c5f9", "description": "Design, usabilidade e acessibilidade"},
+  {"name": "ia", "color": "c5def5", "description": "Assistente virtual e recursos de IA"},
+  {"name": "documentation", "color": "0075ca", "description": "Wiki e documentação do projeto"},
+  {"name": "must-have", "color": "b60205", "description": "Prioridade MoSCoW: Must have"},
+  {"name": "should-have", "color": "fbca04", "description": "Prioridade MoSCoW: Should have"},
+  {"name": "could-have", "color": "0e8a16", "description": "Prioridade MoSCoW: Could have"}
+]
