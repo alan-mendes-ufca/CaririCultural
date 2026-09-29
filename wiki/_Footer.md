@@ -1,0 +1,1 @@
+Cariri Cultural — UFCA · Esta wiki é gerada a partir da pasta [`wiki/`](https://github.com/alan-mendes-ufca/CaririCultural-wiki/tree/main/wiki) do repositório; edite por lá (alterações feitas direto na wiki são sobrescritas). Veja [Como Contribuir](Como-Contribuir).

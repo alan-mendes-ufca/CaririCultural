@@ -1,0 +1,1 @@
+![BPMN](assets/bpmn/BPMN-Cariri-Cultural.png)
