@@ -1,8 +1,12 @@
 <!--
 Antes de fechar uma issue, este PR precisa registrar três coisas:
 a decisão principal (com a alternativa descartada), os modos de falha
-testados e o que ficou de fora de propósito. Substitua os comentários
-pelas suas respostas; não deixe nenhuma seção em branco.
+testados e o que ficou de fora de propósito.
+
+Estas respostas são do autor humano do PR, escritas com as próprias
+palavras. Não peça a um agente de IA para preenchê-las: o objetivo é
+registrar o SEU raciocínio sobre o que foi construído. Um agente pode
+te ajudar a levantar opções e riscos, mas a decisão e o texto são seus.
 -->
 
 Closes #<!-- número da issue -->
