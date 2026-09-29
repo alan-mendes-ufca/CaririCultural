@@ -4,7 +4,7 @@ name: Sincronizar milestones e labels
 # Idempotente: itens existentes (mesmo título/nome) são apenas atualizados.
 on:
   push:
-    branches: [main, claude/sharp-allen-smaxk5]
+    branches: [main]
     paths:
       - ".github/project/**"
       - ".github/workflows/sync-project.yml"
