@@ -3,7 +3,7 @@ name: Android
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, claude/charming-hamilton-ilr55o] # TEMP: validar antes do PR
   workflow_dispatch:
 
 permissions:
@@ -18,19 +18,19 @@ jobs:
     name: Build debug
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@CHECKOUT_V
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-java@SETUP_JAVA_V
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: 17
 
-      - uses: gradle/actions/setup-gradle@SETUP_GRADLE_V
+      - uses: gradle/actions/setup-gradle@v6
 
       - name: Assemble debug APK
         run: ./gradlew assembleDebug
 
-      - uses: actions/upload-artifact@UPLOAD_V
+      - uses: actions/upload-artifact@v7
         with:
           name: app-debug
           path: app/build/outputs/apk/debug/*.apk
