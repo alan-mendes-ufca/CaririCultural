@@ -3,7 +3,7 @@ name: Android
 on:
   pull_request:
   push:
-    branches: [main, claude/charming-hamilton-ilr55o] # TEMP: validar antes do PR
+    branches: [main]
   workflow_dispatch:
 
 permissions:
