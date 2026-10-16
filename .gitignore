@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+.kotlin/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Configuração local (caminho do SDK e chaves de API)
+local.properties
+
+# Assinatura e segredos
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
